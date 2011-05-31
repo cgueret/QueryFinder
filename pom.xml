@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>nl.vu</groupId>
+  <artifactId>queryfinder</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>queryfinder</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>com.hp.hpl.jena</groupId>
+    	<artifactId>jena</artifactId>
+    	<version>2.6.4</version>
+    	<exclusions>
+    		<exclusion>
+    			<artifactId>log4j</artifactId>
+    			<groupId>log4j</groupId>
+    		</exclusion>
+    		<exclusion>
+    			<artifactId>slf4j-log4j12</artifactId>
+    			<groupId>org.slf4j</groupId>
+    		</exclusion>
+    		<exclusion>
+    			<artifactId>slf4j-api</artifactId>
+    			<groupId>org.slf4j</groupId>
+    		</exclusion>
+    	</exclusions>
+    </dependency>
+    <dependency>
+    	<groupId>com.hp.hpl.jena</groupId>
+    	<artifactId>arq</artifactId>
+    	<version>2.8.7</version>
+    	<exclusions>
+    		<exclusion>
+    			<artifactId>log4j</artifactId>
+    			<groupId>log4j</groupId>
+    		</exclusion>
+    		<exclusion>
+    			<artifactId>slf4j-api</artifactId>
+    			<groupId>org.slf4j</groupId>
+    		</exclusion>
+    	</exclusions>
+    </dependency>
+    <dependency>
+    	<groupId>ch.qos.logback</groupId>
+    	<artifactId>logback-classic</artifactId>
+    	<version>0.9.28</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.sindice.api</groupId>
+    	<artifactId>sindice4j</artifactId>
+    	<version>0.3</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.codehaus.janino</groupId>
+    	<artifactId>janino</artifactId>
+    	<version>2.5.16</version>
+    </dependency>
+    <dependency>
+    	<groupId>nl.erdf</groupId>
+    	<artifactId>core</artifactId>
+    	<version>0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>nl.erdf</groupId>
+    	<artifactId>datalayer-sparql</artifactId>
+    	<version>0.1-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+</project>

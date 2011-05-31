@@ -1,0 +1,5 @@
+select * where {
+	?result a <http://www.w3.org/2002/07/owl#Class>.
+	?result <http://www.w3.org/2000/01/rdf-schema#label> ?label. 
+	filter (langMatches(lang(?label), "en") && regex(?label, "%keyword%", "i"))
+}

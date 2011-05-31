@@ -1,0 +1,8 @@
+select * where {
+	?result <http://www.w3.org/2000/01/rdf-schema#label> ?label. 
+	?result <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty>. 
+	?result <http://www.w3.org/2000/01/rdf-schema#domain> []. 
+	OPTIONAL {?other1 <http://www.w3.org/2002/07/owl#sameAs> ?result.}
+	OPTIONAL {?result <http://www.w3.org/2002/07/owl#sameAs> ?other2.}
+	filter (langMatches(lang(?label), "en") && regex(?label, "%keyword%", "i"))
+}

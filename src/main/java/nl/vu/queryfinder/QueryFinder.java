@@ -6,7 +6,9 @@ import java.util.Set;
 
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.model.QueryPattern;
+import nl.vu.queryfinder.model.WorkFlow;
 import nl.vu.queryfinder.services.impl.KeywordMatcher;
+import nl.vu.queryfinder.services.impl.SindiceSearch;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,19 +17,27 @@ import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.rdf.model.ResourceFactory;
 
 /**
- * Hello world!
- * 
+ * @author Christophe Guéret <christophe.gueret@gmail.com>
+ *
  */
-// Note : http://jena.sourceforge.net/ARQ/lucene-arq.html
-// http://tech.groups.yahoo.com/group/jena-dev/message/39347
-// work well : population, city, birth
+//Note : http://jena.sourceforge.net/ARQ/lucene-arq.html
+//http://tech.groups.yahoo.com/group/jena-dev/message/39347
+//work well : population, city, birth
 public class QueryFinder {
 	static final Logger logger = LoggerFactory.getLogger(QueryFinder.class);
 
 	public static void main(String[] args) throws IOException {
+		WorkFlow workFlow = new WorkFlow();
+		
+		KeywordMatcher keywordMatcher = new KeywordMatcher("http://dbpedia.org/sparql");
+		workFlow.setPropertyMatcher(keywordMatcher);
+		workFlow.setClassMatcher(keywordMatcher);
+		
+		SindiceSearch sindiceSearch = new SindiceSearch();
+		workFlow.setResourceMatcher(sindiceSearch);
+
 		// Create all the components
 		Query query = new Query();
-		KeywordMatcher keywordMatcher = new KeywordMatcher("http://dbpedia.org/sparql");
 
 		// We want to find someone who is an artist
 		query.add(QueryPattern.create("?person", QueryPattern.IS_A, "artist"));
@@ -61,7 +71,7 @@ public class QueryFinder {
 
 				// Find resources
 				if (!pattern.getObject().startsWith("?")) {
-					Set<Resource> resources = keywordMatcher.getResources(pattern.getObject());
+					Set<Resource> resources = sindiceSearch.getResources(pattern.getObject());
 					for (Resource resource : resources)
 						query.addBinding(pattern.getObject(), resource);
 				}

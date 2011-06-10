@@ -9,11 +9,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
-
-import nl.erdf.datalayer.sparql.orig.SPARQLDataLayer;
+import java.util.TreeSet;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,13 +34,16 @@ public class BruteSolver {
 	static final Logger logger = LoggerFactory.getLogger(BruteSolver.class);
 	static final String SPARQL_ENDPOINT = "http://lod.openlinksw.com/sparql";
 
-	/**
-	 * @author Christophe Guéret <christophe.gueret@gmail.com>
-	 * 
-	 */
-	public class Block {
-		private final Set<ElementGroup> elements = new HashSet<ElementGroup>();
-	}
+	public class TripleSet extends HashSet<Triple> implements Comparable<TripleSet> {
+		private static final long serialVersionUID = -7842966204179829234L;
+		public int compareTo(TripleSet o) {
+			return o.size() - this.size();
+		}
+	};
+
+	public class Block extends TreeSet<TripleSet> {
+		private static final long serialVersionUID = -4820888956735317884L;
+	};
 
 	/**
 	 * @param args
@@ -65,14 +65,14 @@ public class BruteSolver {
 			logger.warn("No solution found !");
 			return;
 		}
-		
+
 		if (blocks.size() == 1) {
 			logger.info("Solution found with " + queries + " queries");
-			for (ElementGroup element : blocks.get(0).elements)
+			for (TripleSet element : blocks.get(0))
 				logger.info(element.toString());
 			return;
 		}
-		
+
 		List<Block> newBlocks = new ArrayList<Block>();
 
 		for (int index = 0; index < blocks.size() - 1; index++) {
@@ -82,27 +82,32 @@ public class BruteSolver {
 			Block newBlock = new Block();
 
 			// Try to combine their content
-			for (ElementGroup firstGroup : firstBlock.elements) {
-				for (ElementGroup secondGroup : secondBlock.elements) {
+			// TODO sort by size and combine x with x+1, x with x+2, ...
+			for (TripleSet firstGroup : firstBlock) {
+				for (TripleSet secondGroup : secondBlock) {
 					// Prepare the query
-					ElementGroup elg = new ElementGroup();
-					elg.addElement(firstGroup);
-					elg.addElement(secondGroup);
+					TripleSet newSet = new TripleSet();
+					newSet.addAll(firstGroup);
+					newSet.addAll(secondGroup);
 					Query query = QueryFactory.make();
 					query.setQueryAskType();
+					ElementGroup elg = new ElementGroup();
+					for (Triple triple : newSet)
+						elg.addTriplePattern(triple);
 					query.setQueryPattern(elg);
 					QueryExecution queryExec = QueryExecutionFactory.sparqlService(SPARQL_ENDPOINT, query);
 					boolean valid = queryExec.execAsk();
 					if (valid)
-						newBlock.elements.add(elg);
+						newBlock.add(newSet);
 					queries++;
+					queryExec.close();
 				}
 			}
 
-			if (newBlock.elements.size() > 0)
+			if (newBlock.size() > 0)
 				newBlocks.add(newBlock);
 		}
-		
+
 		combineBlocks(newBlocks, queries);
 	}
 
@@ -145,9 +150,9 @@ public class BruteSolver {
 			// Store it to the current block
 			if (currentBlock != null) {
 				Triple triple = Triple.create(spoNodes[0], spoNodes[1], spoNodes[2]);
-				ElementGroup elementGroup = new ElementGroup();
-				elementGroup.addTriplePattern(triple);
-				currentBlock.elements.add(elementGroup);
+				TripleSet tripleSet = new TripleSet();
+				tripleSet.add(triple);
+				currentBlock.add(tripleSet);
 			}
 		}
 

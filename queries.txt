@@ -1,0 +1,94 @@
+select distinct ?s where {
+ ?s a ?o .
+ ?s <http://www.w3.org/2000/01/rdf-schema#label> ?l.
+ ?l bif:contains "amsterdam"
+}
+
+select ?person where {
+?person a ?artist.
+{
+select ?artist where {
+?artist <http://www.w3.org/2000/01/rdf-schema#label> ?artist_kw_label.
+?artist_kw_label bif:contains "artist".
+} 
+}
+?person ?field ?f.
+{
+select ?field where {
+?field <http://www.w3.org/2000/01/rdf-schema#label> ?artist_kw_label.
+?artist_kw_label bif:contains "field".
+} 
+}
+?person ?birth ?ned.
+{
+select ?birth where {
+?birth <http://www.w3.org/2000/01/rdf-schema#label> ?artist_kw_label.
+?artist_kw_label bif:contains "birth".
+} 
+}
+{
+select ?ned where {
+?ned <http://www.w3.org/2000/01/rdf-schema#label> ?artist_kw_label.
+?artist_kw_label bif:contains "netherlands".
+} 
+}
+} 
+
+
+select ?person where {
+?person a ?artist_kw.
+?artist_kw <http://www.w3.org/2000/01/rdf-schema#label> ?artist_kw_label.
+?artist_kw_label <http://www.ontotext.com/owlim/lucene#> "artist".
+?person ?field_kw ?field.
+?field_kw <http://www.w3.org/2000/01/rdf-schema#label> ?field_kw_label.
+?field_kw_label <http://www.ontotext.com/owlim/lucene#> "field".
+?person ?birth_kw ?ned_kw.
+?birth_kw <http://www.w3.org/2000/01/rdf-schema#label> ?birth_kw_label.
+?birth_kw_label <http://www.ontotext.com/owlim/lucene#> "birth".
+?ned_kw <http://www.w3.org/2000/01/rdf-schema#label> ?ned_kw_label.
+?ned_kw_label <http://www.ontotext.com/owlim/lucene#> "netherlands".
+} limit 1
+
+
+
+select ?person where {
+?person a ?artist_kw.
+?artist_kw <http://www.w3.org/2000/01/rdf-schema#label> ?artist_kw_label.
+?artist_kw_label bif:contains "artist".
+?person ?field_kw ?field.
+?field_kw <http://www.w3.org/2000/01/rdf-schema#label> ?field_kw_label.
+?field_kw_label bif:contains "field".
+?person ?birth_kw ?ned_kw.
+?birth_kw <http://www.w3.org/2000/01/rdf-schema#label> ?birth_kw_label.
+?birth_kw_label bif:contains "birth".
+?ned_kw <http://www.w3.org/2000/01/rdf-schema#label> ?ned_kw_label.
+?ned_kw_label bif:contains "netherlands".
+} limit 1
+
+select count (distinct ?birth)  where {
+?birth <http://www.w3.org/2000/01/rdf-schema#label> ?artist_kw_label.
+?artist_kw_label bif:contains "field".
+}
+
+
+select ?person where {
+?person a ?artist_kw.
+?artist_kw <http://www.w3.org/2000/01/rdf-schema#label> ?artist_kw_label.
+?artist_kw_label bif:contains "artist".
+?person ?field_kw ?field.
+?field_kw <http://www.w3.org/2000/01/rdf-schema#label> ?field_kw_label.
+?field_kw_label bif:contains "field".
+?person ?birth_kw ?ned_kw.
+?birth_kw <http://www.w3.org/2000/01/rdf-schema#label> ?birth_kw_label.
+?birth_kw_label bif:contains "birth".
+?ned_kw <http://www.w3.org/2000/01/rdf-schema#label> ?ned_kw_label.
+?ned_kw_label bif:contains "netherlands".
+} limit 1
+
+
+select distinct ?birth where {
+?birth <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>. 
+?birth <http://www.w3.org/2000/01/rdf-schema#label> ?artist_kw_label.
+?artist_kw_label bif:contains "birth".
+}
+

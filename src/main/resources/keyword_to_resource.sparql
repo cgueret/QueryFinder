@@ -1,0 +1,5 @@
+select distinct ?result where {
+	?result a ?type .
+ 	?result <http://www.w3.org/2000/01/rdf-schema#label> ?label.
+ 	?label bif:contains "%keyword%"
+}

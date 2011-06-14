@@ -41,7 +41,7 @@ public class BruteSolver {
 		}
 	};
 
-	public class Block extends TreeSet<TripleSet> {
+	public class Block extends HashSet<TripleSet> {
 		private static final long serialVersionUID = -4820888956735317884L;
 	};
 
@@ -61,6 +61,8 @@ public class BruteSolver {
 	 * @param blocks
 	 */
 	private void combineBlocks(List<Block> blocks, int queries) {
+//		logger.info(blocks.toString());
+		
 		if (blocks.size() == 0) {
 			logger.warn("No solution found !");
 			return;
@@ -89,6 +91,7 @@ public class BruteSolver {
 					TripleSet newSet = new TripleSet();
 					newSet.addAll(firstGroup);
 					newSet.addAll(secondGroup);
+					//logger.info("Try " + newSet);
 					Query query = QueryFactory.make();
 					query.setQueryAskType();
 					ElementGroup elg = new ElementGroup();

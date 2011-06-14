@@ -6,6 +6,8 @@ package nl.vu.queryfinder.model;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.hp.hpl.jena.graph.Node;
+
 /**
  * @author Christophe Guéret <christophe.gueret@gmail.com>
  * 
@@ -14,16 +16,16 @@ public class QueryPattern {
 	static final Logger logger = LoggerFactory.getLogger(QueryPattern.class);
 
 	public static final String IS_A = "is_a";
-	private final String subject;
-	private final String predicate;
-	private final String object;
+	private final Node subject;
+	private final Node predicate;
+	private final Node object;
 
 	/**
 	 * @param s
 	 * @param p
 	 * @param o
 	 */
-	public QueryPattern(String s, String p, String o) {
+	public QueryPattern(Node s, Node p, Node o) {
 		this.subject = s;
 		this.predicate = p;
 		this.object = o;
@@ -35,36 +37,36 @@ public class QueryPattern {
 	 * @param o
 	 * @return
 	 */
-	public static QueryPattern create(String s, String p, String o) {
+	public static QueryPattern create(Node s, Node p, Node o) {
 		return new QueryPattern(s, p, o);
 	}
 
 	/**
 	 * @return
 	 */
-	public String getPredicate() {
+	public Node getPredicate() {
 		return predicate;
 	}
 
 	/**
 	 * @return the subject
 	 */
-	public String getSubject() {
+	public Node getSubject() {
 		return subject;
 	}
 
 	/**
 	 * @return the object
 	 */
-	public String getObject() {
+	public Node getObject() {
 		return object;
 	}
 
 	/**
 	 * @return
 	 */
-	public String[] getElements() {
-		return new String[] { subject, predicate, object };
+	public Node[] getElements() {
+		return new Node[] { subject, predicate, object };
 	}
 
 }

@@ -3,7 +3,7 @@
  */
 package nl.vu.queryfinder.services;
 
-import nl.vu.queryfinder.model.Query;
+import nl.vu.queryfinder.model.StructuredQuery;
 
 /**
  * @author Christophe Guéret <christophe.gueret@gmail.com>
@@ -19,5 +19,5 @@ public interface NLParser {
 	 * 
 	 * @return an instance of Query
 	 */
-	public Query getQuery(String description);
+	public StructuredQuery getQuery(String description);
 }

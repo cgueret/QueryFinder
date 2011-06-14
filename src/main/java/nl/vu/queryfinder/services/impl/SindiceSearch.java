@@ -14,9 +14,9 @@ import java.util.Map.Entry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.Resource;
 import com.sindice.Sindice;
 import com.sindice.SindiceException;
 import com.sindice.result.SearchResults;
@@ -36,7 +36,7 @@ public class SindiceSearch implements ResourceMatcher {
 	 * @see
 	 * nl.vu.queryfinder.services.ResourceMatcher#getResources(java.lang.String)
 	 */
-	public Set<Resource> getResources(String keyword) {
+	public Set<Node> getResources(String keyword) {
 		logger.info(String.format("Look for resources for \"%s\"", keyword));
 
 		// Create a list of possible labels (mostly from
@@ -54,14 +54,14 @@ public class SindiceSearch implements ResourceMatcher {
 		labels.add("http://www.geonames.org/ontology#name");
 		labels.add("http://www.geonames.org/ontology#alternateName");
 
-		Map<Resource, Integer> stats = new HashMap<Resource, Integer>();
+		Map<Node, Integer> stats = new HashMap<Node, Integer>();
 		Model model = ModelFactory.createDefaultModel();
 		Sindice query = new Sindice();
 		try {
 			for (String label : labels) {
 				SearchResults searchResults = query.advancedSearch(label, keyword);
 				for (int index = 0; index < Math.min(5, searchResults.size()); index++) {
-					Resource resource = model.createResource(searchResults.get(index).getLink());
+					Node resource = Node.createURI(searchResults.get(index).getLink());
 					Integer count = stats.get(resource);
 					if (count == null)
 						count = 0;
@@ -74,8 +74,8 @@ public class SindiceSearch implements ResourceMatcher {
 			model.close();
 		}
 
-		Set<Resource> resources = new LinkedHashSet<Resource>();
-		for (Entry<Resource, Integer> stat : stats.entrySet())
+		Set<Node> resources = new LinkedHashSet<Node>();
+		for (Entry<Node, Integer> stat : stats.entrySet())
 			if (stat.getValue() > 1)
 				resources.add(stat.getKey());
 		logger.info(String.format("%d filtered results out of %d ", resources.size(), stats.size()));

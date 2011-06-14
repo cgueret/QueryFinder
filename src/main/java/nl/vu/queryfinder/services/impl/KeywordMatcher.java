@@ -11,13 +11,13 @@ import nl.vu.queryfinder.services.PropertyMatcher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
-import com.hp.hpl.jena.rdf.model.Resource;
 
 /**
  * @author cgueret
@@ -40,8 +40,8 @@ public class KeywordMatcher implements ClassMatcher, PropertyMatcher {
 	 * @return
 	 * @throws IOException
 	 */
-	private Set<Resource> execQuery(String queryString) throws IOException {
-		Set<Resource> properties = new HashSet<Resource>();
+	private Set<Node> execQuery(String queryString) throws IOException {
+		Set<Node> properties = new HashSet<Node>();
 
 		// Get all the properties
 		Query query = QueryFactory.create(queryString);
@@ -49,11 +49,11 @@ public class KeywordMatcher implements ClassMatcher, PropertyMatcher {
 		ResultSet resultSet = qexec.execSelect();
 		if (resultSet.hasNext()) {
 			for (QuerySolution result = resultSet.next(); resultSet.hasNext(); result = resultSet.next()) {
-				properties.add(result.get("?result").asResource());
+				properties.add(result.get("?result").asNode());
 				if (result.get("?other1") != null)
-					properties.add(result.get("?other1").asResource());
+					properties.add(result.get("?other1").asNode());
 				if (result.get("?other2") != null)
-					properties.add(result.get("?other2").asResource());
+					properties.add(result.get("?other2").asNode());
 			}
 		}
 
@@ -82,18 +82,18 @@ public class KeywordMatcher implements ClassMatcher, PropertyMatcher {
 	 * 
 	 * @see nl.vu.queryfinder.services.ClassMatcher#getClasses(java.lang.String)
 	 */
-	public Set<Resource> getClasses(String keyword) {
+	public Set<Node> getClasses(String keyword) {
 		logger.info(String.format("Look for classes for \"%s\"", keyword));
 
-		Set<Resource> classes = new HashSet<Resource>();
+		Set<Node> classes = new HashSet<Node>();
 		try {
 			classes.addAll(execQuery(genQuery("classes", keyword)));
 		} catch (Exception e) {
 		}
 
 		// Check which ones are actually used
-		Set<Resource> unused = new HashSet<Resource>();
-		for (Resource c : classes) {
+		Set<Node> unused = new HashSet<Node>();
+		for (Node c : classes) {
 			try {
 				Query check = QueryFactory.create(genQuery("askclasses", c.getURI()));
 				boolean used = QueryExecutionFactory.sparqlService(endPoint, check).execAsk();
@@ -115,11 +115,11 @@ public class KeywordMatcher implements ClassMatcher, PropertyMatcher {
 	 * nl.vu.queryfinder.services.PropertyMatcher#getProperties(java.lang.String
 	 * )
 	 */
-	public Set<Resource> getProperties(String keyword) {
+	public Set<Node> getProperties(String keyword) {
 		logger.info(String.format("Look for properties for \"%s\"", keyword));
 
 		// Execute the queries to get a set of properties of different type
-		Set<Resource> properties = new HashSet<Resource>();
+		Set<Node> properties = new HashSet<Node>();
 		for (String query : new String[] { "objectproperty", "datatypeproperty", "property" }) {
 			try {
 				properties.addAll(execQuery(genQuery(query, keyword)));
@@ -128,8 +128,8 @@ public class KeywordMatcher implements ClassMatcher, PropertyMatcher {
 		}
 
 		// Check which ones are actually used
-		Set<Resource> unused = new HashSet<Resource>();
-		for (Resource property : properties) {
+		Set<Node> unused = new HashSet<Node>();
+		for (Node property : properties) {
 			try {
 				Query check = QueryFactory.create(genQuery("askproperty", property.getURI()));
 				boolean used = QueryExecutionFactory.sparqlService(endPoint, check).execAsk();
@@ -138,8 +138,7 @@ public class KeywordMatcher implements ClassMatcher, PropertyMatcher {
 			} catch (Exception e) {
 			}
 		}
-		logger.info(String.format("%d filtered results out of %d ", properties.size() - unused.size(),
-				properties.size()));
+		logger.info(String.format("%d filtered results out of %d ", properties.size() - unused.size(), properties.size()));
 		properties.removeAll(unused);
 
 		return properties;

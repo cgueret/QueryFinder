@@ -15,7 +15,7 @@ public interface NLParser {
 	 * full text description
 	 * 
 	 * @param description
-	 *            a textual description of the information need
+	 *            a textual description of the information needed
 	 * 
 	 * @return an instance of Query
 	 */

@@ -102,7 +102,9 @@ public class WorkFlow {
 			Set<Node> objects = getMappingsFor(Position.O, pattern);
 
 			// Compose all the triples
+			// TODO Check if a triple is valid before pushing it
 			TripleSet triples = new TripleSet();
+			triples.setPattern(pattern);
 			for (Node s : subjects)
 				for (Node p : predicates)
 					for (Node o : objects)

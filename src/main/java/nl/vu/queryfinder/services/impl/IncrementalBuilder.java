@@ -69,23 +69,26 @@ public class IncrementalBuilder implements QueryGenerator {
 			// Try to combine their content
 			for (TripleSet firstGroup : firstBlock) {
 				for (TripleSet secondGroup : secondBlock) {
+					boolean valid = false;
 					// Prepare the query
 					TripleSet newSet = new TripleSet();
 					newSet.addAll(firstGroup);
 					newSet.addAll(secondGroup);
-					// logger.info("Try " + newSet);
-					Query query = QueryFactory.make();
-					query.setQueryAskType();
-					ElementGroup elg = new ElementGroup();
-					for (Triple triple : newSet)
-						elg.addTriplePattern(triple);
-					query.setQueryPattern(elg);
-					QueryExecution queryExec = QueryExecutionFactory.sparqlService(endPoint, query);
-					boolean valid = queryExec.execAsk();
+					try {
+						// logger.info("Try " + newSet);
+						Query query = QueryFactory.make();
+						query.setQueryAskType();
+						ElementGroup elg = new ElementGroup();
+						for (Triple triple : newSet)
+							elg.addTriplePattern(triple);
+						query.setQueryPattern(elg);
+						QueryExecution queryExec = QueryExecutionFactory.sparqlService(endPoint, query);
+						valid = queryExec.execAsk();
+					} catch (Exception e) {
+					}
 					if (valid)
 						newBlock.add(newSet);
 					queries++;
-					queryExec.close();
 				}
 			}
 

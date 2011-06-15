@@ -29,7 +29,7 @@ public class MappedQuery {
 	public void printContent() {
 		logger.info(groups.size() + " groups");
 		for (TripleSet triples : groups)
-			logger.info(triples.size() + "");
+			logger.info(triples.getPattern() + " " + triples.size() + "");
 	}
 
 	/**

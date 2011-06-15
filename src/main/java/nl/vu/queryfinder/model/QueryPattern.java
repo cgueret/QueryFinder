@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.hp.hpl.jena.graph.Node;
+import com.hp.hpl.jena.graph.Triple;
 
 /**
  * @author Christophe Guéret <christophe.gueret@gmail.com>
@@ -69,4 +70,11 @@ public class QueryPattern {
 		return new Node[] { subject, predicate, object };
 	}
 
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return Triple.create(subject, predicate, object).toString();
+	}
 }

@@ -6,7 +6,6 @@ import java.util.Set;
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
-import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
 
@@ -26,13 +25,17 @@ public class PaginatedQueryExec {
 		Set<Node> results = new HashSet<Node>();
 		boolean morePages = true;
 		while (morePages) {
-			QueryExecution queryExec = QueryExecutionFactory.sparqlService(service, query);
-			ResultSet bindings = queryExec.execSelect();
-
 			long count = 0;
-			if (bindings.hasNext())
-				for (QuerySolution binding = bindings.next(); bindings.hasNext(); binding = bindings.next(), count++)
-					results.add(binding.get(var.getName()).asNode());
+			try {
+				QueryExecution queryExec = new QueryEngineHTTPClient(service, query);
+				ResultSet bindings = queryExec.execSelect();
+				if (bindings != null && bindings.hasNext())
+					for (QuerySolution binding = bindings.next(); bindings.hasNext(); binding = bindings.next(), count++)
+						results.add(binding.get(var.getName()).asNode());
+				queryExec.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 
 			morePages = (count == PAGE_SIZE - 1);
 			query.setOffset(query.getOffset() + PAGE_SIZE);

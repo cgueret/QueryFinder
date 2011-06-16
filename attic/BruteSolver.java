@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
+import nl.vu.queryfinder.util.TripleSet;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,13 +34,6 @@ import com.hp.hpl.jena.sparql.syntax.ElementGroup;
 public class BruteSolver {
 	static final Logger logger = LoggerFactory.getLogger(BruteSolver.class);
 	static final String SPARQL_ENDPOINT = "http://lod.openlinksw.com/sparql";
-
-	public class TripleSet extends HashSet<Triple> implements Comparable<TripleSet> {
-		private static final long serialVersionUID = -7842966204179829234L;
-		public int compareTo(TripleSet o) {
-			return o.size() - this.size();
-		}
-	};
 
 	public class Block extends HashSet<TripleSet> {
 		private static final long serialVersionUID = -4820888956735317884L;

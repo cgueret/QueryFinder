@@ -53,8 +53,8 @@ public class IncrementalBuilder implements QueryGenerator {
 			return blocks.get(0);
 		}
 
-		Block first = blocks.poll();
-		Block second = blocks.poll();
+		Block first = blocks.pollFirst();
+		Block second = blocks.pollLast();
 		Block newBlock = new Block();
 
 		for (TripleSet firstSet : first) {
@@ -82,6 +82,8 @@ public class IncrementalBuilder implements QueryGenerator {
 		}
 		
 		blocks.addFirst(newBlock);
+		FIXME sort the list
+		TODO Check that combines triples have an overlap in variables!
 		return reduxBlocks(blocks);
 	}
 

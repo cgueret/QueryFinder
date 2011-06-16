@@ -8,7 +8,6 @@ import java.util.Set;
 import com.hp.hpl.jena.graph.Triple;
 
 import nl.vu.queryfinder.model.Mappings;
-import nl.vu.queryfinder.model.StructuredQuery;
 
 /**
  * @author Christophe Guéret <christophe.gueret@gmail.com>

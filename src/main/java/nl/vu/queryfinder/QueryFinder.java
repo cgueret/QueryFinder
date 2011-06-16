@@ -1,12 +1,10 @@
 package nl.vu.queryfinder;
 
 import java.io.IOException;
-import nl.vu.queryfinder.model.StructuredQuery;
 import nl.vu.queryfinder.model.QueryPattern;
 import nl.vu.queryfinder.model.WorkFlow;
 import nl.vu.queryfinder.services.impl.SPARQLClassMatcher;
 import nl.vu.queryfinder.services.impl.SPARQLPropertyMatcher;
-import nl.vu.queryfinder.services.impl.SPARQLResourceMatcher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

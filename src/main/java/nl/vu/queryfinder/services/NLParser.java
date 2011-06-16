@@ -3,8 +3,6 @@
  */
 package nl.vu.queryfinder.services;
 
-import nl.vu.queryfinder.model.StructuredQuery;
-
 /**
  * @author Christophe Guéret <christophe.gueret@gmail.com>
  * 

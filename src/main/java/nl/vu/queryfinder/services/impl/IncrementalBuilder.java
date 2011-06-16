@@ -3,10 +3,9 @@
  */
 package nl.vu.queryfinder.services.impl;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.List;
+import java.util.Set;
 
 import nl.vu.queryfinder.model.EndPoint;
 import nl.vu.queryfinder.model.MappedQuery;
@@ -30,6 +29,7 @@ import com.hp.hpl.jena.sparql.syntax.ElementGroup;
 public class IncrementalBuilder implements QueryGenerator {
 	static final Logger logger = LoggerFactory.getLogger(IncrementalBuilder.class);
 	final EndPoint endPoint;
+	private int numberCalls;
 
 	public class Block extends HashSet<TripleSet> {
 		private static final long serialVersionUID = -4820888956735317884L;
@@ -72,6 +72,7 @@ public class IncrementalBuilder implements QueryGenerator {
 					query.setQueryPattern(elg);
 					QueryEngineHTTPClient queryExec = new QueryEngineHTTPClient(endPoint.getURI(), query);
 					queryExec.addDefaultGraph(endPoint.getDefaultGraph());
+					numberCalls++;
 					valid = queryExec.execAsk();
 				} catch (Exception e) {
 				}
@@ -79,74 +80,9 @@ public class IncrementalBuilder implements QueryGenerator {
 					newBlock.add(newSet);
 			}
 		}
+		
 		blocks.addFirst(newBlock);
 		return reduxBlocks(blocks);
-	}
-
-	/**
-	 * @param blocks
-	 */
-	protected Block combineBlocks(List<Block> blocks, int queries) {
-		// logger.info(blocks.toString());
-		logger.info("-");
-		for (Block block : blocks) {
-			logger.info(block.size() + "");
-		}
-
-		if (blocks.size() == 0) {
-			logger.warn("No solution found !");
-			return null;
-		}
-
-		if (blocks.size() == 1) {
-			logger.info("Solution found with " + queries + " queries");
-			for (TripleSet element : blocks.get(0))
-				logger.info(element.toString());
-			return blocks.get(0);
-		}
-
-		List<Block> newBlocks = new ArrayList<Block>();
-
-		for (int index = 0; index < blocks.size() - 1; index++) {
-			// Get the two blocks
-			Block firstBlock = blocks.get(index);
-			Block secondBlock = blocks.get(index + 1);
-			Block newBlock = new Block();
-
-			// Try to combine their content
-			for (TripleSet firstGroup : firstBlock) {
-				for (TripleSet secondGroup : secondBlock) {
-					boolean valid = false;
-					// Prepare the query
-					TripleSet newSet = new TripleSet();
-					newSet.addAll(firstGroup);
-					newSet.addAll(secondGroup);
-					try {
-						// if (newSet.size() == 3)
-						// logger.info("Try " + newSet);
-						Query query = QueryFactory.make();
-						query.setQueryAskType();
-						ElementGroup elg = new ElementGroup();
-						for (Triple triple : newSet)
-							elg.addTriplePattern(triple);
-						query.setQueryPattern(elg);
-						QueryEngineHTTPClient queryExec = new QueryEngineHTTPClient(endPoint.getURI(), query);
-						queryExec.addDefaultGraph(endPoint.getDefaultGraph());
-						valid = queryExec.execAsk();
-					} catch (Exception e) {
-						// logger.warn("Error");
-					}
-					if (valid)
-						newBlock.add(newSet);
-					queries++;
-				}
-			}
-
-			if (newBlock.size() > 0)
-				newBlocks.add(newBlock);
-		}
-
-		return combineBlocks(newBlocks, queries);
 	}
 
 	/*
@@ -156,7 +92,7 @@ public class IncrementalBuilder implements QueryGenerator {
 	 * nl.vu.queryfinder.services.QueryGenerator#getQuery(nl.vu.queryfinder.
 	 * model.MappedQuery)
 	 */
-	public Query getQuery(MappedQuery mappedQuery) {
+	public Set<Query> getQuery(MappedQuery mappedQuery) {
 		// Solve
 		LinkedList<Block> blocks = new LinkedList<Block>();
 		for (TripleSet triples : mappedQuery.getGroups()) {
@@ -170,22 +106,62 @@ public class IncrementalBuilder implements QueryGenerator {
 		}
 
 		// Get the result
+		numberCalls = 0;
 		Block result = reduxBlocks(blocks);
+		logger.info(numberCalls + " requests sent to the end point");
 
 		// Compose the query
-		Query query = QueryFactory.make();
-		query.setQuerySelectType();
-		ElementGroup elg = new ElementGroup();
+		Set<Query> queries = new HashSet<Query>();
 		for (TripleSet element : result) {
+			Query query = QueryFactory.make();
+			ElementGroup elg = new ElementGroup();
 			for (Triple t : element) {
 				for (Node n : new Node[] { t.getSubject(), t.getPredicate(), t.getObject() })
 					if (n.isVariable())
 						query.addResultVar(n);
 				elg.addTriplePattern(t);
 			}
+			query.setQuerySelectType();
+			query.setQueryPattern(elg);
+			queries.add(query);
 		}
-		query.setQueryPattern(elg);
 
-		return query;
+		return queries;
 	}
 }
+
+/*
+ * protected Block combineBlocks(List<Block> blocks, int queries) { //
+ * logger.info(blocks.toString()); logger.info("-"); for (Block block : blocks)
+ * { logger.info(block.size() + ""); }
+ * 
+ * if (blocks.size() == 0) { logger.warn("No solution found !"); return null; }
+ * 
+ * if (blocks.size() == 1) { logger.info("Solution found with " + queries +
+ * " queries"); for (TripleSet element : blocks.get(0))
+ * logger.info(element.toString()); return blocks.get(0); }
+ * 
+ * List<Block> newBlocks = new ArrayList<Block>();
+ * 
+ * for (int index = 0; index < blocks.size() - 1; index++) { // Get the two
+ * blocks Block firstBlock = blocks.get(index); Block secondBlock =
+ * blocks.get(index + 1); Block newBlock = new Block();
+ * 
+ * // Try to combine their content for (TripleSet firstGroup : firstBlock) { for
+ * (TripleSet secondGroup : secondBlock) { boolean valid = false; // Prepare the
+ * query TripleSet newSet = new TripleSet(); newSet.addAll(firstGroup);
+ * newSet.addAll(secondGroup); try { // if (newSet.size() == 3) //
+ * logger.info("Try " + newSet); Query query = QueryFactory.make();
+ * query.setQueryAskType(); ElementGroup elg = new ElementGroup(); for (Triple
+ * triple : newSet) elg.addTriplePattern(triple); query.setQueryPattern(elg);
+ * QueryEngineHTTPClient queryExec = new
+ * QueryEngineHTTPClient(endPoint.getURI(), query);
+ * queryExec.addDefaultGraph(endPoint.getDefaultGraph()); valid =
+ * queryExec.execAsk(); } catch (Exception e) { // logger.warn("Error"); } if
+ * (valid) newBlock.add(newSet); queries++; } }
+ * 
+ * if (newBlock.size() > 0) newBlocks.add(newBlock); }
+ * 
+ * return combineBlocks(newBlocks, queries); }
+ */
+

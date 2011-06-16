@@ -9,7 +9,7 @@
 		</filter>
 		<encoder>
 			<pattern>
-				%date{HH:MM:ss} [%thread] %-4level %logger{20} - %msg%n
+				%date{HH:mm:ss} [%thread] %-4level %logger{20} - %msg%n
 			</pattern>
 		</encoder>
 	</appender>

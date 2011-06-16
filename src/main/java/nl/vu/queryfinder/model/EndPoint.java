@@ -3,8 +3,6 @@
  */
 package nl.vu.queryfinder.model;
 
-import nl.vu.queryfinder.model.EndPoint.EndPointType;
-
 /**
  * @author Christophe Guéret <christophe.gueret@gmail.com>
  * 

@@ -39,10 +39,17 @@ public class QueryFinder {
 		// in some field, who is born in the Netherlands
 		StructuredQuery query = new StructuredQuery();
 		Node p = Node.createVariable("person");
-		query.add(QueryPattern.create(p, RDF.type.asNode(), Node.createLiteral("artist")));
-		query.add(QueryPattern.create(p, Node.createLiteral("field"), Node.createVariable("field")));
-		query.add(QueryPattern.create(p, Node.createLiteral("birth"), Node.createLiteral("Netherlands")));
+		//query.add(QueryPattern.create(p, RDF.type.asNode(), Node.createLiteral("artist")));
+		//query.add(QueryPattern.create(p, Node.createLiteral("field"), Node.createVariable("field")));
+		//query.add(QueryPattern.create(p, Node.createLiteral("birth"), Node.createLiteral("Netherlands")));
 
+		Node a = Node.createVariable("album");
+		query.add(QueryPattern.create(p, RDF.type.asNode(), Node.createLiteral("artist")));
+		query.add(QueryPattern.create(p, Node.createLiteral("birth"), Node.createLiteral("New and York")));
+		query.add(QueryPattern.create(a, Node.createLiteral("artist"), p));
+		query.add(QueryPattern.create(a, RDF.type.asNode(), Node.createLiteral("album")));
+		query.add(QueryPattern.create(a, Node.createLiteral("genre"), Node.createLiteral("hip and hop")));
+			    		   
 		// Go !
 		workFlow.process(query);
 	}

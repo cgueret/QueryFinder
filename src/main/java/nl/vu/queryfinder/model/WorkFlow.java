@@ -171,7 +171,8 @@ public class WorkFlow {
 	public void process(StructuredQuery structuredQuery) {
 		MappedQuery mappedQuery = getMappedQuery(structuredQuery);
 		mappedQuery.printContent();
-		Query sparqlQuery = queryGenerator.getQuery(mappedQuery);
-		logger.info(sparqlQuery.serialize());
+		Set<Query> sparqlQuerySet = queryGenerator.getQuery(mappedQuery);
+		for (Query sparqlQuery : sparqlQuerySet)
+			logger.info(sparqlQuery.serialize());
 	}
 }

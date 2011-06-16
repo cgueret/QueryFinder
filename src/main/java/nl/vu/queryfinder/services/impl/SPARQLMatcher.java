@@ -16,6 +16,7 @@ import com.hp.hpl.jena.vocabulary.OWL;
 import com.hp.hpl.jena.vocabulary.RDF;
 import com.hp.hpl.jena.vocabulary.RDFS;
 
+import nl.vu.queryfinder.model.EndPoint;
 import nl.vu.queryfinder.services.ClassMatcher;
 import nl.vu.queryfinder.services.PropertyMatcher;
 import nl.vu.queryfinder.services.ResourceMatcher;
@@ -23,27 +24,31 @@ import nl.vu.queryfinder.util.PaginatedQueryExec;
 
 public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMatcher {
 	static final Logger logger = LoggerFactory.getLogger(SPARQLMatcher.class);
-	static final Node[] propertyTypes = { RDF.Property.asNode(), OWL.DatatypeProperty.asNode(),
-			OWL.ObjectProperty.asNode() };
-	private final String service;
+	// static final Node[] propertyTypes = { RDF.Property.asNode(),
+	// OWL.DatatypeProperty.asNode(),
+	// OWL.ObjectProperty.asNode() };
+	static final Node[] propertyTypes = { OWL.ObjectProperty.asNode() };
+	final EndPoint endPoint;
 
 	/**
-	 * @param service
+	 * @param endPoint
 	 */
-	public SPARQLMatcher(String service) {
-		this.service = service;
+	public SPARQLMatcher(EndPoint endPoint) {
+		this.endPoint = endPoint;
 	}
 
 	/*
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * nl.vu.queryfinder.services.PropertyMatcher#getProperties(java.lang.String)
+	 * nl.vu.queryfinder.services.PropertyMatcher#getProperties(java.lang.String
+	 * )
 	 */
 	public Set<Node> getProperties(String keyword) {
-		logger.debug(String.format("Get properties for \"%s\"",keyword));
+		logger.debug(String.format("Get properties for \"%s\"", keyword));
 		Node var = Node.createVariable("r");
 		Node label = Node.createVariable("l");
+		//Node o = Node.createVariable("o");
 		Query query = QueryFactory.create();
 		query.setQuerySelectType();
 		query.setDistinct(true);
@@ -52,13 +57,16 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 		Set<Node> results = new HashSet<Node>();
 		for (Node propertyType : propertyTypes) {
 			ElementGroup group = new ElementGroup();
-			group.addTriplePattern(new Triple(Node.createAnon(), var, Node.createAnon()));
+			// group.addTriplePattern(new Triple(Node.createAnon(), var, o));
 			group.addTriplePattern(new Triple(var, RDF.type.asNode(), propertyType));
 			group.addTriplePattern(new Triple(var, RDFS.label.asNode(), label));
 			group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(keyword)));
+			// Restrict the range
+			// group.addElementFilter(new ElementFilter(new E_IsURI(new
+			// ExprVar(o))));
 			query.setQueryPattern(group);
-
-			results.addAll(PaginatedQueryExec.process(service, query, var));
+			// logger.info(query.serialize());
+			results.addAll(PaginatedQueryExec.process(endPoint, query, var));
 		}
 
 		return results;
@@ -72,7 +80,14 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 	 * nl.vu.queryfinder.services.ResourceMatcher#getResources(java.lang.String)
 	 */
 	public Set<Node> getResources(String keyword) {
-		logger.debug(String.format("Get resources for \"%s\"",keyword));
+		/*
+		 * if (keyword.equals("Netherlands")) { Set<Node> results = new
+		 * HashSet<Node>();
+		 * results.add(Node.createURI("http://dbpedia.org/resource/Netherlands"
+		 * )); return results; }
+		 */
+		
+		logger.debug(String.format("Get resources for \"%s\"", keyword));
 		Node var = Node.createVariable("r");
 		Node label = Node.createVariable("l");
 		Query query = QueryFactory.create();
@@ -85,7 +100,7 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 		group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(keyword)));
 		query.setQueryPattern(group);
 
-		Set<Node> results = PaginatedQueryExec.process(service, query, var);
+		Set<Node> results = PaginatedQueryExec.process(endPoint, query, var);
 		return results;
 
 	}
@@ -96,7 +111,7 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 	 * @see nl.vu.queryfinder.services.ClassMatcher#getClasses(java.lang.String)
 	 */
 	public Set<Node> getClasses(String keyword) {
-		logger.debug(String.format("Get classes for \"%s\"",keyword));
+		logger.debug(String.format("Get classes for \"%s\"", keyword));
 		Node var = Node.createVariable("r");
 		Node label = Node.createVariable("l");
 		Query query = QueryFactory.create();
@@ -110,7 +125,7 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 		group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(keyword)));
 		query.setQueryPattern(group);
 
-		Set<Node> results = PaginatedQueryExec.process(service, query, var);
+		Set<Node> results = PaginatedQueryExec.process(endPoint, query, var);
 		return results;
 	}
 
@@ -119,10 +134,13 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
-		SPARQLMatcher me = new SPARQLMatcher("http://dbpedia.org/sparql");
-		logger.info("arsist    : " + me.getClasses("artist").size());
-		logger.info("field     : " + me.getProperties("field").size());
-		logger.info("amsterdam : " + me.getResources("amsterdam").size());
+		EndPoint endPoint = new EndPoint("http://dbpedia.org/sparql", "http://dbpedia.org");
+		SPARQLMatcher me = new SPARQLMatcher(endPoint);
+		logger.info("arsist      : " + me.getClasses("artist").size());
+		logger.info("field       : " + me.getProperties("field").size());
+		logger.info("birth       : " + me.getProperties("birth").size());
+		logger.info("amsterdam   : " + me.getResources("amsterdam").size());
+		logger.info("Netherlands : " + me.getResources("Netherlands").size());
 	}
 
 }

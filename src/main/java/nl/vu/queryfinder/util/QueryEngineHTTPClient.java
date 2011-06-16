@@ -1,6 +1,5 @@
 package nl.vu.queryfinder.util;
 
-import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -15,7 +14,6 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
-import org.openjena.atlas.io.IO;
 import org.openjena.atlas.lib.NotImplemented;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -51,6 +49,7 @@ public class QueryEngineHTTPClient implements QueryExecution {
 	private boolean finished = false;
 	// Used for select
 	private InputStream retainedConnection = null;
+	private List<NameValuePair> params = new ArrayList<NameValuePair>();
 
 	/**
 	 * @param service
@@ -111,7 +110,7 @@ public class QueryEngineHTTPClient implements QueryExecution {
 		// Get a query object
 		HttpGet httpQuery = makeHttpQuery();
 		httpQuery.setHeader("Accept", QUERY_RESULT_MIME_TYPE);
-		// logger.info("[SEL] " + httpQuery.getURI());
+		//logger.info("[SEL] " + httpQuery.getURI());
 
 		String replyString = "";
 		try {
@@ -126,21 +125,22 @@ public class QueryEngineHTTPClient implements QueryExecution {
 			InputStream in = entity.getContent();
 
 			// DEBUG trick
-			if (false) {
-				byte b[] = IO.readWholeFile(in);
-				replyString = new String(b);
-				in = new ByteArrayInputStream(b);
-			}
+			/*
+			 * byte b[] = IO.readWholeFile(in); replyString = new String(b);
+			 * logger.info(replyString); in = new ByteArrayInputStream(b);
+			 */
 
 			retainedConnection = in;
 			return ResultSetFactory.fromXML(in);
 
 		} catch (Exception e) {
-			
-			  logger.info("[SEL] " + queryString); logger.info(replyString); for
-			  (StackTraceElement st : e.getStackTrace())
-			  logger.info(st.toString());
-			 
+
+			logger.info("[SEL] " + queryString);
+			logger.info(replyString);
+			logger.info(e.getMessage());
+			for (StackTraceElement st : e.getStackTrace())
+				logger.info(st.toString());
+
 			if (httpQuery != null)
 				httpQuery.abort();
 		}
@@ -166,11 +166,45 @@ public class QueryEngineHTTPClient implements QueryExecution {
 			String name = iter.next();
 			qparams.add(new BasicNameValuePair(PARAM_NAMED_GRAPH, name));
 		}
+		for (NameValuePair extraParam : params)
+			qparams.add(extraParam);
+
+		qparams.add(new BasicNameValuePair("format", QUERY_RESULT_MIME_TYPE));
 
 		// Create the query object
 		String uri = service + "?" + URLEncodedUtils.format(qparams, "UTF-8");
 		HttpGet httpQuery = new HttpGet(uri);
 		return httpQuery;
+	}
+
+	/**
+	 * @param defaultGraph
+	 *            The defaultGraph to add.
+	 */
+	public void addDefaultGraph(String defaultGraph) {
+		if (defaultGraphURIs == null)
+			defaultGraphURIs = new ArrayList<String>();
+		defaultGraphURIs.add(defaultGraph);
+	}
+
+	/**
+	 * @param name
+	 *            The URI to add.
+	 */
+	public void addNamedGraph(String name) {
+		if (namedGraphURIs == null)
+			namedGraphURIs = new ArrayList<String>();
+		namedGraphURIs.add(name);
+	}
+
+	/**
+	 * @param field
+	 * @param value
+	 */
+	public void addParam(String field, String value) {
+		if (params == null)
+			params = new ArrayList<NameValuePair>();
+		params.add(new BasicNameValuePair(field, value));
 	}
 
 	/*

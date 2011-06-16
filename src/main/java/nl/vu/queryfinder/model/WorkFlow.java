@@ -6,8 +6,12 @@ package nl.vu.queryfinder.model;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.Triple;
+import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.vocabulary.RDF;
 
 import nl.vu.queryfinder.services.ClassMatcher;
@@ -21,6 +25,7 @@ import nl.vu.queryfinder.util.TripleSet;
  * 
  */
 public class WorkFlow {
+	static final Logger logger = LoggerFactory.getLogger(WorkFlow.class);
 	private ResourceMatcher resourceMatcher;
 	private PropertyMatcher propertyMatcher;
 	private ClassMatcher classMatcher;
@@ -32,7 +37,7 @@ public class WorkFlow {
 
 	/**
 	 * @param propertyMatcher
-	 *           the propertyMatcher to set
+	 *            the propertyMatcher to set
 	 */
 	public void setPropertyMatcher(PropertyMatcher propertyMatcher) {
 		this.propertyMatcher = propertyMatcher;
@@ -47,7 +52,7 @@ public class WorkFlow {
 
 	/**
 	 * @param resourceMatcher
-	 *           the resourceMatcher to set
+	 *            the resourceMatcher to set
 	 */
 	public void setResourceMatcher(ResourceMatcher resourceMatcher) {
 		this.resourceMatcher = resourceMatcher;
@@ -62,7 +67,7 @@ public class WorkFlow {
 
 	/**
 	 * @param classMatcher
-	 *           the classMatcher to set
+	 *            the classMatcher to set
 	 */
 	public void setClassMatcher(ClassMatcher classMatcher) {
 		this.classMatcher = classMatcher;
@@ -156,17 +161,17 @@ public class WorkFlow {
 
 		if (results.isEmpty())
 			results.add(node);
-		
+
 		return results;
 	}
 
 	/**
 	 * @param query
 	 */
-	public void process(StructuredQuery query) {
-		MappedQuery mappedQuery = getMappedQuery(query);
+	public void process(StructuredQuery structuredQuery) {
+		MappedQuery mappedQuery = getMappedQuery(structuredQuery);
 		mappedQuery.printContent();
-		queryGenerator.getQuery(mappedQuery);
+		Query sparqlQuery = queryGenerator.getQuery(mappedQuery);
+		logger.info(sparqlQuery.serialize());
 	}
-
 }

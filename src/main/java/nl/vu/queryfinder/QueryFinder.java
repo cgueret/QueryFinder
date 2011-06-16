@@ -3,6 +3,7 @@ package nl.vu.queryfinder;
 import java.io.IOException;
 
 import nl.vu.queryfinder.model.EndPoint;
+import nl.vu.queryfinder.model.EndPoint.EndPointType;
 import nl.vu.queryfinder.model.QueryPattern;
 import nl.vu.queryfinder.model.StructuredQuery;
 import nl.vu.queryfinder.model.WorkFlow;
@@ -24,7 +25,7 @@ public class QueryFinder {
 
 	public static void main(String[] args) throws IOException {
 		// Set an end point
-		EndPoint endPoint = new EndPoint("http://dbpedia.org/sparql", "http://dbpedia.org");
+		EndPoint endPoint = new EndPoint("http://dbpedia.org/sparql", "http://dbpedia.org", EndPointType.VIRTUOSO);
 
 		// Create the workflow
 		WorkFlow workFlow = new WorkFlow();

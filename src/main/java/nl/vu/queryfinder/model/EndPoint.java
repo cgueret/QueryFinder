@@ -3,6 +3,8 @@
  */
 package nl.vu.queryfinder.model;
 
+import nl.vu.queryfinder.model.EndPoint.EndPointType;
+
 /**
  * @author Christophe Guéret <christophe.gueret@gmail.com>
  * 
@@ -10,14 +12,19 @@ package nl.vu.queryfinder.model;
 public class EndPoint {
 	private final String uri;
 	private final String defaultGraph;
-
+	private final EndPointType type;
+	public enum EndPointType {
+		VIRTUOSO, OWLIM
+	}
+	
 	/**
 	 * @param uri
 	 * @param defaultGraph
 	 */
-	public EndPoint(String uri, String defaultGraph) {
+	public EndPoint(String uri, String defaultGraph, EndPointType type) {
 		this.uri = uri;
 		this.defaultGraph = defaultGraph;
+		this.type = type;
 	}
 
 	/**
@@ -32,6 +39,13 @@ public class EndPoint {
 	 */
 	public String getURI() {
 		return uri;
+	}
+
+	/**
+	 * @return the type
+	 */
+	public EndPointType getType() {
+		return type;
 	}
 
 }

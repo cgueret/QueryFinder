@@ -17,6 +17,7 @@ import com.hp.hpl.jena.vocabulary.RDF;
 import com.hp.hpl.jena.vocabulary.RDFS;
 
 import nl.vu.queryfinder.model.EndPoint;
+import nl.vu.queryfinder.model.EndPoint.EndPointType;
 import nl.vu.queryfinder.services.ClassMatcher;
 import nl.vu.queryfinder.services.PropertyMatcher;
 import nl.vu.queryfinder.services.ResourceMatcher;
@@ -48,7 +49,7 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 		logger.debug(String.format("Get properties for \"%s\"", keyword));
 		Node var = Node.createVariable("r");
 		Node label = Node.createVariable("l");
-		//Node o = Node.createVariable("o");
+		// Node o = Node.createVariable("o");
 		Query query = QueryFactory.create();
 		query.setQuerySelectType();
 		query.setDistinct(true);
@@ -60,12 +61,12 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 			// group.addTriplePattern(new Triple(Node.createAnon(), var, o));
 			group.addTriplePattern(new Triple(var, RDF.type.asNode(), propertyType));
 			group.addTriplePattern(new Triple(var, RDFS.label.asNode(), label));
-			group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(keyword)));
+			if (endPoint.getType().equals(EndPointType.VIRTUOSO))
+				group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(keyword)));
 			// Restrict the range
 			// group.addElementFilter(new ElementFilter(new E_IsURI(new
 			// ExprVar(o))));
 			query.setQueryPattern(group);
-			// logger.info(query.serialize());
 			results.addAll(PaginatedQueryExec.process(endPoint, query, var));
 		}
 
@@ -80,13 +81,6 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 	 * nl.vu.queryfinder.services.ResourceMatcher#getResources(java.lang.String)
 	 */
 	public Set<Node> getResources(String keyword) {
-		/*
-		 * if (keyword.equals("Netherlands")) { Set<Node> results = new
-		 * HashSet<Node>();
-		 * results.add(Node.createURI("http://dbpedia.org/resource/Netherlands"
-		 * )); return results; }
-		 */
-		
 		logger.debug(String.format("Get resources for \"%s\"", keyword));
 		Node var = Node.createVariable("r");
 		Node label = Node.createVariable("l");
@@ -97,7 +91,8 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 		ElementGroup group = new ElementGroup();
 		group.addTriplePattern(new Triple(var, RDF.type.asNode(), Node.createAnon()));
 		group.addTriplePattern(new Triple(var, RDFS.label.asNode(), label));
-		group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(keyword)));
+		if (endPoint.getType().equals(EndPointType.VIRTUOSO))
+			group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(keyword)));
 		query.setQueryPattern(group);
 
 		Set<Node> results = PaginatedQueryExec.process(endPoint, query, var);
@@ -122,7 +117,8 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 		group.addTriplePattern(new Triple(Node.createAnon(), RDF.type.asNode(), var));
 		group.addTriplePattern(new Triple(var, RDF.type.asNode(), OWL.Class.asNode()));
 		group.addTriplePattern(new Triple(var, RDFS.label.asNode(), label));
-		group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(keyword)));
+		if (endPoint.getType().equals(EndPointType.VIRTUOSO))
+			group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(keyword)));
 		query.setQueryPattern(group);
 
 		Set<Node> results = PaginatedQueryExec.process(endPoint, query, var);
@@ -134,7 +130,7 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
-		EndPoint endPoint = new EndPoint("http://dbpedia.org/sparql", "http://dbpedia.org");
+		EndPoint endPoint = new EndPoint("http://dbpedia.org/sparql", "http://dbpedia.org", EndPointType.VIRTUOSO);
 		SPARQLMatcher me = new SPARQLMatcher(endPoint);
 		logger.info("arsist      : " + me.getClasses("artist").size());
 		logger.info("field       : " + me.getProperties("field").size());

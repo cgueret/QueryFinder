@@ -292,10 +292,9 @@ public class QueryEngineHTTPClient implements QueryExecution {
 
 				// Send the query
 				response = httpClient.execute(httpQuery);
-				HttpEntity entity = response.getEntity();
 
 				// Wait and retry if failed
-				if (entity == null || response.getStatusLine().getStatusCode() != 200) {
+				if (response.getEntity() == null || response.getStatusLine().getStatusCode() != 200) {
 					// logger.warn("----------------------------------------");
 					// logger.warn("Replied " +
 					// response.getStatusLine().getStatusCode() + " for " +

@@ -13,7 +13,7 @@ import com.hp.hpl.jena.query.ResultSet;
 
 public class PaginatedQueryExec {
 	static final Logger logger = LoggerFactory.getLogger(PaginatedQueryExec.class);
-	private final static int PAGE_SIZE = 500;
+	private final static int PAGE_SIZE = 1000;
 
 	/**
 	 * @param service
@@ -31,21 +31,23 @@ public class PaginatedQueryExec {
 			long count = 0;
 			try {
 				QueryEngineHTTPClient queryExec = new QueryEngineHTTPClient(endPoint.getURI(), query);
-				queryExec.addDefaultGraph(endPoint.getDefaultGraph());
-				queryExec.addParam("timeout", "10000");
-				queryExec.addParam("debug", "on");
+				if (endPoint.getDefaultGraph() != null)
+					queryExec.addDefaultGraph(endPoint.getDefaultGraph());
+				// queryExec.addParam("timeout", "10000");
+				// queryExec.addParam("debug", "on");
 				ResultSet bindings = queryExec.execSelect();
-				if (bindings != null)
-					while (bindings.hasNext())
+				if (bindings != null) {
+					while (bindings.hasNext()) {
 						results.add(bindings.next().get(var.getName()).asNode());
-				// for (QuerySolution binding = bindings.next();
-				// bindings.hasNext(); binding = bindings.next(), count++)
+						count++;
+					}
+				}
 				queryExec.close();
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-
-			morePages = (count == PAGE_SIZE - 1);
+			
+			morePages = (count == PAGE_SIZE);
 			query.setOffset(query.getOffset() + PAGE_SIZE);
 		}
 

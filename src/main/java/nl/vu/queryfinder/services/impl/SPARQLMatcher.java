@@ -60,9 +60,13 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 			ElementGroup group = new ElementGroup();
 			// group.addTriplePattern(new Triple(Node.createAnon(), var, o));
 			group.addTriplePattern(new Triple(var, RDF.type.asNode(), propertyType));
-			group.addTriplePattern(new Triple(var, RDFS.label.asNode(), label));
-			if (endPoint.getType().equals(EndPointType.VIRTUOSO))
+			
+			if (endPoint.getType().equals(EndPointType.VIRTUOSO)) {
+				group.addTriplePattern(new Triple(var, RDFS.label.asNode(), label));
 				group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(keyword)));
+			}
+			else if (endPoint.getType().equals(EndPointType.OWLIM))
+				group.addTriplePattern(new Triple(var, Node.createURI("http://www.ontotext.com/owlim/lucene#"), Node.createLiteral(keyword)));
 			// Restrict the range
 			// group.addElementFilter(new ElementFilter(new E_IsURI(new
 			// ExprVar(o))));
@@ -90,9 +94,13 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 		query.addResultVar(var);
 		ElementGroup group = new ElementGroup();
 		group.addTriplePattern(new Triple(var, RDF.type.asNode(), Node.createAnon()));
-		group.addTriplePattern(new Triple(var, RDFS.label.asNode(), label));
-		if (endPoint.getType().equals(EndPointType.VIRTUOSO))
+		
+		if (endPoint.getType().equals(EndPointType.VIRTUOSO)) {
+			group.addTriplePattern(new Triple(var, RDFS.label.asNode(), label));
 			group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(keyword)));
+		}
+		else if (endPoint.getType().equals(EndPointType.OWLIM))
+			group.addTriplePattern(new Triple(var, Node.createURI("http://www.ontotext.com/owlim/lucene#"), Node.createLiteral(keyword)));
 		query.setQueryPattern(group);
 
 		Set<Node> results = PaginatedQueryExec.process(endPoint, query, var);
@@ -115,10 +123,13 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 		query.addResultVar(var);
 		ElementGroup group = new ElementGroup();
 		group.addTriplePattern(new Triple(Node.createAnon(), RDF.type.asNode(), var));
-		group.addTriplePattern(new Triple(var, RDF.type.asNode(), OWL.Class.asNode()));
-		group.addTriplePattern(new Triple(var, RDFS.label.asNode(), label));
-		if (endPoint.getType().equals(EndPointType.VIRTUOSO))
+		group.addTriplePattern(new Triple(var, RDF.type.asNode(), OWL.Class.asNode()));		
+		if (endPoint.getType().equals(EndPointType.VIRTUOSO)) {
+			group.addTriplePattern(new Triple(var, RDFS.label.asNode(), label));
 			group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(keyword)));
+		}
+		else if (endPoint.getType().equals(EndPointType.OWLIM))
+			group.addTriplePattern(new Triple(var, Node.createURI("http://www.ontotext.com/owlim/lucene#"), Node.createLiteral(keyword)));
 		query.setQueryPattern(group);
 
 		Set<Node> results = PaginatedQueryExec.process(endPoint, query, var);
@@ -130,9 +141,11 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
+		//EndPoint endPoint = new EndPoint("http://factforge.net/sparql", "", EndPointType.OWLIM);
 		EndPoint endPoint = new EndPoint("http://dbpedia.org/sparql", "http://dbpedia.org", EndPointType.VIRTUOSO);
+
 		SPARQLMatcher me = new SPARQLMatcher(endPoint);
-		logger.info("arsist      : " + me.getClasses("artist").size());
+		logger.info("artist      : " + me.getClasses("artist").size());
 		logger.info("field       : " + me.getProperties("field").size());
 		logger.info("birth       : " + me.getProperties("birth").size());
 		logger.info("amsterdam   : " + me.getResources("amsterdam").size());

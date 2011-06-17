@@ -125,10 +125,10 @@ public class QueryEngineHTTPClient implements QueryExecution {
 			InputStream in = entity.getContent();
 
 			// DEBUG trick
-			/*
-			 * byte b[] = IO.readWholeFile(in); replyString = new String(b);
-			 * logger.info(replyString); in = new ByteArrayInputStream(b);
-			 */
+			
+//			byte b[] = IO.readWholeFile(in); replyString = new String(b);
+//			logger.info(replyString); in = new ByteArrayInputStream(b);
+			 
 
 			retainedConnection = in;
 			return ResultSetFactory.fromXML(in);
@@ -170,7 +170,7 @@ public class QueryEngineHTTPClient implements QueryExecution {
 			qparams.add(extraParam);
 
 		qparams.add(new BasicNameValuePair("format", QUERY_RESULT_MIME_TYPE));
-
+		
 		// Create the query object
 		String uri = service + "?" + URLEncodedUtils.format(qparams, "UTF-8");
 		HttpGet httpQuery = new HttpGet(uri);

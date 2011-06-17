@@ -1,0 +1,20 @@
+!endpoint=http://dbpedia.org/sparql
+!type=virtuoso
+!graph=http://dbpedia.org
+
+----------------------------------------------------------------------
+An artist born in the Netherlands who works in some field
+
+(?p "type" "artist")
+(?p "field" ?f)
+(?p "birth" "Netherlands")
+
+----------------------------------------------------------------------
+Hip-hop artist from New york
+
+(?p "type" "artist")
+(?p "birth" "New York")
+(?a "artist" ?p)
+(?a "type" "album")
+(?a "genre" "hip hop")
+

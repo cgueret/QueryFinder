@@ -29,6 +29,8 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 	// OWL.DatatypeProperty.asNode(),
 	// OWL.ObjectProperty.asNode() };
 	static final Node[] propertyTypes = { OWL.ObjectProperty.asNode() };
+
+
 	final EndPoint endPoint;
 
 	/**
@@ -37,6 +39,7 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 	public SPARQLMatcher(EndPoint endPoint) {
 		this.endPoint = endPoint;
 	}
+
 
 	/*
 	 * (non-Javadoc)
@@ -105,7 +108,6 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 
 		Set<Node> results = PaginatedQueryExec.process(endPoint, query, var);
 		return results;
-
 	}
 
 	/*

@@ -25,73 +25,21 @@ import nl.vu.queryfinder.util.TripleSet;
  * 
  */
 public class WorkFlow {
+	private enum Position {
+		O, P, S
+	}
 	static final Logger logger = LoggerFactory.getLogger(WorkFlow.class);
-	private ResourceMatcher resourceMatcher;
-	private PropertyMatcher propertyMatcher;
 	private ClassMatcher classMatcher;
+	private PropertyMatcher propertyMatcher;
 	private QueryGenerator queryGenerator;
 
-	private enum Position {
-		S, P, O
-	};
-
-	/**
-	 * @param propertyMatcher
-	 *            the propertyMatcher to set
-	 */
-	public void setPropertyMatcher(PropertyMatcher propertyMatcher) {
-		this.propertyMatcher = propertyMatcher;
-	}
-
-	/**
-	 * @return the propertyMatcher
-	 */
-	public PropertyMatcher getPropertyMatcher() {
-		return propertyMatcher;
-	}
-
-	/**
-	 * @param resourceMatcher
-	 *            the resourceMatcher to set
-	 */
-	public void setResourceMatcher(ResourceMatcher resourceMatcher) {
-		this.resourceMatcher = resourceMatcher;
-	}
-
-	/**
-	 * @return the resourceMatcher
-	 */
-	public ResourceMatcher getResourceMatcher() {
-		return resourceMatcher;
-	}
-
-	/**
-	 * @param classMatcher
-	 *            the classMatcher to set
-	 */
-	public void setClassMatcher(ClassMatcher classMatcher) {
-		this.classMatcher = classMatcher;
-	}
+	private ResourceMatcher resourceMatcher;;
 
 	/**
 	 * @return the classMatcher
 	 */
 	public ClassMatcher getClassMatcher() {
 		return classMatcher;
-	}
-
-	/**
-	 * @param queryGenerator
-	 */
-	public void setQueryGenerator(QueryGenerator queryGenerator) {
-		this.queryGenerator = queryGenerator;
-	}
-
-	/**
-	 * 
-	 */
-	public QueryGenerator getQueryGenerator() {
-		return queryGenerator;
 	}
 
 	/**
@@ -166,12 +114,66 @@ public class WorkFlow {
 	}
 
 	/**
-	 * @param query
+	 * @return the propertyMatcher
 	 */
-	public void process(StructuredQuery structuredQuery) {
+	public PropertyMatcher getPropertyMatcher() {
+		return propertyMatcher;
+	}
+
+	/**
+	 * 
+	 */
+	public QueryGenerator getQueryGenerator() {
+		return queryGenerator;
+	}
+
+	/**
+	 * @return the resourceMatcher
+	 */
+	public ResourceMatcher getResourceMatcher() {
+		return resourceMatcher;
+	}
+
+	/**
+	 * @param query
+	 * @throws Exception
+	 */
+	public void process(StructuredQuery structuredQuery) throws Exception {
 		MappedQuery mappedQuery = getMappedQuery(structuredQuery);
 		mappedQuery.printContent();
-		Query sparqlQuery = queryGenerator.getQuery(mappedQuery);
-		logger.info(sparqlQuery.serialize());
+		Set<Query> sparqlQuerySet = queryGenerator.getQuery(mappedQuery);
+		for (Query sparqlQuery : sparqlQuerySet)
+			logger.info(sparqlQuery.serialize());
+	}
+
+	/**
+	 * @param classMatcher
+	 *            the classMatcher to set
+	 */
+	public void setClassMatcher(ClassMatcher classMatcher) {
+		this.classMatcher = classMatcher;
+	}
+
+	/**
+	 * @param propertyMatcher
+	 *            the propertyMatcher to set
+	 */
+	public void setPropertyMatcher(PropertyMatcher propertyMatcher) {
+		this.propertyMatcher = propertyMatcher;
+	}
+
+	/**
+	 * @param queryGenerator
+	 */
+	public void setQueryGenerator(QueryGenerator queryGenerator) {
+		this.queryGenerator = queryGenerator;
+	}
+
+	/**
+	 * @param resourceMatcher
+	 *            the resourceMatcher to set
+	 */
+	public void setResourceMatcher(ResourceMatcher resourceMatcher) {
+		this.resourceMatcher = resourceMatcher;
 	}
 }

@@ -14,12 +14,22 @@ import com.hp.hpl.jena.graph.Triple;
  * 
  */
 public class QueryPattern {
-	static final Logger logger = LoggerFactory.getLogger(QueryPattern.class);
-
 	public static final String IS_A = "is_a";
-	private final Node subject;
-	private final Node predicate;
+
+	static final Logger logger = LoggerFactory.getLogger(QueryPattern.class);
+	/**
+	 * @param s
+	 * @param p
+	 * @param o
+	 * @return
+	 */
+	public static QueryPattern create(Node s, Node p, Node o) {
+		return new QueryPattern(s, p, o);
+	}
 	private final Node object;
+	private final Node predicate;
+
+	private final Node subject;
 
 	/**
 	 * @param s
@@ -33,13 +43,17 @@ public class QueryPattern {
 	}
 
 	/**
-	 * @param s
-	 * @param p
-	 * @param o
 	 * @return
 	 */
-	public static QueryPattern create(Node s, Node p, Node o) {
-		return new QueryPattern(s, p, o);
+	public Node[] getElements() {
+		return new Node[] { subject, predicate, object };
+	}
+
+	/**
+	 * @return the object
+	 */
+	public Node getObject() {
+		return object;
 	}
 
 	/**
@@ -56,21 +70,9 @@ public class QueryPattern {
 		return subject;
 	}
 
-	/**
-	 * @return the object
-	 */
-	public Node getObject() {
-		return object;
-	}
-
-	/**
-	 * @return
-	 */
-	public Node[] getElements() {
-		return new Node[] { subject, predicate, object };
-	}
-
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override

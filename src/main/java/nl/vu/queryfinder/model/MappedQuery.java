@@ -34,12 +34,9 @@ public class MappedQuery {
 	 * 
 	 */
 	public void printContent() {
-		logger.info(groups.size() + " groups");
-		for (TripleSet triples : groups) {
-			logger.info("Pattern " + triples.getPattern() + " has " + triples.size() + " options");
-			// for (Triple t : triples)
-			// logger.info(t.toString());
-		}
+		logger.info("Mapped query contains " + groups.size() + " groups");
+		for (TripleSet triples : groups)
+			logger.info("Group [" + triples.getPattern() + "] -> " + triples.size() + " options");
 	}
 
 }

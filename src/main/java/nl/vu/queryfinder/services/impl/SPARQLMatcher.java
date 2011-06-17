@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,6 +30,7 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 	// OWL.DatatypeProperty.asNode(),
 	// OWL.ObjectProperty.asNode() };
 	static final Node[] propertyTypes = { OWL.ObjectProperty.asNode() };
+
 	/**
 	 * @param args
 	 * @throws IOException
@@ -58,7 +60,6 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 	 * @see nl.vu.queryfinder.services.ClassMatcher#getClasses(java.lang.String)
 	 */
 	public Set<Node> getClasses(String keyword) {
-		logger.debug(String.format("Get classes for \"%s\"", keyword));
 		Node var = Node.createVariable("r");
 		Node label = Node.createVariable("l");
 		Query query = QueryFactory.create();
@@ -69,11 +70,14 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 		group.addTriplePattern(new Triple(Node.createAnon(), RDF.type.asNode(), var));
 		group.addTriplePattern(new Triple(var, RDF.type.asNode(), OWL.Class.asNode()));
 		group.addTriplePattern(new Triple(var, RDFS.label.asNode(), label));
-		if (endPoint.getType().equals(EndPointType.VIRTUOSO))
-			group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(keyword)));
+		if (endPoint.getType().equals(EndPointType.VIRTUOSO)) {
+			String text = StringUtils.join(keyword.split(" "), " and ");
+			group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(text)));
+		}
 		query.setQueryPattern(group);
 
 		Set<Node> results = PaginatedQueryExec.process(endPoint, query, var);
+		logger.info(String.format("[class] \"%s\" -> %d", keyword, results.size()));
 		return results;
 	}
 
@@ -85,7 +89,6 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 	 * )
 	 */
 	public Set<Node> getProperties(String keyword) {
-		logger.debug(String.format("Get properties for \"%s\"", keyword));
 		Node var = Node.createVariable("r");
 		Node label = Node.createVariable("l");
 		// Node o = Node.createVariable("o");
@@ -100,8 +103,10 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 			// group.addTriplePattern(new Triple(Node.createAnon(), var, o));
 			group.addTriplePattern(new Triple(var, RDF.type.asNode(), propertyType));
 			group.addTriplePattern(new Triple(var, RDFS.label.asNode(), label));
-			if (endPoint.getType().equals(EndPointType.VIRTUOSO))
-				group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(keyword)));
+			if (endPoint.getType().equals(EndPointType.VIRTUOSO)) {
+				String text = StringUtils.join(keyword.split(" "), " and ");
+				group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(text)));
+			}
 			// Restrict the range
 			// group.addElementFilter(new ElementFilter(new E_IsURI(new
 			// ExprVar(o))));
@@ -109,6 +114,7 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 			results.addAll(PaginatedQueryExec.process(endPoint, query, var));
 		}
 
+		logger.info(String.format("[property] \"%s\" -> %d", keyword, results.size()));
 		return results;
 
 	}
@@ -120,7 +126,6 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 	 * nl.vu.queryfinder.services.ResourceMatcher#getResources(java.lang.String)
 	 */
 	public Set<Node> getResources(String keyword) {
-		logger.debug(String.format("Get resources for \"%s\"", keyword));
 		Node var = Node.createVariable("r");
 		Node label = Node.createVariable("l");
 		Query query = QueryFactory.create();
@@ -130,13 +135,15 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 		ElementGroup group = new ElementGroup();
 		group.addTriplePattern(new Triple(var, RDF.type.asNode(), Node.createAnon()));
 		group.addTriplePattern(new Triple(var, RDFS.label.asNode(), label));
-		if (endPoint.getType().equals(EndPointType.VIRTUOSO))
-			group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(keyword)));
+		if (endPoint.getType().equals(EndPointType.VIRTUOSO)) {
+			String text = StringUtils.join(keyword.split(" "), " and ");
+			group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(text)));
+		}
 		query.setQueryPattern(group);
 
 		Set<Node> results = PaginatedQueryExec.process(endPoint, query, var);
+		logger.info(String.format("[resource] \"%s\" -> %d", keyword, results.size()));
 		return results;
-
 	}
 
 }

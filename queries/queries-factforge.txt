@@ -1,0 +1,164 @@
+!endpoint=http://dbpedia.org/sparql
+!type=virtuoso
+!graph=http://dbpedia.org
+
+# Queries from http://factforge.net/sparql, see there for SPARQL versions
+
+# I didn't look at any of the SPARQL when writing these keyword-queries,
+# or at any of the schemata involved. I'm also not at all familiar with
+# the details of the schemata that are used. So I think I'm a reasonable
+# subject for this experiment. 
+
+# General strategy:
+# For classes and properties, I wrote "string" whenever I needed a URI 
+# that contained "string" in the URI
+# For objects, I wrote "string" whenever I needed a URI that contained 
+# "string" in the URI or which as a label containing "string"
+
+# Every query is SELECT ?x WHERE ...
+
+# Multiple items on a line separated by "/" are alternative patterns
+
+# Everywhere:
+# - "United States" can be alternative for "US"
+# - "United Kingdom" can be alternative for "UK"
+# - "located in" can be alternative for "part of" and for "has location"
+
+# Whenever a query is for "people who..." I assumed to return the URI's
+# of those people, not their names. Idem for places etc. 
+
+----------------------------------------------------------------------
+
+Find airports near London
+
+#(?x "type" "airport")
+#(?x "haslocation" ?y")
+#(?y "near" "London") / (?y "part of" "Greater London") / 
+
+#COMMENT: this first query is also the hardest. I know this should
+#probably be some jiggery-pokery with latlong's, but that's a no-hoper:
+
+----------------------------------------------------------------------
+
+Software companies founded in the US
+
+(?x "type" "company")
+(?x "produces" ?y) / (?y "product of" ?x) / (?y "produced by" ?x) / (?y "made by" ?x) / (?x "sells" ?y) / (?y "sold by" ?x)
+(?y "type" "software product") / (?y "type" "software")
+(?x "foundinglocation" "US") / (?x "foundinglocation" "?z")(?z "part of" "US")
+
+----------------------------------------------------------------------
+
+Media in US
+
+(?x "type" "media company")
+(?x "located in" "?z") / (?x "haslocation" "?z")
+(?z "part of" "US")
+
+----------------------------------------------------------------------
+
+Compact car with CVT transmission assembled in US
+
+(?x "type" "compact car")
+(?x "assembly location" ?y)
+(?y "part of" "US")
+(?x "transmission type" "CVT")
+
+----------------------------------------------------------------------
+
+Entertainers born in Bavaria
+
+(?x "type" "person")
+(?x "has profession" "entertainer")
+(?x "birthplace" ?y)
+(?y "part of" "Bavaria")
+
+----------------------------------------------------------------------
+
+UK musicians who play Alternative rock using piano
+
+(?x "type" "person")
+(?x "has profession" "musician")
+(?x "plays instrument" "piano")
+(?x "nationality" "UK") / (?x "birthplace" ?b) (?b "part of" "UK")
+(?x "created" ?y) / (?y "created by" ?x) / (?x "performs" ?y) / (?y "performed by" ?x)
+(?y "genre" "Alternative Rock")
+
+----------------------------------------------------------------------
+
+Artists born in France and died in US
+
+(?x "type" "artist")
+(?x "birth place" ?y)
+(?y "located in" "France")
+(?x "death place" ?z)
+(?z "located in" "US")
+
+----------------------------------------------------------------------
+
+Specific types of Reasoning from Wordnet
+
+# WTF?
+
+----------------------------------------------------------------------
+
+Place in UK which has a building by Richard Norman Shaw
+
+(?p "has name" "Richard Norman")
+(?p "has designed" ?b) / (?b "designed by" ?p)
+(?b "type" "building")
+(?b "located in" ?x)
+(?x "part of" "United Kingdom")
+
+----------------------------------------------------------------------
+
+City in UK which has a building by Richard Norman Shaw
+
+(?p "has name" "Richard Norman")
+(?p "has designed" ?b) / (?b "designed by" ?p)
+(?b "type" "building")
+(?b "located in" ?x)
+(?x "type" "city")
+(?x "part of" "United Kingdom")
+
+
+----------------------------------------------------------------------
+
+The birthplace of American lawyers-artists
+
+(?p "type" "lawyer")
+(?p "type" "artist")
+(?p "nationality" "US") / (?p "birthplace" ?x) (?x "part of" "US")
+(?p "birthplace" ?x)
+
+----------------------------------------------------------------------
+
+People born in the state of Massachusetts
+
+(?x "type" "person")
+(?x "birth place" ?y)
+(?y "located in" "Massachusetts")
+
+----------------------------------------------------------------------
+
+Who died of Vascular disease
+
+(?x "type" "person")
+(?x "cause of death" "Vascular disease") / (?x "cause of death" ?y)(?y "type""Vascular disease") 
+
+----------------------------------------------------------------------
+
+Names of the People employed by US Justice Agency
+
+(?x "type" "person")
+(?x "works for" ?y)
+(?y "part of" "US Department of Justice") / (?y "type" "US Justice Agency")
+
+----------------------------------------------------------------------
+
+Cities where paintings of Modigliani are located
+
+(?y "type" "painting")
+(?y "created by" "Modigliani") / ("Modigliani" "created" ?y)
+(?y "located in" ?x) / (?y "located in" ?museum) (?museum "located in" ?x) 
+(?x "type" "city")

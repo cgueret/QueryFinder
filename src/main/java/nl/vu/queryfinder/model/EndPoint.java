@@ -12,9 +12,8 @@ public class EndPoint {
 		OWLIM, VIRTUOSO
 	}
 	private final String defaultGraph;
-	private final EndPointType type;
-
 	private final String uri;
+	private final EndPointType type;
 
 	/**
 	 * @param uri
@@ -45,6 +44,16 @@ public class EndPoint {
 	 */
 	public String getURI() {
 		return uri;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return uri.toString();
 	}
 
 }

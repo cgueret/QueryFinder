@@ -6,14 +6,21 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.http.Header;
+import org.apache.http.HeaderElement;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.HttpVersion;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.GzipDecompressingEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
+import org.apache.http.params.HttpProtocolParams;
 import org.openjena.atlas.lib.NotImplemented;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,11 +39,13 @@ import com.hp.hpl.jena.util.FileManager;
 
 public class QueryEngineHTTPClient implements QueryExecution {
 	static final Logger logger = LoggerFactory.getLogger(QueryEngineHTTPClient.class);
-	public static final String PARAM_DEFAULT_GRAPH = "default-graph-uri";
-	public static final String PARAM_NAMED_GRAPH = "named-graph-uri";
-	public static final String PARAM_QUERY = "query";
-	public static final String QUERY_MIME_TYPE = "application/sparql-query";
-	public static final String QUERY_RESULT_MIME_TYPE = "application/sparql-results+xml";
+	// List of time to wait, in second, before trying a resource again
+	static final int[] RETRY_DELAY = { 1, 5, 10 };
+	static final String PARAM_DEFAULT_GRAPH = "default-graph-uri";
+	static final String PARAM_NAMED_GRAPH = "named-graph-uri";
+	static final String PARAM_QUERY = "query";
+	static final String QUERY_MIME_TYPE = "application/sparql-query";
+	static final String QUERY_RESULT_MIME_TYPE = "application/sparql-results+xml";
 	// List of default graph
 	List<String> defaultGraphURIs = new ArrayList<String>();
 	// Connection finished ?
@@ -124,29 +133,43 @@ public class QueryEngineHTTPClient implements QueryExecution {
 	 */
 	public boolean execAsk() {
 		HttpGet httpQuery = makeHttpQuery();
-		httpQuery.setHeader("Accept", QUERY_RESULT_MIME_TYPE);
 
 		try {
-			// Send the query
-			HttpClient httpClient = new DefaultHttpClient();
-			HttpResponse response = httpClient.execute(httpQuery);
-			HttpEntity entity = response.getEntity();
-			if (entity == null)
-				throw new Exception("No entity");
-
 			// Get the result
-			InputStream in = entity.getContent();
+			InputStream in = execHttpQuery(httpQuery);
 			boolean result = XMLInput.booleanFromXML(in);
 			in.close();
 			return result;
 		} catch (Exception e) {
-			logger.info("[ASK] " + queryString);
-			e.printStackTrace();
+			logger.info("[ASK] " + httpQuery.getURI());
 			if (httpQuery != null)
 				httpQuery.abort();
 		}
 
 		return false;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.hp.hpl.jena.query.QueryExecution#execSelect()
+	 */
+	public ResultSet execSelect() {
+		// Get a query object
+		HttpGet httpQuery = makeHttpQuery();
+
+		try {
+			// Get the results
+			InputStream in = execHttpQuery(httpQuery);
+			retainedConnection = in;
+			return ResultSetFactory.fromXML(in);
+		} catch (Exception e) {
+			logger.info("[SEL] " + httpQuery.getURI());
+			if (httpQuery != null)
+				httpQuery.abort();
+		}
+
+		return null;
 	}
 
 	/*
@@ -187,53 +210,6 @@ public class QueryEngineHTTPClient implements QueryExecution {
 	 */
 	public Model execDescribe(Model model) {
 		throw new NotImplemented("Not implemented yet");
-	}
-
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see com.hp.hpl.jena.query.QueryExecution#execSelect()
-	 */
-	public ResultSet execSelect() {
-		// Get a query object
-		HttpGet httpQuery = makeHttpQuery();
-		httpQuery.setHeader("Accept", QUERY_RESULT_MIME_TYPE);
-		// logger.info("[SEL] " + httpQuery.getURI());
-
-		String replyString = "";
-		try {
-			// Send the query
-			HttpClient httpClient = new DefaultHttpClient();
-			HttpResponse response = httpClient.execute(httpQuery);
-			HttpEntity entity = response.getEntity();
-			if (entity == null || response.getStatusLine().getStatusCode() != 200)
-				throw new Exception("No or invalid reply");
-
-			// Get the results
-			InputStream in = entity.getContent();
-
-			// DEBUG trick
-			/*
-			 * byte b[] = IO.readWholeFile(in); replyString = new String(b);
-			 * logger.info(replyString); in = new ByteArrayInputStream(b);
-			 */
-
-			retainedConnection = in;
-			return ResultSetFactory.fromXML(in);
-
-		} catch (Exception e) {
-
-			logger.info("[SEL] " + queryString);
-			logger.info(replyString);
-			logger.info(e.getMessage());
-			for (StackTraceElement st : e.getStackTrace())
-				logger.info(st.toString());
-
-			if (httpQuery != null)
-				httpQuery.abort();
-		}
-
-		return null;
 	}
 
 	/*
@@ -281,7 +257,92 @@ public class QueryEngineHTTPClient implements QueryExecution {
 		// Create the query object
 		String uri = service + "?" + URLEncodedUtils.format(qparams, "UTF-8");
 		HttpGet httpQuery = new HttpGet(uri);
+		httpQuery.addHeader("Accept-Encoding", "gzip");
 		return httpQuery;
+	}
+
+	/**
+	 * @param httpQuery
+	 * @return
+	 * @throws Exception
+	 */
+	private InputStream execHttpQuery(HttpGet httpQuery) throws Exception {
+		if (httpQuery == null)
+			throw new Exception("No query");
+
+		httpQuery.setHeader("Accept", QUERY_RESULT_MIME_TYPE);
+		HttpClient httpClient = new DefaultHttpClient();
+		HttpParams params = httpClient.getParams();
+		HttpConnectionParams.setConnectionTimeout(params, 20000);
+		HttpConnectionParams.setSoTimeout(params, 20000);
+		HttpConnectionParams.setTcpNoDelay(params, true);
+		HttpProtocolParams.setVersion(params, HttpVersion.HTTP_1_1);
+		HttpProtocolParams.setContentCharset(params, "UTF-8");
+		HttpProtocolParams.setUseExpectContinue(params, true);
+
+		HttpResponse response = null;
+		try {
+			boolean retry = true;
+			int retryCount = 0;
+			while (retry) {
+				retry = false;
+
+				// Send the query
+				response = httpClient.execute(httpQuery);
+				HttpEntity entity = response.getEntity();
+
+				// Wait and retry if failed
+				if (entity == null || response.getStatusLine().getStatusCode() != 200) {
+					// logger.warn("----------------------------------------");
+					// logger.warn("Replied " +
+					// response.getStatusLine().getStatusCode() + " for " +
+					// httpQuery.getURI());
+					// logger.warn(response.getStatusLine().toString());
+					// logger.warn(response.getLastHeader("Content-Encoding").toString());
+					// logger.warn(response.getLastHeader("Content-Length").toString());
+					// if (entity != null)
+					// logger.warn(EntityUtils.toString(entity));
+					// logger.warn("----------------------------------------");
+					if (retryCount < RETRY_DELAY.length) {
+						// Sleep and retry
+						// logger.warn("Retry in " + RETRY_DELAY[retryCount] +
+						// " seconds");
+						try {
+							Thread.sleep(RETRY_DELAY[retryCount] * 1000);
+						} catch (InterruptedException e) {
+							throw new Exception("Interrupted");
+						}
+						retry = true;
+						retryCount++;
+					} else {
+						throw new Exception("Failed to query");
+					}
+				}
+			}
+
+			// Handle GZiped replies
+			Header ceheader = response.getEntity().getContentEncoding();
+			if (ceheader != null) {
+				HeaderElement[] codecs = ceheader.getElements();
+				for (int i = 0; i < codecs.length; i++) {
+					if (codecs[i].getName().equalsIgnoreCase("gzip")) {
+						response.setEntity(new GzipDecompressingEntity(response.getEntity()));
+					}
+				}
+			}
+
+			// Get the content
+			return response.getEntity().getContent();
+		} catch (Exception e) {
+			// logger.info("[execHTTPQuery] " + queryString);
+			// logger.info(e.getMessage());
+			// for (StackTraceElement st : e.getStackTrace())
+			// logger.info(st.toString());
+			if (httpQuery != null)
+				httpQuery.abort();
+		}
+
+		return null;
 	}
 
 	/*

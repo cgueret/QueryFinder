@@ -13,7 +13,7 @@ import com.hp.hpl.jena.query.ResultSet;
 
 public class PaginatedQueryExec {
 	static final Logger logger = LoggerFactory.getLogger(PaginatedQueryExec.class);
-	private final static int PAGE_SIZE = 100;
+	private final static int PAGE_SIZE = 500;
 
 	/**
 	 * @param service
@@ -32,7 +32,8 @@ public class PaginatedQueryExec {
 			try {
 				QueryEngineHTTPClient queryExec = new QueryEngineHTTPClient(endPoint.getURI(), query);
 				queryExec.addDefaultGraph(endPoint.getDefaultGraph());
-				// queryExec.addParam("timeout", "2000");
+				queryExec.addParam("timeout", "10000");
+				queryExec.addParam("debug", "on");
 				ResultSet bindings = queryExec.execSelect();
 				if (bindings != null)
 					while (bindings.hasNext())

@@ -64,7 +64,8 @@ public class WorkFlow {
 						triples.add(Triple.create(s, p, o));
 
 			// Add the group to the query
-			mappedQuery.addGroup(triples);
+			if (!triples.isEmpty())
+				mappedQuery.addGroup(triples);
 		}
 
 		return mappedQuery;
@@ -107,7 +108,7 @@ public class WorkFlow {
 			}
 		}
 
-		if (results.isEmpty())
+		if (position.equals(Position.O) && results.isEmpty())
 			results.add(node);
 
 		return results;

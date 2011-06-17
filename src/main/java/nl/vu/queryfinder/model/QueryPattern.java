@@ -14,9 +14,11 @@ import com.hp.hpl.jena.graph.Triple;
  * 
  */
 public class QueryPattern {
-	public static final String IS_A = "is_a";
-
 	static final Logger logger = LoggerFactory.getLogger(QueryPattern.class);
+	private final Node subject;
+	private final Node predicate;
+	private final Node object;
+
 	/**
 	 * @param s
 	 * @param p
@@ -26,11 +28,7 @@ public class QueryPattern {
 	public static QueryPattern create(Node s, Node p, Node o) {
 		return new QueryPattern(s, p, o);
 	}
-	private final Node object;
-	private final Node predicate;
-
-	private final Node subject;
-
+	
 	/**
 	 * @param s
 	 * @param p

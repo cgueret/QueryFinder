@@ -30,6 +30,7 @@ import com.hp.hpl.jena.sparql.syntax.ElementGroup;
 public class IncrementalBuilder implements QueryGenerator {
 	public class BuildingBlock extends HashSet<TripleSet> implements Comparable<BuildingBlock> {
 		private static final long serialVersionUID = -4820888956735317884L;
+		private String title;
 
 		/*
 		 * (non-Javadoc)
@@ -39,7 +40,23 @@ public class IncrementalBuilder implements QueryGenerator {
 		public int compareTo(BuildingBlock o) {
 			return this.size() - o.size();
 		}
+
+		/**
+		 * @param title
+		 *            the title to set
+		 */
+		public void setTitle(String title) {
+			this.title = title;
+		}
+
+		/**
+		 * @return the title
+		 */
+		public String getTitle() {
+			return title;
+		}
 	}
+
 	static final Logger logger = LoggerFactory.getLogger(IncrementalBuilder.class);
 	final EndPoint endPoint;
 
@@ -50,6 +67,54 @@ public class IncrementalBuilder implements QueryGenerator {
 	 */
 	public IncrementalBuilder(EndPoint endPoint) {
 		this.endPoint = endPoint;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * nl.vu.queryfinder.services.QueryGenerator#getQuery(nl.vu.queryfinder.
+	 * model.MappedQuery)
+	 */
+	public Set<Query> getQuery(MappedQuery mappedQuery) throws Exception {
+		// Solve
+		LinkedList<BuildingBlock> blocks = new LinkedList<BuildingBlock>();
+		for (TripleSet triples : mappedQuery.getGroups()) {
+			BuildingBlock block = new BuildingBlock();
+			for (Triple t : triples) {
+				TripleSet set = new TripleSet();
+				set.add(t);
+				block.add(set);
+			}
+			block.setTitle(triples.getPattern().toString());
+			blocks.add(block);
+		}
+
+		// Get the result
+		numberCalls = 0;
+		BuildingBlock result = reduxBlocks(blocks);
+
+		// Compose the query
+		Set<Query> queries = new HashSet<Query>();
+		for (TripleSet element : result) {
+			if (isValid(element)) {
+				Query query = QueryFactory.make();
+				ElementGroup elg = new ElementGroup();
+				for (Triple t : element) {
+					for (Node n : new Node[] { t.getSubject(), t.getPredicate(), t.getObject() })
+						if (n.isVariable())
+							query.addResultVar(n);
+					elg.addTriplePattern(t);
+				}
+				query.setQuerySelectType();
+				query.setQueryPattern(elg);
+				queries.add(query);
+			}
+		}
+
+		logger.info(String.format("Found %d queries with %d calls to the end point", queries.size(), numberCalls));
+
+		return queries;
 	}
 
 	/**
@@ -82,50 +147,6 @@ public class IncrementalBuilder implements QueryGenerator {
 		return match;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * nl.vu.queryfinder.services.QueryGenerator#getQuery(nl.vu.queryfinder.
-	 * model.MappedQuery)
-	 */
-	public Set<Query> getQuery(MappedQuery mappedQuery) throws Exception {
-		// Solve
-		LinkedList<BuildingBlock> blocks = new LinkedList<BuildingBlock>();
-		for (TripleSet triples : mappedQuery.getGroups()) {
-			BuildingBlock block = new BuildingBlock();
-			for (Triple t : triples) {
-				TripleSet set = new TripleSet();
-				set.add(t);
-				block.add(set);
-			}
-			blocks.add(block);
-		}
-
-		// Get the result
-		numberCalls = 0;
-		BuildingBlock result = reduxBlocks(blocks);
-		logger.info(numberCalls + " requests sent to the end point");
-
-		// Compose the query
-		Set<Query> queries = new HashSet<Query>();
-		for (TripleSet element : result) {
-			Query query = QueryFactory.make();
-			ElementGroup elg = new ElementGroup();
-			for (Triple t : element) {
-				for (Node n : new Node[] { t.getSubject(), t.getPredicate(), t.getObject() })
-					if (n.isVariable())
-						query.addResultVar(n);
-				elg.addTriplePattern(t);
-			}
-			query.setQuerySelectType();
-			query.setQueryPattern(elg);
-			queries.add(query);
-		}
-
-		return queries;
-	}
-
 	/**
 	 * @param b
 	 * @return
@@ -143,17 +164,47 @@ public class IncrementalBuilder implements QueryGenerator {
 	/**
 	 * @param blocks
 	 * @return
+	 */
+	private Set<Node> getVariables(LinkedList<BuildingBlock> blocks) {
+		Set<Node> variables = getVars(blocks.getFirst());
+		for (BuildingBlock block : blocks)
+			variables.retainAll(getVars(block));
+		return variables;
+	}
+
+	/**
+	 * @param set
+	 * @return
+	 */
+	private boolean isValid(TripleSet set) {
+		Query query = QueryFactory.make();
+		query.setQueryAskType();
+		ElementGroup elg = new ElementGroup();
+		for (Triple triple : set)
+			elg.addTriplePattern(triple);
+		query.setQueryPattern(elg);
+		QueryEngineHTTPClient queryExec = new QueryEngineHTTPClient(endPoint.getURI(), query);
+		queryExec.addDefaultGraph(endPoint.getDefaultGraph());
+		numberCalls++;
+		return queryExec.execAsk();
+	}
+
+	/**
+	 * @param blocks
+	 * @return
 	 * @throws Exception
 	 */
 	private BuildingBlock reduxBlocks(LinkedList<BuildingBlock> blocks) throws Exception {
 		// No more reduction possible
-		if (blocks.size() == 1) {
-			logger.info("Done");
+		if (blocks.size() == 1)
 			return blocks.get(0);
-		}
 
 		// Sort the blocks
 		Collections.sort(blocks);
+
+		// Sanity check
+		if (getVariables(blocks).isEmpty())
+			throw new Exception("No overlap between blocks");
 
 		// Get two blocks from the list and prepare a third one to replace them
 		BuildingBlock first = blocks.pollFirst();
@@ -163,29 +214,22 @@ public class IncrementalBuilder implements QueryGenerator {
 		// Test combination of sets from the building blocks
 		for (TripleSet firstSet : first) {
 			for (TripleSet secondSet : second) {
-				boolean valid = false;
 				TripleSet newSet = new TripleSet();
 				newSet.addAll(firstSet);
 				newSet.addAll(secondSet);
-				try {
-					Query query = QueryFactory.make();
-					query.setQueryAskType();
-					ElementGroup elg = new ElementGroup();
-					for (Triple triple : newSet)
-						elg.addTriplePattern(triple);
-					query.setQueryPattern(elg);
-					QueryEngineHTTPClient queryExec = new QueryEngineHTTPClient(endPoint.getURI(), query);
-					queryExec.addDefaultGraph(endPoint.getDefaultGraph());
-					numberCalls++;
-					valid = queryExec.execAsk();
-				} catch (Exception e) {
-				}
-				if (valid)
+				if (isValid(newSet))
 					newBlock.add(newSet);
 			}
 		}
 
+		// No matching pair found
+		if (!newBlock.isEmpty()) {
+			logger.info("Can't merge " + first.getTitle() + " with " + second.getTitle());
+			return new BuildingBlock();
+		}
+
 		blocks.addFirst(newBlock);
+		newBlock.setTitle(first.getTitle() + "+" + second.getTitle());
 		return reduxBlocks(blocks);
 	}
 }

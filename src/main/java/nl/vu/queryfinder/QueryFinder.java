@@ -46,10 +46,10 @@ public class QueryFinder {
 
 		Node a = Node.createVariable("album");
 		query.add(QueryPattern.create(p, RDF.type.asNode(), Node.createLiteral("artist")));
-		query.add(QueryPattern.create(p, Node.createLiteral("birth"), Node.createLiteral("New and York")));
+		query.add(QueryPattern.create(p, Node.createLiteral("birth"), Node.createLiteral("New York")));
 		query.add(QueryPattern.create(a, Node.createLiteral("artist"), p));
 		query.add(QueryPattern.create(a, RDF.type.asNode(), Node.createLiteral("album")));
-		query.add(QueryPattern.create(a, Node.createLiteral("genre"), Node.createLiteral("hip and hop")));
+		query.add(QueryPattern.create(a, Node.createLiteral("genre"), Node.createLiteral("hip hop")));
 
 		// Go !
 		workFlow.process(query);

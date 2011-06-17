@@ -1,0 +1,214 @@
+!endpoint=http://greententacle.techfak.uni-bielefeld.de:5171/sparql
+!type=virtuoso
+
+# All notes from queries-factforge.txt also apply. 
+
+# NB1: I assumed liberal use of "label", so I asked
+#    ("Slayer" "creator of" ?x)
+#    instead of
+#    (?p "has name" "Slayer") (?p "creator of" ?x)
+
+# Everywhere:
+# - "creator of" is synonmym of "created"
+# - any (?x "created" ?y) could be replaced by (?y "created by" ?x)
+
+# All of this made me realise that we're only solving part of the
+# problem, namely finding the right URI's for instances, classes,
+# properties. But users also don't know the modelling choices that have
+# been made (e.g. the one above about "are names of people modelled as
+# labels or as "has name" properties?)
+
+
+-----------------------------------------------------------------
+01 Which singles did Slayer release?
+
+("Slayer" "created" ?x)
+(?x "type" "single")
+
+-----------------------------------------------------------------
+02 Which groups was David Bowie a member of?
+
+("David Bowie" "member of" ?x) / (?x "has member" "David Bowie")
+(?x "type" "band")
+
+-----------------------------------------------------------------
+03 When was the band Green Day founded?
+
+("Green" "type" "band")
+("Green" "founding date" ?x)
+
+-----------------------------------------------------------------
+04 How many albums did Michael Jackson record?
+
+#SELECT COUNT(?y) as ?x WHERE
+("Michael Jackson" "created" ?y)
+(?y "type" "album")
+
+-----------------------------------------------------------------
+05 Who composed the Star Wars soundtrack?
+
+(?x "created" ?y)
+("Star Wars" "soundtrack" ?y)
+
+-----------------------------------------------------------------
+06 Which artists have their 50th birthday on May 30, 2011?
+
+(?x "type" "artist")
+(?x "birth date" "30/05/1961")
+
+-----------------------------------------------------------------
+07 Give me the present members of The Cure.
+
+#SELECT ?x WHERE
+#(?x "member of" "The Cure") / ("The Cure" "has member" ?x)
+#FILTER NOT EXISTS (?x "has left" "The Cure")
+
+#(bit of a no-hoper this one...)
+
+-----------------------------------------------------------------
+08 Give me all Kraftwerk albums!
+
+(?x "type" "album")
+(?x "created by" "Kraftwerk")
+
+-----------------------------------------------------------------
+09 How many bands are called Nirvana?
+
+#SELECT COUNT(?y) as ?x WHERE
+#  ("Nirvana" "type" "band")
+
+#NB: fully it would be something like:
+#  SELECT COUNT(?y) as ?x WHERE
+#    (?y "type" "band")
+#    (?y "has name" "Nirvana") / (?y "label" "Nirvana")
+#but see NB1 above
+
+-----------------------------------------------------------------
+10 When did the Sex Pistols break up?
+
+(?y "type" "event")
+(?y "what" "breaking up")
+(?y "who"  "Sex Pistols")
+(?y "when" ?x)
+
+#NB: no idea how events are modelled...
+
+-----------------------------------------------------------------
+11 Was Quee MacArthur a member of Queen?
+
+-----------------------------------------------------------------
+12 When is the birthday of Tom Waits?
+
+-----------------------------------------------------------------
+13 Which artists were born on the 29th of December 1960?
+
+-----------------------------------------------------------------
+14 How many bands broke up in 2010?
+
+-----------------------------------------------------------------
+15 Give me all albums with the BBC Symphony Orchestra.
+
+-----------------------------------------------------------------
+16 Give me all bands that Michael Stipe is a member of.
+
+-----------------------------------------------------------------
+17 How many albums did Amy Macdonald release?
+
+-----------------------------------------------------------------
+18 Show me all live albums by Michael Jackson!
+
+-----------------------------------------------------------------
+19 Who produced the album In Utero?
+
+-----------------------------------------------------------------
+20 How long is the Babylon 5 theme?
+
+-----------------------------------------------------------------
+21 When did Kurt Cobain join Nirvana?
+
+-----------------------------------------------------------------
+22 Give me all songs by Petula Clark.
+
+-----------------------------------------------------------------
+23 Since when does Fugazi exist?
+
+-----------------------------------------------------------------
+24 How many members does the band Trio have?
+
+-----------------------------------------------------------------
+25 Are the members of the Ramones that are not called Ramone?
+
+-----------------------------------------------------------------
+26 When was Elvis Presley born?
+
+-----------------------------------------------------------------
+27 How many artists are called John Williams?
+
+-----------------------------------------------------------------
+28 Since when is Tom Araya a member of Slayer?
+
+-----------------------------------------------------------------
+29 Give me all people who were members of The Beatles.
+
+-----------------------------------------------------------------
+30 Give me the birthdays of all members of The Beatles.
+
+-----------------------------------------------------------------
+31 When did Pete Best leave The Beatles?
+
+-----------------------------------------------------------------
+32 Which artists died on the same day as Michael Jackson?
+
+-----------------------------------------------------------------
+33 Which singles did the Dead Kennedys release?
+
+-----------------------------------------------------------------
+34 Is Liz Story a person or a group?
+
+-----------------------------------------------------------------
+35 Who was Frank Sinatra married to?
+
+-----------------------------------------------------------------
+36 In which band did Frank Sinatra play?
+
+-----------------------------------------------------------------
+37 Which members of the Beatles are dead?
+
+-----------------------------------------------------------------
+38 Was Keith Richards a member of The Rolling Stones?
+
+-----------------------------------------------------------------
+39 Give me all former members of the Berliner Philharmoniker.
+
+-----------------------------------------------------------------
+40 Who wrote the song Freeway of Love?
+
+-----------------------------------------------------------------
+41 When did Kurt Cobain die?
+
+-----------------------------------------------------------------
+42 Who composed the soundtrack of The Virgin Suicides?
+
+-----------------------------------------------------------------
+43 Give me all thrash metal albums.
+
+-----------------------------------------------------------------
+44 How many versions of the song Smells Like Teen Spirit are there?
+
+-----------------------------------------------------------------
+45 Is there a group called The Notwist?
+
+-----------------------------------------------------------------
+46 List all members of The Notwist.
+
+-----------------------------------------------------------------
+47 Who collaborated on Tocotronic vs. Console?
+
+-----------------------------------------------------------------
+48 Did the Sex Pistols already break up?
+
+-----------------------------------------------------------------
+49 Until when was Tina Turner married to Ike Turner?
+
+-----------------------------------------------------------------
+50 Give me the names of John Lennons children?

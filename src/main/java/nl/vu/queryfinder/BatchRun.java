@@ -45,7 +45,7 @@ public class BatchRun {
 	 */
 	public static void main(String[] args) throws Exception {
 		BatchRun me = new BatchRun();
-		me.parse(new File("queries/queries-musicbrainz-train.txt"));
+		me.parse(new File("queries/queries-factforge.txt"));
 		me.processQueries();
 	}
 

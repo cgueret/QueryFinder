@@ -1,6 +1,6 @@
-!endpoint=http://dbpedia.org/sparql
-!type=virtuoso
-!graph=http://dbpedia.org
+!endpoint=http://factforge.net/sparql
+!type=owlim
+#!graph=http://dbpedia.org
 
 # Queries from http://factforge.net/sparql, see there for SPARQL versions
 

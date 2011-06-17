@@ -3,6 +3,7 @@
  */
 package nl.vu.queryfinder.model;
 
+
 /**
  * @author Christophe Guéret <christophe.gueret@gmail.com>
  * 

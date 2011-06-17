@@ -334,8 +334,8 @@ public class QueryEngineHTTPClient implements QueryExecution {
 			// Get the content
 			return response.getEntity().getContent();
 		} catch (Exception e) {
-			// logger.info("[execHTTPQuery] " + queryString);
-			// logger.info(e.getMessage());
+			logger.info("[execHTTPQuery] " + queryString);
+			logger.info(e.getMessage());
 			// for (StackTraceElement st : e.getStackTrace())
 			// logger.info(st.toString());
 			if (httpQuery != null)

@@ -23,12 +23,12 @@ public class TripleSet extends HashSet<Triple> implements Comparable<TripleSet> 
 		return this.size() - o.size();
 	}
 
-	public void setPattern(QueryPattern pattern) {
-		this.pattern = pattern;
-	}
-
 	public QueryPattern getPattern() {
 		return pattern;
+	}
+
+	public void setPattern(QueryPattern pattern) {
+		this.pattern = pattern;
 	}
 
 }

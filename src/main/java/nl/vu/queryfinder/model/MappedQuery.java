@@ -24,6 +24,13 @@ public class MappedQuery {
 	}
 
 	/**
+	 * @return
+	 */
+	public Set<TripleSet> getGroups() {
+		return groups;
+	}
+
+	/**
 	 * 
 	 */
 	public void printContent() {
@@ -33,13 +40,6 @@ public class MappedQuery {
 			// for (Triple t : triples)
 			// logger.info(t.toString());
 		}
-	}
-
-	/**
-	 * @return
-	 */
-	public Set<TripleSet> getGroups() {
-		return groups;
 	}
 
 }

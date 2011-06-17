@@ -8,13 +8,14 @@ package nl.vu.queryfinder.model;
  * 
  */
 public class EndPoint {
-	private final String uri;
+	public enum EndPointType {
+		OWLIM, VIRTUOSO
+	}
 	private final String defaultGraph;
 	private final EndPointType type;
-	public enum EndPointType {
-		VIRTUOSO, OWLIM
-	}
-	
+
+	private final String uri;
+
 	/**
 	 * @param uri
 	 * @param defaultGraph
@@ -33,17 +34,17 @@ public class EndPoint {
 	}
 
 	/**
-	 * @return
-	 */
-	public String getURI() {
-		return uri;
-	}
-
-	/**
 	 * @return the type
 	 */
 	public EndPointType getType() {
 		return type;
+	}
+
+	/**
+	 * @return
+	 */
+	public String getURI() {
+		return uri;
 	}
 
 }

@@ -7,6 +7,6 @@ import nl.vu.queryfinder.model.MappedQuery;
 import com.hp.hpl.jena.query.Query;
 
 public interface QueryGenerator {
-	public Set<Query> getQuery(MappedQuery mappedQuery);
-	
+	public Set<Query> getQuery(MappedQuery mappedQuery) throws Exception;
+
 }

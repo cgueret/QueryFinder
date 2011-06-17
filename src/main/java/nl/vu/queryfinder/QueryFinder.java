@@ -1,7 +1,5 @@
 package nl.vu.queryfinder;
 
-import java.io.IOException;
-
 import nl.vu.queryfinder.model.EndPoint;
 import nl.vu.queryfinder.model.EndPoint.EndPointType;
 import nl.vu.queryfinder.model.QueryPattern;
@@ -23,7 +21,7 @@ import com.hp.hpl.jena.vocabulary.RDF;
 public class QueryFinder {
 	static final Logger logger = LoggerFactory.getLogger(QueryFinder.class);
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		// Set an end point
 		EndPoint endPoint = new EndPoint("http://dbpedia.org/sparql", "http://dbpedia.org", EndPointType.VIRTUOSO);
 
@@ -39,9 +37,12 @@ public class QueryFinder {
 		// in some field, who is born in the Netherlands
 		StructuredQuery query = new StructuredQuery();
 		Node p = Node.createVariable("person");
-		//query.add(QueryPattern.create(p, RDF.type.asNode(), Node.createLiteral("artist")));
-		//query.add(QueryPattern.create(p, Node.createLiteral("field"), Node.createVariable("field")));
-		//query.add(QueryPattern.create(p, Node.createLiteral("birth"), Node.createLiteral("Netherlands")));
+		// query.add(QueryPattern.create(p, RDF.type.asNode(),
+		// Node.createLiteral("artist")));
+		// query.add(QueryPattern.create(p, Node.createLiteral("field"),
+		// Node.createVariable("field")));
+		// query.add(QueryPattern.create(p, Node.createLiteral("birth"),
+		// Node.createLiteral("Netherlands")));
 
 		Node a = Node.createVariable("album");
 		query.add(QueryPattern.create(p, RDF.type.asNode(), Node.createLiteral("artist")));
@@ -49,7 +50,7 @@ public class QueryFinder {
 		query.add(QueryPattern.create(a, Node.createLiteral("artist"), p));
 		query.add(QueryPattern.create(a, RDF.type.asNode(), Node.createLiteral("album")));
 		query.add(QueryPattern.create(a, Node.createLiteral("genre"), Node.createLiteral("hip and hop")));
-			    		   
+
 		// Go !
 		workFlow.process(query);
 	}

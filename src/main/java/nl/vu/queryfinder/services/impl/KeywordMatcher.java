@@ -138,7 +138,8 @@ public class KeywordMatcher implements ClassMatcher, PropertyMatcher {
 			} catch (Exception e) {
 			}
 		}
-		logger.info(String.format("%d filtered results out of %d ", properties.size() - unused.size(), properties.size()));
+		logger.info(String.format("%d filtered results out of %d ", properties.size() - unused.size(),
+				properties.size()));
 		properties.removeAll(unused);
 
 		return properties;

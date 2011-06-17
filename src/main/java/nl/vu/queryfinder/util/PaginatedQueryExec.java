@@ -48,8 +48,8 @@ public class PaginatedQueryExec {
 			query.setOffset(query.getOffset() + PAGE_SIZE);
 		}
 
-		//logger.info(results.size() + " results for ");
-		//logger.info(query.serialize());
+		// logger.info(results.size() + " results for ");
+		// logger.info(query.serialize());
 		return results;
 	}
 }

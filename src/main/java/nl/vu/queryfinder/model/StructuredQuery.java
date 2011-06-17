@@ -8,8 +8,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
-import java.util.TreeSet;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,9 +18,9 @@ import com.hp.hpl.jena.graph.Node;
  * 
  */
 public class StructuredQuery extends HashSet<QueryPattern> {
+	static final Logger logger = LoggerFactory.getLogger(StructuredQuery.class);
 	/** For serialization */
 	private static final long serialVersionUID = -718582275488380974L;
-	static final Logger logger = LoggerFactory.getLogger(StructuredQuery.class);
 	private final Map<Node, Set<Node>> mappings = new HashMap<Node, Set<Node>>();
 
 	/*
@@ -61,40 +59,5 @@ public class StructuredQuery extends HashSet<QueryPattern> {
 		for (Entry<Node, Set<Node>> mapping : mappings.entrySet())
 			for (Node r : mapping.getValue())
 				logger.info(String.format("%s -> %s ", mapping.getKey(), r));
-	}
-
-	/**
-	 * @return
-	 */
-	public Set<String> getStatements() {
-		Set<String> statements = new TreeSet<String>();
-		for (QueryPattern pattern : this) {
-			// Get the list of all possible s
-			Set<Node> s = new HashSet<Node>();
-			for (Node r : mappings.get(pattern.getSubject()))
-				s.add(r);
-			if (s.isEmpty())
-				s.add(pattern.getSubject());
-
-			// Get the list of all possible p
-			Set<Node> p = new HashSet<Node>();
-			for (Node r : mappings.get(pattern.getPredicate()))
-				p.add(r);
-			if (p.isEmpty())
-				p.add(pattern.getPredicate());
-
-			// Get the list of all possible o
-			Set<Node> o = new HashSet<Node>();
-			for (Node r : mappings.get(pattern.getObject()))
-				o.add(r);
-			if (o.isEmpty())
-				o.add(pattern.getObject());
-
-			for (Node a : s)
-				for (Node b : p)
-					for (Node c : o)
-						statements.add(a + " " + b + " " + c);
-		}
-		return statements;
 	}
 }

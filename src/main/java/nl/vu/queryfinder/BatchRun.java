@@ -45,7 +45,7 @@ public class BatchRun {
 	 */
 	public static void main(String[] args) throws Exception {
 		BatchRun me = new BatchRun();
-		me.parse(new File("queries/queries-factforge.txt"));
+		me.parse(new File("queries/queries-test.txt"));
 		me.processQueries();
 	}
 
@@ -80,7 +80,7 @@ public class BatchRun {
 
 	/**
 	 * @param queriesFile
-	 * @throws Exception 
+	 * @throws Exception
 	 */
 	private void parse(File queriesFile) throws Exception {
 		StructuredQuery currentQuery = null;
@@ -126,7 +126,7 @@ public class BatchRun {
 				if (parts.length == 3) {
 					Node[] nodes = new Node[3];
 					for (int i = 0; i < 3; i++) {
-						String element = parts[i].replace('"',' ').trim();
+						String element = parts[i].replace('"', ' ').trim();
 						if (element.startsWith("?"))
 							nodes[i] = Node.createVariable(element.substring(1, element.length()));
 						else if (element.equals("type"))
@@ -136,13 +136,15 @@ public class BatchRun {
 					}
 					currentQuery.add(QueryPattern.create(nodes[0], nodes[1], nodes[2]));
 				} else {
-					throw new Exception("Error parsing " + text + " = " + StringUtils.join(parts,"|"));
+					throw new Exception("Error parsing " + text + " = " + StringUtils.join(parts, "|"));
 				}
 				continue;
 			}
 
 			logger.info("Not managed: " + line);
 		}
+		if (currentQuery != null && !currentQuery.isEmpty())
+			queries.add(currentQuery);
 		reader.close();
 
 		// Initialise the end point

@@ -162,21 +162,11 @@ public class IncrementalBuilder implements QueryGenerator {
 	}
 
 	/**
-	 * @param blocks
-	 * @return
-	 */
-	private Set<Node> getVariables(LinkedList<BuildingBlock> blocks) {
-		Set<Node> variables = getVars(blocks.getFirst());
-		for (BuildingBlock block : blocks)
-			variables.retainAll(getVars(block));
-		return variables;
-	}
-
-	/**
 	 * @param set
 	 * @return
+	 * @throws Exception
 	 */
-	private boolean isValid(TripleSet set) {
+	private boolean isValid(TripleSet set) throws Exception {
 		Query query = QueryFactory.make();
 		query.setQueryAskType();
 		ElementGroup elg = new ElementGroup();
@@ -202,15 +192,15 @@ public class IncrementalBuilder implements QueryGenerator {
 		// Sort the blocks
 		Collections.sort(blocks);
 
-		// Sanity check
-		if (getVariables(blocks).isEmpty())
-			throw new Exception("No overlap between blocks");
+		// Sanity check (Bug)
+		// if (getVariables(blocks).isEmpty())
+		// throw new Exception("No overlap between blocks");
 
 		// Get two blocks from the list and prepare a third one to replace them
 		BuildingBlock first = blocks.pollFirst();
 		BuildingBlock second = getOther(first, blocks);
 		BuildingBlock newBlock = new BuildingBlock();
-
+		
 		// Test combination of sets from the building blocks
 		for (TripleSet firstSet : first) {
 			for (TripleSet secondSet : second) {
@@ -223,13 +213,11 @@ public class IncrementalBuilder implements QueryGenerator {
 		}
 
 		// No matching pair found
-		if (!newBlock.isEmpty()) {
-			logger.info("Can't merge " + first.getTitle() + " with " + second.getTitle());
-			return new BuildingBlock();
-		}
+		if (newBlock.isEmpty())
+			throw new Exception("Can't merge [" + first.getTitle() + "] with [" + second.getTitle() + "]");
 
 		blocks.addFirst(newBlock);
-		newBlock.setTitle(first.getTitle() + "+" + second.getTitle());
+		newBlock.setTitle(first.getTitle() + " + " + second.getTitle());
 		return reduxBlocks(blocks);
 	}
 }

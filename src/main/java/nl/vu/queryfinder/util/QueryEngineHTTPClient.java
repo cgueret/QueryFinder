@@ -81,8 +81,11 @@ public class QueryEngineHTTPClient implements QueryExecution {
 	/**
 	 * @param defaultGraph
 	 *            The defaultGraph to add.
+	 * @throws Exception 
 	 */
-	public void addDefaultGraph(String defaultGraph) {
+	public void addDefaultGraph(String defaultGraph) throws Exception {
+		if (defaultGraph == null)
+			throw new Exception("Can't be null");
 		if (defaultGraphURIs == null)
 			defaultGraphURIs = new ArrayList<String>();
 		defaultGraphURIs.add(defaultGraph);
@@ -164,7 +167,7 @@ public class QueryEngineHTTPClient implements QueryExecution {
 			retainedConnection = in;
 			return ResultSetFactory.fromXML(in);
 		} catch (Exception e) {
-			logger.info("[SEL] " + httpQuery.getURI());
+			//logger.info("[SEL] " + httpQuery.getURI());
 			if (httpQuery != null)
 				httpQuery.abort();
 		}
@@ -334,8 +337,8 @@ public class QueryEngineHTTPClient implements QueryExecution {
 			// Get the content
 			return response.getEntity().getContent();
 		} catch (Exception e) {
-			logger.info("[execHTTPQuery] " + queryString);
-			logger.info(e.getMessage());
+			//logger.info("[execHTTPQuery] " + queryString);
+			//logger.info(e.getMessage());
 			// for (StackTraceElement st : e.getStackTrace())
 			// logger.info(st.toString());
 			if (httpQuery != null)

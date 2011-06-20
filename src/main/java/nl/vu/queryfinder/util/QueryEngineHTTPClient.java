@@ -144,7 +144,7 @@ public class QueryEngineHTTPClient implements QueryExecution {
 			in.close();
 			return result;
 		} catch (Exception e) {
-			logger.info("[ASK] " + httpQuery.getURI());
+			//logger.info("[ASK] " + httpQuery.getURI());
 			if (httpQuery != null)
 				httpQuery.abort();
 		}
@@ -276,12 +276,12 @@ public class QueryEngineHTTPClient implements QueryExecution {
 		httpQuery.setHeader("Accept", QUERY_RESULT_MIME_TYPE);
 		HttpClient httpClient = new DefaultHttpClient();
 		HttpParams params = httpClient.getParams();
-		HttpConnectionParams.setConnectionTimeout(params, 10000);
+		HttpConnectionParams.setConnectionTimeout(params, 2000);
 		HttpConnectionParams.setSoTimeout(params, 10000);
 		HttpConnectionParams.setTcpNoDelay(params, true);
 		HttpProtocolParams.setVersion(params, HttpVersion.HTTP_1_1);
 		HttpProtocolParams.setContentCharset(params, "UTF-8");
-		//HttpProtocolParams.setUseExpectContinue(params, true);
+		HttpProtocolParams.setUseExpectContinue(params, true);
 
 		HttpResponse response = null;
 		try {

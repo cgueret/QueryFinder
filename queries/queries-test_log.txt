@@ -1,0 +1,925 @@
+[22:03:01] Parsed 2 queries
+[22:03:01] EndPoint = http://lod.openlinksw.com/sparql
+[22:03:01] 
+[22:03:01] ------------------------------------------------
+[22:03:01] 
+[22:03:01] An artist born in the Netherlands who works in some field
+[22:03:01] 
+[22:03:01] Query = [?p @"field" ?f, ?p @rdf:type "artist", ?p @"birth" "Netherlands"]
+[22:03:01] 
+[22:03:01] S,P,O
+[22:03:02] [property] "field" -> 1
+[22:03:02] S,type,O
+[22:03:03] [class] "artist" -> 2
+[22:03:03] S,P,O
+[22:03:03] [property] "birth" -> 1
+[22:03:03] [resource] "Netherlands" -> 29
+[22:03:03] Mapped query contains 3 groups
+[22:03:03] Group [?p @"field" ?f] -> 1 options
+[22:03:03] Group [?p @rdf:type "artist"] -> 2 options
+[22:03:03] Group [?p @"birth" "Netherlands"] -> 30 options
+[22:03:03] Blocks = [1,2,30]
+[22:03:03] Match ?p @"field" ?f and ?p @"birth" "Netherlands"
+[22:03:11] Blocks = [2,4]
+[22:03:11] Match ?p @rdf:type "artist" and ?p @"field" ?f + ?p @"birth" "Netherlands"
+[22:03:14] Found 4 queries with 42 calls to the end point
+[22:03:14] SELECT  ?p ?f
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Burgundian_Netherlands> ;
+        <http://dbpedia.org/ontology/field>  ?f ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:03:14] SELECT  ?p ?f
+WHERE
+  { ?p  <http://dbpedia.org/ontology/field>  ?f ;
+        <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Habsburg_Netherlands> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:03:14] SELECT  ?p ?f
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Netherlands> ;
+        <http://dbpedia.org/ontology/field>  ?f ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:03:14] SELECT  ?p ?f
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Southern_Netherlands> ;
+        <http://dbpedia.org/ontology/field>  ?f ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:03:14] 
+[22:03:14] ------------------------------------------------
+[22:03:14] 
+[22:03:14]        
+[22:03:14] 
+[22:03:14] Query = [?a @"artist" ?p, ?p @rdf:type "artist", ?p @"birth" "New York", ?a @"genre" "hip hop", ?a @rdf:type "album"]
+[22:03:14] 
+[22:03:14] S,P,O
+[22:03:14] [property] "artist" -> 4
+[22:03:14] S,type,O
+[22:03:15] [class] "artist" -> 2
+[22:03:15] S,P,O
+[22:03:15] [property] "birth" -> 1
+[22:03:17] [resource] "New York" -> 716
+[22:03:17] S,P,O
+[22:03:18] [property] "genre" -> 2
+[22:03:18] [resource] "hip hop" -> 1
+[22:03:18] [resource] "hip hop" -> 32
+[22:03:18] S,type,O
+[22:03:20] [class] "album" -> 1
+[22:03:20] Mapped query contains 5 groups
+[22:03:20] Group [?a @rdf:type "album"] -> 1 options
+[22:03:20] Group [?p @rdf:type "artist"] -> 2 options
+[22:03:20] Group [?a @"artist" ?p] -> 4 options
+[22:03:20] Group [?a @"genre" "hip hop"] -> 35 options
+[22:03:20] Group [?p @"birth" "New York"] -> 717 options
+[22:03:20] Blocks = [1,2,4,35,717]
+[22:03:20] Match ?a @rdf:type "album" and ?a @"genre" "hip hop"
+[22:03:28] Blocks = [2,4,28,717]
+[22:03:28] Match ?p @rdf:type "artist" and ?p @"birth" "New York"
+[22:08:37] Blocks = [4,28,305]
+[22:08:37] Match ?a @"artist" ?p and ?p @rdf:type "artist" + ?p @"birth" "New York"
+[22:12:49] Blocks = [28,200]
+[22:12:49] Match ?a @rdf:type "album" + ?a @"genre" "hip hop" and ?a @"artist" ?p + ?p @rdf:type "artist" + ?p @"birth" "New York"
+[22:33:37] Found 93 queries with 8382 calls to the end point
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Conscious_hip_hop> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hardcore_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Golden_age_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/East_Coast_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Underground_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p .
+    ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Buffalo,_New_York> .
+    ?a  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Southern_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Latin_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Political_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Southern_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/East_Coast_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Latin_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Rochester,_New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Conscious_hip_hop> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Old_school_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Southern_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/East_Coast_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hardcore_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> ;
+        <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Glen_Cove,_New_York> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> ;
+        <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Yonkers,_New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/East_Coast_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_soul> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Golden_age_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> ;
+        <http://dbpedia.org/ontology/artist>  ?p .
+    ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Buffalo,_New_York> .
+    ?a  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> ;
+        <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Yonkers,_New_York> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/West_Coast_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Jamaica,_Queens> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Political_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Mount_Vernon,_New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Underground_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Glen_Cove,_New_York> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Huntington,_New_York> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> ;
+        <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Yonkers,_New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Conscious_hip_hop> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/East_Coast_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Bay_Shore,_New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Old_school_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Bay_Shore,_New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Mount_Vernon,_New_York> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_soul> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Mount_Vernon,_New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/East_Coast_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Yonkers,_New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hardcore_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Mount_Vernon,_New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hardcore_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Old_school_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/East_Coast_hip_hop> .
+    ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_%28Ja_Rule_song%29> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Alternative_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Golden_age_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Alternative_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Alternative_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Staten_Island> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Yonkers,_New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/East_Coast_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hardcore_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/East_Coast_hip_hop> .
+    ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_%28Ja_Rule_song%29> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> ;
+        <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Huntington,_New_York> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Conscious_hip_hop> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Mount_Vernon,_New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hardcore_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Underground_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/West_Coast_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Jamaica,_Queens> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_%28Ja_Rule_song%29> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Underground_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Latin_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/West_Coast_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> ;
+        <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_%28Ja_Rule_song%29> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Mount_Vernon,_New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_soul> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Yonkers,_New_York> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Old_school_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> ;
+        <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Huntington,_New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Latin_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Huntington,_New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> ;
+        <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Staten_Island> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_soul> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?a ?p
+WHERE
+  { ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop_music> .
+    ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Political_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/West_Coast_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Mount_Vernon,_New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Southern_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Experimental_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Experimental_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Golden_age_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Mount_Vernon,_New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/East_Coast_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Political_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Yonkers,_New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York_City> .
+    ?a  <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Alternative_hip_hop> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+    ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/New_York> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hardcore_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+
+[22:33:37] SELECT  ?p ?a
+WHERE
+  { ?p  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> ;
+        <http://dbpedia.org/ontology/birthPlace>  <http://dbpedia.org/resource/Yonkers,_New_York> .
+    ?a  <http://dbpedia.org/ontology/genre>  <http://dbpedia.org/resource/Hardcore_hip_hop> ;
+        <http://dbpedia.org/ontology/artist>  ?p ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> .
+  }
+

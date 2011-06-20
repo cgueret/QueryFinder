@@ -31,8 +31,11 @@ public class PaginatedQueryExec {
 			long count = 0;
 			try {
 				QueryEngineHTTPClient queryExec = new QueryEngineHTTPClient(endPoint.getURI(), query);
-				if (endPoint.getDefaultGraph() != null)
+				if (endPoint.getDefaultGraph() != null) {
 					queryExec.addDefaultGraph(endPoint.getDefaultGraph());
+					//query.addNamedGraphURI(endPoint.getDefaultGraph());
+					//query.setBaseURI(endPoint.getDefaultGraph());
+				}
 				// queryExec.addParam("timeout", "10000");
 				// queryExec.addParam("debug", "on");
 				ResultSet bindings = queryExec.execSelect();

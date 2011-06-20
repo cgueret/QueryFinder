@@ -1,4 +1,4 @@
-!endpoint=http://dbpedia.org/sparql
+!endpoint=http://lod.openlinksw.com/sparql
 !type=virtuoso
 !graph=http://dbpedia.org
 
@@ -17,4 +17,12 @@ Hip-hop artist from New york
 (?a "artist" ?p)
 (?a "type" "album")
 (?a "genre" "hip hop")
+
+# Version from semplore
+# ?x typeof  Artist  
+# ?x origin  NewYork 
+# ?y artist  ?x     
+# ?y typeof  Album   
+# ?y keywords "hip hop"
+       
 

@@ -24,7 +24,7 @@
 			<OnMatch>DENY</OnMatch>
 		</filter>
 		<encoder>
-			<pattern>%msg%n</pattern>
+			<pattern>[%date{HH:mm:ss}] %msg%n</pattern>
 		</encoder>
 	</appender>
 	<root level="DEBUG">

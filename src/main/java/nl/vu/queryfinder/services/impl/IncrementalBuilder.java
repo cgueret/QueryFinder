@@ -43,7 +43,7 @@ public class IncrementalBuilder implements QueryGenerator {
 
 		/**
 		 * @param title
-		 *            the title to set
+		 *           the title to set
 		 */
 		public void setTitle(String title) {
 			this.title = title;
@@ -72,8 +72,7 @@ public class IncrementalBuilder implements QueryGenerator {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see
-	 * nl.vu.queryfinder.services.QueryGenerator#getQuery(nl.vu.queryfinder.
+	 * @see nl.vu.queryfinder.services.QueryGenerator#getQuery(nl.vu.queryfinder.
 	 * model.MappedQuery)
 	 */
 	public Set<Query> getQuery(MappedQuery mappedQuery) throws Exception {
@@ -141,8 +140,11 @@ public class IncrementalBuilder implements QueryGenerator {
 			index--;
 		}
 
-		if (match == null)
-			throw new Exception("No overlap between blocks");
+		// No overlap between blocks
+		if (match == null) {
+			// fall back on the biggest
+			match = blocks.pollLast();
+		}
 
 		return match;
 	}
@@ -174,7 +176,8 @@ public class IncrementalBuilder implements QueryGenerator {
 			elg.addTriplePattern(triple);
 		query.setQueryPattern(elg);
 		QueryEngineHTTPClient queryExec = new QueryEngineHTTPClient(endPoint.getURI(), query);
-		queryExec.addDefaultGraph(endPoint.getDefaultGraph());
+		if (endPoint.getDefaultGraph() != null)
+			queryExec.addDefaultGraph(endPoint.getDefaultGraph());
 		numberCalls++;
 		return queryExec.execAsk();
 	}
@@ -192,6 +195,14 @@ public class IncrementalBuilder implements QueryGenerator {
 		// Sort the blocks
 		Collections.sort(blocks);
 
+		// Print a status line
+		StringBuffer buffer =  new StringBuffer();
+		buffer.append("Blocks = [");
+		for (BuildingBlock block: blocks)
+			buffer.append(block.size()).append(',');
+		buffer.setCharAt(buffer.length()-1, ']');
+		logger.info(buffer.toString());
+		
 		// Sanity check (Bug)
 		// if (getVariables(blocks).isEmpty())
 		// throw new Exception("No overlap between blocks");
@@ -200,6 +211,7 @@ public class IncrementalBuilder implements QueryGenerator {
 		BuildingBlock first = blocks.pollFirst();
 		BuildingBlock second = getOther(first, blocks);
 		BuildingBlock newBlock = new BuildingBlock();
+		logger.info("Match [" + first.getTitle() + "] and [" + second.getTitle() + "]");
 		
 		// Test combination of sets from the building blocks
 		for (TripleSet firstSet : first) {

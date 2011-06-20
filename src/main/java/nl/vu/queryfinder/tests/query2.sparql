@@ -1,0 +1,9 @@
+SELECT distinct ?s ?sc from <http://dbpedia.org>
+WHERE
+  {
+    ?a <http://dbpedia.org/ontology/birthPlace> ?s.
+    ?s <http://www.w3.org/2000/01/rdf-schema#label> ?o .
+    ?o <bif:contains> "'new york'" OPTION (score ?sc). 
+  }
+order by desc (?sc)
+LIMIT 100

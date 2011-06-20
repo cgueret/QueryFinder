@@ -1,0 +1,29 @@
+SELECT  distinct ?r ?p ?rs
+WHERE { 
+_:b0  <http://dbpedia.org/ontology/genre>  ?r.
+?r    <http://www.w3.org/2000/01/rdf-schema#label>  ?l.
+?l    <bif:contains>        "'hip hop'" .
+?r  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t.
+OPTIONAL {
+?r  ?p  ?rs.
+?p a <http://www.w3.org/2002/07/owl#ObjectProperty>.
+?rs  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t.
+}
+}
+
+SELECT  distinct ?r ?p ?rs
+WHERE { 
+_:b0  <http://dbpedia.org/ontology/birthPlace>  ?r.
+?r    <http://www.w3.org/2000/01/rdf-schema#label>  ?l.
+?l    <bif:contains>        "'new york'" .
+?r  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t.
+?t a  <http://www.w3.org/2002/07/owl#Class>.
+OPTIONAL {
+?r  ?p  ?rs.
+?p a <http://www.w3.org/2002/07/owl#ObjectProperty>.
+?rs  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?t.
+}
+}
+limit 100
+
+

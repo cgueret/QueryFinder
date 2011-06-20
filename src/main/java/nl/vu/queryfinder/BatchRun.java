@@ -24,6 +24,7 @@ import nl.vu.queryfinder.model.EndPoint.EndPointType;
 import nl.vu.queryfinder.model.QueryPattern;
 import nl.vu.queryfinder.model.StructuredQuery;
 import nl.vu.queryfinder.model.WorkFlow;
+import nl.vu.queryfinder.services.impl.DefaultMappedQueryGen;
 import nl.vu.queryfinder.services.impl.IncrementalBuilder;
 import nl.vu.queryfinder.services.impl.SPARQLMatcher;
 
@@ -61,7 +62,8 @@ public class BatchRun {
 		workFlow.setClassMatcher(matcher);
 		workFlow.setResourceMatcher(matcher);
 		workFlow.setQueryGenerator(new IncrementalBuilder(endPoint));
-
+		workFlow.setMappedQueryGenerator(new DefaultMappedQueryGen());
+		
 		for (StructuredQuery query : queries) {
 			logger.info("");
 			logger.info("------------------------------------------------");
@@ -74,6 +76,7 @@ public class BatchRun {
 				workFlow.process(query);
 			} catch (Exception e) {
 				logger.warn("Failed ! " + e.getMessage());
+				e.printStackTrace();
 			}
 		}
 	}

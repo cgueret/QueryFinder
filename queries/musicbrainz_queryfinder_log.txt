@@ -1,0 +1,308 @@
+[11:05:40] Parsed 8 queries
+[11:05:40] EndPoint = http://greententacle.techfak.uni-bielefeld.de:5171/sparql
+[11:05:40] 
+[11:05:40] ------------------------------------------------
+[11:05:40] 
+[11:05:40] 01 Which singles did Slayer release?
+[11:05:40] 
+[11:05:40] Query = ["Slayer" @"created" ?x, ?x @rdf:type "single"]
+[11:05:40] 
+[11:05:41] [resource] "Slayer" -> 204
+[11:05:42] [property] "created" -> 0
+[11:05:42] [class] "single" -> 1
+[11:05:42] Mapped query contains 1 groups
+[11:05:42] Group [?x @rdf:type "single"] -> 1 options
+[11:05:43] Found 1 queries with 1 calls to the end point
+[11:05:43] SELECT  ?x
+WHERE
+  { ?x  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Single> . }
+
+[11:05:43] 
+[11:05:43] ------------------------------------------------
+[11:05:43] 
+[11:05:43] 02 Which groups was David Bowie a member of?
+[11:05:43] 
+[11:05:43] Query = ["David Bowie" @"member of" ?x, ?x @rdf:type "band"]
+[11:05:43] 
+[11:05:43] [resource] "David Bowie" -> 55
+[11:05:44] [property] "member of" -> 1
+[11:05:46] [class] "band" -> 1
+[11:05:46] Mapped query contains 2 groups
+[11:05:46] Group [?x @rdf:type "band"] -> 1 options
+[11:05:46] Group ["David Bowie" @"member of" ?x] -> 55 options
+[11:05:52] Failed ! Can't merge [?x @rdf:type "band"] with ["David Bowie" @"member of" ?x]
+[11:05:52] 
+[11:05:52] ------------------------------------------------
+[11:05:52] 
+[11:05:52] 03 When was the band Green Day founded?
+[11:05:52] 
+[11:05:52] Query = ["Green" @rdf:type "band", "Green" @"founding date" ?x]
+[11:05:52] 
+[11:05:55] [resource] "Green" -> 3903
+[11:05:56] [class] "band" -> 1
+[11:05:59] [resource] "Green" -> 3903
+[11:05:59] [property] "founding date" -> 0
+[11:05:59] Mapped query contains 1 groups
+[11:05:59] Group ["Green" @rdf:type "band"] -> 3903 options
+[11:13:22] Found 27 queries with 3903 calls to the end point
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Tea_Leaf_Green>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/The_Echoing_Green_%28band%29>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Green_and_Yellow_TV>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Green_River_%28band%29>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/The_Village_Green_%28band%29>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Green_Go>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Mr._Green_%28producer%29>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Green_Day>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Gang_Green>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/The_Green_Pajamas>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Beautiful_Pea_Green_Boat>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Secret_Green>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Green_on_Red>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Green_Magnet_School>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Green_echo>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Christopher_Warren-Green>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Green_Apple_Quick_Step>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Soilent_Green>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Friends_of_Fiddler%27s_Green>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Green_Carnation>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/End_of_Green_%28band%29>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Fiddler%27s_Green_%28band%29>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Green_River_Ordinance_%28band%29>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/The_Brilliant_Green>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/The_Essex_Green>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Litmus_Green>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] SELECT  
+WHERE
+  { <http://dbpedia.org/resource/Green_Jell%C3%BF>
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Band> .
+  }
+
+[11:13:23] 
+[11:13:23] ------------------------------------------------
+[11:13:23] 
+[11:13:23] 04 How many albums did Michael Jackson record?
+[11:13:23] 
+[11:13:23] Query = [?y @rdf:type "album", "Michael Jackson" @"created" ?y]
+[11:13:23] 
+[11:13:25] [class] "album" -> 1
+[11:13:26] [resource] "Michael Jackson" -> 98
+[11:13:26] [property] "created" -> 0
+[11:13:26] Mapped query contains 1 groups
+[11:13:26] Group [?y @rdf:type "album"] -> 1 options
+[11:13:26] Found 1 queries with 1 calls to the end point
+[11:13:26] SELECT  ?y
+WHERE
+  { ?y  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> . }
+
+[11:13:26] 
+[11:13:26] ------------------------------------------------
+[11:13:26] 
+[11:13:26] 05 Who composed the Star Wars soundtrack?
+[11:13:26] 
+[11:13:26] Query = ["Star Wars" @"soundtrack" ?y, ?x @"created" ?y]
+[11:13:26] 
+[11:13:27] [resource] "Star Wars" -> 305
+[11:13:27] [property] "soundtrack" -> 0
+[11:13:27] [property] "created" -> 0
+[11:13:27] Mapped query contains 0 groups
+[11:13:27] Failed ! null
+[11:13:27] 
+[11:13:27] ------------------------------------------------
+[11:13:27] 
+[11:13:27] 06 Which artists have their 50th birthday on May 30, 2011?
+[11:13:27] 
+[11:13:27] Query = [?x @rdf:type "artist", ?x @"birth date" "30/05/1961"]
+[11:13:27] 
+[11:13:28] [class] "artist" -> 2
+[11:13:28] [property] "birth date" -> 0
+[11:13:29] [resource] "30/05/1961" -> 0
+[11:13:29] Mapped query contains 1 groups
+[11:13:29] Group [?x @rdf:type "artist"] -> 2 options
+[11:13:30] Found 2 queries with 2 calls to the end point
+[11:13:30] SELECT  ?x
+WHERE
+  { ?x  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MusicalArtist> . }
+
+[11:13:30] SELECT  ?x
+WHERE
+  { ?x  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Artist> . }
+
+[11:13:30] 
+[11:13:30] ------------------------------------------------
+[11:13:30] 
+[11:13:30] 08 Give me all Kraftwerk albums!
+[11:13:30] 
+[11:13:30] Query = [?x @rdf:type "album", ?x @"created by" "Kraftwerk"]
+[11:13:30] 
+[11:13:32] [class] "album" -> 1
+[11:13:33] [property] "created by" -> 0
+[11:13:33] [resource] "Kraftwerk" -> 11
+[11:13:33] Mapped query contains 1 groups
+[11:13:33] Group [?x @rdf:type "album"] -> 1 options
+[11:13:33] Found 1 queries with 1 calls to the end point
+[11:13:33] SELECT  ?x
+WHERE
+  { ?x  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Album> . }
+
+[11:13:33] 
+[11:13:33] ------------------------------------------------
+[11:13:33] 
+[11:13:33] 10 When did the Sex Pistols break up?
+[11:13:33] 
+[11:13:33] Query = [?y @"who" "Sex Pistols", ?y @rdf:type "event", ?y @"when" ?x, ?y @"what" "breaking up"]
+[11:13:33] 
+[11:13:36] [property] "who" -> 0
+[11:13:36] [resource] "Sex Pistols" -> 17
+[11:13:36] [class] "event" -> 4
+[11:13:38] [property] "when" -> 0
+[11:13:38] [property] "what" -> 0
+[11:13:39] [resource] "breaking up" -> 9
+[11:13:39] Mapped query contains 1 groups
+[11:13:39] Group [?y @rdf:type "event"] -> 4 options
+[11:13:39] Found 4 queries with 4 calls to the end point
+[11:13:39] SELECT  ?y
+WHERE
+  { ?y  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/MixedMartialArtsEvent> . }
+
+[11:13:39] SELECT  ?y
+WHERE
+  { ?y  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/WrestlingEvent> . }
+
+[11:13:39] SELECT  ?y
+WHERE
+  { ?y  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/SportsEvent> . }
+
+[11:13:39] SELECT  ?y
+WHERE
+  { ?y  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/ontology/Event> . }
+

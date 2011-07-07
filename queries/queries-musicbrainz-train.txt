@@ -1,5 +1,4 @@
-!endpoint=http://greententacle.techfak.uni-bielefeld.de:5171/sparql
-!type=virtuoso
+!endpoint http://greententacle.techfak.uni-bielefeld.de:5171/sparql,virtuoso
 
 # All notes from queries-factforge.txt also apply. 
 

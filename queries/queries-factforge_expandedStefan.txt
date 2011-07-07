@@ -31,7 +31,8 @@ Find airports near London
 
 #(?x "type" "airport")
 #(?x "haslocation" ?y")
-#(?y "near" "London") / (?y "part of" "Greater London") / 
+#(?y "near" "London") / 
+#(?y "part of" "Greater London") / 
 
 #COMMENT: this first query is also the hardest. I know this should
 #probably be some jiggery-pokery with latlong's, but that's a no-hoper:
@@ -41,16 +42,37 @@ Find airports near London
 Software companies founded in the US
 
 (?x "type" "company")
-(?x "produces" ?y) / (?y "product of" ?x) / (?y "produced by" ?x) / (?y "made by" ?x) / (?x "sells" ?y) / (?y "sold by" ?x)
-(?y "type" "software product") / (?y "type" "software")
-(?x "foundinglocation" "US") / (?x "foundinglocation" "?z")(?z "part of" "US")
+(?x "produces" ?y) 
+(?x "make" ?y)
+(?x "create" ?y)
+(?x "bring forth" ?y)
+(?y "product of" ?x) 
+(?y "produced by" ?x) 
+(?y "made by" ?x) 
+(?x "sells" ?y) 
+(?y "sold by" ?x)
+(?y "type" "software product") 
+(?y "type" "software")
+(?x "foundinglocation" "US") 
+(?x "foundinglocation" "?z") 
+(?z "part of" "US")
+(?x "founding" "US") 
+(?x "location" "US") 
+
 
 ----------------------------------------------------------------------
 
 Media in US
 
-(?x "type" "media company")
-(?x "located in" "?z") / (?x "haslocation" "?z")
+(?x "type" "media")
+(?x "type" "company")
+(?x "type" "media media")
+(?x "located" "?z") 
+(?x "situated" "?z") 
+(?x "placed" "?z") 
+(?x "set" "?z") 
+(?x "situated" "?z") 
+(?x "haslocation" "?z")
 (?z "part of" "US")
 
 ----------------------------------------------------------------------
@@ -58,9 +80,15 @@ Media in US
 Compact car with CVT transmission assembled in US
 
 (?x "type" "compact car")
+(?x "type" "car")
+(?x "type" "compact")
 (?x "assembly location" ?y)
+(?x "assembly" ?y)
+(?x "location" ?y)
 (?y "part of" "US")
 (?x "transmission type" "CVT")
+(?x "transmission" "CVT")
+(?x "transmittal" "CVT")
 
 ----------------------------------------------------------------------
 
@@ -78,8 +106,15 @@ UK musicians who play Alternative rock using piano
 (?x "type" "person")
 (?x "has profession" "musician")
 (?x "plays instrument" "piano")
-(?x "nationality" "UK") / (?x "birthplace" ?b) (?b "part of" "UK")
-(?x "created" ?y) / (?y "created by" ?x) / (?x "performs" ?y) / (?y "performed by" ?x)
+(?x "nationality" "UK") 
+(?x "birthplace" ?b) 
+(?x "place of birth" ?b) 
+(?x "birth" ?b) 
+(?b "part of" "UK")
+(?x "created" ?y) 
+(?y "created by" ?x) 
+(?x "performs" ?y) 
+(?y "performed by" ?x)
 (?y "genre" "Alternative Rock")
 
 ----------------------------------------------------------------------
@@ -88,9 +123,20 @@ Artists born in France and died in US
 
 (?x "type" "artist")
 (?x "birth place" ?y)
+(?x "birth" ?y)
+(?x "born" ?y)
+(?x "bear" ?y)
+(?x "place" ?y)
 (?y "located in" "France")
+(?y "in" "France")
+(?y "located" "France")
+(?y "situate" "France")
 (?x "death place" ?z)
+(?x "death" ?z)
 (?z "located in" "US")
+(?z "in" "US")
+(?z "located" "US")
+(?z "situate" "US")
 
 ----------------------------------------------------------------------
 
@@ -103,9 +149,16 @@ Specific types of Reasoning from Wordnet
 Place in UK which has a building by Richard Norman Shaw
 
 (?p "has name" "Richard Norman")
-(?p "has designed" ?b) / (?b "designed by" ?p)
+(?p "name" "Richard Norman")
+(?p "has designed" ?b)
+(?p "designed" ?b)
+(?b "designed by" ?p)
 (?b "type" "building")
+(?b "type" "edifice")
+(?b "type" "construction")
 (?b "located in" ?x)
+(?b "located" ?x)
+(?b "situate" ?x)
 (?x "part of" "United Kingdom")
 
 ----------------------------------------------------------------------
@@ -113,10 +166,19 @@ Place in UK which has a building by Richard Norman Shaw
 City in UK which has a building by Richard Norman Shaw
 
 (?p "has name" "Richard Norman")
-(?p "has designed" ?b) / (?b "designed by" ?p)
+(?p "has designed" ?b)
+(?p "design" ?b)
+(?p "plan" ?b)
+(?p "project" ?b)
+(?p "contrive" ?b)
+(?b "designed by" ?p)
 (?b "type" "building")
 (?b "located in" ?x)
+(?b "located" ?x)
+(?b "situated" ?x)
 (?x "type" "city")
+(?x "type" "metropolis")
+(?x "type" "urban center")
 (?x "part of" "United Kingdom")
 
 
@@ -125,24 +187,42 @@ City in UK which has a building by Richard Norman Shaw
 The birthplace of American lawyers-artists
 
 (?p "type" "lawyer")
+(?p "type" "attorney")
 (?p "type" "artist")
-(?p "nationality" "US") / (?p "birthplace" ?x) (?x "part of" "US")
+(?p "nationality" "US")
+(?p "birthplace" ?x) 
+(?p "birth place" ?x) 
+(?p "birth" ?x) 
+(?p "born" ?x) 
+(?x "part of" "US")
 (?p "birthplace" ?x)
+(?p "birth" ?x)
+(?p "born" ?x)
 
 ----------------------------------------------------------------------
 
 People born in the state of Massachusetts
 
 (?x "type" "person")
+(?x "type" "people")
+(?x "born" ?y)
 (?x "birth place" ?y)
+(?x "birth" ?y)
 (?y "located in" "Massachusetts")
+(?y "located" "Massachusetts")
+(?y "situated" "Massachusetts")
 
 ----------------------------------------------------------------------
 
 Who died of Vascular disease
 
 (?x "type" "person")
-(?x "cause of death" "Vascular disease") / (?x "cause of death" ?y)(?y "type""Vascular disease") 
+(?x "cause of death" "Vascular disease")
+(?x "death" "Vascular disease")
+(?x "cause of death" ?y)
+(?x "death" ?y)
+(?y "type" "Vascular disease") 
+(?y "type" "Vascular") 
 
 ----------------------------------------------------------------------
 
@@ -150,13 +230,25 @@ Names of the People employed by US Justice Agency
 
 (?x "type" "person")
 (?x "works for" ?y)
-(?y "part of" "US Department of Justice") / (?y "type" "US Justice Agency")
+(?x "works" ?y)
+(?x "employed" ?y)
+(?y "part of" "US Department of Justice") 
+(?y "part of" "Department of Justice") 
+(?y "type" "US Justice Agency")
 
 ----------------------------------------------------------------------
 
 Cities where paintings of Modigliani are located
 
 (?y "type" "painting")
-(?y "created by" "Modigliani") / ("Modigliani" "created" ?y)
-(?y "located in" ?x) / (?y "located in" ?museum) (?museum "located in" ?x) 
+(?y "created by" "Modigliani") 
+(?y "created" "Modigliani") 
+(?y "made" "Modigliani") 
+("Modigliani" "created" ?y)
+("Modigliani" "made" ?y)
+(?y "located in" ?x) 
+(?y "located" ?x) 
+(?y "situated" ?x) 
+(?y "located in" ?museum) 
+(?museum "located in" ?x) 
 (?x "type" "city")

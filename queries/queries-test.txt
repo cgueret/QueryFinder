@@ -1,6 +1,4 @@
-!endpoint=http://lod.openlinksw.com/sparql
-!type=virtuoso
-!graph=http://dbpedia.org
+!endpoint http://lod.openlinksw.com/sparql,virtuoso,http://dbpedia.org
 
 ----------------------------------------------------------------------
 An artist born in the Netherlands who works in some field

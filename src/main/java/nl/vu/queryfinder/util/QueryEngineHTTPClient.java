@@ -1,6 +1,7 @@
 package nl.vu.queryfinder.util;
 
 import java.io.InputStream;
+import java.net.URI;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -8,7 +9,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.http.Header;
 import org.apache.http.HeaderElement;
-import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpVersion;
 import org.apache.http.NameValuePair;
@@ -58,13 +58,13 @@ public class QueryEngineHTTPClient implements QueryExecution {
 	// Used for select
 	private InputStream retainedConnection = null;
 	// The SPARQL EndPoint
-	private final String service;
+	private final URI service;
 
 	/**
 	 * @param service
 	 * @param query
 	 */
-	public QueryEngineHTTPClient(String service, Query query) {
+	public QueryEngineHTTPClient(URI service, Query query) {
 		this.service = service;
 		this.queryString = query.serialize();
 	}
@@ -230,8 +230,7 @@ public class QueryEngineHTTPClient implements QueryExecution {
 	 * @see com.hp.hpl.jena.query.QueryExecution#getDataset()
 	 */
 	public Dataset getDataset() {
-		// TODO Auto-generated method stub
-		return null;
+		throw new NotImplemented("Not implemented yet");
 	}
 
 	/**

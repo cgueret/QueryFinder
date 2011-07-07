@@ -106,7 +106,7 @@ public class DefaultMappedQueryGen implements MappedQueryGenerator {
 			// <S,P,?>
 			if (!subject.isVariable() && object.isVariable()) {
 				Triple context = Triple.create(resourceMatcher.getVariable(), p, Node.createAnon());
-				Set<Node> subjects = resourceMatcher.getResources(object.getLiteralLexicalForm(), context);
+				Set<Node> subjects = resourceMatcher.getResources(subject.getLiteralLexicalForm(), context);
 				for (Node s:subjects)
 					set.add(Triple.create(s, p, object));
 			}

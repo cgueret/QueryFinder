@@ -1,5 +1,9 @@
 package nl.vu.queryfinder;
 
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
+
 import nl.vu.queryfinder.model.EndPoint;
 import nl.vu.queryfinder.model.EndPoint.EndPointType;
 import nl.vu.queryfinder.model.QueryPattern;
@@ -23,11 +27,14 @@ public class QueryFinder {
 
 	public static void main(String[] args) throws Exception {
 		// Set an end point
-		EndPoint endPoint = new EndPoint("http://dbpedia.org/sparql", "http://dbpedia.org", EndPointType.VIRTUOSO);
+		List<EndPoint> endPoints = new ArrayList<EndPoint>();
+		EndPoint endPoint = new EndPoint(URI.create("http://dbpedia.org/sparql"), "http://dbpedia.org",
+				EndPointType.VIRTUOSO);
+		endPoints.add(endPoint);
 
 		// Create the workflow
 		WorkFlow workFlow = new WorkFlow();
-		SPARQLMatcher matcher = new SPARQLMatcher(endPoint);
+		SPARQLMatcher matcher = new SPARQLMatcher(endPoints);
 		workFlow.setPropertyMatcher(matcher);
 		workFlow.setClassMatcher(matcher);
 		workFlow.setResourceMatcher(matcher);

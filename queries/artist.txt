@@ -1,0 +1,11 @@
+!endpoint http://lod.openlinksw.com/sparql,virtuoso,http://dbpedia.org
+
+----------------------------------------------------------------------
+An artist born in the Netherlands who works in some field
+
+(?p "type" "artist")
+(?p "field" ?f)
+(?p "birth" "Netherlands")
+
+
+

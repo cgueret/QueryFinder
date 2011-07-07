@@ -151,7 +151,7 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 			results.addAll(PaginatedQueryExec.process(endPoint, query, var));
 		}
 
-		logger.info(String.format("[resource] \"%s\" -> %d", keyword, results.size()));
+		logger.info(String.format("[resource] \"%s\" -> %d (%s)", keyword, results.size(), context.getPredicate()));
 
 		return results;
 	}

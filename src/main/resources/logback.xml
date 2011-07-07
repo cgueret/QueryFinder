@@ -14,7 +14,7 @@
 		</encoder>
 	</appender>
 	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
-		<file>queryfinder_log.txt</file>
+		<file>queryfinder.log</file>
 		<append>false</append>
 		<filter class="ch.qos.logback.core.filter.EvaluatorFilter">
 			<evaluator>

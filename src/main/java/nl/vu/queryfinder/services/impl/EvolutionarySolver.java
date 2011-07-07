@@ -38,20 +38,25 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
  */
 public class EvolutionarySolver implements Observer, QueryGenerator {
 	static final Logger logger = LoggerFactory.getLogger(EvolutionarySolver.class);
+	private final boolean oneTriplePerBlock;
 	private Optimizer optimizer;
 	private SPARQLRequest request;
 	private SPARQLDataLayer datalayer;
 	private Directory directory;
 	private Set<Query> queries = new HashSet<Query>();
 	private Set<Set<Triple>> solutions = new HashSet<Set<Triple>>();
-	private int solutionsSize = 0;
+	private double bestFitness = 0;
 
 	/**
 	 * @param endPoints
 	 * @throws IOException
 	 * @throws FileNotFoundException
 	 */
-	public EvolutionarySolver(List<EndPoint> endPoints) throws FileNotFoundException, IOException {
+	public EvolutionarySolver(List<EndPoint> endPoints, boolean oneTriplePerBlock) throws FileNotFoundException,
+			IOException {
+		// Split the blocks into single triples?
+		this.oneTriplePerBlock = oneTriplePerBlock;
+
 		// Create a directory
 		directory = new Directory();
 		for (EndPoint endPoint : endPoints)
@@ -84,11 +89,11 @@ public class EvolutionarySolver implements Observer, QueryGenerator {
 		boolean stop = false;
 		for (Solution s : (Collection<Solution>) arg) {
 			Set<Triple> triples = request.getTripleSet(s);
-			if (triples.size() > solutionsSize) {
-				solutionsSize = triples.size();
+			if (s.getFitness() > bestFitness) {
+				bestFitness = s.getFitness();
 				solutions.clear();
 			}
-			if (triples.size() == solutionsSize) {
+			if (s.getFitness() == bestFitness) {
 				solutions.add(triples);
 				if (s.isOptimal())
 					stop = true;
@@ -110,15 +115,17 @@ public class EvolutionarySolver implements Observer, QueryGenerator {
 	public Set<Query> getQuery(MappedQuery mappedQuery) throws Exception {
 		// Reset the data from previous calls
 		solutions.clear();
-		solutionsSize = 0;
+		bestFitness = 0;
 
 		// Create the request
-		boolean oneTriplePerBlock = true;
 		request = new SPARQLRequest(datalayer);
 		for (TripleSet triples : mappedQuery.getGroups()) {
 			if (oneTriplePerBlock) {
-				for (Triple triple : triples)
-					request.addConstraint(new TripleConstraint(triple));
+				for (Triple triple : triples) {
+					TripleBlockConstraint block = new TripleBlockConstraint();
+					block.add(new TripleConstraint(triple));
+					request.addConstraint(block);
+				}
 			} else {
 				TripleBlockConstraint block = new TripleBlockConstraint();
 				for (Triple triple : triples)
@@ -150,7 +157,7 @@ public class EvolutionarySolver implements Observer, QueryGenerator {
 		// Print the queries and reset
 		Model model = ModelFactory.createDefaultModel();
 		for (Set<Triple> triples : solutions) {
-			logger.info("Found solution");
+			logger.info("Solution:");
 			for (Triple triple : triples)
 				logger.info(model.asStatement(triple).toString());
 		}

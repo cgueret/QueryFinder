@@ -55,7 +55,7 @@ public class QueryFinder {
 		options.addOption(queriesFileOption);
 		options.addOption("ignoreblocks", false, "ignore the alternative blocks created from the mapping");
 		options.addOption("h", false, "print help message");
-
+		
 		// Parse the command line
 		CommandLineParser parser = new PosixParser();
 		CommandLine cmd = parser.parse(options, args);
@@ -78,7 +78,7 @@ public class QueryFinder {
 		}
 
 		// Handle option "ignoreblocks"
-		boolean ignoreblocks = cmd.hasOption("h");
+		boolean ignoreblocks = cmd.hasOption("ignoreblocks");
 		
 		// Go!
 		QueryFinder me = new QueryFinder();

@@ -134,6 +134,17 @@ public class EvolutionarySolver implements Observer, QueryGenerator {
 			}
 		}
 
+		// Add the graph size constraint if needed
+		// if (oneTriplePerBlock) {
+		logger.info("Adding graph size constraint");
+		GraphSizeConstraint cstr = new GraphSizeConstraint();
+		for (TripleSet triples : mappedQuery.getGroups())
+			for (Triple triple : triples)
+				cstr.add(triple);
+		request.addConstraint(cstr);
+		logger.info("Size " + cstr.getSize());
+		//}
+
 		// Create the providers
 		int count = 0;
 		TripleSet[] groups = mappedQuery.getGroups().toArray(new TripleSet[mappedQuery.getGroups().size()]);

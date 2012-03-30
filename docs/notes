@@ -1,0 +1,17 @@
+"List the persons who write about dark matter"
+?person write ?paper
+?paper related "dark matter"
+
+select distinct ?person ?concept where {
+?publication <http://swrc.ontoware.org/ontology#author> ?person.
+?publication <http://www.w3.org/2004/02/skos/core#related> ?concept.
+?concept a <http://data.sciencewise.info/concept/Dark_matter>.
+}
+
+select distinct ?person ?concept where {
+?publication <http://swrc.ontoware.org/ontology#author> ?person.
+?publication <http://www.w3.org/2004/02/skos/core#related> ?concept.
+?concept <http://www.w3.org/2004/02/skos/core#prefLabel> ?label.
+FILTER regex(?label, "Dark Matter", "i")
+}
+

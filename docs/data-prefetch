@@ -1,0 +1,16 @@
+Get all the properties that are used together with literals
+SELECT DISTINCT ?property WHERE {
+?property a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+[] ?property ?v.
+FILTER (isLiteral(?v)).
+}
+ORDER BY ?property
+
+Get all the class which have some literal associated to them 
+SELECT DISTINCT ?class WHERE {
+[] a ?class.
+?class ?p ?v.
+FILTER (isLiteral(?v)).
+}
+ORDER BY ?class
+ 

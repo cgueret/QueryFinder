@@ -2,70 +2,72 @@ package nl.vu.queryfinder.services.impl;
 
 import java.io.IOException;
 import java.net.URI;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
+import nl.vu.queryfinder.model.Query;
+import nl.vu.queryfinder.services.EndPoint;
+import nl.vu.queryfinder.services.EndPoint.EndPointType;
+import nl.vu.queryfinder.services.Service;
+import nl.vu.queryfinder.util.PaginatedQueryExec;
+
+import org.openrdf.model.Value;
+import org.openrdf.model.vocabulary.OWL;
+import org.openrdf.model.vocabulary.RDF;
+import org.openrdf.model.vocabulary.RDFS;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.hp.hpl.jena.graph.Node;
-import com.hp.hpl.jena.graph.Triple;
-import com.hp.hpl.jena.query.Query;
-import com.hp.hpl.jena.query.QueryFactory;
-import com.hp.hpl.jena.sparql.syntax.ElementGroup;
-import com.hp.hpl.jena.vocabulary.OWL;
-import com.hp.hpl.jena.vocabulary.RDF;
-import com.hp.hpl.jena.vocabulary.RDFS;
+public class SPARQLMatcher extends Service {
+	// Logger
+	private static final Logger logger = LoggerFactory.getLogger(SPARQLMatcher.class);
 
-import nl.vu.queryfinder.model.EndPoint;
-import nl.vu.queryfinder.model.EndPoint.EndPointType;
-import nl.vu.queryfinder.services.ClassMatcher;
-import nl.vu.queryfinder.services.PropertyMatcher;
-import nl.vu.queryfinder.services.ResourceMatcher;
-import nl.vu.queryfinder.util.PaginatedQueryExec;
+	// Property types
+	private static final Value[] propertyTypes = { RDF.PROPERTY, OWL.DATATYPEPROPERTY, OWL.OBJECTPROPERTY };
 
-public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMatcher {
-	static final Logger logger = LoggerFactory.getLogger(SPARQLMatcher.class);
-	static final Node[] propertyTypes = { RDF.Property.asNode(), OWL.DatatypeProperty.asNode(),
-			OWL.ObjectProperty.asNode() };
-	// static final Node[] propertyTypes = { OWL.ObjectProperty.asNode() };
 	// The end point to query
-	final List<EndPoint> endPoints;
-
-	public static final Node VAR = Node.createVariable("r");
+	private EndPoint endPoint;
 
 	/**
 	 * @param endPoint
 	 */
-	public SPARQLMatcher(List<EndPoint> endPoints) {
-		this.endPoints = endPoints;
+	public SPARQLMatcher(EndPoint endPoint) {
+		this.endPoint = endPoint;
 	}
 
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see nl.vu.queryfinder.services.ClassMatcher#getClasses(java.lang.String)
+	 * @see
+	 * nl.vu.queryfinder.services.Service#process(nl.vu.queryfinder.model.Query)
 	 */
-	public Set<Node> getClasses(String keyword) {
-		Set<Node> results = new HashSet<Node>();
+	@Override
+	public Query process(Query inputQuery) {
+		return inputQuery;
+	}
+
+	/**
+	 * @param keyword
+	 * @return
+	 */
+	private Set<Value> getClasses(String keyword) {
+		Set<Value> results = new HashSet<Value>();
 
 		for (EndPoint endPoint : endPoints) {
-			Node label = Node.createVariable("l");
+			Value label = Value.createVariable("l");
 			Query query = QueryFactory.create();
 			query.setQuerySelectType();
 			query.setDistinct(true);
 			query.addResultVar(VAR);
 			ElementGroup group = new ElementGroup();
-			group.addTriplePattern(new Triple(Node.createAnon(), RDF.type.asNode(), VAR));
-			group.addTriplePattern(new Triple(VAR, RDF.type.asNode(), OWL.Class.asNode()));
+			group.addTriplePattern(new Triple(Value.createAnon(), RDF.type.asValue(), VAR));
+			group.addTriplePattern(new Triple(VAR, RDF.type.asValue(), OWL.Class.asValue()));
 			if (endPoint.getType().equals(EndPointType.VIRTUOSO)) {
 				String text = "'" + keyword + "'";
-				group.addTriplePattern(new Triple(VAR, RDFS.label.asNode(), label));
-				group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(text)));
+				group.addTriplePattern(new Triple(VAR, RDFS.label.asValue(), label));
+				group.addTriplePattern(new Triple(label, Value.createURI("bif:contains"), Value.createLiteral(text)));
 			} else if (endPoint.getType().equals(EndPointType.OWLIM)) {
-				group.addTriplePattern(new Triple(VAR, Node.createURI("http://www.ontotext.com/owlim/lucene#"), Node
+				group.addTriplePattern(new Triple(VAR, Value.createURI("http://www.ontotext.com/owlim/lucene#"), Value
 						.createLiteral(keyword)));
 			}
 			query.setQueryPattern(group);
@@ -77,34 +79,31 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 		return results;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * nl.vu.queryfinder.services.PropertyMatcher#getProperties(java.lang.String
-	 * )
+	/**
+	 * @param keyword
+	 * @return
 	 */
-	public Set<Node> getProperties(String keyword) {
-		Set<Node> results = new HashSet<Node>();
+	private Set<Value> getProperties(String keyword) {
+		Set<Value> results = new HashSet<Value>();
 
 		for (EndPoint endPoint : endPoints) {
-			Node var = Node.createVariable("r");
-			Node label = Node.createVariable("l");
+			Value var = Value.createVariable("r");
+			Value label = Value.createVariable("l");
 			Query query = QueryFactory.create();
 			query.setQuerySelectType();
 			query.setDistinct(true);
 			query.addResultVar(var);
 
-			for (Node propertyType : propertyTypes) {
+			for (Value propertyType : propertyTypes) {
 				ElementGroup group = new ElementGroup();
-				group.addTriplePattern(new Triple(var, RDF.type.asNode(), propertyType));
+				group.addTriplePattern(new Triple(var, RDF.type.asValue(), propertyType));
 				if (endPoint.getType().equals(EndPointType.VIRTUOSO)) {
 					String text = "'" + keyword + "'";
-					group.addTriplePattern(new Triple(var, RDFS.label.asNode(), label));
-					group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(text)));
+					group.addTriplePattern(new Triple(var, RDFS.label.asValue(), label));
+					group.addTriplePattern(new Triple(label, Value.createURI("bif:contains"), Value.createLiteral(text)));
 				} else if (endPoint.getType().equals(EndPointType.OWLIM)) {
-					group.addTriplePattern(new Triple(var, Node.createURI("http://www.ontotext.com/owlim/lucene#"),
-							Node.createLiteral(keyword)));
+					group.addTriplePattern(new Triple(var, Value.createURI("http://www.ontotext.com/owlim/lucene#"),
+							Value.createLiteral(keyword)));
 				}
 				query.setQueryPattern(group);
 				results.addAll(PaginatedQueryExec.process(endPoint, query, var));
@@ -117,34 +116,32 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * nl.vu.queryfinder.services.ResourceMatcher#getResources(java.lang.String,
-	 * nl.vu.queryfinder.model.context.Context)
+	/**
+	 * @param keyword
+	 * @param context
+	 * @return
 	 */
-	public Set<Node> getResources(String keyword, Triple context) {
-		Set<Node> results = new HashSet<Node>();
+	private Set<Value> getResources(String keyword, Triple context) {
+		Set<Value> results = new HashSet<Value>();
 
 		for (EndPoint endPoint : endPoints) {
-			Node var = Node.createVariable("r");
-			Node label = Node.createVariable("l");
+			Value var = Value.createVariable("r");
+			Value label = Value.createVariable("l");
 			Query query = QueryFactory.create();
 			query.setQuerySelectType();
 			query.setDistinct(true);
 			query.addResultVar(var);
 			ElementGroup group = new ElementGroup();
-			group.addTriplePattern(new Triple(var, RDF.type.asNode(), Node.createAnon()));
+			group.addTriplePattern(new Triple(var, RDF.type.asValue(), Value.createAnon()));
 			if (context != null)
 				group.addTriplePattern(context);
 			if (endPoint.getType().equals(EndPointType.VIRTUOSO)) {
 				// String text = StringUtils.join(keyword.split(" "), " and ");
 				String text = "'" + keyword + "'";
-				group.addTriplePattern(new Triple(var, RDFS.label.asNode(), label));
-				group.addTriplePattern(new Triple(label, Node.createURI("bif:contains"), Node.createLiteral(text)));
+				group.addTriplePattern(new Triple(var, RDFS.label.asValue(), label));
+				group.addTriplePattern(new Triple(label, Value.createURI("bif:contains"), Value.createLiteral(text)));
 			} else if (endPoint.getType().equals(EndPointType.OWLIM)) {
-				group.addTriplePattern(new Triple(var, Node.createURI("http://www.ontotext.com/owlim/lucene#"), Node
+				group.addTriplePattern(new Triple(var, Value.createURI("http://www.ontotext.com/owlim/lucene#"), Value
 						.createLiteral(keyword)));
 			}
 			query.setQueryPattern(group);
@@ -161,26 +158,15 @@ public class SPARQLMatcher implements ClassMatcher, ResourceMatcher, PropertyMat
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
-		List<EndPoint> endPoints = new ArrayList<EndPoint>();
-		endPoints.add(new EndPoint(URI.create("http://factforge.net/sparql"), null, EndPointType.OWLIM));
-		// endPoints.add(new EndPoint("http://dbpedia.org/sparql",
-		// "http://dbpedia.org", EndPointType.VIRTUOSO));
-
-		SPARQLMatcher me = new SPARQLMatcher(endPoints);
+		// new EndPoint("http://dbpedia.org/sparql", "http://dbpedia.org",
+		// EndPointType.VIRTUOSO);
+	
+		EndPoint endPoint = new EndPoint(URI.create("http://factforge.net/sparql"), null, EndPointType.OWLIM);
+		SPARQLMatcher me = new SPARQLMatcher(endPoint);
 		logger.info("artist      : " + me.getClasses("artist").size());
 		logger.info("field       : " + me.getProperties("field").size());
 		logger.info("birth       : " + me.getProperties("birth").size());
 		logger.info("amsterdam   : " + me.getResources("amsterdam", null).size());
 		logger.info("Netherlands : " + me.getResources("Netherlands", null).size());
 	}
-
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see nl.vu.queryfinder.services.ResourceMatcher#getVariable()
-	 */
-	public Node getVariable() {
-		return VAR;
-	}
-
 }

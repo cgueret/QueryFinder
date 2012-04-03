@@ -1,10 +1,11 @@
 package nl.vu.queryfinder;
 
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.HashSet;
-import java.util.Set;
+
+import nl.vu.queryfinder.model.Query;
+import nl.vu.queryfinder.services.Service;
+import nl.vu.queryfinder.services.impl.Copy;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -12,32 +13,26 @@ import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import org.apache.commons.cli.PosixParser;
-import org.openrdf.model.Statement;
-import org.openrdf.rio.RDFHandler;
+import org.openrdf.repository.RepositoryException;
 import org.openrdf.rio.RDFHandlerException;
 import org.openrdf.rio.RDFParseException;
-import org.openrdf.rio.RDFParser;
-import org.openrdf.rio.turtle.TurtleParserFactory;
 
-public class ServiceExec implements RDFHandler {
-	private String component;
-	private Set<Statement> inputStatements = new HashSet<Statement>();
-	private Set<Statement> outputStatements = new HashSet<Statement>();
+public class ServiceExec {
 
 	/**
-	 * @param inputFile
-	 * @throws RDFParseException
-	 * @throws RDFHandlerException
-	 * @throws FileNotFoundException
+	 * @param input
+	 * @param component
+	 * @return
 	 * @throws IOException
+	 * @throws RepositoryException
+	 * @throws RDFParseException
 	 */
-	public void load(String inputFile) throws RDFParseException, RDFHandlerException, FileNotFoundException,
-			IOException {
-		inputStatements.clear();
-		TurtleParserFactory f = new TurtleParserFactory();
-		RDFParser parser = f.getParser();
-		parser.setRDFHandler(this);
-		parser.parse(new FileInputStream(inputFile), "http://example.org/");
+	public Query process(String input, String component) throws RDFParseException, RepositoryException, IOException {
+		Query inputQuery = new Query();
+		inputQuery.loadFrom(input);
+
+		Service service = new Copy();
+		return service.process(inputQuery);
 	}
 
 	/**
@@ -45,20 +40,27 @@ public class ServiceExec implements RDFHandler {
 	 */
 	public static void printHelpAndExit(Options options, int exitCode) {
 		HelpFormatter formatter = new HelpFormatter();
-		formatter.printHelp(QueryFinder.class.getName(), options);
+		formatter.printHelp(ServiceExec.class.getName(), options);
 		System.exit(exitCode);
 	}
 
 	/**
 	 * @param args
 	 * @throws ParseException
+	 * @throws IOException
+	 * @throws FileNotFoundException
+	 * @throws RDFHandlerException
+	 * @throws RDFParseException
+	 * @throws RepositoryException
 	 */
-	public static void main(String[] args) throws ParseException {
+	public static void main(String[] args) throws ParseException, RDFParseException, RDFHandlerException,
+			FileNotFoundException, IOException, RepositoryException {
 		// Compose the options
 		Options options = new Options();
 		options.addOption("c", "component", true, "name of the processing component");
-		options.addOption("i", "input", true, "input file with the patterns to process");
-		options.addOption("o", "output", true, "output file for the new patterns");
+		options.addOption("i", "input", true, "query input file (ttl)");
+		options.addOption("o", "output", true, "query output file (ttl)");
+		options.addOption("p", "parameters", true, "component parameters");
 		options.addOption("h", "help", false, "print help message");
 
 		// Parse the command line
@@ -73,26 +75,13 @@ public class ServiceExec implements RDFHandler {
 		if (!line.hasOption("c") || !line.hasOption("o") || !line.hasOption("i"))
 			printHelpAndExit(options, -1);
 
-	}
+		// Create an instance
+		ServiceExec instance = new ServiceExec();
 
-	@Override
-	public void endRDF() throws RDFHandlerException {
-	}
+		// Process the input query and get the new one
+		Query newQuery = instance.process(line.getOptionValue("i"), line.getOptionValue("c"));
 
-	@Override
-	public void handleComment(String arg0) throws RDFHandlerException {
-	}
-
-	@Override
-	public void handleNamespace(String arg0, String arg1) throws RDFHandlerException {
-	}
-
-	@Override
-	public void handleStatement(Statement statement) throws RDFHandlerException {
-		inputStatements.add(statement);
-	}
-
-	@Override
-	public void startRDF() throws RDFHandlerException {
+		// Save the new query to disk
+		newQuery.saveTo(line.getOptionValue("o"));
 	}
 }

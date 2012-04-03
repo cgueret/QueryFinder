@@ -1,0 +1,29 @@
+@prefix :     <http://example.org#>.
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+_:query
+	rdf:type	:Query;
+	rdfs:comment "An artist born in the Netherlands who works in some field";
+	:statement _:a;
+	:statement _:b;
+	:statement _:c.
+	
+_:a
+	rdf:type rdf:Statement;
+	rdf:subject "?p";
+	rdf:predicate "type";
+	rdf:object "artist".
+
+_:b
+	rdf:type rdf:Statement;
+	rdf:subject "?p";
+	rdf:predicate "field";
+	rdf:object "?f".
+
+_:c
+	rdf:type rdf:Statement;
+	rdf:subject "?p";
+	rdf:predicate "birth";
+	rdf:object "Netherlands".
+	

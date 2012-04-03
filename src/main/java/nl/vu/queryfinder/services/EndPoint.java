@@ -1,7 +1,4 @@
-/**
- * 
- */
-package nl.vu.queryfinder.model;
+package nl.vu.queryfinder.services;
 
 import java.net.URI;
 

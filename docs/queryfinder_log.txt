@@ -1,0 +1,1803 @@
+[17:26:36] Parsed 1 queries
+[17:26:36] Parsed 1 end points
+[17:26:36] Initialise workflow
+[17:26:36] Ignore blocks = false
+[17:26:36] 
+[17:26:36] ------------------------------------------------
+[17:26:36] 
+[17:26:36] An artist born in the Netherlands who works in some field
+[17:26:36] 
+[17:26:37] Query = [?p @rdf:type "artist", ?p @"birth" "Netherlands", ?p @"field" ?f]
+[17:26:37] 
+[17:26:37] S,type,O
+[17:26:37] [class] "artist" -> 2
+[17:26:37] S,P,O
+[17:26:38] [property] "birth" -> 63
+[17:26:40] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthPlace_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0)
+[17:26:40] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/srAtBirth)
+[17:26:40] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthNames)
+[17:26:40] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/placeBirth)
+[17:26:40] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/dateOfBirth_percent_C2_percent_A0_percent_C2_percent_A0)
+[17:26:41] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthTime)
+[17:26:41] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/dateOfBirthDate)
+[17:26:41] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthDay)
+[17:26:42] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/placeOfBirthPlace)
+[17:26:43] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/cityOfBirth)
+[17:26:43] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthName.)
+[17:26:43] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthDate_percent_27_percent_27_percent_27)
+[17:26:44] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/flagBirthPlace)
+[17:26:44] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/countyOfBirth)
+[17:26:44] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/_percent_27_percent_27_percent_27dateOfBirth_percent_27_percent_27_percent_27)
+[17:26:44] [resource] "Netherlands" -> 1 (http://dbpedia.org/property/birthPlace)
+[17:26:44] [resource] "Netherlands" -> 0 (http://dbpedia.org/ontology/birthName)
+[17:26:44] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthEra)
+[17:26:44] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthPlacce)
+[17:26:44] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/placeFoBirth)
+[17:26:45] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthDatePlace)
+[17:26:45] [resource] "Netherlands" -> 0 (http://dbpedia.org/ontology/birthDate)
+[17:26:45] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/bornSeptember101975BirthPlace)
+[17:26:45] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthPlace_percent_27_percent_27_percent_27)
+[17:26:45] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthDathjghjghje)
+[17:26:45] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/chineseBirthName)
+[17:26:45] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthGame)
+[17:26:45] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthDateName)
+[17:26:45] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthNam)
+[17:26:45] [resource] "Netherlands" -> 0 (http://dbpedia.org/ontology/birthYear)
+[17:26:46] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthDate_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0)
+[17:26:46] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/currentBirthPlace)
+[17:26:46] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/yearOfBirth)
+[17:26:46] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/dateBirth)
+[17:26:46] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthName)
+[17:26:46] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/characterBirth)
+[17:26:48] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/locationOfBirth)
+[17:26:48] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthNane)
+[17:26:49] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthDate)
+[17:26:49] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/nameAtTheTimeOfBirth)
+[17:26:49] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthPlaceGbfd2hn3gd3hd)
+[17:26:49] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthDateAndAge)
+[17:26:49] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/_percent_27_percent_27_percent_27birth_percent_27_percent_27_percent_27_percent_27_percent_27_percent_27plac_percent_27_percent_27_percent_27e)
+[17:26:49] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/placeOfBirthDate)
+[17:26:49] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthPlaec)
+[17:26:49] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthYear)
+[17:26:49] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthBirthplace)
+[17:26:49] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthPlaces)
+[17:26:49] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/paceOfBirth)
+[17:26:49] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/da7teOfBirth)
+[17:26:49] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthPlaceDeath)
+[17:26:49] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/strebowitzBirth)
+[17:26:50] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birth)
+[17:26:50] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/placeOfBirth)
+[17:26:50] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthDateBirthDate)
+[17:26:50] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthDate_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0)
+[17:26:50] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/countryOfBirth)
+[17:26:50] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/dateOfBirth)
+[17:26:50] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthLocation)
+[17:26:50] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/_200pxBirthDate)
+[17:26:50] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/placOfBirth)
+[17:26:51] [resource] "Netherlands" -> 29 (http://dbpedia.org/ontology/birthPlace)
+[17:26:51] [resource] "Netherlands" -> 0 (http://dbpedia.org/property/birthDat)
+[17:26:51] S,P,O
+[17:26:52] [property] "field" -> 24
+[17:26:52] Mapped query contains 3 groups
+[17:26:52] Group [?p @rdf:type "artist"] -> 2 options
+[17:26:52] Group [?p @"field" ?f] -> 24 options
+[17:26:52] Group [?p @"birth" "Netherlands"] -> 93 options
+[17:26:52] 119 providers
+[17:26:52] Start search
+[17:26:52] Run optimizer
+[17:26:52] Generation 1, best fitness=0.0
+[17:26:52] 0.00  [p=NULL,f=NULL] age=1
+[17:26:52] Generation 2, best fitness=0.0
+[17:26:52] 0.00  [p=NULL,f=NULL] age=2
+[17:26:52] Generation 3, best fitness=0.0
+[17:26:52] 0.00  [p=NULL,f=NULL] age=3
+[17:26:52] Generation 4, best fitness=0.0
+[17:26:52] 0.00  [p=NULL,f=NULL] age=4
+[17:26:52] Generation 5, best fitness=0.0
+[17:26:52] 0.00  [p=NULL,f=NULL] age=5
+[17:26:56] Generation 6, best fitness=0.3333333333333333
+[17:26:56] 0.00  [p=NULL,f=NULL] age=1
+[17:26:56] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=1
+[17:26:56] Generation 7, best fitness=0.3333333333333333
+[17:26:56] 0.00  [p=NULL,f=NULL] age=1
+[17:26:56] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=2
+[17:26:58] Generation 8, best fitness=0.3333333333333333
+[17:26:58] 0.00  [p=NULL,f=NULL] age=1
+[17:26:58] 0.33  [p=http://dbpedia.org/resource/Jan_Joseph_Godfried_van_Voorst_tot_Voorst_%28politician%29,f=NULL] age=1
+[17:26:58] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=3
+[17:26:58] Generation 9, best fitness=0.3333333333333333
+[17:26:58] 0.00  [p=NULL,f=NULL] age=1
+[17:26:58] 0.33  [p=http://dbpedia.org/resource/Jan_Joseph_Godfried_van_Voorst_tot_Voorst_%28politician%29,f=NULL] age=2
+[17:26:58] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=4
+[17:26:58] Generation 10, best fitness=0.3333333333333333
+[17:26:58] 0.00  [p=NULL,f=NULL] age=1
+[17:26:58] 0.33  [p=http://dbpedia.org/resource/Jan_Joseph_Godfried_van_Voorst_tot_Voorst_%28politician%29,f=NULL] age=3
+[17:26:58] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=5
+[17:26:59] Generation 11, best fitness=0.3333333333333333
+[17:26:59] 0.00  [p=NULL,f=NULL] age=1
+[17:26:59] 0.33  [p=http://dbpedia.org/resource/Jan_Joseph_Godfried_van_Voorst_tot_Voorst_%28politician%29,f=NULL] age=4
+[17:26:59] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=6
+[17:26:59] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:00] Generation 12, best fitness=0.3333333333333333
+[17:27:00] 0.00  [p=NULL,f=NULL] age=1
+[17:27:00] 0.33  [p=http://dbpedia.org/resource/Jan_Joseph_Godfried_van_Voorst_tot_Voorst_%28politician%29,f=NULL] age=5
+[17:27:00] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=7
+[17:27:00] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=2
+[17:27:03] Generation 13, best fitness=0.5
+[17:27:03] 0.00  [p=NULL,f=NULL] age=1
+[17:27:03] 0.33  [p=http://dbpedia.org/resource/Jan_Joseph_Godfried_van_Voorst_tot_Voorst_%28politician%29,f=NULL] age=1
+[17:27:03] 0.33  [p=http://dbpedia.org/resource/Peter_van_Dalen,f=NULL] age=1
+[17:27:03] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=1
+[17:27:03] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:03] 0.50  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:27:08] Generation 14, best fitness=1.0
+[17:27:08] 0.00  [p=http://dbpedia.org/resource/Gustave_de_Molinari,f=NULL] age=1
+[17:27:08] 0.00  [p=NULL,f=NULL] age=1
+[17:27:08] 0.33  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:27:08] 0.33  [p=http://dbpedia.org/resource/Jan_Joseph_Godfried_van_Voorst_tot_Voorst_%28politician%29,f=NULL] age=1
+[17:27:08] 0.33  [p=http://dbpedia.org/resource/Peter_van_Dalen,f=NULL] age=1
+[17:27:08] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=1
+[17:27:08] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:08] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:27:08] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:27:12] Generation 15, best fitness=0.8333333333333334
+[17:27:12] 0.00  [p=NULL,f=NULL] age=1
+[17:27:12] 0.33  [p=http://dbpedia.org/resource/Jan_Joseph_Godfried_van_Voorst_tot_Voorst_%28politician%29,f=NULL] age=1
+[17:27:12] 0.33  [p=http://dbpedia.org/resource/Ruud_Boymans,f=NULL] age=1
+[17:27:12] 0.33  [p=http://dbpedia.org/resource/Gustave_de_Molinari,f=NULL] age=1
+[17:27:12] 0.33  [p=http://dbpedia.org/resource/Peter_van_Dalen,f=NULL] age=1
+[17:27:12] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:27:12] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=1
+[17:27:12] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:12] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:27:12] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=2
+[17:27:14] Generation 16, best fitness=0.8333333333333334
+[17:27:14] 0.33  [p=http://dbpedia.org/resource/Wim_Hof,f=NULL] age=1
+[17:27:14] 0.33  [p=http://dbpedia.org/resource/Jan_Joseph_Godfried_van_Voorst_tot_Voorst_%28politician%29,f=NULL] age=1
+[17:27:14] 0.33  [p=http://dbpedia.org/resource/Ruud_Boymans,f=NULL] age=1
+[17:27:14] 0.33  [p=http://dbpedia.org/resource/Gustave_de_Molinari,f=NULL] age=1
+[17:27:14] 0.33  [p=http://dbpedia.org/resource/Peter_van_Dalen,f=NULL] age=1
+[17:27:14] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:27:14] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=1
+[17:27:14] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:14] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:27:14] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=3
+[17:27:18] Generation 17, best fitness=0.8333333333333334
+[17:27:18] 0.33  [p=http://dbpedia.org/resource/Ruud_Boymans,f=NULL] age=1
+[17:27:18] 0.33  [p=http://dbpedia.org/resource/Gustave_de_Molinari,f=NULL] age=1
+[17:27:18] 0.33  [p=http://dbpedia.org/resource/Peter_van_Dalen,f=NULL] age=1
+[17:27:18] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:27:18] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=1
+[17:27:18] 0.33  [p=http://dbpedia.org/resource/Juancho_Evertsz,f=NULL] age=1
+[17:27:18] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:18] 0.33  [p=http://dbpedia.org/resource/Marianne_Thieme,f=NULL] age=1
+[17:27:18] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:27:18] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=4
+[17:27:21] Generation 18, best fitness=0.8333333333333334
+[17:27:21] 0.33  [p=http://dbpedia.org/resource/Gustave_de_Molinari,f=NULL] age=1
+[17:27:21] 0.33  [p=http://dbpedia.org/resource/Peter_van_Dalen,f=NULL] age=1
+[17:27:21] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:27:21] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=1
+[17:27:21] 0.33  [p=http://dbpedia.org/resource/Juancho_Evertsz,f=NULL] age=1
+[17:27:21] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:27:21] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:21] 0.33  [p=http://dbpedia.org/resource/Marianne_Thieme,f=NULL] age=1
+[17:27:21] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:27:21] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=5
+[17:27:29] Generation 19, best fitness=0.8333333333333334
+[17:27:29] 0.33  [p=http://dbpedia.org/resource/Juancho_Evertsz,f=NULL] age=1
+[17:27:29] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=1
+[17:27:29] 0.33  [p=http://dbpedia.org/resource/Churandy_Martina,f=NULL] age=1
+[17:27:29] 0.33  [p=http://dbpedia.org/resource/Marianne_Thieme,f=NULL] age=1
+[17:27:29] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:27:29] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:27:29] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:27:29] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:29] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:27:29] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=6
+[17:27:31] Generation 20, best fitness=0.8333333333333334
+[17:27:31] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:27:31] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:27:31] 0.33  [p=http://dbpedia.org/resource/Juancho_Evertsz,f=NULL] age=1
+[17:27:31] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=1
+[17:27:31] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:27:31] 0.33  [p=http://dbpedia.org/resource/Churandy_Martina,f=NULL] age=1
+[17:27:31] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:31] 0.33  [p=http://dbpedia.org/resource/Marianne_Thieme,f=NULL] age=1
+[17:27:31] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:27:31] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=7
+[17:27:39] Generation 21, best fitness=0.8333333333333334
+[17:27:39] 0.33  [p=http://dbpedia.org/resource/Juancho_Evertsz,f=NULL] age=1
+[17:27:39] 0.33  [p=http://dbpedia.org/resource/Churandy_Martina,f=NULL] age=1
+[17:27:39] 0.33  [p=http://dbpedia.org/resource/Charlison_Benschop,f=NULL] age=1
+[17:27:39] 0.33  [p=http://dbpedia.org/resource/Marianne_Thieme,f=NULL] age=1
+[17:27:39] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:27:39] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:27:39] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:27:39] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:39] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:27:39] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=8
+[17:27:43] Generation 22, best fitness=0.8333333333333334
+[17:27:43] 0.33  [p=http://dbpedia.org/resource/Churandy_Martina,f=NULL] age=1
+[17:27:43] 0.33  [p=http://dbpedia.org/resource/Marianne_Thieme,f=NULL] age=1
+[17:27:43] 0.33  [p=http://dbpedia.org/resource/Jan_Joseph_Godfried_van_Voorst_tot_Voorst_%28politician%29,f=NULL] age=1
+[17:27:43] 0.33  [p=http://dbpedia.org/resource/Philippa_of_Guelders,f=NULL] age=1
+[17:27:43] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:27:43] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:27:43] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:27:43] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:43] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:27:43] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=9
+[17:27:47] Generation 23, best fitness=0.8333333333333334
+[17:27:47] 0.33  [p=http://dbpedia.org/resource/Jan_Joseph_Godfried_van_Voorst_tot_Voorst_%28politician%29,f=NULL] age=1
+[17:27:47] 0.33  [p=http://dbpedia.org/resource/Philippa_of_Guelders,f=NULL] age=1
+[17:27:47] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:27:47] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:27:47] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:27:47] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:47] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:27:47] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:27:47] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=10
+[17:27:47] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:27:50] Generation 24, best fitness=0.8333333333333334
+[17:27:50] 0.33  [p=http://dbpedia.org/resource/Pieter_van_den_Hoogenband,f=NULL] age=1
+[17:27:50] 0.33  [p=http://dbpedia.org/resource/Philippa_of_Guelders,f=NULL] age=1
+[17:27:50] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:27:50] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:27:50] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:27:50] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:50] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:27:50] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:27:50] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=2
+[17:27:50] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=11
+[17:27:50] Generation 25, best fitness=1.0
+[17:27:50] 0.33  [p=http://dbpedia.org/resource/Philippa_of_Guelders,f=NULL] age=1
+[17:27:50] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:27:50] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:27:50] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:27:50] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:50] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:27:50] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:27:50] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:27:50] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:27:50] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:27:51] Generation 26, best fitness=1.0
+[17:27:51] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:27:51] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:27:51] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:27:51] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:51] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:27:51] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:27:51] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:27:51] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:27:51] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:27:51] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:27:54] Generation 27, best fitness=1.0
+[17:27:54] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:27:54] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:27:54] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:27:54] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:27:54] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:27:54] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:27:54] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:27:54] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:27:54] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:27:54] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:28:01] Generation 28, best fitness=1.0
+[17:28:01] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=1
+[17:28:01] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:28:01] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:28:01] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:01] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:01] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:01] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:01] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:28:01] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:28:01] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:28:05] Generation 29, best fitness=0.8333333333333334
+[17:28:05] 0.33  [p=http://dbpedia.org/resource/Jan_Joseph_Godfried_van_Voorst_tot_Voorst_%28politician%29,f=NULL] age=1
+[17:28:05] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:28:05] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=1
+[17:28:05] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:28:05] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:05] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:05] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:05] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:05] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=2
+[17:28:05] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=2
+[17:28:10] Generation 30, best fitness=0.8333333333333334
+[17:28:10] 0.33  [p=http://dbpedia.org/resource/Jan_Joseph_Godfried_van_Voorst_tot_Voorst_%28politician%29,f=NULL] age=1
+[17:28:10] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:28:10] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:28:10] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:28:10] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:10] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:10] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:10] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:10] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=3
+[17:28:10] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=3
+[17:28:11] Generation 31, best fitness=0.8333333333333334
+[17:28:11] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:28:11] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:28:11] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:28:11] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:11] 0.33  [p=http://dbpedia.org/resource/Angelo_Zimmerman,f=NULL] age=1
+[17:28:11] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:11] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:11] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:11] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=4
+[17:28:11] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=4
+[17:28:13] Generation 32, best fitness=0.8333333333333334
+[17:28:13] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:28:13] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:28:13] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:28:13] 0.33  [p=http://dbpedia.org/resource/Angelo_Zimmerman,f=NULL] age=1
+[17:28:13] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:13] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:13] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:13] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:13] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=5
+[17:28:13] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=5
+[17:28:16] Generation 33, best fitness=1.0
+[17:28:16] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:28:16] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:28:16] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:16] 0.33  [p=http://dbpedia.org/resource/Angelo_Zimmerman,f=NULL] age=1
+[17:28:16] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:16] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:16] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:16] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:28:16] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:28:16] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:28:19] Generation 34, best fitness=1.0
+[17:28:19] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:28:19] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:28:19] 0.33  [p=http://dbpedia.org/resource/Angelo_Zimmerman,f=NULL] age=1
+[17:28:19] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:19] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:19] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:19] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:19] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:28:19] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:28:19] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:28:20] Generation 35, best fitness=1.0
+[17:28:20] 0.33  [p=http://dbpedia.org/resource/Gert_Schutte,f=NULL] age=1
+[17:28:20] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:28:20] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:20] 0.33  [p=http://dbpedia.org/resource/Angelo_Zimmerman,f=NULL] age=1
+[17:28:20] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:20] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:20] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:20] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:28:20] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:28:20] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:28:20] Generation 36, best fitness=1.0
+[17:28:20] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:28:20] 0.33  [p=http://dbpedia.org/resource/Angelo_Zimmerman,f=NULL] age=1
+[17:28:20] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:20] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:20] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:20] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:20] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:28:20] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:28:20] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:28:20] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:28:22] Generation 37, best fitness=1.0
+[17:28:22] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:28:22] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:22] 0.33  [p=http://dbpedia.org/resource/Angelo_Zimmerman,f=NULL] age=1
+[17:28:22] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:22] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:22] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:22] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:28:22] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:28:22] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:28:22] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:28:25] Generation 38, best fitness=1.0
+[17:28:25] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:28:25] 0.33  [p=http://dbpedia.org/resource/Angelo_Zimmerman,f=NULL] age=1
+[17:28:25] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:25] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:25] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:25] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:25] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:28:25] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:28:25] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:28:25] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:28:26] Generation 39, best fitness=1.0
+[17:28:26] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:28:26] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:26] 0.33  [p=http://dbpedia.org/resource/Angelo_Zimmerman,f=NULL] age=1
+[17:28:26] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:26] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:26] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:26] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:28:26] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:28:26] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:28:26] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:28:30] Generation 40, best fitness=1.0
+[17:28:30] 0.33  [p=http://dbpedia.org/resource/Jo_Bonfrere,f=NULL] age=1
+[17:28:30] 0.33  [p=http://dbpedia.org/resource/Angelo_Zimmerman,f=NULL] age=1
+[17:28:30] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:30] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:30] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:30] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:30] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:28:30] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:28:30] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:28:30] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:28:31] Generation 41, best fitness=1.0
+[17:28:31] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:31] 0.33  [p=http://dbpedia.org/resource/Angelo_Zimmerman,f=NULL] age=1
+[17:28:31] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:31] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:31] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:31] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:28:31] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:28:31] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:28:31] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:28:31] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:28:37] Generation 42, best fitness=1.0
+[17:28:37] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:37] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:37] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:37] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:37] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:28:37] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:28:37] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:28:37] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:28:37] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=http://dbpedia.org/resource/Painting] age=1
+[17:28:37] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:28:40] Generation 43, best fitness=0.8333333333333334
+[17:28:40] 0.33  [p=http://dbpedia.org/resource/Ruud_Boymans,f=NULL] age=1
+[17:28:40] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:28:40] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:40] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:40] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:40] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:40] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=2
+[17:28:40] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=2
+[17:28:40] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=2
+[17:28:40] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=2
+[17:28:42] Generation 44, best fitness=1.0
+[17:28:42] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:28:42] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:42] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:42] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:42] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:28:42] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:28:42] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:28:42] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:28:42] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:28:42] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:28:44] Generation 45, best fitness=1.0
+[17:28:44] 0.50  [p=http://dbpedia.org/resource/Ed_van_den_Heuvel,f=NULL] age=1
+[17:28:44] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:44] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:44] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:44] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:28:44] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:28:44] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:28:44] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:28:44] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f=http://dbpedia.org/resource/Painting] age=1
+[17:28:44] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:28:53] Generation 46, best fitness=1.0
+[17:28:53] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:53] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:53] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:53] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:28:53] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:28:53] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:28:53] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:28:53] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:28:53] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:28:53] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:28:56] Generation 47, best fitness=1.0
+[17:28:56] 0.33  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f=NULL] age=1
+[17:28:56] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:28:56] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:28:56] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:28:56] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:28:56] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:28:56] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:28:56] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:28:56] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:28:56] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:00] Generation 48, best fitness=1.0
+[17:29:00] 0.67  [p=http://dbpedia.org/resource/Simon_Vestdijk,f=NULL] age=1
+[17:29:00] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:00] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:00] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:00] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:00] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:00] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:00] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:00] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:00] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:02] Generation 49, best fitness=1.0
+[17:29:02] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:02] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:02] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:02] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:02] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:02] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:02] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:02] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:02] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:02] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:03] Generation 50, best fitness=1.0
+[17:29:03] 0.33  [p=http://dbpedia.org/resource/Louise_of_the_Netherlands,f=NULL] age=1
+[17:29:03] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:03] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:03] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:03] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:03] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:03] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:03] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:03] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:03] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:06] Generation 51, best fitness=1.0
+[17:29:06] 0.33  [p=http://dbpedia.org/resource/Ruud_Boymans,f=NULL] age=1
+[17:29:06] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:29:06] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:06] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:06] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:06] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:06] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:06] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:06] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:06] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:08] Generation 52, best fitness=1.0
+[17:29:08] 0.33  [p=http://dbpedia.org/resource/Ruud_Boymans,f=NULL] age=1
+[17:29:08] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:29:08] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:08] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:08] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:08] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:08] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:08] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:08] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:16] Generation 53, best fitness=1.0
+[17:29:16] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:29:16] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:16] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:16] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:16] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:16] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:16] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:16] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:16] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:16] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:16] Generation 54, best fitness=1.0
+[17:29:16] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:29:16] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:16] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:16] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:16] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:16] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:16] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:16] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:16] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:16] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:16] Generation 55, best fitness=1.0
+[17:29:16] 0.33  [p=http://dbpedia.org/resource/Jo_Bonfrere,f=NULL] age=1
+[17:29:16] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:29:16] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:16] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:16] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:16] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:16] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:16] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:16] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:16] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:18] Generation 56, best fitness=1.0
+[17:29:18] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:18] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:18] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:18] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:18] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:18] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:18] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:18] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:18] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:18] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:18] Generation 57, best fitness=1.0
+[17:29:18] 0.33  [p=http://dbpedia.org/resource/Jan_Joseph_Godfried_van_Voorst_tot_Voorst_%28politician%29,f=NULL] age=1
+[17:29:18] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:18] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:18] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:18] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:18] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:18] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:18] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:18] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:18] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:18] Generation 58, best fitness=1.0
+[17:29:18] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:18] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:18] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:18] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:18] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:18] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:18] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:18] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:18] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:18] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:19] Generation 59, best fitness=1.0
+[17:29:19] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:19] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:19] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:19] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:19] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:19] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:19] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:19] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:19] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:21] Generation 60, best fitness=1.0
+[17:29:21] 0.33  [p=http://dbpedia.org/resource/Eug%C3%A8ne_Dubois,f=NULL] age=1
+[17:29:21] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:29:21] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:21] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:21] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:21] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:21] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:21] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:21] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:21] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:22] Generation 61, best fitness=1.0
+[17:29:22] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:29:22] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:22] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:22] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:22] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:22] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:22] Generation 62, best fitness=1.0
+[17:29:22] 0.33  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f=NULL] age=1
+[17:29:22] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:29:22] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:22] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:22] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:22] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:22] Generation 63, best fitness=1.0
+[17:29:22] 0.33  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f=NULL] age=1
+[17:29:22] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:22] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:22] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:22] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:22] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:22] Generation 64, best fitness=1.0
+[17:29:22] 0.50  [p=http://dbpedia.org/resource/Andreas_Vesalius,f=NULL] age=1
+[17:29:22] 0.67  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f=NULL] age=1
+[17:29:22] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:22] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:22] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:22] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:22] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:25] Generation 65, best fitness=1.0
+[17:29:25] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:29:25] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=NULL] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f=NULL] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:25] Generation 66, best fitness=1.0
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:25] Generation 67, best fitness=1.0
+[17:29:25] 0.50  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:25] Generation 68, best fitness=1.0
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:25] Generation 69, best fitness=1.0
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:25] Generation 70, best fitness=1.0
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:25] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:25] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:26] Generation 71, best fitness=1.0
+[17:29:26] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:26] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:26] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:26] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:26] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:26] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:26] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:26] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:26] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:26] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:27] Generation 72, best fitness=1.0
+[17:29:27] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:27] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:27] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:27] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:27] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:27] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:27] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:27] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:27] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:27] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:28] Generation 73, best fitness=1.0
+[17:29:28] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:28] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:28] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:28] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:28] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:28] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:28] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:28] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:28] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:28] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:29] Generation 74, best fitness=1.0
+[17:29:29] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:29] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:29] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:29] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:29] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:29] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:29] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:29] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:29] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:29] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:29] Generation 75, best fitness=1.0
+[17:29:29] 0.50  [p=http://dbpedia.org/resource/Jo_Bonfrere,f="Anatomy"@en] age=1
+[17:29:29] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:29] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:29] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:29] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:29] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:29] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:29] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:29] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:29] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:30] Generation 76, best fitness=1.0
+[17:29:30] 0.50  [p=http://dbpedia.org/resource/Victor_van_der_Chijs,f="Anatomy"@en] age=1
+[17:29:30] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:30] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:30] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:30] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:30] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:30] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:30] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:30] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:30] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:31] Generation 77, best fitness=1.0
+[17:29:31] 0.50  [p=http://dbpedia.org/resource/Jo_Bonfrere,f="Anatomy"@en] age=1
+[17:29:31] 0.50  [p=http://dbpedia.org/resource/Victor_van_der_Chijs,f="Anatomy"@en] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:31] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:31] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:31] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:31] Generation 78, best fitness=1.0
+[17:29:31] 0.50  [p=http://dbpedia.org/resource/Victor_van_der_Chijs,f="Anatomy"@en] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:31] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:31] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:31] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:31] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:31] Generation 79, best fitness=1.0
+[17:29:31] 0.50  [p=http://dbpedia.org/resource/Victor_van_der_Chijs,f="Anatomy"@en] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:31] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:31] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:31] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:31] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:32] Generation 80, best fitness=1.0
+[17:29:32] 0.50  [p=http://dbpedia.org/resource/Victor_van_der_Chijs,f="Anatomy"@en] age=1
+[17:29:32] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:32] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:32] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:32] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:32] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:32] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:32] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:32] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:32] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:33] Generation 81, best fitness=1.0
+[17:29:33] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:33] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:33] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:33] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:33] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:33] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:33] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:33] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:33] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:33] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:36] Generation 82, best fitness=1.0
+[17:29:36] 0.50  [p=http://dbpedia.org/resource/Rick_ten_Voorde,f="Anatomy"@en] age=1
+[17:29:36] 0.50  [p=http://dbpedia.org/resource/Angelo_Zimmerman,f="Anatomy"@en] age=1
+[17:29:36] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:36] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:36] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:36] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:36] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:36] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:36] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:36] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:37] Generation 83, best fitness=1.0
+[17:29:37] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:37] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:37] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:37] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:37] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:37] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:37] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:37] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:37] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:37] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:38] Generation 84, best fitness=1.0
+[17:29:38] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:29:38] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:38] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:38] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:38] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:38] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:38] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:38] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:38] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:38] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:39] Generation 85, best fitness=1.0
+[17:29:39] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:39] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:39] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:39] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:39] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:39] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:39] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:39] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:39] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:39] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:39] Generation 86, best fitness=1.0
+[17:29:39] 0.50  [p=http://dbpedia.org/resource/Loek_van_Wely,f="Anatomy"@en] age=1
+[17:29:39] 0.50  [p=http://dbpedia.org/resource/Churandy_Martina,f="Anatomy"@en] age=1
+[17:29:39] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:29:39] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:39] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:39] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:39] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:39] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:39] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:39] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:43] Generation 87, best fitness=1.0
+[17:29:43] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:43] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:43] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:43] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:43] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:43] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:43] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:43] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:43] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:43] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:44] Generation 88, best fitness=1.0
+[17:29:44] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:29:44] 0.83  [p=http://dbpedia.org/resource/Bart_Hendrikx,f="Anatomy"@en] age=1
+[17:29:44] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:44] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:44] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:44] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:44] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:44] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:44] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:44] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:44] Generation 89, best fitness=1.0
+[17:29:44] 0.83  [p=http://dbpedia.org/resource/Bart_Hendrikx,f="Anatomy"@en] age=1
+[17:29:44] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:44] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:44] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:44] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:44] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:44] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:44] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:44] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:44] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:45] Generation 90, best fitness=1.0
+[17:29:45] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:45] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:45] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:45] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:45] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:45] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:45] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:45] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:45] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:45] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:46] Generation 91, best fitness=1.0
+[17:29:46] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:29:46] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:46] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:46] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:46] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:46] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:46] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:46] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:46] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:46] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:46] Generation 92, best fitness=1.0
+[17:29:46] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:29:46] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:46] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:46] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:46] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:46] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:46] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:46] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:46] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:46] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:46] Generation 93, best fitness=1.0
+[17:29:46] 0.50  [p=http://dbpedia.org/resource/Wim_Hof,f="Anatomy"@en] age=1
+[17:29:46] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:29:46] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:46] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:46] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:46] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:46] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:46] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:46] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:46] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:47] Generation 94, best fitness=1.0
+[17:29:47] 0.50  [p=http://dbpedia.org/resource/Kemy_Agustien,f="Anatomy"@en] age=1
+[17:29:47] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:29:47] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:47] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:47] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:47] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:47] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:47] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:47] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:47] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:48] Generation 95, best fitness=1.0
+[17:29:48] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:29:48] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:48] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:48] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:48] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:48] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:48] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:48] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:48] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:48] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:48] Generation 96, best fitness=1.0
+[17:29:48] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:29:48] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:48] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:48] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:48] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:48] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:48] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:48] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:48] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:48] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:49] Generation 97, best fitness=1.0
+[17:29:49] 0.83  [p=http://dbpedia.org/resource/Bart_Hendrikx,f="Anatomy"@en] age=1
+[17:29:49] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:49] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:49] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:49] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:49] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:49] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:49] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:49] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:49] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:52] Generation 98, best fitness=1.0
+[17:29:52] 0.50  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f="Anatomy"@en] age=1
+[17:29:52] 0.83  [p=http://dbpedia.org/resource/Bart_Hendrikx,f="Anatomy"@en] age=1
+[17:29:52] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:52] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:52] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:52] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:52] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:52] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:52] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:52] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:53] Generation 99, best fitness=1.0
+[17:29:53] 0.83  [p=http://dbpedia.org/resource/Bart_Hendrikx,f="Anatomy"@en] age=1
+[17:29:53] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:53] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:53] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:53] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:53] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:53] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:53] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:53] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:53] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:54] Generation 100, best fitness=1.0
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Bart_Hendrikx,f="Anatomy"@en] age=1
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:54] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:54] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:54] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:54] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:54] Generation 101, best fitness=1.0
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=NULL] age=1
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:54] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:54] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:54] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:54] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:54] Generation 102, best fitness=1.0
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Anatomy"@en] age=1
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:54] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:54] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:54] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:54] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:54] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:55] Generation 103, best fitness=1.0
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Joos_de_Momper,f="Painting"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:29:55] Generation 104, best fitness=1.0
+[17:29:55] 0.50  [p=http://dbpedia.org/resource/Peter_Stoffer,f="Anatomy"@en] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:29:55] Generation 105, best fitness=1.0
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:29:55] Generation 106, best fitness=1.0
+[17:29:55] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Bart_Hendrikx,f="Anatomy"@en] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:55] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:55] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:29:57] Generation 107, best fitness=1.0
+[17:29:57] 0.50  [p=http://dbpedia.org/resource/Ulrich_van_Gobbel,f="Anatomy"@en] age=1
+[17:29:57] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Bart_Hendrikx,f="Anatomy"@en] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:57] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:57] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:29:57] Generation 108, best fitness=1.0
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:57] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:57] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:57] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:57] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:29:57] Generation 109, best fitness=1.0
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:57] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:57] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:57] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:57] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:57] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:29:58] Generation 110, best fitness=1.0
+[17:29:58] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:29:58] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:58] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:29:58] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:58] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:58] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:58] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=http://dbpedia.org/resource/Painting] age=1
+[17:29:58] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:58] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:58] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f=http://dbpedia.org/resource/Printmaking] age=1
+[17:29:58] Generation 111, best fitness=1.0
+[17:29:58] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:29:58] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:29:58] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:29:58] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:29:58] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:29:58] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:29:58] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:29:58] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:29:58] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:29:58] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:01] Generation 112, best fitness=1.0
+[17:30:01] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:30:01] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:01] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:01] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:01] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:01] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:01] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:01] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:01] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:01] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:03] Generation 113, best fitness=1.0
+[17:30:03] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:30:03] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:03] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:03] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:03] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:03] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:03] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:03] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:03] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:03] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:04] Generation 114, best fitness=1.0
+[17:30:04] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:04] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:04] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:04] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:04] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:04] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:04] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:04] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:04] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:04] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:04] Generation 115, best fitness=1.0
+[17:30:04] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:04] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:04] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:04] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:04] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:04] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:04] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:04] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:04] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:04] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:05] Generation 116, best fitness=1.0
+[17:30:05] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:05] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:05] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:05] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:05] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:05] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:05] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:05] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:05] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:05] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:06] Generation 117, best fitness=1.0
+[17:30:06] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:06] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:06] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:06] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:06] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:06] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:06] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:06] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:06] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:06] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:06] Generation 118, best fitness=1.0
+[17:30:06] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:30:06] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:06] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:06] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:06] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:06] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:06] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:06] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:06] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:06] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:07] Generation 119, best fitness=1.0
+[17:30:07] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:30:07] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:07] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:07] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:07] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:07] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:07] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:07] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:07] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:07] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:07] Generation 120, best fitness=1.0
+[17:30:07] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:30:07] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:07] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:07] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:07] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:07] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:07] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:07] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:07] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:07] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:08] Generation 121, best fitness=1.0
+[17:30:08] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:08] Generation 122, best fitness=1.0
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Bart_Hendrikx,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:08] Generation 123, best fitness=1.0
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:08] Generation 124, best fitness=1.0
+[17:30:08] 0.50  [p=http://dbpedia.org/resource/Rick_ten_Voorde,f="Anatomy"@en] age=1
+[17:30:08] 0.50  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f="Anatomy"@en] age=1
+[17:30:08] 0.50  [p=http://dbpedia.org/resource/Reinout_Oerlemans,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:08] Generation 125, best fitness=1.0
+[17:30:08] 0.50  [p=http://dbpedia.org/resource/Andreas_Vesalius,f=NULL] age=1
+[17:30:08] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:08] Generation 126, best fitness=1.0
+[17:30:08] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:08] Generation 127, best fitness=1.0
+[17:30:08] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:08] Generation 128, best fitness=1.0
+[17:30:08] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:08] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:08] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:09] Generation 129, best fitness=1.0
+[17:30:09] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:30:09] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:09] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:09] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:09] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:09] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:09] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:09] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:09] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:09] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:10] Generation 130, best fitness=1.0
+[17:30:10] 0.50  [p=http://dbpedia.org/resource/Wilhelmus_Demarteau,f="Anatomy"@en] age=1
+[17:30:10] 0.67  [p=http://dbpedia.org/resource/Bart_Hendrikx,f=NULL] age=1
+[17:30:10] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:10] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:10] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:10] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:10] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:10] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:10] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:10] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:11] Generation 131, best fitness=1.0
+[17:30:11] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:11] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:11] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:11] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:11] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:11] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:11] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:11] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:11] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:11] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:12] Generation 132, best fitness=1.0
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:12] Generation 133, best fitness=1.0
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:12] Generation 134, best fitness=1.0
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:12] Generation 135, best fitness=1.0
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:12] Generation 136, best fitness=1.0
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:12] Generation 137, best fitness=1.0
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:12] Generation 138, best fitness=1.0
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:12] Generation 139, best fitness=1.0
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:12] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:12] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:15] Generation 140, best fitness=1.0
+[17:30:15] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:15] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:15] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:15] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:15] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:15] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:15] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:15] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:15] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:15] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:16] Generation 141, best fitness=1.0
+[17:30:16] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:16] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:16] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:16] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:16] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:16] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:16] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:16] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:16] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:16] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:16] Generation 142, best fitness=1.0
+[17:30:16] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:16] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:16] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:16] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:16] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:16] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:16] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:16] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:16] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:16] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:18] Generation 143, best fitness=1.0
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:18] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:18] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:18] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:18] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:18] Generation 144, best fitness=1.0
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:18] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:18] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:18] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:18] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:18] Generation 145, best fitness=1.0
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:18] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:18] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:18] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:18] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:18] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:19] Generation 146, best fitness=1.0
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:19] Generation 147, best fitness=1.0
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:19] Generation 148, best fitness=1.0
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:19] Generation 149, best fitness=1.0
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:19] Generation 150, best fitness=1.0
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:19] Generation 151, best fitness=1.0
+[17:30:19] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:19] Generation 152, best fitness=1.0
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:19] Generation 153, best fitness=1.0
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:19] Generation 154, best fitness=1.0
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:19] Generation 155, best fitness=1.0
+[17:30:19] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:19] Generation 156, best fitness=1.0
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:19] Generation 157, best fitness=1.0
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:19] Generation 158, best fitness=1.0
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:19] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:19] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:20] Generation 159, best fitness=1.0
+[17:30:20] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:20] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:20] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:20] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:20] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:20] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:20] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:20] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:20] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:20] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:20] Generation 160, best fitness=1.0
+[17:30:20] 0.67  [p=http://dbpedia.org/resource/Andreas_Vesalius,f="Anatomy"@en] age=1
+[17:30:20] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:20] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:20] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:20] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:20] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:20] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:20] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:20] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:20] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:21] Generation 161, best fitness=1.0
+[17:30:21] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:21] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:21] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:21] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:21] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:21] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:21] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:21] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:21] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:21] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:21] Generation 162, best fitness=1.0
+[17:30:21] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:21] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:21] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:21] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:21] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:21] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:21] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:21] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:21] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:21] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:22] Generation 163, best fitness=1.0
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:22] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:22] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:22] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:22] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:22] Generation 164, best fitness=1.0
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:22] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f=http://dbpedia.org/resource/Painting] age=1
+[17:30:22] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:22] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:22] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1
+[17:30:22] Generation 165, best fitness=1.0
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Jos%C3%A9_Hoebee,f="Anatomy"@en] age=1
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Anatomy"@en] age=1
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Anatomy"@en] age=1
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Anatomy"@en] age=1
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f=NULL] age=1
+[17:30:22] 0.83  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Anatomy"@en] age=1
+[17:30:22] 1.00  [p=http://dbpedia.org/resource/Philippe_de_Champaigne,f="Painting"@en] age=1
+[17:30:22] 1.00  [p=http://dbpedia.org/resource/Jan_van_Eyck,f="Painting"@en] age=1
+[17:30:22] 1.00  [p=http://dbpedia.org/resource/Geertgen_tot_Sint_Jans,f="Painting"@en] age=1
+[17:30:22] 1.00  [p=http://dbpedia.org/resource/Pieter_Bruegel_the_Elder,f="Painting, printmaking"@en] age=1

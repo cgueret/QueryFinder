@@ -1,61 +1,104 @@
 package nl.vu.queryfinder.util;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.HashSet;
 import java.util.Set;
 
-import nl.vu.queryfinder.model.EndPoint;
+import nl.vu.queryfinder.services.EndPoint;
+import nl.vu.queryfinder.services.EndPoint.EndPointType;
+
+import org.openrdf.model.Value;
+import org.openrdf.query.QueryLanguage;
+import org.openrdf.query.TupleQuery;
+import org.openrdf.query.TupleQueryResult;
+import org.openrdf.repository.RepositoryConnection;
+import org.openrdf.repository.RepositoryException;
+import org.openrdf.repository.sparql.SPARQLRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.hp.hpl.jena.graph.Node;
-import com.hp.hpl.jena.query.Query;
-import com.hp.hpl.jena.query.ResultSet;
-
 public class PaginatedQueryExec {
-	static final Logger logger = LoggerFactory.getLogger(PaginatedQueryExec.class);
+	protected static final Logger logger = LoggerFactory.getLogger(PaginatedQueryExec.class);
 	private final static int PAGE_SIZE = 1000;
+	SPARQLRepository repository;
+
+	/**
+	 * @param endPoint
+	 * @throws RepositoryException
+	 */
+	public PaginatedQueryExec(EndPoint endPoint) throws RepositoryException {
+		repository = new SPARQLRepository(endPoint.getURI().toString());
+		repository.initialize();
+	}
 
 	/**
 	 * @param service
 	 * @param query
-	 * @param var
+	 * @param varName
 	 * @return
+	 * @throws RepositoryException
 	 */
-	public static Set<Node> process(EndPoint endPoint, Query query, Node var) {
-		query.setLimit(PAGE_SIZE);
-		query.setOffset(0);
+	public Set<Value> process(String query, String varName) {
+		Set<Value> results = new HashSet<Value>();
 
-		Set<Node> results = new HashSet<Node>();
-		boolean morePages = true;
-		while (morePages) {
-			long count = 0;
-			try {
-				QueryEngineHTTPClient queryExec = new QueryEngineHTTPClient(endPoint.getURI(), query);
-				if (endPoint.getDefaultGraph() != null) {
-					queryExec.addDefaultGraph(endPoint.getDefaultGraph());
-					//query.addNamedGraphURI(endPoint.getDefaultGraph());
-					//query.setBaseURI(endPoint.getDefaultGraph());
+		try {
+
+			boolean morePages = true;
+			int limit = PAGE_SIZE;
+			int offset = 0;
+
+			RepositoryConnection conn = repository.getConnection();
+			while (morePages) {
+				long count = 0;
+				String queryPage = query;
+				queryPage += "LIMIT " + limit + " OFFSET " + offset;
+				TupleQuery tupleQuery = conn.prepareTupleQuery(QueryLanguage.SPARQL, queryPage);
+
+				TupleQueryResult res = tupleQuery.evaluate();
+				while (res.hasNext()) {
+					results.add(res.next().getValue(varName));
+					count++;
 				}
-				// queryExec.addParam("timeout", "10000");
-				// queryExec.addParam("debug", "on");
-				ResultSet bindings = queryExec.execSelect();
-				if (bindings != null) {
-					while (bindings.hasNext()) {
-						results.add(bindings.next().get(var.getName()).asNode());
-						count++;
-					}
-				}
-				queryExec.close();
-			} catch (Exception e) {
-				e.printStackTrace();
+
+				morePages = (count == PAGE_SIZE);
+				offset += PAGE_SIZE;
 			}
-			
-			morePages = (count == PAGE_SIZE);
-			query.setOffset(query.getOffset() + PAGE_SIZE);
+			conn.commit();
+			conn.close();
+
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 
-		// logger.info(results.size() + " results for ");
-		// logger.info(query.serialize());
 		return results;
+	}
+
+	/**
+	 * @param args
+	 * @throws URISyntaxException
+	 * @throws RepositoryException
+	 */
+	public static void main(String[] args) throws URISyntaxException, RepositoryException {
+		String query = "Select distinct ?o where {<http://dbpedia.org/resource/Amsterdam> ?p ?o}";
+		EndPoint endPoint = new EndPoint(new URI("http://dbpedia.org/sparql"), null, EndPointType.VIRTUOSO);
+		PaginatedQueryExec exec = new PaginatedQueryExec(endPoint);
+		Set<Value> r = exec.process(query, "o");
+		logger.info(r.toString());
+		exec.shutDown();
+		logger.info("ok");
+		exec = null;
+	}
+
+	/**
+	 * 
+	 */
+	private void shutDown() {
+		try {
+			repository.shutDown();
+		} catch (RepositoryException e) {
+			e.printStackTrace();
+		}
+
 	}
 }

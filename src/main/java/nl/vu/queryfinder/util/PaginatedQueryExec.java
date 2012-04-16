@@ -2,8 +2,8 @@ package nl.vu.queryfinder.util;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 import nl.vu.queryfinder.services.EndPoint;
 import nl.vu.queryfinder.services.EndPoint.EndPointType;
@@ -20,7 +20,8 @@ import org.slf4j.LoggerFactory;
 
 public class PaginatedQueryExec {
 	protected static final Logger logger = LoggerFactory.getLogger(PaginatedQueryExec.class);
-	private final static int PAGE_SIZE = 1000;
+	private final static int PAGE_SIZE = 600;
+	private final static int HARD_LIMIT = 50;
 	SPARQLRepository repository;
 
 	/**
@@ -39,8 +40,8 @@ public class PaginatedQueryExec {
 	 * @return
 	 * @throws RepositoryException
 	 */
-	public Set<Value> process(String query, String varName) {
-		Set<Value> results = new HashSet<Value>();
+	public List<Value> process(String query, String varName) {
+		List<Value> results = new ArrayList<Value>();
 
 		try {
 
@@ -49,12 +50,14 @@ public class PaginatedQueryExec {
 			int offset = 0;
 
 			RepositoryConnection conn = repository.getConnection();
-			while (morePages) {
+			while (morePages && results.size() < HARD_LIMIT) {
 				long count = 0;
 				String queryPage = query;
-				queryPage += "LIMIT " + limit + " OFFSET " + offset;
-				TupleQuery tupleQuery = conn.prepareTupleQuery(QueryLanguage.SPARQL, queryPage);
+				queryPage += " LIMIT " + limit + " OFFSET " + offset;
 
+				logger.info("Query \n" + queryPage);
+
+				TupleQuery tupleQuery = conn.prepareTupleQuery(QueryLanguage.SPARQL, queryPage);
 				TupleQueryResult res = tupleQuery.evaluate();
 				while (res.hasNext()) {
 					results.add(res.next().getValue(varName));
@@ -83,7 +86,7 @@ public class PaginatedQueryExec {
 		String query = "Select distinct ?o where {<http://dbpedia.org/resource/Amsterdam> ?p ?o}";
 		EndPoint endPoint = new EndPoint(new URI("http://dbpedia.org/sparql"), null, EndPointType.VIRTUOSO);
 		PaginatedQueryExec exec = new PaginatedQueryExec(endPoint);
-		Set<Value> r = exec.process(query, "o");
+		List<Value> r = exec.process(query, "o");
 		logger.info(r.toString());
 		exec.shutDown();
 		logger.info("ok");

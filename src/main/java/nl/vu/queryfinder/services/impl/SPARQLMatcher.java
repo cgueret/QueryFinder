@@ -65,7 +65,7 @@ public class SPARQLMatcher extends Service {
 
 		// Iterate over the triples
 		for (Triple triple : inputQuery.getTriples()) {
-			logger.info("Process " + triple);
+			logger.info(triple.toString());
 
 			// Prepare a list of subjects
 			List<Value> subjects = new ArrayList<Value>();
@@ -103,10 +103,16 @@ public class SPARQLMatcher extends Service {
 					objects.add(object);
 				} else {
 					URI type = ((Literal) predicate).getDatatype();
-					if (type != null && type.equals(new URIImpl(RDF.NAMESPACE + "PlainLiteral")))
+					if (type != null && type.equals(new URIImpl(RDF.NAMESPACE + "PlainLiteral"))) {
 						objects.add(object);
-					else
-						objects.addAll(getResources(object.stringValue(), null));
+					} else {
+						if (predicate instanceof Literal && predicate.stringValue().equals("type"))
+							objects.addAll(getClasses(object.stringValue()));
+						else if (predicate instanceof Resource && predicate.equals(RDF.TYPE))
+							objects.addAll(getClasses(object.stringValue()));
+						else
+							objects.addAll(getResources(object.stringValue(), null));
+					}
 				}
 			}
 
@@ -167,34 +173,37 @@ public class SPARQLMatcher extends Service {
 	protected List<Value> getProperties(String keyword) {
 		List<Value> results = new ArrayList<Value>();
 
-		for (Value propertyType : PROP_TYPES) {
-			for (Entry<EndPoint, PaginatedQueryExec> entry : executors.entrySet()) {
-				EndPoint endPoint = entry.getKey();
-				PaginatedQueryExec executor = entry.getValue();
+		if (!keyword.equals("type")) {
+			for (Value propertyType : PROP_TYPES) {
+				for (Entry<EndPoint, PaginatedQueryExec> entry : executors.entrySet()) {
+					EndPoint endPoint = entry.getKey();
+					PaginatedQueryExec executor = entry.getValue();
 
-				// Build the query
-				String query = "SELECT DISTINCT ?c ";
-				if (endPoint.getDefaultGraph() != null)
-					query += "FROM <" + endPoint.getDefaultGraph() + "> ";
-				query += "WHERE {";
-				query += "?c a <" + propertyType + ">.";
-				if (endPoint.getType().equals(EndPointType.VIRTUOSO)) {
-					query += "?c <http://www.w3.org/2000/01/rdf-schema#label> ?l.";
-					query += "?l bif:contains 'KEYWORD'.} ORDER BY DESC ( <LONG::IRI_RANK> (?c) )";
-					keyword = keyword.replace(" ", " and ");
-				}
-				if (endPoint.getType().equals(EndPointType.OWLIM)) {
-					query += "?c <http://www.ontotext.com/owlim/lucene#> 'KEYWORD'.}";
-				}
-				query = query.replace("KEYWORD", keyword);
+					// Build the query
+					String query = "SELECT DISTINCT ?c ";
+					if (endPoint.getDefaultGraph() != null)
+						query += "FROM <" + endPoint.getDefaultGraph() + "> ";
+					query += "WHERE {";
+					query += "?c a <" + propertyType + ">.";
+					if (endPoint.getType().equals(EndPointType.VIRTUOSO)) {
+						query += "?c <http://www.w3.org/2000/01/rdf-schema#label> ?l.";
+						query += "?l bif:contains 'KEYWORD'.} ORDER BY DESC ( <LONG::IRI_RANK> (?c) )";
+						keyword = keyword.replace(" ", " and ");
+					}
+					if (endPoint.getType().equals(EndPointType.OWLIM)) {
+						query += "?c <http://www.ontotext.com/owlim/lucene#> 'KEYWORD'.}";
+					}
+					query = query.replace("KEYWORD", keyword);
 
-				// Process the query
-				results.addAll(executor.process(query, "c"));
+					// Process the query
+					results.addAll(executor.process(query, "c"));
+				}
 			}
+		} else {
+			results.add(RDF.TYPE);
 		}
 
 		logger.info(String.format("[property] \"%s\" -> %d", keyword, results.size()));
-
 		return results;
 
 	}

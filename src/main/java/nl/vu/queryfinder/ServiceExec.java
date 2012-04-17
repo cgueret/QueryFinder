@@ -37,13 +37,16 @@ public class ServiceExec {
 			outputQuery = service.process(inputQuery);
 		}
 
-		if (component.equals("sparqlmatcher")) {
+		else if (component.equals("sparqlmatcher")) {
 			if (!parameters.containsKey("endpoints"))
-				throw new Exception("Requiered parameter is missing");
+				throw new Exception("Requiered parameter is missing: endpoints");
 			Directory directory = Directory.create(parameters.get("endpoints"));
 			Service service = new SPARQLMatcher(directory);
 			outputQuery = service.process(inputQuery);
 		}
+
+		else
+			throw new Exception("Unrecognised component:" + component);
 
 		return outputQuery;
 	}

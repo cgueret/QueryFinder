@@ -247,7 +247,6 @@ public class Query {
 				BindingSet result = results.next();
 				Triple t = new Triple(result.getValue("s"), result.getValue("p"), result.getValue("o"));
 				triples.add(t);
-				System.out.println(t);
 			}
 		} catch (RepositoryException e) {
 			e.printStackTrace();

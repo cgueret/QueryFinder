@@ -12,7 +12,7 @@ import org.openrdf.model.impl.ValueFactoryImpl;
  * 
  */
 public class QF {
-	/** http://example.org/ */
+	/** http://example.org# */
 	public static final String NAMESPACE = "http://example.org#";
 
 	/** http://example.org#Query */

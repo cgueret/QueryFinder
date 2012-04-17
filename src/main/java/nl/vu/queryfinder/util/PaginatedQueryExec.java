@@ -20,7 +20,7 @@ import org.slf4j.LoggerFactory;
 public class PaginatedQueryExec {
 	protected static final Logger logger = LoggerFactory.getLogger(PaginatedQueryExec.class);
 	private final static int PAGE_SIZE = 500;
-	private final static int HARD_LIMIT = 2000;
+	private final static int HARD_LIMIT = 800;
 	SPARQLRepository repository;
 
 	/**
@@ -53,8 +53,6 @@ public class PaginatedQueryExec {
 				long count = 0;
 				String queryPage = query;
 				queryPage += " LIMIT " + limit + " OFFSET " + offset;
-
-				logger.info("Query \n" + queryPage);
 
 				TupleQuery tupleQuery = conn.prepareTupleQuery(QueryLanguage.SPARQL, queryPage);
 				TupleQueryResult res = tupleQuery.evaluate();

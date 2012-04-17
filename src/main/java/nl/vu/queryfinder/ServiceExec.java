@@ -1,38 +1,51 @@
 package nl.vu.queryfinder;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
+import nl.vu.queryfinder.model.Directory;
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.services.Service;
 import nl.vu.queryfinder.services.impl.Copy;
+import nl.vu.queryfinder.services.impl.SPARQLMatcher;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
-import org.apache.commons.cli.ParseException;
 import org.apache.commons.cli.PosixParser;
-import org.openrdf.repository.RepositoryException;
-import org.openrdf.rio.RDFHandlerException;
-import org.openrdf.rio.RDFParseException;
 
 public class ServiceExec {
+	// The parameters given to the component
+	private final Map<String, String> parameters = new HashMap<String, String>();
 
 	/**
 	 * @param input
 	 * @param component
 	 * @return
-	 * @throws IOException
-	 * @throws RepositoryException
-	 * @throws RDFParseException
+	 * @throws Exception
 	 */
-	public Query process(String input, String component) throws RDFParseException, RepositoryException, IOException {
+	public Query process(String input, String component) throws Exception {
 		Query inputQuery = new Query();
 		inputQuery.loadFrom(input);
 
-		Service service = new Copy();
-		return service.process(inputQuery);
+		// If a component fail, we will return the input query
+		Query outputQuery = inputQuery;
+
+		if (component.equals("copy")) {
+			Service service = new Copy();
+			outputQuery = service.process(inputQuery);
+		}
+
+		if (component.equals("sparqlmatcher")) {
+			if (!parameters.containsKey("endpoints"))
+				throw new Exception("Requiered parameter is missing");
+			Directory directory = Directory.create(parameters.get("endpoints"));
+			Service service = new SPARQLMatcher(directory);
+			outputQuery = service.process(inputQuery);
+		}
+
+		return outputQuery;
 	}
 
 	/**
@@ -46,15 +59,9 @@ public class ServiceExec {
 
 	/**
 	 * @param args
-	 * @throws ParseException
-	 * @throws IOException
-	 * @throws FileNotFoundException
-	 * @throws RDFHandlerException
-	 * @throws RDFParseException
-	 * @throws RepositoryException
+	 * @throws Exception
 	 */
-	public static void main(String[] args) throws ParseException, RDFParseException, RDFHandlerException,
-			FileNotFoundException, IOException, RepositoryException {
+	public static void main(String[] args) throws Exception {
 		// Compose the options
 		Options options = new Options();
 		options.addOption("c", "component", true, "name of the processing component");
@@ -77,6 +84,16 @@ public class ServiceExec {
 
 		// Create an instance
 		ServiceExec instance = new ServiceExec();
+
+		// Handle parameters
+		if (line.hasOption("p")) {
+			String[] params = line.getOptionValue("p").split("'");
+			for (String param : params) {
+				String[] keyvalue = param.split("=");
+				if (keyvalue.length == 2)
+					instance.parameters.put(keyvalue[0], keyvalue[1]);
+			}
+		}
 
 		// Process the input query and get the new one
 		Query newQuery = instance.process(line.getOptionValue("i"), line.getOptionValue("c"));

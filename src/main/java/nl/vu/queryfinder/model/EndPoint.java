@@ -1,4 +1,4 @@
-package nl.vu.queryfinder.services;
+package nl.vu.queryfinder.model;
 
 import java.net.URI;
 
@@ -73,8 +73,8 @@ public class EndPoint {
 	 * @param uri
 	 * @param defaultGraph
 	 */
-	public EndPoint(URI uri, String defaultGraph, EndPointType type) {
-		this.uri = uri;
+	public EndPoint(String uri, String defaultGraph, EndPointType type) {
+		this.uri = URI.create(uri);
 		this.defaultGraph = defaultGraph;
 		this.type = type;
 	}

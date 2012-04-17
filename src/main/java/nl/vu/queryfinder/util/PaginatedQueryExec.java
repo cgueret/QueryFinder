@@ -1,12 +1,11 @@
 package nl.vu.queryfinder.util;
 
-import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
-import nl.vu.queryfinder.services.EndPoint;
-import nl.vu.queryfinder.services.EndPoint.EndPointType;
+import nl.vu.queryfinder.model.EndPoint;
+import nl.vu.queryfinder.model.EndPoint.EndPointType;
 
 import org.openrdf.model.Value;
 import org.openrdf.query.QueryLanguage;
@@ -20,8 +19,8 @@ import org.slf4j.LoggerFactory;
 
 public class PaginatedQueryExec {
 	protected static final Logger logger = LoggerFactory.getLogger(PaginatedQueryExec.class);
-	private final static int PAGE_SIZE = 600;
-	private final static int HARD_LIMIT = 50;
+	private final static int PAGE_SIZE = 500;
+	private final static int HARD_LIMIT = 2000;
 	SPARQLRepository repository;
 
 	/**
@@ -84,7 +83,7 @@ public class PaginatedQueryExec {
 	 */
 	public static void main(String[] args) throws URISyntaxException, RepositoryException {
 		String query = "Select distinct ?o where {<http://dbpedia.org/resource/Amsterdam> ?p ?o}";
-		EndPoint endPoint = new EndPoint(new URI("http://dbpedia.org/sparql"), null, EndPointType.VIRTUOSO);
+		EndPoint endPoint = new EndPoint("http://dbpedia.org/sparql", null, EndPointType.VIRTUOSO);
 		PaginatedQueryExec exec = new PaginatedQueryExec(endPoint);
 		List<Value> r = exec.process(query, "o");
 		logger.info(r.toString());

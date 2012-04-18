@@ -4,8 +4,8 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
-import nl.vu.queryfinder.model.EndPoint;
-import nl.vu.queryfinder.model.EndPoint.EndPointType;
+import nl.erdf.model.EndPoint;
+import nl.erdf.model.EndPoint.EndPointType;
 
 import org.openrdf.model.Value;
 import org.openrdf.query.QueryLanguage;
@@ -20,7 +20,7 @@ import org.slf4j.LoggerFactory;
 public class PaginatedQueryExec {
 	protected static final Logger logger = LoggerFactory.getLogger(PaginatedQueryExec.class);
 	private final static int PAGE_SIZE = 500;
-	private final static int HARD_LIMIT = 800;
+	private final static int HARD_LIMIT = 8;
 	SPARQLRepository repository;
 
 	/**
@@ -56,7 +56,7 @@ public class PaginatedQueryExec {
 
 				TupleQuery tupleQuery = conn.prepareTupleQuery(QueryLanguage.SPARQL, queryPage);
 				TupleQueryResult res = tupleQuery.evaluate();
-				while (res.hasNext()) {
+				while (res.hasNext() && results.size() < HARD_LIMIT) {
 					results.add(res.next().getValue(varName));
 					count++;
 				}

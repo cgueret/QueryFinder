@@ -3,10 +3,11 @@ package nl.vu.queryfinder;
 import java.util.HashMap;
 import java.util.Map;
 
-import nl.vu.queryfinder.model.Directory;
+import nl.erdf.model.Directory;
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.services.Service;
 import nl.vu.queryfinder.services.impl.Copy;
+import nl.vu.queryfinder.services.impl.EvolutionarySolver;
 import nl.vu.queryfinder.services.impl.SPARQLMatcher;
 
 import org.apache.commons.cli.CommandLine;
@@ -42,6 +43,14 @@ public class ServiceExec {
 				throw new Exception("Requiered parameter is missing: endpoints");
 			Directory directory = Directory.create(parameters.get("endpoints"));
 			Service service = new SPARQLMatcher(directory);
+			outputQuery = service.process(inputQuery);
+		}
+
+		else if (component.equals("evosolver")) {
+			if (!parameters.containsKey("endpoints"))
+				throw new Exception("Requiered parameter is missing: endpoints");
+			Directory directory = Directory.create(parameters.get("endpoints"));
+			Service service = new EvolutionarySolver(directory);
 			outputQuery = service.process(inputQuery);
 		}
 

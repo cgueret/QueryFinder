@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import nl.vu.queryfinder.model.Directory;
-import nl.vu.queryfinder.model.EndPoint;
-import nl.vu.queryfinder.model.EndPoint.EndPointType;
+import nl.erdf.model.Directory;
+import nl.erdf.model.EndPoint;
+import nl.erdf.model.EndPoint.EndPointType;
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.model.Triple;
 import nl.vu.queryfinder.services.Service;
@@ -32,8 +32,7 @@ public class SPARQLMatcher extends Service {
 	private static final Logger logger = LoggerFactory.getLogger(SPARQLMatcher.class);
 
 	// Property types ( RDF.PROPERTY )
-	private static final Value[] PROP_TYPES = { RDF.PROPERTY, OWL.DATATYPEPROPERTY, OWL.OBJECTPROPERTY,
-			OWL.FUNCTIONALPROPERTY };
+	private static final Value[] PROP_TYPES = { OWL.DATATYPEPROPERTY, OWL.OBJECTPROPERTY, OWL.FUNCTIONALPROPERTY };
 
 	// The end point to query
 	private final Map<EndPoint, PaginatedQueryExec> executors = new HashMap<EndPoint, PaginatedQueryExec>();

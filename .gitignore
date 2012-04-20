@@ -4,3 +4,4 @@
 .project
 .classpath
 /queryfinder_log.txt
+bin/

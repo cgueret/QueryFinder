@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import nl.vu.queryfinder.model.Directory;
-import nl.vu.queryfinder.model.EndPoint;
-import nl.vu.queryfinder.model.EndPoint.EndPointType;
+import nl.erdf.model.Directory;
+import nl.erdf.model.EndPoint;
+import nl.erdf.model.EndPoint.EndPointType;
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.model.Triple;
 import nl.vu.queryfinder.services.Service;

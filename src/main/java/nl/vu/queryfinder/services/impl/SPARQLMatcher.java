@@ -36,7 +36,7 @@ public class SPARQLMatcher extends Service {
 	// Logger
 	private static final Logger logger = LoggerFactory.getLogger(SPARQLMatcher.class);
 
-	// Property types RDF.PROPERTY
+	// Property types ( RDF.PROPERTY )
 	private static final Value[] PROP_TYPES = { OWL.DATATYPEPROPERTY, OWL.OBJECTPROPERTY, OWL.FUNCTIONALPROPERTY };
 
 	// The end point to query

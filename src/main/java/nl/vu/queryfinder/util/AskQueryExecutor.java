@@ -4,8 +4,8 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
-import nl.vu.queryfinder.model.EndPoint;
-import nl.vu.queryfinder.model.EndPoint.EndPointType;
+import nl.erdf.model.EndPoint;
+import nl.erdf.model.EndPoint.EndPointType;
 
 import org.openrdf.model.Value;
 import org.openrdf.query.BooleanQuery;

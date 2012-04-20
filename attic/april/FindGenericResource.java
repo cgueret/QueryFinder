@@ -8,21 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import nl.vu.queryfinder.model.EndPoint;
-import nl.vu.queryfinder.model.EndPoint.EndPointType;
+import nl.erdf.model.EndPoint;
+import nl.erdf.model.EndPoint.EndPointType;
 import nl.vu.queryfinder.services.impl.SPARQLMatcher;
 
-import com.hp.hpl.jena.graph.Node;
-import com.hp.hpl.jena.graph.Triple;
-import com.hp.hpl.jena.query.Query;
-import com.hp.hpl.jena.query.QueryExecutionFactory;
-import com.hp.hpl.jena.query.QueryFactory;
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.sparql.core.BasicPattern;
-import com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP;
-import com.hp.hpl.jena.sparql.syntax.ElementGroup;
-import com.hp.hpl.jena.sparql.syntax.Template;
+import com.sun.org.apache.xalan.internal.xsltc.compiler.Template;
 
 public class FindGenericResource {
 

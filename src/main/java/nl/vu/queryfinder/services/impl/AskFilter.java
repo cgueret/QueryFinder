@@ -14,8 +14,8 @@ import org.openrdf.repository.RepositoryException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import nl.vu.queryfinder.model.Directory;
-import nl.vu.queryfinder.model.EndPoint;
+import nl.erdf.model.Directory;
+import nl.erdf.model.EndPoint;
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.model.Triple;
 import nl.vu.queryfinder.services.Service;

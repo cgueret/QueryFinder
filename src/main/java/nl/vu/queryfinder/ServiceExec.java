@@ -7,6 +7,7 @@ import nl.vu.queryfinder.model.Directory;
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.services.Service;
 import nl.vu.queryfinder.services.impl.Copy;
+import nl.vu.queryfinder.services.impl.AskFilter;
 import nl.vu.queryfinder.services.impl.SPARQLMatcher;
 
 import org.apache.commons.cli.CommandLine;
@@ -45,6 +46,14 @@ public class ServiceExec {
 			outputQuery = service.process(inputQuery);
 		}
 
+		else if (component.equals("filter")) {
+			if (!parameters.containsKey("endpoints"))
+				throw new Exception("Requiered parameter is missing: endpoints");
+			Directory directory = Directory.create(parameters.get("endpoints"));
+			Service service = new AskFilter(directory);
+			outputQuery = service.process(inputQuery);
+		}
+		
 		else
 			throw new Exception("Unrecognised component:" + component);
 

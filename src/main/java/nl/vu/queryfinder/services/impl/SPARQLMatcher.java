@@ -13,7 +13,7 @@ import nl.vu.queryfinder.model.EndPoint.EndPointType;
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.model.Triple;
 import nl.vu.queryfinder.services.Service;
-import nl.vu.queryfinder.util.PaginatedQueryExec;
+import nl.vu.queryfinder.util.SelectQueryExecutor;
 
 import org.openrdf.model.Literal;
 import org.openrdf.model.Resource;
@@ -27,16 +27,20 @@ import org.openrdf.repository.RepositoryException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * @author Christophe Guéret <christophe.gueret@gmail.com>
+ * @see http
+ *      ://www.openlinksw.com/dataspace/dav/wiki/Main/VirtuosoFacetsViewsLinkedData
+ */
 public class SPARQLMatcher extends Service {
 	// Logger
 	private static final Logger logger = LoggerFactory.getLogger(SPARQLMatcher.class);
 
-	// Property types ( RDF.PROPERTY )
-	private static final Value[] PROP_TYPES = { RDF.PROPERTY, OWL.DATATYPEPROPERTY, OWL.OBJECTPROPERTY,
-			OWL.FUNCTIONALPROPERTY };
+	// Property types RDF.PROPERTY
+	private static final Value[] PROP_TYPES = { OWL.DATATYPEPROPERTY, OWL.OBJECTPROPERTY, OWL.FUNCTIONALPROPERTY };
 
 	// The end point to query
-	private final Map<EndPoint, PaginatedQueryExec> executors = new HashMap<EndPoint, PaginatedQueryExec>();
+	private final Map<EndPoint, SelectQueryExecutor> executors = new HashMap<EndPoint, SelectQueryExecutor>();
 
 	/**
 	 * @param endPoint
@@ -44,7 +48,7 @@ public class SPARQLMatcher extends Service {
 	 */
 	public SPARQLMatcher(Directory directory) throws RepositoryException {
 		for (EndPoint endPoint : directory) {
-			PaginatedQueryExec exec = new PaginatedQueryExec(endPoint);
+			SelectQueryExecutor exec = new SelectQueryExecutor(endPoint);
 			executors.put(endPoint, exec);
 		}
 	}
@@ -137,9 +141,9 @@ public class SPARQLMatcher extends Service {
 	protected List<Value> getClasses(String keyword) {
 		List<Value> results = new ArrayList<Value>();
 
-		for (Entry<EndPoint, PaginatedQueryExec> entry : executors.entrySet()) {
+		for (Entry<EndPoint, SelectQueryExecutor> entry : executors.entrySet()) {
 			EndPoint endPoint = entry.getKey();
-			PaginatedQueryExec executor = entry.getValue();
+			SelectQueryExecutor executor = entry.getValue();
 
 			// Build the query
 			String query = "SELECT DISTINCT ?c ";
@@ -175,9 +179,9 @@ public class SPARQLMatcher extends Service {
 
 		if (!keyword.equals("type")) {
 			for (Value propertyType : PROP_TYPES) {
-				for (Entry<EndPoint, PaginatedQueryExec> entry : executors.entrySet()) {
+				for (Entry<EndPoint, SelectQueryExecutor> entry : executors.entrySet()) {
 					EndPoint endPoint = entry.getKey();
-					PaginatedQueryExec executor = entry.getValue();
+					SelectQueryExecutor executor = entry.getValue();
 
 					// Build the query
 					String query = "SELECT DISTINCT ?c ";
@@ -216,9 +220,9 @@ public class SPARQLMatcher extends Service {
 	protected List<Value> getResources(String keyword, Statement context) {
 		List<Value> results = new ArrayList<Value>();
 
-		for (Entry<EndPoint, PaginatedQueryExec> entry : executors.entrySet()) {
+		for (Entry<EndPoint, SelectQueryExecutor> entry : executors.entrySet()) {
 			EndPoint endPoint = entry.getKey();
-			PaginatedQueryExec executor = entry.getValue();
+			SelectQueryExecutor executor = entry.getValue();
 
 			// Build the query
 			String query = "SELECT DISTINCT ?c ";

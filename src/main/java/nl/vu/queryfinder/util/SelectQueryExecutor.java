@@ -17,8 +17,8 @@ import org.openrdf.repository.sparql.SPARQLRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class PaginatedQueryExec {
-	protected static final Logger logger = LoggerFactory.getLogger(PaginatedQueryExec.class);
+public class SelectQueryExecutor {
+	protected static final Logger logger = LoggerFactory.getLogger(SelectQueryExecutor.class);
 	private final static int PAGE_SIZE = 500;
 	private final static int HARD_LIMIT = 800;
 	SPARQLRepository repository;
@@ -27,7 +27,7 @@ public class PaginatedQueryExec {
 	 * @param endPoint
 	 * @throws RepositoryException
 	 */
-	public PaginatedQueryExec(EndPoint endPoint) throws RepositoryException {
+	public SelectQueryExecutor(EndPoint endPoint) throws RepositoryException {
 		repository = new SPARQLRepository(endPoint.getURI().toString());
 		repository.initialize();
 	}
@@ -56,7 +56,7 @@ public class PaginatedQueryExec {
 
 				TupleQuery tupleQuery = conn.prepareTupleQuery(QueryLanguage.SPARQL, queryPage);
 				TupleQueryResult res = tupleQuery.evaluate();
-				while (res.hasNext()) {
+				while (res.hasNext() && results.size() < HARD_LIMIT) {
 					results.add(res.next().getValue(varName));
 					count++;
 				}
@@ -82,7 +82,7 @@ public class PaginatedQueryExec {
 	public static void main(String[] args) throws URISyntaxException, RepositoryException {
 		String query = "Select distinct ?o where {<http://dbpedia.org/resource/Amsterdam> ?p ?o}";
 		EndPoint endPoint = new EndPoint("http://dbpedia.org/sparql", null, EndPointType.VIRTUOSO);
-		PaginatedQueryExec exec = new PaginatedQueryExec(endPoint);
+		SelectQueryExecutor exec = new SelectQueryExecutor(endPoint);
 		List<Value> r = exec.process(query, "o");
 		logger.info(r.toString());
 		exec.shutDown();

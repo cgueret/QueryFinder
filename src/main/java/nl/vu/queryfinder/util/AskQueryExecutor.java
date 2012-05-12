@@ -1,17 +1,12 @@
 package nl.vu.queryfinder.util;
 
 import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.List;
 
 import nl.erdf.model.EndPoint;
 import nl.erdf.model.EndPoint.EndPointType;
 
-import org.openrdf.model.Value;
 import org.openrdf.query.BooleanQuery;
 import org.openrdf.query.QueryLanguage;
-import org.openrdf.query.TupleQuery;
-import org.openrdf.query.TupleQueryResult;
 import org.openrdf.repository.RepositoryConnection;
 import org.openrdf.repository.RepositoryException;
 import org.openrdf.repository.sparql.SPARQLRepository;
@@ -37,7 +32,7 @@ public class AskQueryExecutor {
 	 */
 	public boolean process(String pattern) {
 		boolean result = false;
-		
+
 		try {
 			RepositoryConnection conn = repository.getConnection();
 			String query = "ASK {" + pattern + "}";
@@ -62,7 +57,7 @@ public class AskQueryExecutor {
 		EndPoint endPoint = new EndPoint("http://dbpedia.org/sparql", "http://dbpedia.org", EndPointType.VIRTUOSO);
 		AskQueryExecutor exec = new AskQueryExecutor(endPoint);
 		boolean r = exec.process(query);
-		logger.info(""+r);
+		logger.info("" + r);
 		exec.shutDown();
 		logger.info("ok");
 		exec = null;

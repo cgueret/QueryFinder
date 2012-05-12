@@ -29,7 +29,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @author Christophe Guéret <christophe.gueret@gmail.com>
- * @see http
+ * @see http 
  *      ://www.openlinksw.com/dataspace/dav/wiki/Main/VirtuosoFacetsViewsLinkedData
  */
 public class SPARQLMatcher extends Service {
@@ -48,8 +48,10 @@ public class SPARQLMatcher extends Service {
 	 */
 	public SPARQLMatcher(Directory directory) throws RepositoryException {
 		for (EndPoint endPoint : directory) {
-			SelectQueryExecutor exec = new SelectQueryExecutor(endPoint);
-			executors.put(endPoint, exec);
+			if (endPoint.getType().equals(EndPointType.VIRTUOSO) || endPoint.getType().equals(EndPointType.OWLIM)) {
+				SelectQueryExecutor exec = new SelectQueryExecutor(endPoint);
+				executors.put(endPoint, exec);
+			}
 		}
 	}
 

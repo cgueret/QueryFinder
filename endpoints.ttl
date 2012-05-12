@@ -4,9 +4,14 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix sd:  <http://www.w3.org/ns/sparql-service-description#> .
 
-
 _:dbpedia
 	a sd:Service;
 	sd:defaultGraph "http://dbpedia.org";
 	sd:endpoint "http://dbpedia.org/sparql";
 	sd:supportedLanguage "virtuoso".
+
+_:localhbase
+	a sd:Service;
+	sd:endpoint "localhost";
+	sd:supportedLanguage "hbase".
+	

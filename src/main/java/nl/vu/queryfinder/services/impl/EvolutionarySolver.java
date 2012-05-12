@@ -9,6 +9,7 @@ import java.util.Observer;
 
 import nl.erdf.constraints.impl.StatementPatternConstraint;
 import nl.erdf.datalayer.DataLayer;
+import nl.erdf.datalayer.hbase.NativeHBaseDataLayer;
 import nl.erdf.datalayer.sparql.SPARQLDataLayer;
 import nl.erdf.model.Directory;
 import nl.erdf.model.Request;
@@ -39,8 +40,12 @@ public class EvolutionarySolver extends Service implements Observer {
 	 * @param directory
 	 */
 	public EvolutionarySolver(Directory directory) {
-		// Create the SPARQL data layer
-		dataLayer = new SPARQLDataLayer(directory);
+		if (directory != null) {
+			// Create the SPARQL data layer
+			dataLayer = new SPARQLDataLayer(directory);
+		} else {
+			dataLayer = new NativeHBaseDataLayer();
+		}
 	}
 
 	/*

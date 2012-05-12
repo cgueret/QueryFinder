@@ -6,8 +6,8 @@ import java.util.Map;
 import nl.erdf.model.Directory;
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.services.Service;
-import nl.vu.queryfinder.services.impl.Copy;
 import nl.vu.queryfinder.services.impl.AskFilter;
+import nl.vu.queryfinder.services.impl.Copy;
 import nl.vu.queryfinder.services.impl.EvolutionarySolver;
 import nl.vu.queryfinder.services.impl.SPARQLMatcher;
 
@@ -48,13 +48,10 @@ public class ServiceExec {
 		}
 
 		else if (component.equals("askfilter")) {
-			if (!parameters.containsKey("endpoints"))
-				throw new Exception("Requiered parameter is missing: endpoints");
-			Directory directory = Directory.create(parameters.get("endpoints"));
-			Service service = new AskFilter(directory);
+			Service service = new AskFilter();
 			outputQuery = service.process(inputQuery);
 		}
-		
+
 		else if (component.equals("evosolver")) {
 			if (!parameters.containsKey("endpoints"))
 				throw new Exception("Requiered parameter is missing: endpoints");

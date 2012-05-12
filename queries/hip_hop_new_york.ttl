@@ -1,0 +1,50 @@
+@prefix :     <http://example.org#>.
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+# Version from semplore
+# ?x typeof  Artist  
+# ?x origin  NewYork 
+# ?y artist  ?x     
+# ?y typeof  Album   
+# ?y keywords "hip hop"
+
+_:query
+	rdf:type	:Query;
+	rdfs:comment "Hip-hop artist from New york";
+	:statement _:a;
+	:statement _:b;
+	:statement _:c;
+	:statement _:d;
+	:statement _:e.
+	
+_:a
+	rdf:type rdf:Statement;
+	rdf:subject "?person";
+	rdf:predicate "type";
+	rdf:object "artist".
+
+_:b
+	rdf:type rdf:Statement;
+	rdf:subject "?person";
+	rdf:predicate "birth";
+	rdf:object "New York".
+
+_:c
+	rdf:type rdf:Statement;
+	rdf:subject "?album";
+	rdf:predicate "artist";
+	rdf:object "?person".
+
+_:d
+	rdf:type rdf:Statement;
+	rdf:subject "?album";
+	rdf:predicate "type";
+	rdf:object "album".
+
+_:e
+	rdf:type rdf:Statement;
+	rdf:subject "?album";
+	rdf:predicate "genre";
+	rdf:object "hip hop".
+	

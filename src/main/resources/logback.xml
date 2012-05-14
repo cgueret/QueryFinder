@@ -1,34 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-		<filter class="ch.qos.logback.core.filter.EvaluatorFilter">
-			<evaluator>
-				<expression>return logger.contains("jena");</expression>
-			</evaluator>
-			<OnMismatch>NEUTRAL</OnMismatch>
-			<OnMatch>DENY</OnMatch>
-		</filter>
+	<!-- Uncomment if you are using the logback plugin for eclipse <consolePlugin/> -->
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
-			<pattern>
-				%date{HH:mm:ss} [%thread] %-4level %logger{20} - %msg%n
-			</pattern>
+			<pattern>%d{HH:mm:ss.SSS} [%p] %c - %m%n</pattern>
 		</encoder>
-	</appender>
-	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
-		<file>queryfinder.log</file>
-		<append>false</append>
-		<filter class="ch.qos.logback.core.filter.EvaluatorFilter">
-			<evaluator>
-				<expression>return logger.contains("jena");</expression>
-			</evaluator>
-			<OnMismatch>NEUTRAL</OnMismatch>
-			<OnMatch>DENY</OnMatch>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>INFO</level>
 		</filter>
-		<encoder>
-			<pattern>[%date{HH:mm:ss}] %msg%n</pattern>
-		</encoder>
 	</appender>
 	<root level="INFO">
-		<appender-ref ref="STDOUT" />
-		<appender-ref ref="FILE" />
+		<appender-ref ref="CONSOLE" />
 	</root>
+	<logger name="org.apache.zookeeper" level="WARN" />
+	<logger name="org.apache.hadoop.hbase.zookeeper" level="WARN" />
 </configuration>

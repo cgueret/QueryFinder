@@ -103,9 +103,10 @@ public class EvolutionarySolver extends Service implements Observer {
 		Collection<Solution> solutions = (Collection<Solution>) param;
 		boolean stop = false;
 		for (Solution s : solutions) {
-			logger.info("Found solution:");
+			logger.info(s.toString());
 			for (nl.erdf.model.Triple triple : optimizer.getRequest().getTripleSet(s))
-				logger.info(triple.toString());
+				if (triple.getNumberNulls() == 0)
+					logger.info(triple.toString());
 			if (s.isOptimal()) {
 				stop = true;
 			}

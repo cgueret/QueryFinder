@@ -19,12 +19,17 @@ import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.PosixParser;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author Christophe Guéret <christophe.gueret@gmail.com>
  * 
  */
 public class Workflow {
+	// Logger
+	protected static final Logger logger = LoggerFactory.getLogger(Workflow.class);
+
 	/**
 	 * @param exitCode
 	 */
@@ -71,6 +76,7 @@ public class Workflow {
 	 */
 	private void process(String fileName) throws Exception {
 		// Turn the literals into resources
+		logger.info("1 - Turn the literals into resources");
 		String outputMatcherFileName = fileName.replace(".ttl", "-sparqlmatcher.ttl");
 		if (!(new File(outputMatcherFileName)).exists()) {
 			Directory directory = new Directory();
@@ -82,6 +88,7 @@ public class Workflow {
 		}
 
 		// Filter out non valid query patterns
+		logger.info("2 - Filter out non valid query patterns");
 		String outputAskFileName = fileName.replace(".ttl", "-askfilter.ttl");
 		if (!(new File(outputAskFileName)).exists()) {
 			Service matcher = new AskFilter();
@@ -90,9 +97,10 @@ public class Workflow {
 			matcher.process(query).saveTo(outputAskFileName);
 		}
 
-		// Filter out non valid query patterns
+		// Run the evolutionary solver
+		logger.info("3 - Run the evolutionary solver");
 		String outputSolverFileName = fileName.replace(".ttl", "-evosolver.ttl");
-		if (!(new File(outputSolverFileName)).exists()) {
+		if (true || !(new File(outputSolverFileName)).exists()) {
 			Service matcher = new EvolutionarySolver(null);
 			Query query = new Query();
 			query.loadFrom(outputAskFileName);

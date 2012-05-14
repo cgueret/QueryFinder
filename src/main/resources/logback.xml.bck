@@ -1,0 +1,34 @@
+<configuration>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+			<evaluator>
+				<expression>return logger.contains("jena");</expression>
+			</evaluator>
+			<OnMismatch>NEUTRAL</OnMismatch>
+			<OnMatch>DENY</OnMatch>
+		</filter>
+		<encoder>
+			<pattern>
+				%date{HH:mm:ss} [%thread] %-4level %logger{20} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+		<file>queryfinder.log</file>
+		<append>false</append>
+		<filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+			<evaluator>
+				<expression>return logger.contains("jena");</expression>
+			</evaluator>
+			<OnMismatch>NEUTRAL</OnMismatch>
+			<OnMatch>DENY</OnMatch>
+		</filter>
+		<encoder>
+			<pattern>[%date{HH:mm:ss}] %msg%n</pattern>
+		</encoder>
+	</appender>
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE" />
+	</root>
+</configuration>

@@ -2,7 +2,7 @@ package nl.vu.queryfinder.services.impl;
 
 import nl.erdf.datalayer.hbase.NativeHBaseDataLayer;
 import nl.vu.queryfinder.model.Query;
-import nl.vu.queryfinder.model.Triple;
+import nl.vu.queryfinder.model.Quad;
 import nl.vu.queryfinder.services.Service;
 
 import org.openrdf.model.Resource;
@@ -32,16 +32,16 @@ public class AskFilter extends Service {
 		NativeHBaseDataLayer d = new NativeHBaseDataLayer();
 
 		// Iterate over the triples
-		for (Triple triple : inputQuery.getTriples()) {
-			Resource s = triple.getSubject().stringValue().startsWith("?") ? null : (Resource) triple.getSubject();
-			URI p = triple.getPredicate().stringValue().startsWith("?") ? null : (URI) triple.getPredicate();
-			Value o = triple.getObject().stringValue().startsWith("?") ? null : triple.getObject();
+		for (Quad quad : inputQuery.getTriples()) {
+			Resource s = quad.getSubject().stringValue().startsWith("?") ? null : (Resource) quad.getSubject();
+			URI p = quad.getPredicate().stringValue().startsWith("?") ? null : (URI) quad.getPredicate();
+			Value o = quad.getObject().stringValue().startsWith("?") ? null : quad.getObject();
 			nl.erdf.model.Triple t = new nl.erdf.model.Triple(s, p, o);
 
 			// Test the triples with 0 or 1 variable
 			if (t.getNumberNulls() > 1 || d.isValid(t)) {
 				logger.info(t.toString());
-				outputQuery.addTriple(triple);
+				outputQuery.addQuad(quad);
 			}
 		}
 

@@ -13,17 +13,20 @@ _:a
 	rdf:type rdf:Statement;
 	rdf:subject "?p";
 	rdf:predicate "type";
-	rdf:object "artist".
+	rdf:object "artist";
+	rdfs:label "?p type artist".
 
 _:b
 	rdf:type rdf:Statement;
 	rdf:subject "?p";
 	rdf:predicate "field";
-	rdf:object "?f".
+	rdf:object "?f";
+	rdfs:label "?p field ?f".
 
 _:c
 	rdf:type rdf:Statement;
 	rdf:subject "?p";
 	rdf:predicate "birth";
-	rdf:object "Netherlands".
+	rdf:object "Netherlands";
+	rdfs:label "?p birth Netherlands".
 	

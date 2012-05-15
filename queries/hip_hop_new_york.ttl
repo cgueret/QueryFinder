@@ -22,29 +22,34 @@ _:a
 	rdf:type rdf:Statement;
 	rdf:subject "?person";
 	rdf:predicate "type";
-	rdf:object "artist".
+	rdf:object "artist";
+	rdfs:label "?person type artist".
 
 _:b
 	rdf:type rdf:Statement;
 	rdf:subject "?person";
 	rdf:predicate "birth";
-	rdf:object "New York".
+	rdf:object "New York";
+	rdfs:label "?person birth New York".
 
 _:c
 	rdf:type rdf:Statement;
 	rdf:subject "?album";
 	rdf:predicate "artist";
-	rdf:object "?person".
+	rdf:object "?person";
+	rdfs:label "?album artist ?person".
 
 _:d
 	rdf:type rdf:Statement;
 	rdf:subject "?album";
 	rdf:predicate "type";
-	rdf:object "album".
+	rdf:object "album";
+	rdfs:label "?album type album".
 
 _:e
 	rdf:type rdf:Statement;
 	rdf:subject "?album";
 	rdf:predicate "genre";
-	rdf:object "hip hop".
+	rdf:object "hip hop";
+	rdfs:label "?album genre hip hop".
 	

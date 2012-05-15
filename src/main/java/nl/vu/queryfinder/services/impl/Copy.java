@@ -4,7 +4,7 @@
 package nl.vu.queryfinder.services.impl;
 
 import nl.vu.queryfinder.model.Query;
-import nl.vu.queryfinder.model.Triple;
+import nl.vu.queryfinder.model.Quad;
 import nl.vu.queryfinder.services.Service;
 
 /**
@@ -30,8 +30,8 @@ public class Copy extends Service {
 		outputQuery.setDescription(inputQuery.getDescription());
 
 		// Copy the triples
-		for (Triple triple : inputQuery.getTriples())
-			outputQuery.addTriple(triple);
+		for (Quad triple : inputQuery.getTriples())
+			outputQuery.addQuad(triple);
 
 		return outputQuery;
 	}

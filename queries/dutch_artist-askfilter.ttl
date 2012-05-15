@@ -1,0 +1,53 @@
+@prefix qf: <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+_:node16t8cisitx1 a qf:Query ;
+	rdfs:comment "An artist born in the Netherlands who works in some field" ;
+	qf:statement _:node16t8cisitx2 .
+
+_:node16t8cisitx2 a rdf:Statement ;
+	rdf:subject "?p" ;
+	rdf:predicate rdf:type ;
+	rdf:object <http://dbpedia.org/ontology/Artist> ;
+	rdfs:label "?p type artist" .
+
+_:node16t8cisitx1 qf:statement _:node16t8cisitx3 .
+
+_:node16t8cisitx3 a rdf:Statement ;
+	rdf:subject "?p" ;
+	rdf:predicate rdf:type ;
+	rdf:object <http://dbpedia.org/ontology/MusicalArtist> ;
+	rdfs:label "?p type artist" .
+
+_:node16t8cisitx1 qf:statement _:node16t8cisitx4 .
+
+_:node16t8cisitx4 a rdf:Statement ;
+	rdf:subject "?p" ;
+	rdf:predicate rdf:type ;
+	rdf:object <http://dbpedia.org/ontology/MartialArtist> ;
+	rdfs:label "?p type artist" .
+
+_:node16t8cisitx1 qf:statement _:node16t8cisitx5 .
+
+_:node16t8cisitx5 a rdf:Statement ;
+	rdf:subject "?p" ;
+	rdf:predicate <http://dbpedia.org/ontology/field> ;
+	rdf:object "?f" ;
+	rdfs:label "?p field ?f" .
+
+_:node16t8cisitx1 qf:statement _:node16t8cisitx6 .
+
+_:node16t8cisitx6 a rdf:Statement ;
+	rdf:subject "?p" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Netherlands> ;
+	rdfs:label "?p birth Netherlands" .
+
+_:node16t8cisitx1 qf:statement _:node16t8cisitx7 .
+
+_:node16t8cisitx7 a rdf:Statement ;
+	rdf:subject "?p" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/United_Kingdom_of_the_Netherlands> ;
+	rdfs:label "?p birth Netherlands" .

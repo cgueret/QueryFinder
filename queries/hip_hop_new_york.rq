@@ -1,0 +1,16 @@
+select ?album ?person {
+?album a <http://dbpedia.org/ontology/Album>.
+?album <http://dbpedia.org/ontology/artist> ?person.
+?person <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/New_York>.
+?person a <http://dbpedia.org/ontology/Artist>.
+}
+
+select distinct ?p (count (?a) as ?t) {
+?a <http://dbpedia.org/ontology/artist> ?p.
+?p <http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/New_York>.
+?a a <http://dbpedia.org/ontology/Album>.
+?p a <http://dbpedia.org/ontology/Artist>.
+}
+group by ?p
+order by ?t 
+

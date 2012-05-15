@@ -4,10 +4,14 @@
 package nl.vu.queryfinder.services.impl;
 
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Observable;
 import java.util.Observer;
 
 import nl.erdf.constraints.impl.StatementPatternConstraint;
+import nl.erdf.constraints.impl.StatementPatternSetConstraint;
 import nl.erdf.datalayer.DataLayer;
 import nl.erdf.datalayer.hbase.NativeHBaseDataLayer;
 import nl.erdf.datalayer.sparql.SPARQLDataLayer;
@@ -15,10 +19,11 @@ import nl.erdf.model.Directory;
 import nl.erdf.model.Request;
 import nl.erdf.model.Solution;
 import nl.erdf.model.impl.StatementPatternProvider;
+import nl.erdf.model.impl.StatementPatternSetProvider;
 import nl.erdf.optimizer.Optimizer;
 import nl.erdf.util.Converter;
+import nl.vu.queryfinder.model.Quad;
 import nl.vu.queryfinder.model.Query;
-import nl.vu.queryfinder.model.Triple;
 import nl.vu.queryfinder.services.Service;
 
 import org.openrdf.query.algebra.StatementPattern;
@@ -60,22 +65,47 @@ public class EvolutionarySolver extends Service implements Observer {
 		Request request = new Request(dataLayer);
 
 		// Fill up the request
-		for (Triple triple : inputQuery.getTriples()) {
+		Map<String, StatementPatternSetConstraint> constraints = new HashMap<String, StatementPatternSetConstraint>();
+		Map<String, StatementPatternSetProvider> providers = new HashMap<String, StatementPatternSetProvider>();
+		for (Quad quad : inputQuery.getTriples()) {
 			// Turn the triple into a statement pattern
-			Var s = Converter.toVar(triple.getSubject());
-			Var p = Converter.toVar(triple.getPredicate());
-			Var o = Converter.toVar(triple.getObject());
+			Var s = Converter.toVar(quad.getSubject());
+			Var p = Converter.toVar(quad.getPredicate());
+			Var o = Converter.toVar(quad.getObject());
+			String c = quad.getContext().stringValue();
 			StatementPattern pattern = new StatementPattern(s, p, o);
 
 			// Add a constraint
-			request.addConstraint(new StatementPatternConstraint(pattern));
+			if (constraints.containsKey(c)) {
+				StatementPatternSetConstraint set = constraints.get(c);
+				set.add(new StatementPatternConstraint(pattern));
+			} else {
+				StatementPatternSetConstraint set = new StatementPatternSetConstraint(c);
+				set.add(new StatementPatternConstraint(pattern));
+				constraints.put(c, set);
+			}
 
-			// Use that pattern as a data source
-			request.addResourceProvider(new StatementPatternProvider(pattern));
+			// Use that pattern as a provider
+			if (providers.containsKey(c)) {
+				StatementPatternSetProvider set = providers.get(c);
+				set.add(new StatementPatternProvider(pattern));
+			} else {
+				StatementPatternSetProvider set = new StatementPatternSetProvider(c);
+				set.add(new StatementPatternProvider(pattern));
+				providers.put(c, set);
+			}
 
-			// Use is too to instantiate solutions
+			// Use it too to instantiate solutions
 			request.addStatementPattern(pattern);
 		}
+
+		// Add the constraints
+		for (Entry<String, StatementPatternSetConstraint> set : constraints.entrySet())
+			request.addConstraint(set.getValue());
+
+		// Add the providers
+		for (Entry<String, StatementPatternSetProvider> set : providers.entrySet())
+			request.addResourceProvider(set.getValue());
 
 		// Create the optimiser
 		Optimizer optimizer = new Optimizer(dataLayer, request, null);

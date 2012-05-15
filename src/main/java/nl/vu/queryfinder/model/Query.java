@@ -225,9 +225,9 @@ public class Query {
 	/**
 	 * @return
 	 */
-	public List<Triple> getTriples() {
+	public List<Quad> getTriples() {
 		// Prepare result list
-		List<Triple> triples = new ArrayList<Triple>();
+		List<Quad> triples = new ArrayList<Quad>();
 
 		SailRepositoryConnection connection = null;
 		try {
@@ -235,17 +235,19 @@ public class Query {
 			connection = repository.getConnection();
 
 			// Get the list of statements
-			String queryStr = "SELECT DISTINCT ?q ?st ?s ?p ?o WHERE {";
+			String queryStr = "SELECT DISTINCT ?q ?st ?s ?p ?o ?c WHERE {";
 			queryStr += "?q <" + RDF.TYPE + "> <" + QF.QUERY + ">.";
 			queryStr += "?q <" + QF.STATEMENT + "> ?st.";
 			queryStr += "?st <" + RDF.SUBJECT + "> ?s. ";
 			queryStr += "?st <" + RDF.PREDICATE + "> ?p. ";
-			queryStr += "?st <" + RDF.OBJECT + "> ?o. }";
+			queryStr += "?st <" + RDF.OBJECT + "> ?o. ";
+			queryStr += "?st <" + RDFS.LABEL + "> ?c. }";
 			TupleQuery tupleQuery = connection.prepareTupleQuery(QueryLanguage.SPARQL, queryStr);
 			TupleQueryResult results = tupleQuery.evaluate();
 			while (results.hasNext()) {
 				BindingSet result = results.next();
-				Triple t = new Triple(result.getValue("s"), result.getValue("p"), result.getValue("o"));
+				Quad t = new Quad(result.getValue("s"), result.getValue("p"), result.getValue("o"),
+						result.getValue("c"));
 				triples.add(t);
 			}
 		} catch (RepositoryException e) {
@@ -267,9 +269,9 @@ public class Query {
 	}
 
 	/**
-	 * @param triple
+	 * @param quad
 	 */
-	public void addTriple(Triple triple) {
+	public void addQuad(final Quad quad) {
 		// Get the name of the query
 		Resource queryResource = getQueryResource();
 
@@ -284,9 +286,10 @@ public class Query {
 
 			// Reify the triple
 			connection.add(stmtResource, RDF.TYPE, RDF.STATEMENT);
-			connection.add(stmtResource, RDF.SUBJECT, triple.getSubject());
-			connection.add(stmtResource, RDF.PREDICATE, triple.getPredicate());
-			connection.add(stmtResource, RDF.OBJECT, triple.getObject());
+			connection.add(stmtResource, RDF.SUBJECT, quad.getSubject());
+			connection.add(stmtResource, RDF.PREDICATE, quad.getPredicate());
+			connection.add(stmtResource, RDF.OBJECT, quad.getObject());
+			connection.add(stmtResource, RDFS.LABEL, quad.getContext());
 
 			// Commit
 			connection.commit();

@@ -10,8 +10,8 @@ import java.util.Map.Entry;
 import nl.erdf.model.Directory;
 import nl.erdf.model.EndPoint;
 import nl.erdf.model.EndPoint.EndPointType;
+import nl.vu.queryfinder.model.Quad;
 import nl.vu.queryfinder.model.Query;
-import nl.vu.queryfinder.model.Triple;
 import nl.vu.queryfinder.services.Service;
 import nl.vu.queryfinder.util.SelectQueryExecutor;
 
@@ -70,12 +70,12 @@ public class SPARQLMatcher extends Service {
 		outputQuery.setDescription(inputQuery.getDescription());
 
 		// Iterate over the triples
-		for (Triple triple : inputQuery.getTriples()) {
-			logger.info(triple.toString());
+		for (Quad quad : inputQuery.getTriples()) {
+			logger.info(quad.toString());
 
 			// Prepare a list of subjects
 			List<Value> subjects = new ArrayList<Value>();
-			Value subject = triple.getSubject();
+			Value subject = quad.getSubject();
 			if (subject instanceof Resource) {
 				subjects.add(subject);
 			} else if (subject instanceof Literal) {
@@ -88,7 +88,7 @@ public class SPARQLMatcher extends Service {
 
 			// Prepare a list of predicates
 			List<Value> predicates = new ArrayList<Value>();
-			Value predicate = triple.getPredicate();
+			Value predicate = quad.getPredicate();
 			if (predicate instanceof Resource) {
 				predicates.add(predicate);
 			} else if (predicate instanceof Literal) {
@@ -101,7 +101,7 @@ public class SPARQLMatcher extends Service {
 
 			// Prepare a list of objects
 			List<Value> objects = new ArrayList<Value>();
-			Value object = triple.getObject();
+			Value object = quad.getObject();
 			if (object instanceof Resource) {
 				objects.add(object);
 			} else if (object instanceof Literal) {
@@ -126,8 +126,8 @@ public class SPARQLMatcher extends Service {
 			for (Value s : subjects) {
 				for (Value p : predicates) {
 					for (Value o : objects) {
-						Triple t = new Triple(s, p, o);
-						outputQuery.addTriple(t);
+						Quad t = new Quad(s, p, o, quad.getContext());
+						outputQuery.addQuad(t);
 					}
 				}
 			}

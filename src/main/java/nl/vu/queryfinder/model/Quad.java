@@ -9,20 +9,22 @@ import org.openrdf.model.Value;
  * @author Christophe Guéret <christophe.gueret@gmail.com>
  * 
  */
-public class Triple {
+public class Quad {
 	private final Value subject;
 	private final Value predicate;
 	private final Value object;
+	private final Value context;
 
 	/**
 	 * @param subject
 	 * @param predicate
 	 * @param object
 	 */
-	public Triple(Value subject, Value predicate, Value object) {
+	public Quad(Value subject, Value predicate, Value object, Value context) {
 		this.subject = subject;
 		this.predicate = predicate;
 		this.object = object;
+		this.context = context;
 	}
 
 	/*
@@ -32,7 +34,8 @@ public class Triple {
 	 */
 	@Override
 	public String toString() {
-		return "Triple [subject=" + subject + ", predicate=" + predicate + ", object=" + object + "]";
+		return "Triple [subject=" + subject + ", predicate=" + predicate + ", object=" + object + ", context="
+				+ context + "]";
 	}
 
 	/**
@@ -54,5 +57,12 @@ public class Triple {
 	 */
 	public Value getObject() {
 		return object;
+	}
+
+	/**
+	 * @return the context
+	 */
+	public Value getContext() {
+		return context;
 	}
 }

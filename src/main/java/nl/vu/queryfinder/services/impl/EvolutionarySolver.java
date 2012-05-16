@@ -19,7 +19,6 @@ import nl.erdf.model.Directory;
 import nl.erdf.model.Request;
 import nl.erdf.model.Solution;
 import nl.erdf.model.impl.StatementPatternProvider;
-import nl.erdf.model.impl.StatementPatternSetProvider;
 import nl.erdf.optimizer.Optimizer;
 import nl.erdf.util.Converter;
 import nl.vu.queryfinder.model.Quad;
@@ -66,7 +65,6 @@ public class EvolutionarySolver extends Service implements Observer {
 
 		// Fill up the request
 		Map<String, StatementPatternSetConstraint> constraints = new HashMap<String, StatementPatternSetConstraint>();
-		Map<String, StatementPatternSetProvider> providers = new HashMap<String, StatementPatternSetProvider>();
 		for (Quad quad : inputQuery.getTriples()) {
 			// Turn the triple into a statement pattern
 			Var s = Converter.toVar(quad.getSubject());
@@ -85,15 +83,13 @@ public class EvolutionarySolver extends Service implements Observer {
 				constraints.put(c, set);
 			}
 
-			// Use that pattern as a provider
-			if (providers.containsKey(c)) {
-				StatementPatternSetProvider set = providers.get(c);
-				set.add(new StatementPatternProvider(pattern));
-			} else {
-				StatementPatternSetProvider set = new StatementPatternSetProvider(c);
-				set.add(new StatementPatternProvider(pattern));
-				providers.put(c, set);
-			}
+			// If it has only one variable, use that pattern as a provider
+			int nbVar = 0;
+			nbVar += quad.getSubject().stringValue().startsWith("?") ? 1 : 0;
+			nbVar += quad.getPredicate().stringValue().startsWith("?") ? 1 : 0;
+			nbVar += quad.getObject().stringValue().startsWith("?") ? 1 : 0;
+			if (nbVar == 1)
+				request.addResourceProvider(new StatementPatternProvider(pattern));
 
 			// Use it too to instantiate solutions
 			request.addStatementPattern(pattern);
@@ -102,10 +98,6 @@ public class EvolutionarySolver extends Service implements Observer {
 		// Add the constraints
 		for (Entry<String, StatementPatternSetConstraint> set : constraints.entrySet())
 			request.addConstraint(set.getValue());
-
-		// Add the providers
-		for (Entry<String, StatementPatternSetProvider> set : providers.entrySet())
-			request.addResourceProvider(set.getValue());
 
 		// Create the optimiser
 		Optimizer optimizer = new Optimizer(dataLayer, request, null);

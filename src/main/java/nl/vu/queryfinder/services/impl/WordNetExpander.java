@@ -129,7 +129,7 @@ public class WordNetExpander extends Service {
 		for (IWord w : synset.getWords())
 			out.add(f.createLiteral(w.getLemma()));
 
-		return null;
+		return out;
 	}
 
 	/**

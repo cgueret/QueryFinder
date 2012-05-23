@@ -16,10 +16,10 @@ public class QF {
 	public static final String NAMESPACE = "http://example.org#";
 
 	/** http://example.org#Query */
-	public final static URI QUERY;
+	public static final URI QUERY;
 
 	/** http://example.org#statement */
-	public final static URI STATEMENT;
+	public static final URI STATEMENT;
 
 	static {
 		ValueFactory factory = ValueFactoryImpl.getInstance();

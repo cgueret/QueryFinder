@@ -1,8 +1,9 @@
 package nl.vu.queryfinder.services.impl;
 
+import nl.erdf.datalayer.DataLayer;
 import nl.erdf.datalayer.hbase.NativeHBaseDataLayer;
-import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.model.Quad;
+import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.services.Service;
 
 import org.openrdf.model.Resource;
@@ -29,7 +30,7 @@ public class AskFilter extends Service {
 		// Copy the value of the description
 		outputQuery.setDescription(inputQuery.getDescription());
 
-		NativeHBaseDataLayer d = new NativeHBaseDataLayer();
+		DataLayer d = NativeHBaseDataLayer.getInstance("test");
 
 		// Iterate over the triples
 		for (Quad quad : inputQuery.getTriples()) {

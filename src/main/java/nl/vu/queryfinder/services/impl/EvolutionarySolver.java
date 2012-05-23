@@ -48,7 +48,7 @@ public class EvolutionarySolver extends Service implements Observer {
 			// Create the SPARQL data layer
 			dataLayer = new SPARQLDataLayer(directory);
 		} else {
-			dataLayer = new NativeHBaseDataLayer();
+			dataLayer = NativeHBaseDataLayer.getInstance("test");
 		}
 	}
 

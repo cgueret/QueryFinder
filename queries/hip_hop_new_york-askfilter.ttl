@@ -2,740 +2,4076 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-_:node16t8d3p95x1 a qf:Query ;
+_:node16v3l8be1x1 a qf:Query ;
 	rdfs:comment "Hip-hop artist from New york" ;
-	qf:statement _:node16t8d3p95x2 .
+	qf:statement _:node16v3l8be1x2 .
 
-_:node16t8d3p95x2 a rdf:Statement ;
+_:node16v3l8be1x2 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate rdf:type ;
 	rdf:object <http://dbpedia.org/ontology/Artist> ;
 	rdfs:label "?person type artist" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x3 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x3 .
 
-_:node16t8d3p95x3 a rdf:Statement ;
+_:node16v3l8be1x3 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate rdf:type ;
 	rdf:object <http://dbpedia.org/ontology/MusicalArtist> ;
 	rdfs:label "?person type artist" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x4 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x4 .
 
-_:node16t8d3p95x4 a rdf:Statement ;
+_:node16v3l8be1x4 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate rdf:type ;
 	rdf:object <http://dbpedia.org/ontology/MartialArtist> ;
 	rdfs:label "?person type artist" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x5 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x5 .
 
-_:node16t8d3p95x5 a rdf:Statement ;
+_:node16v3l8be1x5 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x6 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x6 .
 
-_:node16t8d3p95x6 a rdf:Statement ;
+_:node16v3l8be1x6 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/New_York_City> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x7 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x7 .
 
-_:node16t8d3p95x7 a rdf:Statement ;
+_:node16v3l8be1x7 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Brooklyn> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x8 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x8 .
 
-_:node16t8d3p95x8 a rdf:Statement ;
+_:node16v3l8be1x8 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Manhattan> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x9 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x9 .
 
-_:node16t8d3p95x9 a rdf:Statement ;
+_:node16v3l8be1x9 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Buffalo,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x10 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x10 .
 
-_:node16t8d3p95x10 a rdf:Statement ;
+_:node16v3l8be1x10 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Rochester,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x11 .
+
+_:node16v3l8be1x11 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Syracuse,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x11 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x12 .
 
-_:node16t8d3p95x11 a rdf:Statement ;
+_:node16v3l8be1x12 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Long_Island> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x12 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x13 .
 
-_:node16t8d3p95x12 a rdf:Statement ;
+_:node16v3l8be1x13 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Albany,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x13 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x14 .
 
-_:node16t8d3p95x13 a rdf:Statement ;
+_:node16v3l8be1x14 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Staten_Island> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x14 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x15 .
 
-_:node16t8d3p95x14 a rdf:Statement ;
+_:node16v3l8be1x15 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Poughkeepsie,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x15 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x16 .
 
-_:node16t8d3p95x15 a rdf:Statement ;
+_:node16v3l8be1x16 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/New_York_Knicks> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x16 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x17 .
 
-_:node16t8d3p95x16 a rdf:Statement ;
+_:node16v3l8be1x17 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Suffolk_County,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x17 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x18 .
 
-_:node16t8d3p95x17 a rdf:Statement ;
+_:node16v3l8be1x18 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Troy,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x19 .
+
+_:node16v3l8be1x19 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Ithaca,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x18 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x20 .
 
-_:node16t8d3p95x18 a rdf:Statement ;
+_:node16v3l8be1x20 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Westchester_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x21 .
+
+_:node16v3l8be1x21 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Nassau_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x22 .
+
+_:node16v3l8be1x22 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Yonkers,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x19 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x23 .
 
-_:node16t8d3p95x19 a rdf:Statement ;
+_:node16v3l8be1x23 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Utica,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x20 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x24 .
 
-_:node16t8d3p95x20 a rdf:Statement ;
+_:node16v3l8be1x24 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Binghamton,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x25 .
+
+_:node16v3l8be1x25 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Kingston,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x21 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x26 .
 
-_:node16t8d3p95x21 a rdf:Statement ;
+_:node16v3l8be1x26 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/New_Rochelle,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x22 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x27 .
 
-_:node16t8d3p95x22 a rdf:Statement ;
+_:node16v3l8be1x27 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Schenectady,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x23 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x28 .
 
-_:node16t8d3p95x23 a rdf:Statement ;
+_:node16v3l8be1x28 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Newburgh_%28city%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x29 .
+
+_:node16v3l8be1x29 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/White_Plains,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x24 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x30 .
 
-_:node16t8d3p95x24 a rdf:Statement ;
+_:node16v3l8be1x30 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Elmira,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x31 .
+
+_:node16v3l8be1x31 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Orange_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x32 .
+
+_:node16v3l8be1x32 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Flushing,_Queens> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x25 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x33 .
 
-_:node16t8d3p95x25 a rdf:Statement ;
+_:node16v3l8be1x33 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Erie_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x34 .
+
+_:node16v3l8be1x34 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Ulster_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x35 .
+
+_:node16v3l8be1x35 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Onondaga_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x36 .
+
+_:node16v3l8be1x36 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Albany_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x37 .
+
+_:node16v3l8be1x37 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Dutchess_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x38 .
+
+_:node16v3l8be1x38 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Auburn,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x39 .
+
+_:node16v3l8be1x39 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Saratoga_Springs,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x40 .
+
+_:node16v3l8be1x40 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Monroe_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x41 .
+
+_:node16v3l8be1x41 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Niagara_Falls,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x26 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x42 .
 
-_:node16t8d3p95x26 a rdf:Statement ;
+_:node16v3l8be1x42 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Mount_Vernon,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x27 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x43 .
 
-_:node16t8d3p95x27 a rdf:Statement ;
+_:node16v3l8be1x43 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Huntington,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x28 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x44 .
 
-_:node16t8d3p95x28 a rdf:Statement ;
+_:node16v3l8be1x44 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Oneida_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x45 .
+
+_:node16v3l8be1x45 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Saranac_Lake,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x46 .
+
+_:node16v3l8be1x46 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Jamaica,_Queens> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x29 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x47 .
 
-_:node16t8d3p95x29 a rdf:Statement ;
+_:node16v3l8be1x47 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Essex_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x48 .
+
+_:node16v3l8be1x48 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/West_Point,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x30 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x49 .
 
-_:node16t8d3p95x30 a rdf:Statement ;
+_:node16v3l8be1x49 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Glens_Falls,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x31 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x50 .
 
-_:node16t8d3p95x31 a rdf:Statement ;
+_:node16v3l8be1x50 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Glen_Cove,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x32 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x51 .
 
-_:node16t8d3p95x32 a rdf:Statement ;
+_:node16v3l8be1x51 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Oswego,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x52 .
+
+_:node16v3l8be1x52 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Cattaraugus_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x53 .
+
+_:node16v3l8be1x53 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Rockland_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x54 .
+
+_:node16v3l8be1x54 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Jefferson_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x55 .
+
+_:node16v3l8be1x55 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Middletown,_Orange_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x56 .
+
+_:node16v3l8be1x56 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/St._Lawrence_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x57 .
+
+_:node16v3l8be1x57 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Plattsburgh_%28city%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x58 .
+
+_:node16v3l8be1x58 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Rensselaer_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x59 .
+
+_:node16v3l8be1x59 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Saratoga_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x60 .
+
+_:node16v3l8be1x60 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Steuben_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x61 .
+
+_:node16v3l8be1x61 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Columbia_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x62 .
+
+_:node16v3l8be1x62 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Chautauqua_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x63 .
+
+_:node16v3l8be1x63 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Watertown_%28city%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x64 .
+
+_:node16v3l8be1x64 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Greene_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x65 .
+
+_:node16v3l8be1x65 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Oswego_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x66 .
+
+_:node16v3l8be1x66 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Peekskill,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x33 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x67 .
 
-_:node16t8d3p95x33 a rdf:Statement ;
+_:node16v3l8be1x67 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Jamestown,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x68 .
+
+_:node16v3l8be1x68 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Sullivan_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x69 .
+
+_:node16v3l8be1x69 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Hudson,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x34 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x70 .
 
-_:node16t8d3p95x34 a rdf:Statement ;
+_:node16v3l8be1x70 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Bronxville,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x35 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x71 .
 
-_:node16t8d3p95x35 a rdf:Statement ;
+_:node16v3l8be1x71 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Niagara_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x72 .
+
+_:node16v3l8be1x72 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Cayuga_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x73 .
+
+_:node16v3l8be1x73 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Ontario_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x74 .
+
+_:node16v3l8be1x74 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Franklin_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x75 .
+
+_:node16v3l8be1x75 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Washington_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x76 .
+
+_:node16v3l8be1x76 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Mineola,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x36 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x77 .
 
-_:node16t8d3p95x36 a rdf:Statement ;
+_:node16v3l8be1x77 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Broome_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x78 .
+
+_:node16v3l8be1x78 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Lockport_%28city%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x79 .
+
+_:node16v3l8be1x79 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Geneva,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x37 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x80 .
 
-_:node16t8d3p95x37 a rdf:Statement ;
+_:node16v3l8be1x80 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Putnam_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x81 .
+
+_:node16v3l8be1x81 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Chenango_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x82 .
+
+_:node16v3l8be1x82 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Tarrytown,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x83 .
+
+_:node16v3l8be1x83 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Rome,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x84 .
+
+_:node16v3l8be1x84 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Otsego_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x85 .
+
+_:node16v3l8be1x85 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Rye_%28city%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x86 .
+
+_:node16v3l8be1x86 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Mount_Kisco,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x38 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x87 .
 
-_:node16t8d3p95x38 a rdf:Statement ;
+_:node16v3l8be1x87 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Woodstock,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x88 .
+
+_:node16v3l8be1x88 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Delaware_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x89 .
+
+_:node16v3l8be1x89 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Genesee_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x90 .
+
+_:node16v3l8be1x90 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Southampton_%28town%29,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x39 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x91 .
 
-_:node16t8d3p95x39 a rdf:Statement ;
+_:node16v3l8be1x91 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Manhasset,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x92 .
+
+_:node16v3l8be1x92 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Beacon,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x93 .
+
+_:node16v3l8be1x93 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Livingston_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x94 .
+
+_:node16v3l8be1x94 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Madison_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x95 .
+
+_:node16v3l8be1x95 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Herkimer_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x96 .
+
+_:node16v3l8be1x96 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Rhinebeck_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x97 .
+
+_:node16v3l8be1x97 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Tompkins_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x98 .
+
+_:node16v3l8be1x98 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Hyde_Park,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x40 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x99 .
 
-_:node16t8d3p95x40 a rdf:Statement ;
+_:node16v3l8be1x99 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Cooperstown,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x100 .
+
+_:node16v3l8be1x100 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Wayne_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x101 .
+
+_:node16v3l8be1x101 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hempstead_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x102 .
+
+_:node16v3l8be1x102 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Amherst,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x103 .
+
+_:node16v3l8be1x103 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Batavia,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x104 .
+
+_:node16v3l8be1x104 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Cortland_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x105 .
+
+_:node16v3l8be1x105 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Schoharie_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x106 .
+
+_:node16v3l8be1x106 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Oneonta,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x107 .
+
+_:node16v3l8be1x107 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Port_Chester,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x41 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x108 .
 
-_:node16t8d3p95x41 a rdf:Statement ;
+_:node16v3l8be1x108 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Canandaigua_%28city%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x109 .
+
+_:node16v3l8be1x109 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Rockville_Centre,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x42 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x110 .
 
-_:node16t8d3p95x42 a rdf:Statement ;
+_:node16v3l8be1x110 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Montgomery_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x111 .
+
+_:node16v3l8be1x111 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Roslyn,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x112 .
+
+_:node16v3l8be1x112 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Smithtown,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x43 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x113 .
 
-_:node16t8d3p95x43 a rdf:Statement ;
+_:node16v3l8be1x113 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Warren_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x114 .
+
+_:node16v3l8be1x114 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Great_Neck,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x44 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x115 .
 
-_:node16t8d3p95x44 a rdf:Statement ;
+_:node16v3l8be1x115 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Keene,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x116 .
+
+_:node16v3l8be1x116 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Wyoming_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x117 .
+
+_:node16v3l8be1x117 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Garden_City,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x118 .
+
+_:node16v3l8be1x118 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Corning_%28city%29,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x45 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x119 .
 
-_:node16t8d3p95x45 a rdf:Statement ;
+_:node16v3l8be1x119 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Dobbs_Ferry,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x120 .
+
+_:node16v3l8be1x120 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Suffern,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x121 .
+
+_:node16v3l8be1x121 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Nyack,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x46 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x122 .
 
-_:node16t8d3p95x46 a rdf:Statement ;
+_:node16v3l8be1x122 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Ogdensburg,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x123 .
+
+_:node16v3l8be1x123 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Bay_Shore,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x47 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x124 .
 
-_:node16t8d3p95x47 a rdf:Statement ;
+_:node16v3l8be1x124 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Amityville,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x48 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x125 .
 
-_:node16t8d3p95x48 a rdf:Statement ;
+_:node16v3l8be1x125 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/East_Hampton_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x126 .
+
+_:node16v3l8be1x126 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Stony_Brook,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x127 .
+
+_:node16v3l8be1x127 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Endicott,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x128 .
+
+_:node16v3l8be1x128 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Catskill_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x129 .
+
+_:node16v3l8be1x129 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/York_County,_New_Brunswick> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x130 .
+
+_:node16v3l8be1x130 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Massapequa,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x49 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x131 .
 
-_:node16t8d3p95x49 a rdf:Statement ;
+_:node16v3l8be1x131 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Lake_Placid,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x132 .
+
+_:node16v3l8be1x132 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Cazenovia,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x133 .
+
+_:node16v3l8be1x133 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Cornwall,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x134 .
+
+_:node16v3l8be1x134 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Ossining_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x135 .
+
+_:node16v3l8be1x135 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Cortland,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x136 .
+
+_:node16v3l8be1x136 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Elmont,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x137 .
+
+_:node16v3l8be1x137 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Long_Beach,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x138 .
+
+_:node16v3l8be1x138 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Farmingdale,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x139 .
+
+_:node16v3l8be1x139 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Syosset,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x140 .
+
+_:node16v3l8be1x140 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Olean,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x141 .
+
+_:node16v3l8be1x141 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Amsterdam_%28city%29,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x50 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x142 .
 
-_:node16t8d3p95x50 a rdf:Statement ;
+_:node16v3l8be1x142 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Seneca_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x143 .
+
+_:node16v3l8be1x143 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hamilton_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x144 .
+
+_:node16v3l8be1x144 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Norwich_%28city%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x145 .
+
+_:node16v3l8be1x145 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Patchogue,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x146 .
+
+_:node16v3l8be1x146 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/West_Islip,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x147 .
+
+_:node16v3l8be1x147 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Westbury,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x51 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x148 .
 
-_:node16t8d3p95x51 a rdf:Statement ;
+_:node16v3l8be1x148 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Johnson_City,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x149 .
+
+_:node16v3l8be1x149 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Seneca_Falls_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x150 .
+
+_:node16v3l8be1x150 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Freeport,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x151 .
+
+_:node16v3l8be1x151 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Riverhead_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x152 .
+
+_:node16v3l8be1x152 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Orchard_Park_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x153 .
+
+_:node16v3l8be1x153 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Cohoes,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x154 .
+
+_:node16v3l8be1x154 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Oyster_Bay_%28hamlet%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x155 .
+
+_:node16v3l8be1x155 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Tioga_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x156 .
+
+_:node16v3l8be1x156 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Port_Jervis,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x157 .
+
+_:node16v3l8be1x157 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Duanesburg,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x158 .
+
+_:node16v3l8be1x158 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Harrison,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x159 .
+
+_:node16v3l8be1x159 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Valhalla,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x160 .
+
+_:node16v3l8be1x160 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Oneida,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x161 .
+
+_:node16v3l8be1x161 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Scarsdale,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x52 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x162 .
 
-_:node16t8d3p95x52 a rdf:Statement ;
+_:node16v3l8be1x162 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/East_Meadow,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x53 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x163 .
 
-_:node16t8d3p95x53 a rdf:Statement ;
+_:node16v3l8be1x163 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Geneseo,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x164 .
+
+_:node16v3l8be1x164 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Irvington,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x165 .
+
+_:node16v3l8be1x165 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/New_Hyde_Park,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x166 .
+
+_:node16v3l8be1x166 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Port_Jefferson,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x167 .
+
+_:node16v3l8be1x167 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Goshen_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x168 .
+
+_:node16v3l8be1x168 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Bath_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x169 .
+
+_:node16v3l8be1x169 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Jericho,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x170 .
+
+_:node16v3l8be1x170 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hamilton_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x171 .
+
+_:node16v3l8be1x171 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Port_Washington,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x172 .
+
+_:node16v3l8be1x172 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Highland_Falls,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x173 .
+
+_:node16v3l8be1x173 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Watervliet,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x174 .
+
+_:node16v3l8be1x174 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Babylon_%28village%29,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x54 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x175 .
 
-_:node16t8d3p95x54 a rdf:Statement ;
+_:node16v3l8be1x175 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hoosick_Falls,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x176 .
+
+_:node16v3l8be1x176 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Johnstown_%28city%29,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x55 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x177 .
 
-_:node16t8d3p95x55 a rdf:Statement ;
+_:node16v3l8be1x177 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Dunkirk,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x178 .
+
+_:node16v3l8be1x178 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Cheektowaga_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x179 .
+
+_:node16v3l8be1x179 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Fulton,_Oswego_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x180 .
+
+_:node16v3l8be1x180 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hempstead_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x181 .
+
+_:node16v3l8be1x181 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Oceanside,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x56 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x182 .
 
-_:node16t8d3p95x56 a rdf:Statement ;
+_:node16v3l8be1x182 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Ticonderoga,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x183 .
+
+_:node16v3l8be1x183 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Islip_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x184 .
+
+_:node16v3l8be1x184 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Lewiston,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x185 .
+
+_:node16v3l8be1x185 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Brewster,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x186 .
+
+_:node16v3l8be1x186 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Brockport,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x187 .
+
+_:node16v3l8be1x187 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Mount_Sinai_Hospital,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x188 .
+
+_:node16v3l8be1x188 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Northport,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x189 .
+
+_:node16v3l8be1x189 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Ballston_Spa,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x57 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x190 .
 
-_:node16t8d3p95x57 a rdf:Statement ;
+_:node16v3l8be1x190 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Hornell,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x58 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x191 .
 
-_:node16t8d3p95x58 a rdf:Statement ;
+_:node16v3l8be1x191 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Croton-on-Hudson,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x192 .
+
+_:node16v3l8be1x192 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Williamsville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x193 .
+
+_:node16v3l8be1x193 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Sleepy_Hollow,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x194 .
+
+_:node16v3l8be1x194 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Oyster_Bay_%28town%29,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x59 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x195 .
 
-_:node16t8d3p95x59 a rdf:Statement ;
+_:node16v3l8be1x195 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Bedford_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x196 .
+
+_:node16v3l8be1x196 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hastings-on-Hudson,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x197 .
+
+_:node16v3l8be1x197 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/New_Windsor,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x198 .
+
+_:node16v3l8be1x198 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Province_of_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x60 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x199 .
 
-_:node16t8d3p95x60 a rdf:Statement ;
+_:node16v3l8be1x199 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Levittown,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x200 .
+
+_:node16v3l8be1x200 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Tonawanda_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x201 .
+
+_:node16v3l8be1x201 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Chelsea,_Manhattan> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x61 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x202 .
 
-_:node16t8d3p95x61 a rdf:Statement ;
+_:node16v3l8be1x202 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Monticello,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x203 .
+
+_:node16v3l8be1x203 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Uniondale,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x204 .
+
+_:node16v3l8be1x204 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Webster,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x205 .
+
+_:node16v3l8be1x205 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/West_Seneca,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x206 .
+
+_:node16v3l8be1x206 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Irondequoit,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x207 .
+
+_:node16v3l8be1x207 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Brookhaven,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x208 .
+
+_:node16v3l8be1x208 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hudson_Falls,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x209 .
+
+_:node16v3l8be1x209 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Mamaroneck_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x210 .
+
+_:node16v3l8be1x210 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Merrick,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x211 .
+
+_:node16v3l8be1x211 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Bethpage,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x212 .
+
+_:node16v3l8be1x212 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Clifton_Park,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x213 .
+
+_:node16v3l8be1x213 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/East_Greenbush,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x214 .
+
+_:node16v3l8be1x214 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/The_Bellmores,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x215 .
+
+_:node16v3l8be1x215 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Brentwood,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x216 .
+
+_:node16v3l8be1x216 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Sackets_Harbor,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x217 .
+
+_:node16v3l8be1x217 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Henrietta,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x218 .
+
+_:node16v3l8be1x218 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Herkimer_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x219 .
+
+_:node16v3l8be1x219 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Cold_Spring,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x220 .
+
+_:node16v3l8be1x220 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Setauket-East_Setauket,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x221 .
+
+_:node16v3l8be1x221 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Sag_Harbor,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x222 .
+
+_:node16v3l8be1x222 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Amenia_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x223 .
+
+_:node16v3l8be1x223 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Pelham_Manor,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x224 .
+
+_:node16v3l8be1x224 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Armonk,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x62 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x225 .
 
-_:node16t8d3p95x62 a rdf:Statement ;
+_:node16v3l8be1x225 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Larchmont,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x226 .
+
+_:node16v3l8be1x226 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Purchase,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x227 .
+
+_:node16v3l8be1x227 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Canton_%28village%29,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x63 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x228 .
 
-_:node16t8d3p95x63 a rdf:Statement ;
+_:node16v3l8be1x228 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Liverpool,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x229 .
+
+_:node16v3l8be1x229 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Pawling_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x230 .
+
+_:node16v3l8be1x230 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Saratoga,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x231 .
+
+_:node16v3l8be1x231 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Coeymans,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x232 .
+
+_:node16v3l8be1x232 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Newburgh_%28town%29,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x64 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x233 .
 
-_:node16t8d3p95x64 a rdf:Statement ;
+_:node16v3l8be1x233 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Shawangunk,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x234 .
+
+_:node16v3l8be1x234 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Katonah,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x235 .
+
+_:node16v3l8be1x235 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Malone_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x236 .
+
+_:node16v3l8be1x236 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Delmar,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x237 .
+
+_:node16v3l8be1x237 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Rensselaer,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x238 .
+
+_:node16v3l8be1x238 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/New_City,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x239 .
+
+_:node16v3l8be1x239 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Rotterdam_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x240 .
+
+_:node16v3l8be1x240 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Windham,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x65 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x241 .
 
-_:node16t8d3p95x65 a rdf:Statement ;
+_:node16v3l8be1x241 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
-	rdf:object <http://dbpedia.org/resource/Canastota,_New_York> ;
+	rdf:object <http://dbpedia.org/resource/Pittsford_%28village%29,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x66 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x242 .
 
-_:node16t8d3p95x66 a rdf:Statement ;
+_:node16v3l8be1x242 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Yorktown,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x243 .
+
+_:node16v3l8be1x243 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Penn_Yan,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x244 .
+
+_:node16v3l8be1x244 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Gloversville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x245 .
+
+_:node16v3l8be1x245 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Fairport,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x246 .
+
+_:node16v3l8be1x246 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Baldwin,_Nassau_County,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x67 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x247 .
 
-_:node16t8d3p95x67 a rdf:Statement ;
+_:node16v3l8be1x247 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Canastota,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x248 .
+
+_:node16v3l8be1x248 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Red_Hook,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x249 .
+
+_:node16v3l8be1x249 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Mohawk_River> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x250 .
+
+_:node16v3l8be1x250 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Montauk,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x251 .
+
+_:node16v3l8be1x251 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Cold_Spring_Harbor,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x252 .
+
+_:node16v3l8be1x252 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hicksville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x253 .
+
+_:node16v3l8be1x253 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Saugerties_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x254 .
+
+_:node16v3l8be1x254 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Niskayuna,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x255 .
+
+_:node16v3l8be1x255 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hamburg_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x256 .
+
+_:node16v3l8be1x256 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Massena_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x257 .
+
+_:node16v3l8be1x257 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Southeast,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x258 .
+
+_:node16v3l8be1x258 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Briarcliff_Manor,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x259 .
+
+_:node16v3l8be1x259 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Central_Islip,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x260 .
+
+_:node16v3l8be1x260 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Waterloo_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x261 .
+
+_:node16v3l8be1x261 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Ellenville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x262 .
+
+_:node16v3l8be1x262 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/North_Tonawanda,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x263 .
+
+_:node16v3l8be1x263 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Menands,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x264 .
+
+_:node16v3l8be1x264 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Stony_Point,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x265 .
+
+_:node16v3l8be1x265 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Carmel,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x68 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x266 .
 
-_:node16t8d3p95x68 a rdf:Statement ;
+_:node16v3l8be1x266 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Valley_Stream,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x267 .
+
+_:node16v3l8be1x267 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/North_Salem,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x268 .
+
+_:node16v3l8be1x268 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Southampton_%28village%29,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x69 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x269 .
 
-_:node16t8d3p95x69 a rdf:Statement ;
+_:node16v3l8be1x269 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Roosevelt_Island> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x270 .
+
+_:node16v3l8be1x270 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Plainview,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x271 .
+
+_:node16v3l8be1x271 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Baldwinsville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x272 .
+
+_:node16v3l8be1x272 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Warwick,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x70 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x273 .
 
-_:node16t8d3p95x70 a rdf:Statement ;
+_:node16v3l8be1x273 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
-	rdf:object <http://dbpedia.org/resource/Penfield,_New_York> ;
+	rdf:object <http://dbpedia.org/resource/Owego_%28village%29,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x71 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x274 .
 
-_:node16t8d3p95x71 a rdf:Statement ;
+_:node16v3l8be1x274 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Bridgehampton,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x275 .
+
+_:node16v3l8be1x275 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Kinderhook_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x276 .
+
+_:node16v3l8be1x276 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Wantagh,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x277 .
+
+_:node16v3l8be1x277 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Blauvelt,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x278 .
+
+_:node16v3l8be1x278 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Scotia,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x279 .
+
+_:node16v3l8be1x279 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Albion_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x280 .
+
+_:node16v3l8be1x280 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Roxbury,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x72 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x281 .
 
-_:node16t8d3p95x72 a rdf:Statement ;
+_:node16v3l8be1x281 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Clarence,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x282 .
+
+_:node16v3l8be1x282 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Victor,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x283 .
+
+_:node16v3l8be1x283 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Penfield,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x284 .
+
+_:node16v3l8be1x284 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Spring_Valley,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x285 .
+
+_:node16v3l8be1x285 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Sayville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x286 .
+
+_:node16v3l8be1x286 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Tonawanda_%28city%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x287 .
+
+_:node16v3l8be1x287 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Clinton,_Oneida_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x288 .
+
+_:node16v3l8be1x288 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Salamanca_%28city%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x289 .
+
+_:node16v3l8be1x289 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Floral_Park,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x73 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x290 .
 
-_:node16t8d3p95x73 a rdf:Statement ;
+_:node16v3l8be1x290 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/St._James,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x291 .
+
+_:node16v3l8be1x291 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Commack,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x292 .
+
+_:node16v3l8be1x292 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Scottsville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x293 .
+
+_:node16v3l8be1x293 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Locust_Valley,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x294 .
+
+_:node16v3l8be1x294 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Fishkill,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x295 .
+
+_:node16v3l8be1x295 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Durham,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x296 .
+
+_:node16v3l8be1x296 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Clifton_Springs,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x297 .
+
+_:node16v3l8be1x297 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Pound_Ridge,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x298 .
+
+_:node16v3l8be1x298 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Old_Westbury,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x299 .
+
+_:node16v3l8be1x299 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Cortlandt,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x300 .
+
+_:node16v3l8be1x300 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Queensbury,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x301 .
+
+_:node16v3l8be1x301 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Brighton,_Monroe_County,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x302 .
+
+_:node16v3l8be1x302 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Painted_Post,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x303 .
+
+_:node16v3l8be1x303 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Rosendale,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x304 .
+
+_:node16v3l8be1x304 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Pleasantville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x305 .
+
+_:node16v3l8be1x305 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Pearl_River,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x306 .
+
+_:node16v3l8be1x306 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Fredonia,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x307 .
+
+_:node16v3l8be1x307 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Potsdam_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x308 .
+
+_:node16v3l8be1x308 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Rensselaerville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x309 .
+
+_:node16v3l8be1x309 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hunter_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x310 .
+
+_:node16v3l8be1x310 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Huntington_Station,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x311 .
+
+_:node16v3l8be1x311 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Kenmore,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x312 .
+
+_:node16v3l8be1x312 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Angola,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x313 .
+
+_:node16v3l8be1x313 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/New_Lebanon,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x74 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x314 .
 
-_:node16t8d3p95x74 a rdf:Statement ;
+_:node16v3l8be1x314 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/North_Greenbush,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x315 .
+
+_:node16v3l8be1x315 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Rye_%28town%29,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x75 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x316 .
 
-_:node16t8d3p95x75 a rdf:Statement ;
+_:node16v3l8be1x316 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Little_Falls_%28city%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x317 .
+
+_:node16v3l8be1x317 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Chatham_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x318 .
+
+_:node16v3l8be1x318 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Claverack,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x319 .
+
+_:node16v3l8be1x319 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Altamont,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x320 .
+
+_:node16v3l8be1x320 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hartsdale,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x321 .
+
+_:node16v3l8be1x321 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Grand_Island,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x322 .
+
+_:node16v3l8be1x322 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Medina,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x323 .
+
+_:node16v3l8be1x323 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Sloatsburg,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x76 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x324 .
 
-_:node16t8d3p95x76 a rdf:Statement ;
+_:node16v3l8be1x324 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Clermont,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x77 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x325 .
 
-_:node16t8d3p95x77 a rdf:Statement ;
+_:node16v3l8be1x325 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Carthage,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x78 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x326 .
 
-_:node16t8d3p95x78 a rdf:Statement ;
+_:node16v3l8be1x326 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Schodack,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x327 .
+
+_:node16v3l8be1x327 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Pelham,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x328 .
+
+_:node16v3l8be1x328 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Yaphank,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x329 .
+
+_:node16v3l8be1x329 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/East_Fishkill,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x330 .
+
+_:node16v3l8be1x330 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hauppauge,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x331 .
+
+_:node16v3l8be1x331 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Yorktown_Heights,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x332 .
+
+_:node16v3l8be1x332 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Pompey,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x333 .
+
+_:node16v3l8be1x333 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Lynbrook,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x79 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x334 .
 
-_:node16t8d3p95x79 a rdf:Statement ;
+_:node16v3l8be1x334 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/North_East,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x335 .
+
+_:node16v3l8be1x335 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Rouses_Point,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x336 .
+
+_:node16v3l8be1x336 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Lackawanna,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x337 .
+
+_:node16v3l8be1x337 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/West_Nyack,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x338 .
+
+_:node16v3l8be1x338 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Springville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x339 .
+
+_:node16v3l8be1x339 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Roslyn_Harbor,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x340 .
+
+_:node16v3l8be1x340 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Latham,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x341 .
+
+_:node16v3l8be1x341 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Bayport,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x342 .
+
+_:node16v3l8be1x342 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Goshen_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x343 .
+
+_:node16v3l8be1x343 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Hamilton_%28town%29,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x80 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x344 .
 
-_:node16t8d3p95x80 a rdf:Statement ;
+_:node16v3l8be1x344 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Akron,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x345 .
+
+_:node16v3l8be1x345 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Auriesville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x346 .
+
+_:node16v3l8be1x346 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Akron,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x347 .
+
+_:node16v3l8be1x347 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Canaan,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x348 .
+
+_:node16v3l8be1x348 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Crown_Point,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x349 .
+
+_:node16v3l8be1x349 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/LaGrange,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x350 .
+
+_:node16v3l8be1x350 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hammondsport,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x351 .
+
+_:node16v3l8be1x351 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Bohemia,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x352 .
+
+_:node16v3l8be1x352 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/North_Hempstead,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x353 .
+
+_:node16v3l8be1x353 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Hewlett,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x81 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x354 .
 
-_:node16t8d3p95x81 a rdf:Statement ;
+_:node16v3l8be1x354 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Pine_Plains_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x355 .
+
+_:node16v3l8be1x355 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Lyons_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x356 .
+
+_:node16v3l8be1x356 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Mechanicville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x357 .
+
+_:node16v3l8be1x357 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Patterson,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x358 .
+
+_:node16v3l8be1x358 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/East_Patchogue,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x359 .
+
+_:node16v3l8be1x359 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Haverstraw,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x360 .
+
+_:node16v3l8be1x360 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Rye_Brook,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x361 .
+
+_:node16v3l8be1x361 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Walton_%28village%29,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x82 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x362 .
 
-_:node16t8d3p95x82 a rdf:Statement ;
+_:node16v3l8be1x362 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Groveland,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x363 .
+
+_:node16v3l8be1x363 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Richfield_Springs,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x364 .
+
+_:node16v3l8be1x364 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Wappingers_Falls,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x365 .
+
+_:node16v3l8be1x365 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Delhi_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x366 .
+
+_:node16v3l8be1x366 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/New_York_%28magazine%29> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x83 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x367 .
 
-_:node16t8d3p95x83 a rdf:Statement ;
+_:node16v3l8be1x367 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Chemung,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x368 .
+
+_:node16v3l8be1x368 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Jerusalem,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x369 .
+
+_:node16v3l8be1x369 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Essex,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x370 .
+
+_:node16v3l8be1x370 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Stafford,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x371 .
+
+_:node16v3l8be1x371 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Mendon,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x372 .
+
+_:node16v3l8be1x372 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/North_Babylon,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x373 .
+
+_:node16v3l8be1x373 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Prattsville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x374 .
+
+_:node16v3l8be1x374 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Dix_Hills,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x375 .
+
+_:node16v3l8be1x375 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/West_Babylon,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x376 .
+
+_:node16v3l8be1x376 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Granville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x377 .
+
+_:node16v3l8be1x377 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Palmyra_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x378 .
+
+_:node16v3l8be1x378 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Chappaqua,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x379 .
+
+_:node16v3l8be1x379 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Bethlehem,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x380 .
+
+_:node16v3l8be1x380 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hillsdale,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x381 .
+
+_:node16v3l8be1x381 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Pittsford_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x382 .
+
+_:node16v3l8be1x382 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Le_Roy_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x383 .
+
+_:node16v3l8be1x383 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Willsboro,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x384 .
+
+_:node16v3l8be1x384 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Lake_Success,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x385 .
+
+_:node16v3l8be1x385 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Skaneateles_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x386 .
+
+_:node16v3l8be1x386 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hoosick,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x387 .
+
+_:node16v3l8be1x387 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Paris,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x388 .
+
+_:node16v3l8be1x388 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Jamesville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x389 .
+
+_:node16v3l8be1x389 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/West_Hills,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x84 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x390 .
 
-_:node16t8d3p95x84 a rdf:Statement ;
+_:node16v3l8be1x390 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Whitehall_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x391 .
+
+_:node16v3l8be1x391 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/West_New_York,_New_Jersey> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x392 .
+
+_:node16v3l8be1x392 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Copiague,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x393 .
+
+_:node16v3l8be1x393 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Ronkonkoma,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x394 .
+
+_:node16v3l8be1x394 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Ontario,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x395 .
+
+_:node16v3l8be1x395 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Washingtonville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x396 .
+
+_:node16v3l8be1x396 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Oakdale,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x397 .
+
+_:node16v3l8be1x397 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Glen_Head,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x398 .
+
+_:node16v3l8be1x398 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Shokan,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x399 .
+
+_:node16v3l8be1x399 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Honeoye_Falls,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x400 .
+
+_:node16v3l8be1x400 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Staatsburg,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x401 .
+
+_:node16v3l8be1x401 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Montour_Falls,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x402 .
+
+_:node16v3l8be1x402 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Old_Bethpage,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x403 .
+
+_:node16v3l8be1x403 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Horseheads_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x404 .
+
+_:node16v3l8be1x404 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Cicero,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x405 .
+
+_:node16v3l8be1x405 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Lindenhurst,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x85 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x406 .
 
-_:node16t8d3p95x85 a rdf:Statement ;
+_:node16v3l8be1x406 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Highland_Mills,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x407 .
+
+_:node16v3l8be1x407 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Loudonville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x408 .
+
+_:node16v3l8be1x408 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Keeseville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x409 .
+
+_:node16v3l8be1x409 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Farmingville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x410 .
+
+_:node16v3l8be1x410 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Medford,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x411 .
+
+_:node16v3l8be1x411 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Piermont,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x412 .
+
+_:node16v3l8be1x412 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Shirley,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x413 .
+
+_:node16v3l8be1x413 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Pleasant_Valley_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x414 .
+
+_:node16v3l8be1x414 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Millerton,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x415 .
+
+_:node16v3l8be1x415 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Stillwater,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x416 .
+
+_:node16v3l8be1x416 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Oxford,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x417 .
+
+_:node16v3l8be1x417 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Kings_Park,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x418 .
+
+_:node16v3l8be1x418 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/York,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x419 .
+
+_:node16v3l8be1x419 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Solvay,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x420 .
+
+_:node16v3l8be1x420 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Fort_Edward_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x421 .
+
+_:node16v3l8be1x421 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Woodmere,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x86 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x422 .
 
-_:node16t8d3p95x86 a rdf:Statement ;
+_:node16v3l8be1x422 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Nanuet,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x423 .
+
+_:node16v3l8be1x423 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Seneca_Falls_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x424 .
+
+_:node16v3l8be1x424 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hopewell_Junction,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x425 .
+
+_:node16v3l8be1x425 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Massena_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x426 .
+
+_:node16v3l8be1x426 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Dover_Plains,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x427 .
+
+_:node16v3l8be1x427 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Wilmington,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x428 .
+
+_:node16v3l8be1x428 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Westport,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x429 .
+
+_:node16v3l8be1x429 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Tuxedo,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x430 .
+
+_:node16v3l8be1x430 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Tupper_Lake_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x431 .
+
+_:node16v3l8be1x431 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Newfane,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x432 .
+
+_:node16v3l8be1x432 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Whitesboro,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x433 .
+
+_:node16v3l8be1x433 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Fayetteville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x434 .
+
+_:node16v3l8be1x434 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Spencerport,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x435 .
+
+_:node16v3l8be1x435 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Schaghticoke_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x436 .
+
+_:node16v3l8be1x436 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Port_Henry,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x437 .
+
+_:node16v3l8be1x437 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Lancaster_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x438 .
+
+_:node16v3l8be1x438 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Cedarhurst,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x439 .
+
+_:node16v3l8be1x439 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Endwell,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x440 .
+
+_:node16v3l8be1x440 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Ghent,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x441 .
+
+_:node16v3l8be1x441 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Wawarsing,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x442 .
+
+_:node16v3l8be1x442 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Fairfield,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x443 .
+
+_:node16v3l8be1x443 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Pawling_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x444 .
+
+_:node16v3l8be1x444 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Cape_Vincent_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x445 .
+
+_:node16v3l8be1x445 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Amagansett,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x446 .
+
+_:node16v3l8be1x446 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Granby,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x447 .
+
+_:node16v3l8be1x447 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Lake_Ronkonkoma,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x448 .
+
+_:node16v3l8be1x448 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Roosevelt,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x449 .
+
+_:node16v3l8be1x449 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Friendship,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x450 .
+
+_:node16v3l8be1x450 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Phelps_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x451 .
+
+_:node16v3l8be1x451 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Mattituck,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x452 .
+
+_:node16v3l8be1x452 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Dover,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x453 .
+
+_:node16v3l8be1x453 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hartland,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x454 .
+
+_:node16v3l8be1x454 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Hamburg_%28village%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x455 .
+
+_:node16v3l8be1x455 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/East_Syracuse,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x456 .
+
+_:node16v3l8be1x456 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Huntington_%28CDP%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x457 .
+
+_:node16v3l8be1x457 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Camillus_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x458 .
+
+_:node16v3l8be1x458 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Fort_Montgomery,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x459 .
+
+_:node16v3l8be1x459 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Orangeburg,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x460 .
+
+_:node16v3l8be1x460 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Malta,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x461 .
+
+_:node16v3l8be1x461 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Marbletown,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x462 .
+
+_:node16v3l8be1x462 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Ulster,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x463 .
+
+_:node16v3l8be1x463 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Malone_%28town%29,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x87 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x464 .
 
-_:node16t8d3p95x87 a rdf:Statement ;
+_:node16v3l8be1x464 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Frankfort_%28town%29,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x465 .
+
+_:node16v3l8be1x465 a rdf:Statement ;
 	rdf:subject "?person" ;
 	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
 	rdf:object <http://dbpedia.org/resource/Henderson,_New_York> ;
 	rdfs:label "?person birth New York" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x88 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x466 .
 
-_:node16t8d3p95x88 a rdf:Statement ;
+_:node16v3l8be1x466 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Great_River,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x467 .
+
+_:node16v3l8be1x467 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Clarkstown,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x468 .
+
+_:node16v3l8be1x468 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Scipio,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x469 .
+
+_:node16v3l8be1x469 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Bainbridge,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x470 .
+
+_:node16v3l8be1x470 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/West_Hempstead,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x471 .
+
+_:node16v3l8be1x471 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Palatine_Bridge,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x472 .
+
+_:node16v3l8be1x472 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Lloyd_Harbor,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x473 .
+
+_:node16v3l8be1x473 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Conklin,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x474 .
+
+_:node16v3l8be1x474 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Mayville,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x475 .
+
+_:node16v3l8be1x475 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Elma,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x476 .
+
+_:node16v3l8be1x476 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/East_Northport,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x477 .
+
+_:node16v3l8be1x477 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Bellport,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x478 .
+
+_:node16v3l8be1x478 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Fayette,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x479 .
+
+_:node16v3l8be1x479 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Tivoli,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x480 .
+
+_:node16v3l8be1x480 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Middle_Island,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x481 .
+
+_:node16v3l8be1x481 a rdf:Statement ;
+	rdf:subject "?person" ;
+	rdf:predicate <http://dbpedia.org/ontology/birthPlace> ;
+	rdf:object <http://dbpedia.org/resource/Oriskany,_New_York> ;
+	rdfs:label "?person birth New York" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x482 .
+
+_:node16v3l8be1x482 a rdf:Statement ;
 	rdf:subject "?album" ;
 	rdf:predicate <http://dbpedia.org/ontology/musicalArtist> ;
 	rdf:object "?person" ;
 	rdfs:label "?album artist ?person" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x89 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x483 .
 
-_:node16t8d3p95x89 a rdf:Statement ;
-	rdf:subject "?album" ;
-	rdf:predicate <http://dbpedia.org/ontology/associatedMusicalArtist> ;
-	rdf:object "?person" ;
-	rdfs:label "?album artist ?person" .
-
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x90 .
-
-_:node16t8d3p95x90 a rdf:Statement ;
-	rdf:subject "?album" ;
-	rdf:predicate <http://dbpedia.org/ontology/artist> ;
-	rdf:object "?person" ;
-	rdfs:label "?album artist ?person" .
-
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x91 .
-
-_:node16t8d3p95x91 a rdf:Statement ;
+_:node16v3l8be1x483 a rdf:Statement ;
 	rdf:subject "?album" ;
 	rdf:predicate <http://dbpedia.org/ontology/coverArtist> ;
 	rdf:object "?person" ;
 	rdfs:label "?album artist ?person" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x92 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x484 .
 
-_:node16t8d3p95x92 a rdf:Statement ;
+_:node16v3l8be1x484 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/associatedMusicalArtist> ;
+	rdf:object "?person" ;
+	rdfs:label "?album artist ?person" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x485 .
+
+_:node16v3l8be1x485 a rdf:Statement ;
 	rdf:subject "?album" ;
 	rdf:predicate <http://dbpedia.org/ontology/gameArtist> ;
 	rdf:object "?person" ;
 	rdfs:label "?album artist ?person" .
 
-_:node16t8d3p95x1 qf:statement _:node16t8d3p95x93 .
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x486 .
 
-_:node16t8d3p95x93 a rdf:Statement ;
+_:node16v3l8be1x486 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/artist> ;
+	rdf:object "?person" ;
+	rdfs:label "?album artist ?person" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x487 .
+
+_:node16v3l8be1x487 a rdf:Statement ;
 	rdf:subject "?album" ;
 	rdf:predicate rdf:type ;
 	rdf:object <http://dbpedia.org/ontology/Album> ;
 	rdfs:label "?album type album" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x488 .
+
+_:node16v3l8be1x488 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/musicFusionGenre> ;
+	rdf:object <http://dbpedia.org/resource/Hip_hop_music> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x489 .
+
+_:node16v3l8be1x489 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/musicFusionGenre> ;
+	rdf:object <http://dbpedia.org/resource/Nerdcore_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x490 .
+
+_:node16v3l8be1x490 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/musicFusionGenre> ;
+	rdf:object <http://dbpedia.org/resource/Comedy_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x491 .
+
+_:node16v3l8be1x491 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/musicFusionGenre> ;
+	rdf:object <http://dbpedia.org/resource/Ragga_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x492 .
+
+_:node16v3l8be1x492 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Hip_hop_music> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x493 .
+
+_:node16v3l8be1x493 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/West_Coast_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x494 .
+
+_:node16v3l8be1x494 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Alternative_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x495 .
+
+_:node16v3l8be1x495 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Southern_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x496 .
+
+_:node16v3l8be1x496 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/East_Coast_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x497 .
+
+_:node16v3l8be1x497 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Hip_hop_soul> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x498 .
+
+_:node16v3l8be1x498 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Midwest_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x499 .
+
+_:node16v3l8be1x499 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Christian_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x500 .
+
+_:node16v3l8be1x500 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Political_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x501 .
+
+_:node16v3l8be1x501 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/British_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x502 .
+
+_:node16v3l8be1x502 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Nerdcore_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x503 .
+
+_:node16v3l8be1x503 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Comedy_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x504 .
+
+_:node16v3l8be1x504 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Japanese_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x505 .
+
+_:node16v3l8be1x505 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Industrial_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x506 .
+
+_:node16v3l8be1x506 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Experimental_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x507 .
+
+_:node16v3l8be1x507 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Iranian_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x508 .
+
+_:node16v3l8be1x508 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Pinoy_hip_hop> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x509 .
+
+_:node16v3l8be1x509 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Hip_hop_in_South_Korea> ;
+	rdfs:label "?album genre hip hop" .
+
+_:node16v3l8be1x1 qf:statement _:node16v3l8be1x510 .
+
+_:node16v3l8be1x510 a rdf:Statement ;
+	rdf:subject "?album" ;
+	rdf:predicate <http://dbpedia.org/ontology/genre> ;
+	rdf:object <http://dbpedia.org/resource/Southwest_hip_hop> ;
+	rdfs:label "?album genre hip hop" .

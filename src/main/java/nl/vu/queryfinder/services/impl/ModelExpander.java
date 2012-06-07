@@ -40,7 +40,7 @@ public class ModelExpander extends Service {
 		outputQuery.setDescription(inputQuery.getDescription());
 
 		// Iterate over the data
-		for (Quad quad : inputQuery.getTriples()) {
+		for (Quad quad : inputQuery.getQuads()) {
 			// Keep the original quad
 			outputQuery.addQuad(quad);
 

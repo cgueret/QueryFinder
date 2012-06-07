@@ -4,18 +4,11 @@
 package nl.vu.queryfinder.services.impl;
 
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Observable;
 import java.util.Observer;
 
 import nl.erdf.constraints.impl.StatementPatternConstraint;
-import nl.erdf.constraints.impl.StatementPatternSetConstraint;
 import nl.erdf.datalayer.DataLayer;
-import nl.erdf.datalayer.hbase.NativeHBaseDataLayer;
-import nl.erdf.datalayer.sparql.SPARQLDataLayer;
-import nl.erdf.model.Directory;
 import nl.erdf.model.Request;
 import nl.erdf.model.Solution;
 import nl.erdf.model.impl.StatementPatternProvider;
@@ -25,6 +18,9 @@ import nl.vu.queryfinder.model.Quad;
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.services.Service;
 
+import org.apache.commons.math.stat.descriptive.moment.StandardDeviation;
+import org.openrdf.model.ValueFactory;
+import org.openrdf.model.impl.ValueFactoryImpl;
 import org.openrdf.query.algebra.StatementPattern;
 import org.openrdf.query.algebra.Var;
 import org.slf4j.Logger;
@@ -38,18 +34,20 @@ public class EvolutionarySolver extends Service implements Observer {
 	// Logger
 	private static final Logger logger = LoggerFactory.getLogger(EvolutionarySolver.class);
 
+	// Data layer
 	private final DataLayer dataLayer;
+
+	// List of optimal solutions
+	private Collection<Solution> solutions = null;
+
+	// Value factory
+	protected final ValueFactory f = new ValueFactoryImpl();
 
 	/**
 	 * @param directory
 	 */
-	public EvolutionarySolver(Directory directory) {
-		if (directory != null) {
-			// Create the SPARQL data layer
-			dataLayer = new SPARQLDataLayer(directory);
-		} else {
-			dataLayer = NativeHBaseDataLayer.getInstance("test");
-		}
+	public EvolutionarySolver(DataLayer dataLayer) {
+		this.dataLayer = dataLayer;
 	}
 
 	/*
@@ -64,24 +62,28 @@ public class EvolutionarySolver extends Service implements Observer {
 		Request request = new Request(dataLayer);
 
 		// Fill up the request
-		Map<String, StatementPatternSetConstraint> constraints = new HashMap<String, StatementPatternSetConstraint>();
-		for (Quad quad : inputQuery.getTriples()) {
+		int nbConstraints = 0;
+		// Map<String, StatementPatternSetConstraint> constraints = new
+		// HashMap<String, StatementPatternSetConstraint>();
+		for (Quad quad : inputQuery.getQuads()) {
 			// Turn the triple into a statement pattern
 			Var s = Converter.toVar(quad.getSubject());
 			Var p = Converter.toVar(quad.getPredicate());
 			Var o = Converter.toVar(quad.getObject());
-			String c = quad.getContext().stringValue();
+			// String c = quad.getContext().stringValue();
 			StatementPattern pattern = new StatementPattern(s, p, o);
 
 			// Add a constraint
-			if (constraints.containsKey(c)) {
-				StatementPatternSetConstraint set = constraints.get(c);
-				set.add(new StatementPatternConstraint(pattern));
-			} else {
-				StatementPatternSetConstraint set = new StatementPatternSetConstraint(c);
-				set.add(new StatementPatternConstraint(pattern));
-				constraints.put(c, set);
-			}
+			/*
+			 * nbConstraints++; if (constraints.containsKey(c)) {
+			 * StatementPatternSetConstraint set = constraints.get(c);
+			 * set.add(new StatementPatternConstraint(pattern)); } else {
+			 * StatementPatternSetConstraint set = new
+			 * StatementPatternSetConstraint(c); set.add(new
+			 * StatementPatternConstraint(pattern)); constraints.put(c, set); }
+			 */
+			nbConstraints++;
+			request.addConstraint(new StatementPatternConstraint(pattern));
 
 			// If it has only one variable, use that pattern as a provider
 			int nbVar = 0;
@@ -96,8 +98,12 @@ public class EvolutionarySolver extends Service implements Observer {
 		}
 
 		// Add the constraints
-		for (Entry<String, StatementPatternSetConstraint> set : constraints.entrySet())
-			request.addConstraint(set.getValue());
+		// for (Entry<String, StatementPatternSetConstraint> set :
+		// constraints.entrySet())
+		// request.addConstraint(set.getValue());
+
+		// logger.info("Number of constraint sets: " + constraints.size());
+		logger.info("Number of constraints: " + nbConstraints);
 
 		// Create the optimiser
 		Optimizer optimizer = new Optimizer(dataLayer, request, null);
@@ -105,6 +111,19 @@ public class EvolutionarySolver extends Service implements Observer {
 		optimizer.run();
 
 		Query output = new Query();
+
+		for (Solution s : solutions) {
+			String solutionName = s.toString();
+			logger.info("Result : " + solutionName);
+			for (nl.erdf.model.Triple triple : request.getTripleSet(s)) {
+				if (triple.getNumberNulls() == 0) {
+					Quad quad = new Quad(triple.getSubject(), triple.getPredicate(), triple.getObject(),
+							f.createLiteral(solutionName));
+					output.addQuad(quad);
+				}
+			}
+		}
+
 		return output;
 	}
 
@@ -114,28 +133,39 @@ public class EvolutionarySolver extends Service implements Observer {
 	 * @see java.util.Observer#update(java.util.Observable, java.lang.Object)
 	 */
 	@Override
+	@SuppressWarnings("unchecked")
 	public void update(Observable source, Object param) {
 		// Check source
 		if (!(source instanceof Optimizer))
 			return;
 		Optimizer optimizer = (Optimizer) source;
+		solutions = (Collection<Solution>) param;
 
-		// Get the best solution
-		@SuppressWarnings("unchecked")
-		Collection<Solution> solutions = (Collection<Solution>) param;
-		boolean stop = false;
+		// Check if all the solutions have the same fitness
+		double[] fitnesses = new double[solutions.size()];
+		int i = 0;
 		for (Solution s : solutions) {
-			logger.info(s.toString());
-			for (nl.erdf.model.Triple triple : optimizer.getRequest().getTripleSet(s))
-				if (triple.getNumberNulls() == 0)
-					logger.info(triple.toString());
-			if (s.isOptimal()) {
-				stop = true;
-			}
+			logger.info("Candidate solution : " + s.toString());
+			logger.info(s.getFitness() + "");
+			fitnesses[i] = s.getFitness();
+			i++;
 		}
 
+		StandardDeviation dev = new StandardDeviation();
+		logger.info("Dev " + dev.evaluate(fitnesses));
+		boolean staled = (dev.evaluate(fitnesses) < 0.001);
+
+		/*
+		 * boolean stop = false; for (Solution s : solutions) {
+		 * logger.info(s.toString()); for (nl.erdf.model.Triple triple :
+		 * optimizer.getRequest().getTripleSet(s)) if (triple.getNumberNulls()
+		 * == 0) logger.info(triple.toString()); if (s.isOptimal()) { stop =
+		 * true; } }
+		 */
+
 		// If we should stop, do it
-		if (stop) {
+		if (staled) {
+			logger.info("Evolution staled ");
 			optimizer.terminate();
 			dataLayer.shutdown();
 		}

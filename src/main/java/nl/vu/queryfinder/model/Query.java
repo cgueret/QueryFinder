@@ -225,7 +225,7 @@ public class Query {
 	/**
 	 * @return
 	 */
-	public List<Quad> getTriples() {
+	public List<Quad> getQuads() {
 		// Prepare result list
 		List<Quad> triples = new ArrayList<Quad>();
 

@@ -70,7 +70,7 @@ public class SPARQLMatcher extends Service {
 		outputQuery.setDescription(inputQuery.getDescription());
 
 		// Iterate over the triples
-		for (Quad quad : inputQuery.getTriples()) {
+		for (Quad quad : inputQuery.getQuads()) {
 			logger.info(quad.toString());
 
 			// Prepare a list of subjects

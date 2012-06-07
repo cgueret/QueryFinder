@@ -1,7 +1,6 @@
 package nl.vu.queryfinder.services.impl;
 
 import nl.erdf.datalayer.DataLayer;
-import nl.erdf.datalayer.hbase.NativeHBaseDataLayer;
 import nl.vu.queryfinder.model.Quad;
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.services.Service;
@@ -15,6 +14,14 @@ import org.slf4j.LoggerFactory;
 public class AskFilter extends Service {
 	// Logger
 	protected static final Logger logger = LoggerFactory.getLogger(AskFilter.class);
+	private DataLayer dataLayer;
+
+	/**
+	 * @param dataLayer
+	 */
+	public AskFilter(DataLayer dataLayer) {
+		this.dataLayer = dataLayer;
+	}
 
 	/*
 	 * (non-Javadoc)
@@ -30,17 +37,15 @@ public class AskFilter extends Service {
 		// Copy the value of the description
 		outputQuery.setDescription(inputQuery.getDescription());
 
-		DataLayer d = NativeHBaseDataLayer.getInstance("test");
-
 		// Iterate over the triples
-		for (Quad quad : inputQuery.getTriples()) {
+		for (Quad quad : inputQuery.getQuads()) {
 			Resource s = quad.getSubject().stringValue().startsWith("?") ? null : (Resource) quad.getSubject();
 			URI p = quad.getPredicate().stringValue().startsWith("?") ? null : (URI) quad.getPredicate();
 			Value o = quad.getObject().stringValue().startsWith("?") ? null : quad.getObject();
 			nl.erdf.model.Triple t = new nl.erdf.model.Triple(s, p, o);
 
 			// Test the triples with 0 or 1 variable
-			if (t.getNumberNulls() > 1 || d.isValid(t)) {
+			if (t.getNumberNulls() > 1 || dataLayer.isValid(t)) {
 				logger.info(t.toString());
 				outputQuery.addQuad(quad);
 			}

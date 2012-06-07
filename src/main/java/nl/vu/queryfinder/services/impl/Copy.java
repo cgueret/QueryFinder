@@ -30,7 +30,7 @@ public class Copy extends Service {
 		outputQuery.setDescription(inputQuery.getDescription());
 
 		// Copy the triples
-		for (Quad triple : inputQuery.getTriples())
+		for (Quad triple : inputQuery.getQuads())
 			outputQuery.addQuad(triple);
 
 		return outputQuery;

@@ -70,7 +70,7 @@ public class WordNetExpander extends Service {
 		outputQuery.setDescription(inputQuery.getDescription());
 
 		// Iterate over the triples
-		for (Quad quad : inputQuery.getTriples()) {
+		for (Quad quad : inputQuery.getQuads()) {
 			// Prepare a list of subjects
 			List<Value> subjects = new ArrayList<Value>();
 			Value subject = quad.getSubject();

@@ -120,7 +120,7 @@ public class Workflow {
 		// Run the evolutionary solver
 		logger.info("3 - Run the evolutionary solver");
 		String outputSolverFileName = fileName.replace(".ttl", "-evosolver.ttl");
-		if (true || !(new File(outputSolverFileName)).exists()) {
+		if (!(new File(outputSolverFileName)).exists()) {
 			Service matcher = new EvolutionarySolver(dataLayer);
 			Query query = new Query();
 			query.loadFrom(outputAskFileName);

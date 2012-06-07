@@ -146,7 +146,6 @@ public class EvolutionarySolver extends Service implements Observer {
 		int i = 0;
 		for (Solution s : solutions) {
 			logger.info("Candidate solution : " + s.toString());
-			logger.info(s.getFitness() + "");
 			fitnesses[i] = s.getFitness();
 			i++;
 		}

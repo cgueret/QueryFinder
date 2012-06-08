@@ -20,7 +20,7 @@ import org.slf4j.LoggerFactory;
 public class PaginatedQueryExec {
 	protected static final Logger logger = LoggerFactory.getLogger(PaginatedQueryExec.class);
 	private final static int PAGE_SIZE = 500;
-	private final static int HARD_LIMIT = 8;
+	private final static int HARD_LIMIT = 10000;
 	SPARQLRepository repository;
 
 	/**

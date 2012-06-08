@@ -1,5 +1,8 @@
 package nl.vu.queryfinder.services.impl;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import nl.erdf.datalayer.DataLayer;
 import nl.vu.queryfinder.model.Quad;
 import nl.vu.queryfinder.model.Query;
@@ -33,11 +36,10 @@ public class AskFilter extends Service {
 	public Query process(Query inputQuery) {
 		// Create the query
 		Query outputQuery = new Query();
-
-		// Copy the value of the description
 		outputQuery.setDescription(inputQuery.getDescription());
 
 		// Iterate over the triples
+		Set<Value> removeContexts = new HashSet<Value>();
 		for (Quad quad : inputQuery.getQuads()) {
 			Resource s = quad.getSubject().stringValue().startsWith("?") ? null : (Resource) quad.getSubject();
 			URI p = quad.getPredicate().stringValue().startsWith("?") ? null : (URI) quad.getPredicate();
@@ -48,9 +50,21 @@ public class AskFilter extends Service {
 			if (t.getNumberNulls() > 1 || dataLayer.isValid(t)) {
 				logger.info(t.toString());
 				outputQuery.addQuad(quad);
+			} else {
+				removeContexts.add(quad.getContext());
 			}
 		}
 
-		return outputQuery;
+		// Create the query
+		Query outputQuery2 = new Query();
+		outputQuery2.setDescription(inputQuery.getDescription());
+
+		// Clean up blocks left alone
+		for (Quad quad : outputQuery.getQuads()) {
+			if (!removeContexts.contains(quad.getContext()))
+				outputQuery2.addQuad(quad);
+		}
+
+		return outputQuery2;
 	}
 }

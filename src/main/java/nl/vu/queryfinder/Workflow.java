@@ -17,7 +17,9 @@ import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.services.Service;
 import nl.vu.queryfinder.services.impl.AskFilter;
 import nl.vu.queryfinder.services.impl.EvolutionarySolver;
+import nl.vu.queryfinder.services.impl.ModelExpander;
 import nl.vu.queryfinder.services.impl.SPARQLMatcher;
+import nl.vu.queryfinder.services.impl.WordNetExpander;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -83,6 +85,11 @@ public class Workflow {
 	 * @throws Exception
 	 */
 	private void process(String fileName, String dataLayerName) throws Exception {
+		// File names
+		String outputFileName = null;
+		String inputFileName = null;
+
+		// Configure the data layer
 		DataLayer dataLayer;
 		if (dataLayerName.equals("spyros"))
 			dataLayer = SpyrosHBaseDataLayer.getInstance("default");
@@ -95,36 +102,65 @@ public class Workflow {
 		else
 			dataLayer = null;
 
-		// Turn the literals into resources
-		logger.info("1 - Turn the literals into resources");
-		String outputMatcherFileName = fileName.replace(".ttl", "-sparqlmatcher.ttl");
-		if (!(new File(outputMatcherFileName)).exists()) {
-			Directory directory = new Directory();
-			directory.add(new EndPoint("http://dbpedia.org/sparql", "http://dbpedia.org", EndPointType.VIRTUOSO));
-			Service matcher = new SPARQLMatcher(directory);
+		// Configure the SPARQL directory
+		Directory directory = new Directory();
+		// directory.add(new EndPoint("http://dbpedia.org/sparql",
+		// "http://dbpedia.org", EndPointType.VIRTUOSO));
+		directory.add(new EndPoint("http://factforge.net/sparql", null, EndPointType.OWLIM));
+
+		// Expand all the literals using Wordnet
+		logger.info("1 - Expand literals with wordnet");
+		inputFileName = fileName;
+		outputFileName = fileName.replace(".ttl", "-wordnet.ttl");
+		if (!(new File(outputFileName)).exists()) {
 			Query query = new Query();
-			query.loadFrom(fileName);
-			matcher.process(query).saveTo(outputMatcherFileName);
+			query.loadFrom(inputFileName);
+			Service service = new WordNetExpander();
+			service.process(query).saveTo(outputFileName);
+		}
+
+		// Expand the model
+		logger.info("2 - Expand the model");
+		inputFileName = outputFileName;
+		outputFileName = fileName.replace(".ttl", "-expand.ttl");
+		if (!(new File(outputFileName)).exists()) {
+			Query query = new Query();
+			query.loadFrom(inputFileName);
+			Service service = new ModelExpander();
+			service.process(query).saveTo(outputFileName);
+		}
+
+		// Turn the literals into resources
+		logger.info("3 - Turn the literals into resources");
+		inputFileName = outputFileName;
+		outputFileName = fileName.replace(".ttl", "-matcher.ttl");
+		if (!(new File(outputFileName)).exists()) {
+			Query query = new Query();
+			query.loadFrom(inputFileName);
+			Service service = new SPARQLMatcher(directory);
+			service.process(query).saveTo(outputFileName);
 		}
 
 		// Filter out non valid query patterns
-		logger.info("2 - Filter out non valid query patterns");
-		String outputAskFileName = fileName.replace(".ttl", "-askfilter.ttl");
-		if (!(new File(outputAskFileName)).exists()) {
-			Service matcher = new AskFilter(dataLayer);
+		logger.info("4 - Filter out non valid query patterns");
+		inputFileName = outputFileName;
+		outputFileName = fileName.replace(".ttl", "-filter.ttl");
+		if (!(new File(outputFileName)).exists()) {
 			Query query = new Query();
-			query.loadFrom(outputMatcherFileName);
-			matcher.process(query).saveTo(outputAskFileName);
+			query.loadFrom(inputFileName);
+			Service service = new AskFilter(dataLayer);
+			service.process(query).saveTo(outputFileName);
 		}
 
 		// Run the evolutionary solver
-		logger.info("3 - Run the evolutionary solver");
-		String outputSolverFileName = fileName.replace(".ttl", "-evosolver.ttl");
-		if (!(new File(outputSolverFileName)).exists()) {
-			Service matcher = new EvolutionarySolver(dataLayer);
+		logger.info("5 - Run the evolutionary solver");
+		inputFileName = outputFileName;
+		outputFileName = fileName.replace(".ttl", "-solver.ttl");
+		if (!(new File(outputFileName)).exists()) {
 			Query query = new Query();
-			query.loadFrom(outputAskFileName);
-			matcher.process(query).saveTo(outputSolverFileName);
+			query.loadFrom(inputFileName);
+			Service service = new EvolutionarySolver(dataLayer);
+			service.process(query).saveTo(outputFileName);
 		}
 	}
 }

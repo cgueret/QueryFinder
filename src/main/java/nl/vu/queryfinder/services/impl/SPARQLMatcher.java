@@ -18,9 +18,7 @@ import nl.vu.queryfinder.util.SelectQueryExecutor;
 import org.openrdf.model.Literal;
 import org.openrdf.model.Resource;
 import org.openrdf.model.Statement;
-import org.openrdf.model.URI;
 import org.openrdf.model.Value;
-import org.openrdf.model.impl.URIImpl;
 import org.openrdf.model.vocabulary.OWL;
 import org.openrdf.model.vocabulary.RDF;
 import org.openrdf.repository.RepositoryException;
@@ -108,8 +106,10 @@ public class SPARQLMatcher extends Service {
 				if (object.stringValue().startsWith("?")) {
 					objects.add(object);
 				} else {
-					URI type = ((Literal) predicate).getDatatype();
-					if (type != null && type.equals(new URIImpl(RDF.NAMESPACE + "PlainLiteral"))) {
+					if (predicate instanceof org.openrdf.sail.memory.model.MemURI) {
+						// URI type = ((Literal) predicate).getDatatype();
+						// if (type != null && type.equals(new
+						// URIImpl(RDF.NAMESPACE + "PlainLiteral"))) {
 						objects.add(object);
 					} else {
 						if (predicate instanceof Literal && predicate.stringValue().equals("type"))

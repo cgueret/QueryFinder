@@ -124,8 +124,11 @@ public class WordNetExpander extends Service {
 	private Collection<Literal> getWords(String word) {
 		// Prepare the output
 		Set<Literal> out = new HashSet<Literal>();
+		out.add(f.createLiteral(word));
 
 		for (String wordTxt : word.split("_")) {
+			out.add(f.createLiteral(wordTxt));
+
 			// Iterate over all the positions of a word
 			for (POS position : POS.values()) {
 				IStemmer stemmer = new WordnetStemmer(dict);
@@ -160,6 +163,5 @@ public class WordNetExpander extends Service {
 			logger.info(l.toString());
 		for (Literal l : e.getWords("born_in"))
 			logger.info(l.toString());
-
 	}
 }

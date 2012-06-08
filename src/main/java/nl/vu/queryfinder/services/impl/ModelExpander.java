@@ -9,7 +9,9 @@ import nl.vu.queryfinder.services.Service;
 
 import org.openrdf.model.Literal;
 import org.openrdf.model.ValueFactory;
+import org.openrdf.model.impl.URIImpl;
 import org.openrdf.model.impl.ValueFactoryImpl;
+import org.openrdf.model.vocabulary.RDF;
 import org.openrdf.model.vocabulary.RDFS;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -44,18 +46,24 @@ public class ModelExpander extends Service {
 			// Keep the original quad
 			outputQuery.addQuad(quad);
 
-			// Turn S,P,O into O,P,S
-			Quad inverseQuad = new Quad(quad.getObject(), quad.getPredicate(), quad.getSubject(), quad.getContext());
-			outputQuery.addQuad(inverseQuad);
+			// Turn ?S,P,?O into ?O,P,?S
+			if (quad.getSubject().stringValue().startsWith("?") && quad.getObject().stringValue().startsWith("?")) {
+				Quad inverseQuad = new Quad(quad.getObject(), quad.getPredicate(), quad.getSubject(), quad.getContext());
+				outputQuery.addQuad(inverseQuad);
+			}
 
 			// Turn a S,P,"blah" into S,P,?v + ?v,label,"blah"
 			if (!quad.getObject().stringValue().startsWith("?")) {
+				Literal context = f.createLiteral(Integer.toString(quad.hashCode()));
 				Literal v = f.createLiteral("?" + Integer.toHexString(quad.getObject().stringValue().hashCode()));
-				Quad spv = new Quad(quad.getSubject(), quad.getPredicate(), v, quad.getContext());
+				Quad spv = new Quad(quad.getSubject(), quad.getPredicate(), v, context);
 				outputQuery.addQuad(spv);
-				Quad vls = new Quad(v, RDFS.LABEL, quad.getObject(), quad.getContext());
+				Literal object = f.createLiteral(quad.getObject().stringValue(), new URIImpl(RDF.NAMESPACE
+						+ "PlainLiteral"));
+				Quad vls = new Quad(v, RDFS.LABEL, object, context);
 				outputQuery.addQuad(vls);
 			}
+
 		}
 
 		return outputQuery;

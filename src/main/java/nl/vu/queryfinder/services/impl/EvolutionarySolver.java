@@ -112,6 +112,9 @@ public class EvolutionarySolver extends Service implements Observer {
 
 		Query output = new Query();
 
+		// Copy the value of the description
+		output.setDescription(inputQuery.getDescription());
+
 		for (Solution s : solutions) {
 			String solutionName = s.toString();
 			logger.info("Result : " + solutionName);
@@ -152,7 +155,7 @@ public class EvolutionarySolver extends Service implements Observer {
 
 		StandardDeviation dev = new StandardDeviation();
 		logger.info("Dev " + dev.evaluate(fitnesses));
-		boolean staled = (dev.evaluate(fitnesses) < 0.001);
+		boolean staled = (dev.evaluate(fitnesses) < 0.001) && (fitnesses[0] > 0.1);
 
 		/*
 		 * boolean stop = false; for (Solution s : solutions) {

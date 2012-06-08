@@ -8,7 +8,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import nl.vu.queryfinder.model.Quad;
 import nl.vu.queryfinder.model.Query;
@@ -29,6 +31,8 @@ import edu.mit.jwi.item.ISynset;
 import edu.mit.jwi.item.IWord;
 import edu.mit.jwi.item.IWordID;
 import edu.mit.jwi.item.POS;
+import edu.mit.jwi.morph.IStemmer;
+import edu.mit.jwi.morph.WordnetStemmer;
 
 /**
  * @author Christophe Guéret <christophe.gueret@gmail.com>
@@ -46,9 +50,10 @@ public class WordNetExpander extends Service {
 
 	public WordNetExpander() throws IOException {
 		// construct the URL to the Wordnet dictionary directory
-		String wnhome = "/usr/share/wordnet/";
+		String wnhome = System.getProperty("user.dir") + "/wordnet";
 		String path = wnhome + File.separator + "dict";
 		URL url = new URL("file", null, path);
+		logger.info(url.toString());
 
 		// construct the dictionary object and open it
 		dict = new Dictionary(url);
@@ -112,22 +117,32 @@ public class WordNetExpander extends Service {
 	}
 
 	/**
-	 * @param stringValue
+	 * @param word
+	 *            The word to parse, can also be composite with "_"
 	 * @return
 	 */
-	private Collection<Literal> getWords(String wordTxt) {
+	private Collection<Literal> getWords(String word) {
 		// Prepare the output
-		List<Literal> out = new ArrayList<Literal>();
+		Set<Literal> out = new HashSet<Literal>();
 
-		// look up first sense of the word
-		IIndexWord idxWord = dict.getIndexWord(wordTxt, POS.NOUN);
-		IWordID wordID = idxWord.getWordIDs().get(0); // 1 st meaning
-		IWord word = dict.getWord(wordID);
-		ISynset synset = word.getSynset();
-
-		// iterate over words associated with the synset
-		for (IWord w : synset.getWords())
-			out.add(f.createLiteral(w.getLemma()));
+		for (String wordTxt : word.split("_")) {
+			// Iterate over all the positions of a word
+			for (POS position : POS.values()) {
+				IStemmer stemmer = new WordnetStemmer(dict);
+				for (String stem : stemmer.findStems(wordTxt, position)) {
+					IIndexWord idxWord = dict.getIndexWord(stem, position);
+					if (idxWord != null) {
+						// Iterate over all the meanings
+						for (IWordID wordID : idxWord.getWordIDs()) {
+							// Iterate over words associated with the synset
+							ISynset synset = dict.getWord(wordID).getSynset();
+							for (IWord w : synset.getWords())
+								out.add(f.createLiteral(w.getLemma()));
+						}
+					}
+				}
+			}
+		}
 
 		return out;
 	}
@@ -139,6 +154,12 @@ public class WordNetExpander extends Service {
 	 */
 	public static void main(String[] args) throws IOException, RepositoryException {
 		WordNetExpander e = new WordNetExpander();
-		e.getWords("dog");
+		for (Literal l : e.getWords("dog"))
+			logger.info(l.toString());
+		for (Literal l : e.getWords("born"))
+			logger.info(l.toString());
+		for (Literal l : e.getWords("born_in"))
+			logger.info(l.toString());
+
 	}
 }

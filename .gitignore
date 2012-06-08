@@ -5,3 +5,5 @@
 .classpath
 /queryfinder_log.txt
 bin/
+wordnet
+jcs_swap

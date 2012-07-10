@@ -8,7 +8,6 @@ import java.util.Observable;
 import java.util.Observer;
 
 import nl.erdf.constraints.impl.StatementPatternConstraint;
-import nl.erdf.datalayer.DataLayer;
 import nl.erdf.model.Request;
 import nl.erdf.model.Solution;
 import nl.erdf.model.impl.StatementPatternProvider;
@@ -34,21 +33,11 @@ public class EvolutionarySolver extends Service implements Observer {
 	// Logger
 	private static final Logger logger = LoggerFactory.getLogger(EvolutionarySolver.class);
 
-	// Data layer
-	private final DataLayer dataLayer;
-
 	// List of optimal solutions
 	private Collection<Solution> solutions = null;
 
 	// Value factory
 	protected final ValueFactory f = new ValueFactoryImpl();
-
-	/**
-	 * @param directory
-	 */
-	public EvolutionarySolver(DataLayer dataLayer) {
-		this.dataLayer = dataLayer;
-	}
 
 	/*
 	 * (non-Javadoc)

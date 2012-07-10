@@ -94,9 +94,9 @@ public class Workflow {
 		if (dataLayerName.equals("spyros"))
 			dataLayer = SpyrosHBaseDataLayer.getInstance("default");
 		else if (dataLayerName.equals("sever_remote"))
-			dataLayer = new SeverHBaseDataLayer(HBaseConnection.REST, true);
+			dataLayer = new SeverHBaseDataLayer(HBaseConnection.REST);
 		else if (dataLayerName.equals("sever_local"))
-			dataLayer = new SeverHBaseDataLayer(HBaseConnection.NATIVE_JAVA, false);
+			dataLayer = new SeverHBaseDataLayer(HBaseConnection.NATIVE_JAVA);
 		else if (dataLayerName.equals("sparql"))
 			dataLayer = new SPARQLDataLayer(null);
 		else

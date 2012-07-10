@@ -64,6 +64,22 @@ public class ModelExpander extends Service {
 				outputQuery.addQuad(vls);
 			}
 
+			// Express events
+			// S,"birth|death",O -> ?E,a,Event + ?E,involvedAgent,S + ?E,label,O
+			if (quad.getPredicate().stringValue().contains("birth")
+					|| quad.getPredicate().stringValue().contains("death")) {
+				Literal context = f.createLiteral(Integer.toString(quad.hashCode()));
+				Literal event = f.createLiteral("?" + Integer.toHexString(quad.getObject().stringValue().hashCode()));
+				Quad quadEvent = new Quad(event, RDF.TYPE, f.createURI("http://linkedevents.org/ontology/Event"),
+						context);
+				Quad quadAgent = new Quad(event, f.createURI("http://linkedevents.org/ontology/involvedAgent"),
+						quad.getSubject(), context);
+				Quad quadLabel = new Quad(event, RDFS.LABEL, quad.getObject(), context);
+				outputQuery.addQuad(quadEvent);
+				outputQuery.addQuad(quadAgent);
+				outputQuery.addQuad(quadLabel);
+			}
+
 		}
 
 		return outputQuery;

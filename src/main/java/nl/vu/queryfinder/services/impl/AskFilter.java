@@ -3,7 +3,6 @@ package nl.vu.queryfinder.services.impl;
 import java.util.HashSet;
 import java.util.Set;
 
-import nl.erdf.datalayer.DataLayer;
 import nl.vu.queryfinder.model.Quad;
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.services.Service;
@@ -17,14 +16,6 @@ import org.slf4j.LoggerFactory;
 public class AskFilter extends Service {
 	// Logger
 	protected static final Logger logger = LoggerFactory.getLogger(AskFilter.class);
-	private DataLayer dataLayer;
-
-	/**
-	 * @param dataLayer
-	 */
-	public AskFilter(DataLayer dataLayer) {
-		this.dataLayer = dataLayer;
-	}
 
 	/*
 	 * (non-Javadoc)

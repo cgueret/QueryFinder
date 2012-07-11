@@ -92,7 +92,8 @@ public class EvolutionarySolver extends Service implements Observer {
 		// request.addConstraint(set.getValue());
 
 		// logger.info("Number of constraint sets: " + constraints.size());
-		logger.info("Number of constraints: " + nbConstraints);
+		logger.info("Number of constraints: " + request.getNbConstraints());
+		logger.info("Number of variables: " + request.getNbVariables());
 
 		// Create the optimiser
 		Optimizer optimizer = new Optimizer(dataLayer, request, null);

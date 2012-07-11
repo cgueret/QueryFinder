@@ -14,4 +14,10 @@
 	</root>
 	<logger name="org.apache.zookeeper" level="WARN" />
 	<logger name="org.apache.hadoop.hbase.zookeeper" level="WARN" />
+	<logger name="org.apache.jcs.auxiliary.disk.indexed.IndexedDiskCache" level="WARN" />
+	<logger name="org.apache.jcs.engine.memory.lru.LRUMemoryCache" level="WARN" />
+	<logger name="org.apache.jcs.engine.control.CompositeCache" level="WARN" />
+	<logger name="org.apache.jcs.engine.control.CompositeCacheConfigurator" level="WARN" />
+	<logger name="org.apache.jcs.engine.control.CompositeCacheManager" level="WARN" />
+	<logger name="org.apache.jcs.utils.threadpool.ThreadPoolManager" level="WARN" />
 </configuration>

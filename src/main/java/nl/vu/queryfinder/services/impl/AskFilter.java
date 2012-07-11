@@ -1,8 +1,5 @@
 package nl.vu.queryfinder.services.impl;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import nl.vu.queryfinder.model.Quad;
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.services.Service;
@@ -30,7 +27,7 @@ public class AskFilter extends Service {
 		outputQuery.setDescription(inputQuery.getDescription());
 
 		// Iterate over the triples
-		Set<Value> removeContexts = new HashSet<Value>();
+		// Set<Value> removeContexts = new HashSet<Value>();
 		for (Quad quad : inputQuery.getQuads()) {
 			Resource s = quad.getSubject().stringValue().startsWith("?") ? null : (Resource) quad.getSubject();
 			URI p = quad.getPredicate().stringValue().startsWith("?") ? null : (URI) quad.getPredicate();
@@ -38,24 +35,24 @@ public class AskFilter extends Service {
 			nl.erdf.model.Triple t = new nl.erdf.model.Triple(s, p, o);
 
 			// Test the triples with 0 or 1 variable
-			if (t.getNumberNulls() > 1 || dataLayer.isValid(t)) {
+			if (dataLayer.isValid(t)) {
 				logger.info(t.toString());
 				outputQuery.addQuad(quad);
 			} else {
-				removeContexts.add(quad.getContext());
+				// removeContexts.add(quad.getContext());
 			}
 		}
 
 		// Create the query
-		Query outputQuery2 = new Query();
-		outputQuery2.setDescription(inputQuery.getDescription());
+		// Query outputQuery2 = new Query();
+		// outputQuery2.setDescription(inputQuery.getDescription());
 
 		// Clean up blocks left alone
-		for (Quad quad : outputQuery.getQuads()) {
-			if (!removeContexts.contains(quad.getContext()))
-				outputQuery2.addQuad(quad);
-		}
+		// for (Quad quad : outputQuery.getQuads()) {
+		// if (!removeContexts.contains(quad.getContext()))
+		// outputQuery2.addQuad(quad);
+		// }
 
-		return outputQuery2;
+		return outputQuery;
 	}
 }

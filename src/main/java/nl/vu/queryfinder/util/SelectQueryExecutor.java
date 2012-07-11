@@ -4,7 +4,6 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import nl.erdf.model.EndPoint;
 import nl.erdf.model.EndPoint.EndPointType;
 
@@ -21,7 +20,7 @@ import org.slf4j.LoggerFactory;
 public class SelectQueryExecutor {
 	protected static final Logger logger = LoggerFactory.getLogger(SelectQueryExecutor.class);
 	private final static int PAGE_SIZE = 500;
-	private final static int HARD_LIMIT = 800;
+	private final static int HARD_LIMIT = 15;
 	SPARQLRepository repository;
 
 	/**

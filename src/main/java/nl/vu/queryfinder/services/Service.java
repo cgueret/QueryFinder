@@ -7,11 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import nl.erdf.datalayer.DataLayer;
-import nl.erdf.datalayer.hbase.SeverHBaseDataLayer;
-import nl.erdf.datalayer.hbase.SpyrosHBaseDataLayer;
-import nl.erdf.datalayer.sparql.SPARQLDataLayer;
 import nl.erdf.model.Directory;
-import nl.vu.datalayer.hbase.connection.HBaseConnection;
 import nl.vu.queryfinder.model.Query;
 
 /**
@@ -32,7 +28,7 @@ public abstract class Service {
 	/**
 	 * The SPARQL end points that may be queried for resources
 	 */
-	private Directory directory = null;
+	protected Directory directory = null;
 
 	/**
 	 * @param dataLayer
@@ -77,17 +73,6 @@ public abstract class Service {
 	 * 
 	 */
 	public void configure() {
-		String dataLayerName = this.getParameter("datalayer");
-		if (dataLayerName.equals("spyros"))
-			dataLayer = SpyrosHBaseDataLayer.getInstance("default");
-		else if (dataLayerName.equals("sever_remote"))
-			dataLayer = new SeverHBaseDataLayer(HBaseConnection.REST);
-		else if (dataLayerName.equals("sever_local"))
-			dataLayer = new SeverHBaseDataLayer(HBaseConnection.NATIVE_JAVA);
-		else if (dataLayerName.equals("sparql"))
-			dataLayer = new SPARQLDataLayer(null);
-		else
-			dataLayer = null;
 	}
 
 	/**
@@ -95,5 +80,12 @@ public abstract class Service {
 	 */
 	public Directory getDirectory() {
 		return directory;
+	}
+
+	/**
+	 * @param directory
+	 */
+	public void setDirectory(Directory directory) {
+		this.directory = directory;
 	}
 }

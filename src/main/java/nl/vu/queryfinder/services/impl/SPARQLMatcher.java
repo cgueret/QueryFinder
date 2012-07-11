@@ -37,21 +37,8 @@ public class SPARQLMatcher extends Service {
 	// Property types ( RDF.PROPERTY )
 	private static final Value[] PROP_TYPES = { OWL.DATATYPEPROPERTY, OWL.OBJECTPROPERTY, OWL.FUNCTIONALPROPERTY };
 
-	// The end point to query
-	private final Map<EndPoint, SelectQueryExecutor> executors = new HashMap<EndPoint, SelectQueryExecutor>();
-
-	/**
-	 * @param endPoint
-	 * @throws RepositoryException
-	 */
-	public SPARQLMatcher(Directory directory) throws RepositoryException {
-		for (EndPoint endPoint : directory) {
-			if (endPoint.getType().equals(EndPointType.VIRTUOSO) || endPoint.getType().equals(EndPointType.OWLIM)) {
-				SelectQueryExecutor exec = new SelectQueryExecutor(endPoint);
-				executors.put(endPoint, exec);
-			}
-		}
-	}
+	// List of end points to query
+	private static final Map<EndPoint, SelectQueryExecutor> executors = new HashMap<EndPoint, SelectQueryExecutor>();
 
 	/*
 	 * (non-Javadoc)
@@ -61,6 +48,18 @@ public class SPARQLMatcher extends Service {
 	 */
 	@Override
 	public Query process(Query inputQuery) {
+		// The end points to query
+		for (EndPoint endPoint : directory) {
+			if (endPoint.getType().equals(EndPointType.VIRTUOSO) || endPoint.getType().equals(EndPointType.OWLIM)) {
+				try {
+					SelectQueryExecutor exec = new SelectQueryExecutor(endPoint);
+					executors.put(endPoint, exec);
+				} catch (RepositoryException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+
 		// Create the query
 		Query outputQuery = new Query();
 
@@ -159,7 +158,10 @@ public class SPARQLMatcher extends Service {
 				keyword = keyword.replace(" ", " and ");
 			}
 			if (endPoint.getType().equals(EndPointType.OWLIM)) {
-				query += "?c <http://www.ontotext.com/owlim/lucene#> 'KEYWORD'.}";
+				// query +=
+				// "?c <http://www.ontotext.com/owlim/lucene#> 'KEYWORD'.}";
+				query += "?c <http://www.w3.org/2000/01/rdf-schema#label> ?l.";
+				query += "FILTER regex(str(?l), 'KEYWORD', 'i') }";
 			}
 			query = query.replace("KEYWORD", keyword);
 
@@ -168,6 +170,9 @@ public class SPARQLMatcher extends Service {
 		}
 
 		logger.info(String.format("[class] \"%s\" -> %d", keyword, results.size()));
+
+		for (Value l : results)
+			logger.info("\t" + l.stringValue());
 
 		return results;
 	}
@@ -210,8 +215,10 @@ public class SPARQLMatcher extends Service {
 		}
 
 		logger.info(String.format("[property] \"%s\" -> %d", keyword, results.size()));
-		return results;
+		for (Value l : results)
+			logger.info("\t" + l.stringValue());
 
+		return results;
 	}
 
 	/**
@@ -231,14 +238,17 @@ public class SPARQLMatcher extends Service {
 			if (endPoint.getDefaultGraph() != null)
 				query += "FROM <" + endPoint.getDefaultGraph() + "> ";
 			query += "WHERE {";
-			query += "?c a <" + OWL.NAMESPACE + "Thing>.";
+			// query += "?c a <" + OWL.NAMESPACE + "Thing>.";
 			if (endPoint.getType().equals(EndPointType.VIRTUOSO)) {
 				query += "?c <http://www.w3.org/2000/01/rdf-schema#label> ?l.";
 				query += "?l bif:contains 'KEYWORD'.} ORDER BY DESC ( <LONG::IRI_RANK> (?c) )";
 				keyword = keyword.replace(" ", " and ");
 			}
 			if (endPoint.getType().equals(EndPointType.OWLIM)) {
-				query += "?c <http://www.ontotext.com/owlim/lucene#> 'KEYWORD'.}";
+				// query +=
+				// "?c <http://www.ontotext.com/owlim/lucene#> 'KEYWORD'.}";
+				query += "?c <http://www.w3.org/2000/01/rdf-schema#label> ?l.";
+				query += "FILTER regex(str(?l), 'KEYWORD', 'i') }";
 			}
 			query = query.replace("KEYWORD", keyword);
 
@@ -250,6 +260,8 @@ public class SPARQLMatcher extends Service {
 			logger.info(String.format("[resource] \"%s\" -> %d (%s)", keyword, results.size(), context.getPredicate()));
 		else
 			logger.info(String.format("[resource] \"%s\" -> %d", keyword, results.size()));
+		for (Value l : results)
+			logger.info("\t" + l.stringValue());
 
 		return results;
 	}
@@ -267,7 +279,8 @@ public class SPARQLMatcher extends Service {
 		// EndPoint endPoint = new
 		// EndPoint(URI.create("http://factforge.net/sparql"), null,
 		// EndPointType.OWLIM);
-		SPARQLMatcher me = new SPARQLMatcher(directory);
+		SPARQLMatcher me = new SPARQLMatcher();
+		me.setDirectory(directory);
 		List<Value> res = null;
 
 		res = me.getClasses("artist");

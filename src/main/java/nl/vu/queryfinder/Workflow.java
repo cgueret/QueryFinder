@@ -116,6 +116,8 @@ public class Workflow {
 			Query query = new Query();
 			query.loadFrom(inputFileName);
 			Service service = new WordNetExpander();
+			service.setDirectory(directory);
+			service.setDataLayer(dataLayer);
 			service.process(query).saveTo(outputFileName);
 		}
 
@@ -127,6 +129,8 @@ public class Workflow {
 			Query query = new Query();
 			query.loadFrom(inputFileName);
 			Service service = new ModelExpander();
+			service.setDirectory(directory);
+			service.setDataLayer(dataLayer);
 			service.process(query).saveTo(outputFileName);
 		}
 
@@ -137,7 +141,9 @@ public class Workflow {
 		if (!(new File(outputFileName)).exists()) {
 			Query query = new Query();
 			query.loadFrom(inputFileName);
-			Service service = new SPARQLMatcher(directory);
+			Service service = new SPARQLMatcher();
+			service.setDirectory(directory);
+			service.setDataLayer(dataLayer);
 			service.process(query).saveTo(outputFileName);
 		}
 
@@ -148,7 +154,9 @@ public class Workflow {
 		if (!(new File(outputFileName)).exists()) {
 			Query query = new Query();
 			query.loadFrom(inputFileName);
-			Service service = new AskFilter(dataLayer);
+			Service service = new AskFilter();
+			service.setDirectory(directory);
+			service.setDataLayer(dataLayer);
 			service.process(query).saveTo(outputFileName);
 		}
 
@@ -159,7 +167,9 @@ public class Workflow {
 		if (!(new File(outputFileName)).exists()) {
 			Query query = new Query();
 			query.loadFrom(inputFileName);
-			Service service = new EvolutionarySolver(dataLayer);
+			Service service = new EvolutionarySolver();
+			service.setDirectory(directory);
+			service.setDataLayer(dataLayer);
 			service.process(query).saveTo(outputFileName);
 		}
 	}

@@ -40,7 +40,7 @@ import edu.mit.jwi.morph.WordnetStemmer;
  */
 public class WordNetExpander extends Service {
 	// Logger
-	protected static final Logger logger = LoggerFactory.getLogger(ModelExpander.class);
+	protected static final Logger logger = LoggerFactory.getLogger(WordNetExpander.class);
 
 	// Dictionary
 	protected final IDictionary dict;
@@ -122,6 +122,8 @@ public class WordNetExpander extends Service {
 	 * @return
 	 */
 	private Collection<Literal> getWords(String word) {
+		logger.info("Get words for \"" + word + "\"");
+
 		// Prepare the output
 		Set<Literal> out = new HashSet<Literal>();
 		out.add(f.createLiteral(word));
@@ -146,6 +148,9 @@ public class WordNetExpander extends Service {
 				}
 			}
 		}
+
+		for (Literal l : out)
+			logger.info("\t" + l.stringValue());
 
 		return out;
 	}

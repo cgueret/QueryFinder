@@ -6,13 +6,10 @@ package nl.vu.queryfinder;
 import java.io.File;
 
 import nl.erdf.datalayer.DataLayer;
-import nl.erdf.datalayer.hbase.SeverHBaseDataLayer;
-import nl.erdf.datalayer.hbase.SpyrosHBaseDataLayer;
 import nl.erdf.datalayer.sparql.SPARQLDataLayer;
 import nl.erdf.model.Directory;
 import nl.erdf.model.EndPoint;
 import nl.erdf.model.EndPoint.EndPointType;
-import nl.vu.datalayer.hbase.connection.HBaseConnection;
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.services.Service;
 import nl.vu.queryfinder.services.impl.AskFilter;
@@ -35,7 +32,8 @@ import org.slf4j.LoggerFactory;
  */
 public class Workflow {
 	// Logger
-	protected static final Logger logger = LoggerFactory.getLogger(Workflow.class);
+	protected static final Logger logger = LoggerFactory
+			.getLogger(Workflow.class);
 
 	/**
 	 * @param exitCode
@@ -54,7 +52,8 @@ public class Workflow {
 		// Compose the options
 		Options options = new Options();
 		options.addOption("i", "input", true, "query file (ttl)");
-		options.addOption("d", "datalayer", true, "data layer name (spyros, sever_local, sever_remote)");
+		// options.addOption("d", "datalayer", true,
+		// "data layer name (spyros, sever_local, sever_remote)");
 		options.addOption("h", "help", false, "print help message");
 
 		// Parse the command line
@@ -68,8 +67,8 @@ public class Workflow {
 		// Handle miss-use
 		if (!line.hasOption("i"))
 			printHelpAndExit(options, -1);
-		if (!line.hasOption("d"))
-			printHelpAndExit(options, -1);
+		// if (!line.hasOption("d"))
+		// printHelpAndExit(options, -1);
 
 		// Create an instance
 		Workflow instance = new Workflow();
@@ -84,35 +83,43 @@ public class Workflow {
 	 * @return
 	 * @throws Exception
 	 */
-	private void process(String fileName, String dataLayerName) throws Exception {
+	private void process(String fileName, String dataLayerName)
+			throws Exception {
 		// File names
 		String outputFileName = null;
 		String inputFileName = null;
+		File outputFile = null;
+		File inputFile = null;
 
 		// Configure the data layer
 		DataLayer dataLayer;
-		if (dataLayerName.equals("spyros"))
-			dataLayer = SpyrosHBaseDataLayer.getInstance("default");
-		else if (dataLayerName.equals("sever_remote"))
-			dataLayer = new SeverHBaseDataLayer(HBaseConnection.REST);
-		else if (dataLayerName.equals("sever_local"))
-			dataLayer = new SeverHBaseDataLayer(HBaseConnection.NATIVE_JAVA);
-		else if (dataLayerName.equals("sparql"))
-			dataLayer = new SPARQLDataLayer(null);
-		else
-			dataLayer = null;
+		/*
+		 * if (dataLayerName.equals("spyros")) dataLayer =
+		 * SpyrosHBaseDataLayer.getInstance("default"); else if
+		 * (dataLayerName.equals("sever_remote")) dataLayer = new
+		 * SeverHBaseDataLayer(HBaseConnection.REST); else if
+		 * (dataLayerName.equals("sever_local")) dataLayer = new
+		 * SeverHBaseDataLayer(HBaseConnection.NATIVE_JAVA); else if
+		 * (dataLayerName.equals("sparql")) dataLayer = new
+		 * SPARQLDataLayer(null); else dataLayer = null;
+		 */
 
 		// Configure the SPARQL directory
 		Directory directory = new Directory();
-		// directory.add(new EndPoint("http://dbpedia.org/sparql",
-		// "http://dbpedia.org", EndPointType.VIRTUOSO));
-		directory.add(new EndPoint("http://factforge.net/sparql", null, EndPointType.OWLIM));
+		directory.add(new EndPoint("http://dbpedia.org/sparql",
+				"http://dbpedia.org", EndPointType.VIRTUOSO));
+		// directory.add(new EndPoint("http://factforge.net/sparql", null,
+		// EndPointType.OWLIM));
+		dataLayer = new SPARQLDataLayer(directory);
 
 		// Expand all the literals using Wordnet
 		logger.info("1 - Expand literals with wordnet");
 		inputFileName = fileName;
-		outputFileName = fileName.replace(".ttl", "-wordnet.ttl");
-		if (!(new File(outputFileName)).exists()) {
+		outputFileName = fileName.replace(".ttl", "-1-wordnet.ttl");
+		outputFile = new File(outputFileName);
+		inputFile = new File(inputFileName);
+		if (!outputFile.exists()
+				|| inputFile.lastModified() > outputFile.lastModified()) {
 			Query query = new Query();
 			query.loadFrom(inputFileName);
 			Service service = new WordNetExpander();
@@ -124,8 +131,11 @@ public class Workflow {
 		// Expand the model
 		logger.info("2 - Expand the model");
 		inputFileName = outputFileName;
-		outputFileName = fileName.replace(".ttl", "-expand.ttl");
-		if (!(new File(outputFileName)).exists()) {
+		outputFileName = fileName.replace(".ttl", "-2-expand.ttl");
+		outputFile = new File(outputFileName);
+		inputFile = new File(inputFileName);
+		if (!outputFile.exists()
+				|| inputFile.lastModified() > outputFile.lastModified()) {
 			Query query = new Query();
 			query.loadFrom(inputFileName);
 			Service service = new ModelExpander();
@@ -137,8 +147,11 @@ public class Workflow {
 		// Turn the literals into resources
 		logger.info("3 - Turn the literals into resources");
 		inputFileName = outputFileName;
-		outputFileName = fileName.replace(".ttl", "-matcher.ttl");
-		if (!(new File(outputFileName)).exists()) {
+		outputFileName = fileName.replace(".ttl", "-3-matcher.ttl");
+		outputFile = new File(outputFileName);
+		inputFile = new File(inputFileName);
+		if (!outputFile.exists()
+				|| inputFile.lastModified() > outputFile.lastModified()) {
 			Query query = new Query();
 			query.loadFrom(inputFileName);
 			Service service = new SPARQLMatcher();
@@ -150,8 +163,11 @@ public class Workflow {
 		// Filter out non valid query patterns
 		logger.info("4 - Filter out non valid query patterns");
 		inputFileName = outputFileName;
-		outputFileName = fileName.replace(".ttl", "-filter.ttl");
-		if (!(new File(outputFileName)).exists()) {
+		outputFileName = fileName.replace(".ttl", "-4-filter.ttl");
+		outputFile = new File(outputFileName);
+		inputFile = new File(inputFileName);
+		if (!outputFile.exists()
+				|| inputFile.lastModified() > outputFile.lastModified()) {
 			Query query = new Query();
 			query.loadFrom(inputFileName);
 			Service service = new AskFilter();
@@ -163,8 +179,11 @@ public class Workflow {
 		// Run the evolutionary solver
 		logger.info("5 - Run the evolutionary solver");
 		inputFileName = outputFileName;
-		outputFileName = fileName.replace(".ttl", "-solver.ttl");
-		if (!(new File(outputFileName)).exists()) {
+		outputFileName = fileName.replace(".ttl", "-5-solver.ttl");
+		outputFile = new File(outputFileName);
+		inputFile = new File(inputFileName);
+		if (!outputFile.exists()
+				|| inputFile.lastModified() > outputFile.lastModified()) {
 			Query query = new Query();
 			query.loadFrom(inputFileName);
 			Service service = new EvolutionarySolver();

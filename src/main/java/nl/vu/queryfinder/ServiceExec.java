@@ -5,13 +5,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 import nl.erdf.datalayer.DataLayer;
-import nl.erdf.datalayer.hbase.SeverHBaseDataLayer;
-import nl.erdf.datalayer.hbase.SpyrosHBaseDataLayer;
 import nl.erdf.datalayer.sparql.SPARQLDataLayer;
 import nl.erdf.model.Directory;
 import nl.erdf.model.EndPoint;
 import nl.erdf.model.EndPoint.EndPointType;
-import nl.vu.datalayer.hbase.connection.HBaseConnection;
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.services.Service;
 import nl.vu.queryfinder.services.impl.AskFilter;
@@ -59,7 +56,8 @@ public class ServiceExec {
 		options.addOption("s", "service", true, "name of the service to use");
 		options.addOption("i", "input", true, "query input file (ttl)");
 		options.addOption("o", "output", true, "query output file (ttl)");
-		options.addOption("p", "parameters", true, "coma separated list of parameters");
+		options.addOption("p", "parameters", true,
+				"coma separated list of parameters");
 		options.addOption("l", "list", false, "list available services");
 		options.addOption("h", "help", false, "print help message");
 
@@ -79,7 +77,8 @@ public class ServiceExec {
 		}
 
 		// Handle miss-use
-		if (!line.hasOption("s") || !line.hasOption("o") || !line.hasOption("i"))
+		if (!line.hasOption("s") || !line.hasOption("o")
+				|| !line.hasOption("i"))
 			printHelpAndExit(options, -1);
 
 		// Handle asking for an unknown service
@@ -115,26 +114,27 @@ public class ServiceExec {
 
 		// Configure the datalayer
 		DataLayer dataLayer = null;
-		String dataLayerName = service.getParameter("datalayer");
-		if (dataLayerName != null) {
-			if (dataLayerName.equals("spyros"))
-				dataLayer = SpyrosHBaseDataLayer.getInstance("default");
-			else if (dataLayerName.equals("sever_remote"))
-				dataLayer = new SeverHBaseDataLayer(HBaseConnection.REST);
-			else if (dataLayerName.equals("sever_local"))
-				dataLayer = new SeverHBaseDataLayer(HBaseConnection.NATIVE_JAVA);
-			else if (dataLayerName.equals("sparql"))
-				dataLayer = new SPARQLDataLayer(null);
-			else
-				dataLayer = null;
-		}
+
+		/*
+		 * String dataLayerName = service.getParameter("datalayer"); if
+		 * (dataLayerName != null) { if (dataLayerName.equals("spyros"))
+		 * dataLayer = SpyrosHBaseDataLayer.getInstance("default"); else if
+		 * (dataLayerName.equals("sever_remote")) dataLayer = new
+		 * SeverHBaseDataLayer(HBaseConnection.REST); else if
+		 * (dataLayerName.equals("sever_local")) dataLayer = new
+		 * SeverHBaseDataLayer(HBaseConnection.NATIVE_JAVA); else if
+		 * (dataLayerName.equals("sparql")) dataLayer = new
+		 * SPARQLDataLayer(null); else dataLayer = null; }
+		 */
+		dataLayer = new SPARQLDataLayer(null);
 		service.setDataLayer(dataLayer);
 
 		// Configure the SPARQL end points
 		Directory directory = new Directory();
 		// directory.add(new EndPoint("http://dbpedia.org/sparql",
 		// "http://dbpedia.org", EndPointType.VIRTUOSO));
-		directory.add(new EndPoint("http://factforge.net/sparql", null, EndPointType.OWLIM));
+		directory.add(new EndPoint("http://factforge.net/sparql", null,
+				EndPointType.OWLIM));
 		service.setDirectory(directory);
 
 		// Process the query

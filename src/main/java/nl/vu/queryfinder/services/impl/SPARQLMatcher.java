@@ -32,10 +32,12 @@ import org.slf4j.LoggerFactory;
  */
 public class SPARQLMatcher extends Service {
 	// Logger
-	private static final Logger logger = LoggerFactory.getLogger(SPARQLMatcher.class);
+	private static final Logger logger = LoggerFactory
+			.getLogger(SPARQLMatcher.class);
 
 	// Property types ( RDF.PROPERTY )
-	private static final Value[] PROP_TYPES = { OWL.DATATYPEPROPERTY, OWL.OBJECTPROPERTY, OWL.FUNCTIONALPROPERTY };
+	private static final Value[] PROP_TYPES = { OWL.DATATYPEPROPERTY,
+			OWL.OBJECTPROPERTY, OWL.FUNCTIONALPROPERTY };
 
 	// List of end points to query
 	private static final Map<EndPoint, SelectQueryExecutor> executors = new HashMap<EndPoint, SelectQueryExecutor>();
@@ -50,7 +52,8 @@ public class SPARQLMatcher extends Service {
 	public Query process(Query inputQuery) {
 		// The end points to query
 		for (EndPoint endPoint : directory) {
-			if (endPoint.getType().equals(EndPointType.VIRTUOSO) || endPoint.getType().equals(EndPointType.OWLIM)) {
+			if (endPoint.getType().equals(EndPointType.VIRTUOSO)
+					|| endPoint.getType().equals(EndPointType.OWLIM)) {
 				try {
 					SelectQueryExecutor exec = new SelectQueryExecutor(endPoint);
 					executors.put(endPoint, exec);
@@ -111,12 +114,15 @@ public class SPARQLMatcher extends Service {
 						// URIImpl(RDF.NAMESPACE + "PlainLiteral"))) {
 						objects.add(object);
 					} else {
-						if (predicate instanceof Literal && predicate.stringValue().equals("type"))
+						if (predicate instanceof Literal
+								&& predicate.stringValue().equals("type"))
 							objects.addAll(getClasses(object.stringValue()));
-						else if (predicate instanceof Resource && predicate.equals(RDF.TYPE))
+						else if (predicate instanceof Resource
+								&& predicate.equals(RDF.TYPE))
 							objects.addAll(getClasses(object.stringValue()));
 						else
-							objects.addAll(getResources(object.stringValue(), null));
+							objects.addAll(getResources(object.stringValue(),
+									null));
 					}
 				}
 			}
@@ -139,8 +145,9 @@ public class SPARQLMatcher extends Service {
 	 * @param keyword
 	 * @return
 	 */
-	protected List<Value> getClasses(String keyword) {
+	protected List<Value> getClasses(final String keyword) {
 		List<Value> results = new ArrayList<Value>();
+		String keyword2 = keyword;
 
 		for (Entry<EndPoint, SelectQueryExecutor> entry : executors.entrySet()) {
 			EndPoint endPoint = entry.getKey();
@@ -155,7 +162,7 @@ public class SPARQLMatcher extends Service {
 			if (endPoint.getType().equals(EndPointType.VIRTUOSO)) {
 				query += "?c <http://www.w3.org/2000/01/rdf-schema#label> ?l.";
 				query += "?l bif:contains 'KEYWORD'.} ORDER BY DESC ( <LONG::IRI_RANK> (?c) )";
-				keyword = keyword.replace(" ", " and ");
+				keyword2 = keyword.replace(" ", " and ");
 			}
 			if (endPoint.getType().equals(EndPointType.OWLIM)) {
 				// query +=
@@ -163,13 +170,15 @@ public class SPARQLMatcher extends Service {
 				query += "?c <http://www.w3.org/2000/01/rdf-schema#label> ?l.";
 				query += "FILTER regex(str(?l), 'KEYWORD', 'i') }";
 			}
-			query = query.replace("KEYWORD", keyword);
+			query = query.replace("KEYWORD", keyword2);
+			logger.info(query);
 
 			// Process the query
 			results.addAll(executor.process(query, "c"));
 		}
 
-		logger.info(String.format("[class] \"%s\" -> %d", keyword, results.size()));
+		logger.info(String.format("[class] \"%s\" -> %d", keyword,
+				results.size()));
 
 		for (Value l : results)
 			logger.info("\t" + l.stringValue());
@@ -181,12 +190,14 @@ public class SPARQLMatcher extends Service {
 	 * @param keyword
 	 * @return
 	 */
-	protected List<Value> getProperties(String keyword) {
+	protected List<Value> getProperties(final String keyword) {
 		List<Value> results = new ArrayList<Value>();
-
+		String keyword2 = keyword;
+		
 		if (!keyword.equals("type")) {
 			for (Value propertyType : PROP_TYPES) {
-				for (Entry<EndPoint, SelectQueryExecutor> entry : executors.entrySet()) {
+				for (Entry<EndPoint, SelectQueryExecutor> entry : executors
+						.entrySet()) {
 					EndPoint endPoint = entry.getKey();
 					SelectQueryExecutor executor = entry.getValue();
 
@@ -199,12 +210,13 @@ public class SPARQLMatcher extends Service {
 					if (endPoint.getType().equals(EndPointType.VIRTUOSO)) {
 						query += "?c <http://www.w3.org/2000/01/rdf-schema#label> ?l.";
 						query += "?l bif:contains 'KEYWORD'.} ORDER BY DESC ( <LONG::IRI_RANK> (?c) )";
-						keyword = keyword.replace(" ", " and ");
+						keyword2 = keyword.replace(" ", " and ");
 					}
 					if (endPoint.getType().equals(EndPointType.OWLIM)) {
 						query += "?c <http://www.ontotext.com/owlim/lucene#> 'KEYWORD'.}";
 					}
-					query = query.replace("KEYWORD", keyword);
+					query = query.replace("KEYWORD", keyword2);
+					logger.info(query);
 
 					// Process the query
 					results.addAll(executor.process(query, "c"));
@@ -214,7 +226,8 @@ public class SPARQLMatcher extends Service {
 			results.add(RDF.TYPE);
 		}
 
-		logger.info(String.format("[property] \"%s\" -> %d", keyword, results.size()));
+		logger.info(String.format("[property] \"%s\" -> %d", keyword,
+				results.size()));
 		for (Value l : results)
 			logger.info("\t" + l.stringValue());
 
@@ -226,8 +239,10 @@ public class SPARQLMatcher extends Service {
 	 * @param context
 	 * @return
 	 */
-	protected List<Value> getResources(String keyword, Statement context) {
+	protected List<Value> getResources(final String keyword,
+			final Statement context) {
 		List<Value> results = new ArrayList<Value>();
+		String keyword2 = keyword;
 
 		for (Entry<EndPoint, SelectQueryExecutor> entry : executors.entrySet()) {
 			EndPoint endPoint = entry.getKey();
@@ -242,7 +257,7 @@ public class SPARQLMatcher extends Service {
 			if (endPoint.getType().equals(EndPointType.VIRTUOSO)) {
 				query += "?c <http://www.w3.org/2000/01/rdf-schema#label> ?l.";
 				query += "?l bif:contains 'KEYWORD'.} ORDER BY DESC ( <LONG::IRI_RANK> (?c) )";
-				keyword = keyword.replace(" ", " and ");
+				keyword2 = keyword.replace(" ", " and ");
 			}
 			if (endPoint.getType().equals(EndPointType.OWLIM)) {
 				// query +=
@@ -250,16 +265,19 @@ public class SPARQLMatcher extends Service {
 				query += "?c <http://www.w3.org/2000/01/rdf-schema#label> ?l.";
 				query += "FILTER regex(str(?l), 'KEYWORD', 'i') }";
 			}
-			query = query.replace("KEYWORD", keyword);
+			query = query.replace("KEYWORD", keyword2);
+			logger.info(query);
 
 			// Process the query
 			results.addAll(executor.process(query, "c"));
 		}
 
 		if (context != null)
-			logger.info(String.format("[resource] \"%s\" -> %d (%s)", keyword, results.size(), context.getPredicate()));
+			logger.info(String.format("[resource] \"%s\" -> %d (%s)", keyword,
+					results.size(), context.getPredicate()));
 		else
-			logger.info(String.format("[resource] \"%s\" -> %d", keyword, results.size()));
+			logger.info(String.format("[resource] \"%s\" -> %d", keyword,
+					results.size()));
 		for (Value l : results)
 			logger.info("\t" + l.stringValue());
 
@@ -271,9 +289,11 @@ public class SPARQLMatcher extends Service {
 	 * @throws IOException
 	 * @throws RepositoryException
 	 */
-	public static void main(String[] args) throws IOException, RepositoryException {
+	public static void main(String[] args) throws IOException,
+			RepositoryException {
 		Directory directory = new Directory();
-		EndPoint endPoint = new EndPoint("http://dbpedia.org/sparql", "http://dbpedia.org", EndPointType.VIRTUOSO);
+		EndPoint endPoint = new EndPoint("http://dbpedia.org/sparql",
+				"http://dbpedia.org", EndPointType.VIRTUOSO);
 		directory.add(endPoint);
 
 		// EndPoint endPoint = new

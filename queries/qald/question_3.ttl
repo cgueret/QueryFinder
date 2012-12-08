@@ -1,0 +1,39 @@
+@prefix :     <http://example.org#>.
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+_:query
+	rdf:type	:Query;
+	rdfs:comment "Give me the official websites of actors of the television show Charmed.";
+	:statement _:a;
+	:statement _:b.
+		
+#_:a
+#	rdf:type rdf:Statement;
+#	rdf:subject "?show";
+#	rdf:predicate "type";
+#	rdf:object "television show";
+#	rdfs:label "?show a television show".
+	
+#_:b
+#	rdf:type rdf:Statement;
+#	rdf:subject "?show";
+#	rdf:predicate "title";
+#	rdf:object "Charmed";
+#	rdfs:label "?show named Charmed".
+	
+_:a
+	rdf:type rdf:Statement;
+	rdf:subject "Charmed";
+	rdf:predicate "starring";
+	rdf:object "?actor";
+	rdfs:label "?show starring ?actor".
+	
+_:b
+	rdf:type rdf:Statement;
+	rdf:subject "?actor";
+	rdf:predicate "page";
+	rdf:object "?page";
+	rdfs:label "?actor page ?page".
+	
+	

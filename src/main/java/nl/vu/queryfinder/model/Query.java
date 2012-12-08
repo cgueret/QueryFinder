@@ -223,6 +223,17 @@ public class Query {
 	}
 
 	/**
+	 * @param quad
+	 * @return
+	 */
+	public boolean contains(Quad quad) {
+		if (this.getQuads().contains(quad))
+			return true;
+		
+		return false;
+	}
+	
+	/**
 	 * @return
 	 */
 	public List<Quad> getQuads() {
@@ -272,6 +283,9 @@ public class Query {
 	 * @param quad
 	 */
 	public void addQuad(final Quad quad) {
+		if (this.contains(quad))
+			return;
+		
 		// Get the name of the query
 		Resource queryResource = getQueryResource();
 

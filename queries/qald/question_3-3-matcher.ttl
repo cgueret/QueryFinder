@@ -1,0 +1,2685 @@
+@prefix qf: <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+_:node17dt8nd3hx1 a qf:Query ;
+	rdfs:comment "Give me the official websites of actors of the television show Charmed." ;
+	qf:statement _:node17dt8nd3hx2 .
+
+_:node17dt8nd3hx2 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/USS_Captivate_(AM-156)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx3 .
+
+_:node17dt8nd3hx3 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Adobe_Captivate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx4 .
+
+_:node17dt8nd3hx4 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Samsung_Captivate_Glide> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx5 .
+
+_:node17dt8nd3hx5 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Captivate_Network> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx6 .
+
+_:node17dt8nd3hx6 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/USS_Captivate_(AMc-133)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx7 .
+
+_:node17dt8nd3hx7 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/USS_Captivate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx8 .
+
+_:node17dt8nd3hx8 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Captivate_Glide> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx9 .
+
+_:node17dt8nd3hx9 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/USS_Captivate_(MSF-156)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx10 .
+
+_:node17dt8nd3hx10 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Captivate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx11 .
+
+_:node17dt8nd3hx11 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Macromedia_Captivate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx12 .
+
+_:node17dt8nd3hx12 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Samsung_Captivate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx13 .
+
+_:node17dt8nd3hx13 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Captivate_network> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx14 .
+
+_:node17dt8nd3hx14 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AT&T_Captivate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx15 .
+
+_:node17dt8nd3hx15 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/SamsungI9000GalaxyS> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx16 .
+
+_:node17dt8nd3hx16 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/USSCaptivate(AM-156)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx17 .
+
+_:node17dt8nd3hx17 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/USS_Captivate_(AM-156)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx18 .
+
+_:node17dt8nd3hx18 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Adobe_Captivate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx19 .
+
+_:node17dt8nd3hx19 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Samsung_Captivate_Glide> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx20 .
+
+_:node17dt8nd3hx20 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Captivate_Network> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx21 .
+
+_:node17dt8nd3hx21 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/USS_Captivate_(AMc-133)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx22 .
+
+_:node17dt8nd3hx22 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/USS_Captivate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx23 .
+
+_:node17dt8nd3hx23 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Captivate_Glide> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx24 .
+
+_:node17dt8nd3hx24 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/USS_Captivate_(MSF-156)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx25 .
+
+_:node17dt8nd3hx25 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Captivate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx26 .
+
+_:node17dt8nd3hx26 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Macromedia_Captivate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx27 .
+
+_:node17dt8nd3hx27 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Samsung_Captivate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx28 .
+
+_:node17dt8nd3hx28 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Captivate_network> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx29 .
+
+_:node17dt8nd3hx29 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AT&T_Captivate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx30 .
+
+_:node17dt8nd3hx30 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/SamsungI9000GalaxyS> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx31 .
+
+_:node17dt8nd3hx31 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/USSCaptivate(AM-156)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx32 .
+
+_:node17dt8nd3hx32 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Entranced_Earth> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx33 .
+
+_:node17dt8nd3hx33 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/EntrancedEarth> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx34 .
+
+_:node17dt8nd3hx34 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Entranced_Earth> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx35 .
+
+_:node17dt8nd3hx35 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/EntrancedEarth> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx36 .
+
+_:node17dt8nd3hx36 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_1)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx37 .
+
+_:node17dt8nd3hx37 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_5)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx38 .
+
+_:node17dt8nd3hx38 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_3)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx39 .
+
+_:node17dt8nd3hx39 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_7)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx40 .
+
+_:node17dt8nd3hx40 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_4)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx41 .
+
+_:node17dt8nd3hx41 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx42 .
+
+_:node17dt8nd3hx42 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_8)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx43 .
+
+_:node17dt8nd3hx43 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_6)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx44 .
+
+_:node17dt8nd3hx44 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_2)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx45 .
+
+_:node17dt8nd3hx45 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_Charmed_characters> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx46 .
+
+_:node17dt8nd3hx46 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Charmed> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx47 .
+
+_:node17dt8nd3hx47 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Charmed_(TV_series)_characters> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx48 .
+
+_:node17dt8nd3hx48 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_Charmed_episodes> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx49 .
+
+_:node17dt8nd3hx49 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Forever_Charmed> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx50 .
+
+_:node17dt8nd3hx50 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/Charmed(TVSeries)Characters> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx51 .
+
+_:node17dt8nd3hx51 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_1)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx52 .
+
+_:node17dt8nd3hx52 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_5)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx53 .
+
+_:node17dt8nd3hx53 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_3)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx54 .
+
+_:node17dt8nd3hx54 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_7)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx55 .
+
+_:node17dt8nd3hx55 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_4)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx56 .
+
+_:node17dt8nd3hx56 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx57 .
+
+_:node17dt8nd3hx57 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_8)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx58 .
+
+_:node17dt8nd3hx58 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_6)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx59 .
+
+_:node17dt8nd3hx59 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed_(season_2)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx60 .
+
+_:node17dt8nd3hx60 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_Charmed_characters> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx61 .
+
+_:node17dt8nd3hx61 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Charmed> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx62 .
+
+_:node17dt8nd3hx62 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Charmed_(TV_series)_characters> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx63 .
+
+_:node17dt8nd3hx63 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_Charmed_episodes> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx64 .
+
+_:node17dt8nd3hx64 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Forever_Charmed> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx65 .
+
+_:node17dt8nd3hx65 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/Charmed(TVSeries)Characters> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx66 .
+
+_:node17dt8nd3hx66 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bewitch_Stakes> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx67 .
+
+_:node17dt8nd3hx67 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bewitch> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx68 .
+
+_:node17dt8nd3hx68 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bewitch_(horse)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx69 .
+
+_:node17dt8nd3hx69 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/Bewitch> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx70 .
+
+_:node17dt8nd3hx70 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BewitchStakes> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx71 .
+
+_:node17dt8nd3hx71 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bewitch_Stakes> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx72 .
+
+_:node17dt8nd3hx72 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bewitch> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx73 .
+
+_:node17dt8nd3hx73 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bewitch_(horse)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx74 .
+
+_:node17dt8nd3hx74 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/Bewitch> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx75 .
+
+_:node17dt8nd3hx75 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BewitchStakes> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx76 .
+
+_:node17dt8nd3hx76 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Beguiled_Again> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx77 .
+
+_:node17dt8nd3hx77 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/The_Beguiled> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx78 .
+
+_:node17dt8nd3hx78 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Beguiled> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx79 .
+
+_:node17dt8nd3hx79 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BeguiledAgain> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx80 .
+
+_:node17dt8nd3hx80 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/TheBeguiled> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx81 .
+
+_:node17dt8nd3hx81 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Beguiled_Again> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx82 .
+
+_:node17dt8nd3hx82 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/The_Beguiled> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx83 .
+
+_:node17dt8nd3hx83 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Beguiled> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx84 .
+
+_:node17dt8nd3hx84 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BeguiledAgain> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx85 .
+
+_:node17dt8nd3hx85 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/TheBeguiled> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx86 .
+
+_:node17dt8nd3hx86 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/ontology/WrestlingEvent> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx87 .
+
+_:node17dt8nd3hx87 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Professional_wrestling> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx88 .
+
+_:node17dt8nd3hx88 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Glossary_of_professional_wrestling_terms> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx89 .
+
+_:node17dt8nd3hx89 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Political_catch_phrases> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx90 .
+
+_:node17dt8nd3hx90 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_Catch-22_characters> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx91 .
+
+_:node17dt8nd3hx91 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/C._C._Catch> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx92 .
+
+_:node17dt8nd3hx92 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Catch_22_(band)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx93 .
+
+_:node17dt8nd3hx93 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/DiGeorge_syndrome> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx94 .
+
+_:node17dt8nd3hx94 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Professional_wrestling_attacks> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx95 .
+
+_:node17dt8nd3hx95 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Professional_wrestling_aerial_techniques> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx96 .
+
+_:node17dt8nd3hx96 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/New_World_Order_(professional_wrestling)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx97 .
+
+_:node17dt8nd3hx97 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hardcore_wrestling> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx98 .
+
+_:node17dt8nd3hx98 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Professional_wrestling_match_types> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx99 .
+
+_:node17dt8nd3hx99 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Professional_wrestling_holds> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx100 .
+
+_:node17dt8nd3hx100 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Professional_wrestling_throws> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx101 .
+
+_:node17dt8nd3hx101 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/ontology/WrestlingEvent> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx102 .
+
+_:node17dt8nd3hx102 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Professional_wrestling> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx103 .
+
+_:node17dt8nd3hx103 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Glossary_of_professional_wrestling_terms> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx104 .
+
+_:node17dt8nd3hx104 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Political_catch_phrases> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx105 .
+
+_:node17dt8nd3hx105 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_Catch-22_characters> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx106 .
+
+_:node17dt8nd3hx106 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/C._C._Catch> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx107 .
+
+_:node17dt8nd3hx107 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Catch_22_(band)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx108 .
+
+_:node17dt8nd3hx108 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/DiGeorge_syndrome> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx109 .
+
+_:node17dt8nd3hx109 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Professional_wrestling_attacks> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx110 .
+
+_:node17dt8nd3hx110 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Professional_wrestling_aerial_techniques> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx111 .
+
+_:node17dt8nd3hx111 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/New_World_Order_(professional_wrestling)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx112 .
+
+_:node17dt8nd3hx112 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hardcore_wrestling> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx113 .
+
+_:node17dt8nd3hx113 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Professional_wrestling_match_types> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx114 .
+
+_:node17dt8nd3hx114 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Professional_wrestling_holds> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx115 .
+
+_:node17dt8nd3hx115 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Professional_wrestling_throws> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx116 .
+
+_:node17dt8nd3hx116 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Cultural_spheres_of_influence> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx117 .
+
+_:node17dt8nd3hx117 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Driving_under_the_influence> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx118 .
+
+_:node17dt8nd3hx118 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/CulturalSpheresOfInfluEnce> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx119 .
+
+_:node17dt8nd3hx119 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/OSI_(band)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx120 .
+
+_:node17dt8nd3hx120 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Blood_types_in_Japanese_culture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx121 .
+
+_:node17dt8nd3hx121 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Influence_diagram> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx122 .
+
+_:node17dt8nd3hx122 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Under_the_Influence_of_Giants> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx123 .
+
+_:node17dt8nd3hx123 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/Poland%E2%80%93RussiaRelations> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx124 .
+
+_:node17dt8nd3hx124 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/European_influence_in_Afghanistan> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx125 .
+
+_:node17dt8nd3hx125 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/D'Influence> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx126 .
+
+_:node17dt8nd3hx126 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Sphere_of_influence> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx127 .
+
+_:node17dt8nd3hx127 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Media_influence> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx128 .
+
+_:node17dt8nd3hx128 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/The_Beatles'_influence_on_popular_culture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx129 .
+
+_:node17dt8nd3hx129 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Media_influence> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx130 .
+
+_:node17dt8nd3hx130 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Under_the_Influence_(Status_Quo_album)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx131 .
+
+_:node17dt8nd3hx131 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Cultural_spheres_of_influence> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx132 .
+
+_:node17dt8nd3hx132 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Driving_under_the_influence> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx133 .
+
+_:node17dt8nd3hx133 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/CulturalSpheresOfInfluEnce> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx134 .
+
+_:node17dt8nd3hx134 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/OSI_(band)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx135 .
+
+_:node17dt8nd3hx135 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Blood_types_in_Japanese_culture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx136 .
+
+_:node17dt8nd3hx136 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Influence_diagram> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx137 .
+
+_:node17dt8nd3hx137 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Under_the_Influence_of_Giants> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx138 .
+
+_:node17dt8nd3hx138 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/Poland%E2%80%93RussiaRelations> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx139 .
+
+_:node17dt8nd3hx139 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/European_influence_in_Afghanistan> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx140 .
+
+_:node17dt8nd3hx140 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/D'Influence> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx141 .
+
+_:node17dt8nd3hx141 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Sphere_of_influence> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx142 .
+
+_:node17dt8nd3hx142 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Media_influence> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx143 .
+
+_:node17dt8nd3hx143 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/The_Beatles'_influence_on_popular_culture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx144 .
+
+_:node17dt8nd3hx144 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Media_influence> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx145 .
+
+_:node17dt8nd3hx145 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Under_the_Influence_(Status_Quo_album)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx146 .
+
+_:node17dt8nd3hx146 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Electoral_district_of_The_Entrance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx147 .
+
+_:node17dt8nd3hx147 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/The_Entrance,_New_South_Wales> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx148 .
+
+_:node17dt8nd3hx148 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Entrance_(musician)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx149 .
+
+_:node17dt8nd3hx149 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Early_entrance_to_college> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx150 .
+
+_:node17dt8nd3hx150 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Lakes_Entrance,_Victoria> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx151 .
+
+_:node17dt8nd3hx151 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Indian_Institute_of_Technology_Joint_Entrance_Examination> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx152 .
+
+_:node17dt8nd3hx152 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/Entrance103290771> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx153 .
+
+_:node17dt8nd3hx153 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/All_India_Engineering_Entrance_Examination> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx154 .
+
+_:node17dt8nd3hx154 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Entrance_examination> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx155 .
+
+_:node17dt8nd3hx155 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Entrance_pupil> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx156 .
+
+_:node17dt8nd3hx156 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Entrance_of_the_Conflagration> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx157 .
+
+_:node17dt8nd3hx157 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Entrance_of_the_Gladiators> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx158 .
+
+_:node17dt8nd3hx158 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_Military_Entrance_Processing_Command> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx159 .
+
+_:node17dt8nd3hx159 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/National_Higher_Education_Entrance_Examination> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx160 .
+
+_:node17dt8nd3hx160 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Common_Entrance_Examination> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx161 .
+
+_:node17dt8nd3hx161 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Electoral_district_of_The_Entrance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx162 .
+
+_:node17dt8nd3hx162 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/The_Entrance,_New_South_Wales> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx163 .
+
+_:node17dt8nd3hx163 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Entrance_(musician)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx164 .
+
+_:node17dt8nd3hx164 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Early_entrance_to_college> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx165 .
+
+_:node17dt8nd3hx165 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Lakes_Entrance,_Victoria> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx166 .
+
+_:node17dt8nd3hx166 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Indian_Institute_of_Technology_Joint_Entrance_Examination> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx167 .
+
+_:node17dt8nd3hx167 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/Entrance103290771> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx168 .
+
+_:node17dt8nd3hx168 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/All_India_Engineering_Entrance_Examination> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx169 .
+
+_:node17dt8nd3hx169 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Entrance_examination> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx170 .
+
+_:node17dt8nd3hx170 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Entrance_pupil> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx171 .
+
+_:node17dt8nd3hx171 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Entrance_of_the_Conflagration> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx172 .
+
+_:node17dt8nd3hx172 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Entrance_of_the_Gladiators> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx173 .
+
+_:node17dt8nd3hx173 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_Military_Entrance_Processing_Command> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx174 .
+
+_:node17dt8nd3hx174 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/National_Higher_Education_Entrance_Examination> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx175 .
+
+_:node17dt8nd3hx175 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Common_Entrance_Examination> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx176 .
+
+_:node17dt8nd3hx176 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Forever_Enthralled> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx177 .
+
+_:node17dt8nd3hx177 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/ForeverEnthralled> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx178 .
+
+_:node17dt8nd3hx178 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Forever_Enthralled> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx179 .
+
+_:node17dt8nd3hx179 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/ForeverEnthralled> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx180 .
+
+_:node17dt8nd3hx180 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Fascinate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx181 .
+
+_:node17dt8nd3hx181 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Samsung_Fascinate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx182 .
+
+_:node17dt8nd3hx182 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Fascinate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx183 .
+
+_:node17dt8nd3hx183 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Samsung_Fascinate> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx184 .
+
+_:node17dt8nd3hx184 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Don't_Tempt_Me> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx185 .
+
+_:node17dt8nd3hx185 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Tempt_One> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx186 .
+
+_:node17dt8nd3hx186 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Tempt> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx187 .
+
+_:node17dt8nd3hx187 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Tempt,_Tease_and_Touch> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx188 .
+
+_:node17dt8nd3hx188 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/Don'tTemptMe> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx189 .
+
+_:node17dt8nd3hx189 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/TemptOne> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx190 .
+
+_:node17dt8nd3hx190 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Don't_Tempt_Me> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx191 .
+
+_:node17dt8nd3hx191 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Tempt_One> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx192 .
+
+_:node17dt8nd3hx192 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Tempt> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx193 .
+
+_:node17dt8nd3hx193 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Tempt,_Tease_and_Touch> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx194 .
+
+_:node17dt8nd3hx194 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/Don'tTemptMe> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx195 .
+
+_:node17dt8nd3hx195 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/TemptOne> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx196 .
+
+_:node17dt8nd3hx196 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Sharm_el-Sheikh> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx197 .
+
+_:node17dt8nd3hx197 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Sharm_el-Sheikh_International_Airport> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx198 .
+
+_:node17dt8nd3hx198 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Leather_Charm> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx199 .
+
+_:node17dt8nd3hx199 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/The_Discreet_Charm_of_the_Bourgeoisie> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx200 .
+
+_:node17dt8nd3hx200 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Superficial_charm> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx201 .
+
+_:node17dt8nd3hx201 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Rock_of_Love:_Charm_School> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx202 .
+
+_:node17dt8nd3hx202 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charm_quark> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx203 .
+
+_:node17dt8nd3hx203 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charm_School_(Roxette_album)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx204 .
+
+_:node17dt8nd3hx204 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charm_School_with_Ricki_Lake> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx205 .
+
+_:node17dt8nd3hx205 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Mobile_phone_charm> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx206 .
+
+_:node17dt8nd3hx206 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Flavor_of_Love_Girls:_Charm_School> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx207 .
+
+_:node17dt8nd3hx207 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/2005_Sharm_el-Sheikh_attacks> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx208 .
+
+_:node17dt8nd3hx208 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Quark,_Strangeness_and_Charm> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx209 .
+
+_:node17dt8nd3hx209 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Lucie_Clayton_Charm_Academy> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx210 .
+
+_:node17dt8nd3hx210 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Italian_charm_bracelet> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx211 .
+
+_:node17dt8nd3hx211 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Sharm_el-Sheikh> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx212 .
+
+_:node17dt8nd3hx212 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Sharm_el-Sheikh_International_Airport> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx213 .
+
+_:node17dt8nd3hx213 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Leather_Charm> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx214 .
+
+_:node17dt8nd3hx214 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/The_Discreet_Charm_of_the_Bourgeoisie> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx215 .
+
+_:node17dt8nd3hx215 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Superficial_charm> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx216 .
+
+_:node17dt8nd3hx216 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Rock_of_Love:_Charm_School> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx217 .
+
+_:node17dt8nd3hx217 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charm_quark> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx218 .
+
+_:node17dt8nd3hx218 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charm_School_(Roxette_album)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx219 .
+
+_:node17dt8nd3hx219 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charm_School_with_Ricki_Lake> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx220 .
+
+_:node17dt8nd3hx220 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Mobile_phone_charm> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx221 .
+
+_:node17dt8nd3hx221 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Flavor_of_Love_Girls:_Charm_School> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx222 .
+
+_:node17dt8nd3hx222 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/2005_Sharm_el-Sheikh_attacks> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx223 .
+
+_:node17dt8nd3hx223 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Quark,_Strangeness_and_Charm> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx224 .
+
+_:node17dt8nd3hx224 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Lucie_Clayton_Charm_Academy> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx225 .
+
+_:node17dt8nd3hx225 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Italian_charm_bracelet> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx226 .
+
+_:node17dt8nd3hx226 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Beguile> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx227 .
+
+_:node17dt8nd3hx227 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Beguile> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx228 .
+
+_:node17dt8nd3hx228 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Automatic_identification_and_data_capture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx229 .
+
+_:node17dt8nd3hx229 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Performance_capture_in_film> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx230 .
+
+_:node17dt8nd3hx230 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Screenshot> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx231 .
+
+_:node17dt8nd3hx231 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Electron_capture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx232 .
+
+_:node17dt8nd3hx232 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Automatic_identification_and_data_capture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx233 .
+
+_:node17dt8nd3hx233 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Motion_capture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx234 .
+
+_:node17dt8nd3hx234 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Data_scraping> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx235 .
+
+_:node17dt8nd3hx235 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Capture_of_Fort_Ticonderoga> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx236 .
+
+_:node17dt8nd3hx236 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Document_capture_software> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx237 .
+
+_:node17dt8nd3hx237 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Mark_and_recapture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx238 .
+
+_:node17dt8nd3hx238 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Capture_the_flag> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx239 .
+
+_:node17dt8nd3hx239 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Capture_of_Fort_Erie> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx240 .
+
+_:node17dt8nd3hx240 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Capture_of_Shusha> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx241 .
+
+_:node17dt8nd3hx241 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Capture_of_Rome> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx242 .
+
+_:node17dt8nd3hx242 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Regulatory_capture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx243 .
+
+_:node17dt8nd3hx243 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Automatic_identification_and_data_capture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx244 .
+
+_:node17dt8nd3hx244 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Performance_capture_in_film> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx245 .
+
+_:node17dt8nd3hx245 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Screenshot> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx246 .
+
+_:node17dt8nd3hx246 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Electron_capture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx247 .
+
+_:node17dt8nd3hx247 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Automatic_identification_and_data_capture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx248 .
+
+_:node17dt8nd3hx248 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Motion_capture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx249 .
+
+_:node17dt8nd3hx249 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Data_scraping> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx250 .
+
+_:node17dt8nd3hx250 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Capture_of_Fort_Ticonderoga> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx251 .
+
+_:node17dt8nd3hx251 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Document_capture_software> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx252 .
+
+_:node17dt8nd3hx252 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Mark_and_recapture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx253 .
+
+_:node17dt8nd3hx253 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Capture_the_flag> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx254 .
+
+_:node17dt8nd3hx254 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Capture_of_Fort_Erie> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx255 .
+
+_:node17dt8nd3hx255 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Capture_of_Shusha> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx256 .
+
+_:node17dt8nd3hx256 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Capture_of_Rome> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx257 .
+
+_:node17dt8nd3hx257 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Regulatory_capture> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx258 .
+
+_:node17dt8nd3hx258 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/All_Delighted_People> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx259 .
+
+_:node17dt8nd3hx259 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Expletive_Delighted!> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx260 .
+
+_:node17dt8nd3hx260 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Delighted_by_You_(1958_Film)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx261 .
+
+_:node17dt8nd3hx261 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Delighted_by_You_(1958_film)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx262 .
+
+_:node17dt8nd3hx262 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Be_Delighted> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx263 .
+
+_:node17dt8nd3hx263 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/All_Delighted_People_EP> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx264 .
+
+_:node17dt8nd3hx264 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/ExpletiveDelighted!> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx265 .
+
+_:node17dt8nd3hx265 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/AllDelightedPeopleEP> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx266 .
+
+_:node17dt8nd3hx266 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/All_Delighted_People> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx267 .
+
+_:node17dt8nd3hx267 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Expletive_Delighted!> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx268 .
+
+_:node17dt8nd3hx268 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Delighted_by_You_(1958_Film)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx269 .
+
+_:node17dt8nd3hx269 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Delighted_by_You_(1958_film)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx270 .
+
+_:node17dt8nd3hx270 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Be_Delighted> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx271 .
+
+_:node17dt8nd3hx271 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/All_Delighted_People_EP> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx272 .
+
+_:node17dt8nd3hx272 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/ExpletiveDelighted!> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx273 .
+
+_:node17dt8nd3hx273 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/AllDelightedPeopleEP> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx274 .
+
+_:node17dt8nd3hx274 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Enchant_(band)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx275 .
+
+_:node17dt8nd3hx275 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Enchant,_Alberta> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx276 .
+
+_:node17dt8nd3hx276 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Enchant_albums> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx277 .
+
+_:node17dt8nd3hx277 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/EnchantAlbums> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx278 .
+
+_:node17dt8nd3hx278 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Enchant_(album)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx279 .
+
+_:node17dt8nd3hx279 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Enchanted_Arms> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx280 .
+
+_:node17dt8nd3hx280 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Break_(Enchant_album)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx281 .
+
+_:node17dt8nd3hx281 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Tug_of_War_(Enchant_album)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx282 .
+
+_:node17dt8nd3hx282 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Blink_of_an_Eye_(Enchant_album)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx283 .
+
+_:node17dt8nd3hx283 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Live_at_Last_(Enchant_album)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx284 .
+
+_:node17dt8nd3hx284 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Enchant_(software)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx285 .
+
+_:node17dt8nd3hx285 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Enchant> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx286 .
+
+_:node17dt8nd3hx286 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Enchant_(disambiguation)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx287 .
+
+_:node17dt8nd3hx287 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/EM_-eNCHANT_arM-> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx288 .
+
+_:node17dt8nd3hx288 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/(eM)_-eNCHANT_arM-> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx289 .
+
+_:node17dt8nd3hx289 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Enchant_(band)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx290 .
+
+_:node17dt8nd3hx290 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Enchant,_Alberta> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx291 .
+
+_:node17dt8nd3hx291 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Enchant_albums> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx292 .
+
+_:node17dt8nd3hx292 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/EnchantAlbums> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx293 .
+
+_:node17dt8nd3hx293 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Enchant_(album)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx294 .
+
+_:node17dt8nd3hx294 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Enchanted_Arms> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx295 .
+
+_:node17dt8nd3hx295 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Break_(Enchant_album)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx296 .
+
+_:node17dt8nd3hx296 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Tug_of_War_(Enchant_album)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx297 .
+
+_:node17dt8nd3hx297 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Blink_of_an_Eye_(Enchant_album)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx298 .
+
+_:node17dt8nd3hx298 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Live_at_Last_(Enchant_album)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx299 .
+
+_:node17dt8nd3hx299 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Enchant_(software)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx300 .
+
+_:node17dt8nd3hx300 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Enchant> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx301 .
+
+_:node17dt8nd3hx301 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Enchant_(disambiguation)> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx302 .
+
+_:node17dt8nd3hx302 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/EM_-eNCHANT_arM-> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx303 .
+
+_:node17dt8nd3hx303 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/(eM)_-eNCHANT_arM-> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx304 .
+
+_:node17dt8nd3hx304 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Trance_music> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx305 .
+
+_:node17dt8nd3hx305 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Progressive_electronic_dance_music> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx306 .
+
+_:node17dt8nd3hx306 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Psychedelic_trance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx307 .
+
+_:node17dt8nd3hx307 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hard_trance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx308 .
+
+_:node17dt8nd3hx308 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Vocal_trance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx309 .
+
+_:node17dt8nd3hx309 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Balearic_beat> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx310 .
+
+_:node17dt8nd3hx310 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Goa_trance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx311 .
+
+_:node17dt8nd3hx311 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Euro-trance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx312 .
+
+_:node17dt8nd3hx312 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Trance_albums> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx313 .
+
+_:node17dt8nd3hx313 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Trance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx314 .
+
+_:node17dt8nd3hx314 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Uplifting_trance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx315 .
+
+_:node17dt8nd3hx315 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:British_trance_music_groups> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx316 .
+
+_:node17dt8nd3hx316 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BritishTranceMusicGroups> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx317 .
+
+_:node17dt8nd3hx317 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Trance_songs> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx318 .
+
+_:node17dt8nd3hx318 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Trance_record_labels> ;
+	rdf:predicate <http://dbpedia.org/ontology/starRating> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx319 .
+
+_:node17dt8nd3hx319 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Trance_music> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx320 .
+
+_:node17dt8nd3hx320 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Progressive_electronic_dance_music> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx321 .
+
+_:node17dt8nd3hx321 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Psychedelic_trance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx322 .
+
+_:node17dt8nd3hx322 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hard_trance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx323 .
+
+_:node17dt8nd3hx323 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Vocal_trance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx324 .
+
+_:node17dt8nd3hx324 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Balearic_beat> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx325 .
+
+_:node17dt8nd3hx325 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Goa_trance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx326 .
+
+_:node17dt8nd3hx326 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Euro-trance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx327 .
+
+_:node17dt8nd3hx327 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Trance_albums> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx328 .
+
+_:node17dt8nd3hx328 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Trance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx329 .
+
+_:node17dt8nd3hx329 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Uplifting_trance> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx330 .
+
+_:node17dt8nd3hx330 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:British_trance_music_groups> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx331 .
+
+_:node17dt8nd3hx331 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BritishTranceMusicGroups> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx332 .
+
+_:node17dt8nd3hx332 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Trance_songs> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx333 .
+
+_:node17dt8nd3hx333 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Trance_record_labels> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx334 .
+
+_:node17dt8nd3hx334 a rdf:Statement ;
+	rdf:subject "?actor" ;
+	rdf:predicate <http://dbpedia.org/ontology/wikiPageID> ;
+	rdf:object "?page" ;
+	rdfs:label "?actor page ?page" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx335 .
+
+_:node17dt8nd3hx335 a rdf:Statement ;
+	rdf:subject "?actor" ;
+	rdf:predicate <http://dbpedia.org/ontology/grayPage> ;
+	rdf:object "?page" ;
+	rdfs:label "?actor page ?page" .
+
+_:node17dt8nd3hx1 qf:statement _:node17dt8nd3hx336 .
+
+_:node17dt8nd3hx336 a rdf:Statement ;
+	rdf:subject "?actor" ;
+	rdf:predicate <http://dbpedia.org/ontology/wikiPageExternalLink> ;
+	rdf:object "?page" ;
+	rdfs:label "?actor page ?page" .

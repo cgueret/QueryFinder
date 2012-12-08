@@ -31,13 +31,18 @@ import org.slf4j.LoggerFactory;
  */
 public class EvolutionarySolver extends Service implements Observer {
 	// Logger
-	private static final Logger logger = LoggerFactory.getLogger(EvolutionarySolver.class);
+	private static final Logger logger = LoggerFactory
+			.getLogger(EvolutionarySolver.class);
 
 	// List of optimal solutions
 	private Collection<Solution> solutions = null;
 
 	// Value factory
 	protected final ValueFactory f = new ValueFactoryImpl();
+
+	Query output = null;
+	Request request = null;
+	int staleCount = 0;
 
 	/*
 	 * (non-Javadoc)
@@ -48,10 +53,11 @@ public class EvolutionarySolver extends Service implements Observer {
 	@Override
 	public Query process(Query inputQuery) {
 		// Create the request
-		Request request = new Request(dataLayer);
+		request = new Request(dataLayer);
 
 		// Fill up the request
-		int nbConstraints = 0;
+		// int nbConstraints = 0;
+
 		// Map<String, StatementPatternSetConstraint> constraints = new
 		// HashMap<String, StatementPatternSetConstraint>();
 		for (Quad quad : inputQuery.getQuads()) {
@@ -71,7 +77,7 @@ public class EvolutionarySolver extends Service implements Observer {
 			 * StatementPatternSetConstraint(c); set.add(new
 			 * StatementPatternConstraint(pattern)); constraints.put(c, set); }
 			 */
-			nbConstraints++;
+			// nbConstraints++;
 			request.addConstraint(new StatementPatternConstraint(pattern));
 
 			// If it has only one variable, use that pattern as a provider
@@ -79,8 +85,8 @@ public class EvolutionarySolver extends Service implements Observer {
 			nbVar += quad.getSubject().stringValue().startsWith("?") ? 1 : 0;
 			nbVar += quad.getPredicate().stringValue().startsWith("?") ? 1 : 0;
 			nbVar += quad.getObject().stringValue().startsWith("?") ? 1 : 0;
-			if (nbVar == 1)
-				request.addResourceProvider(new StatementPatternProvider(pattern));
+			// if (nbVar == 1)
+			request.addResourceProvider(new StatementPatternProvider(pattern));
 
 			// Use it too to instantiate solutions
 			request.addStatementPattern(pattern);
@@ -95,27 +101,16 @@ public class EvolutionarySolver extends Service implements Observer {
 		logger.info("Number of constraints: " + request.getNbConstraints());
 		logger.info("Number of variables: " + request.getNbVariables());
 
+		// Create outpue and copy the value of the description
+		output = new Query();
+		output.setDescription(inputQuery.getDescription());
+
 		// Create the optimiser
 		Optimizer optimizer = new Optimizer(dataLayer, request, null);
 		optimizer.addObserver(this);
+
+		// Go! (blocking call)
 		optimizer.run();
-
-		Query output = new Query();
-
-		// Copy the value of the description
-		output.setDescription(inputQuery.getDescription());
-
-		for (Solution s : solutions) {
-			String solutionName = s.toString();
-			logger.info("Result : " + solutionName);
-			for (nl.erdf.model.Triple triple : request.getTripleSet(s)) {
-				if (triple.getNumberNulls() == 0) {
-					Quad quad = new Quad(triple.getSubject(), triple.getPredicate(), triple.getObject(),
-							f.createLiteral(solutionName));
-					output.addQuad(quad);
-				}
-			}
-		}
 
 		return output;
 	}
@@ -142,10 +137,20 @@ public class EvolutionarySolver extends Service implements Observer {
 			fitnesses[i] = s.getFitness();
 			i++;
 		}
-
 		StandardDeviation dev = new StandardDeviation();
 		logger.info("Dev " + dev.evaluate(fitnesses));
-		boolean staled = (dev.evaluate(fitnesses) < 0.001) && (fitnesses[0] > 0.1);
+		boolean staled = (dev.evaluate(fitnesses) < 0.001)
+				&& (fitnesses[0] > 0.1);
+		if (staled)
+			staleCount++;
+		else
+			staleCount = 0;
+
+		// Check if one of the solution is optimal
+		boolean optimal = false;
+		for (Solution s : solutions)
+			if (s.getFitness() == 1.0d)
+				optimal = true;
 
 		/*
 		 * boolean stop = false; for (Solution s : solutions) {
@@ -156,10 +161,27 @@ public class EvolutionarySolver extends Service implements Observer {
 		 */
 
 		// If we should stop, do it
-		if (staled) {
-			logger.info("Evolution staled ");
+		if ((staleCount == 5) || optimal) {
+			logger.info("Evolution staled or optimum found");
+
+			// Save the solutions
+			for (Solution s : solutions) {
+				String solutionName = s.toString();
+				logger.info("Result : " + solutionName);
+				for (nl.erdf.model.Triple triple : request.getTripleSet(s)) {
+					if (triple.getNumberNulls() == 0) {
+						Quad quad = new Quad(triple.getSubject(),
+								triple.getPredicate(), triple.getObject(),
+								f.createLiteral(solutionName));
+						output.addQuad(quad);
+					}
+				}
+			}
+
+			// Stop everything
 			optimizer.terminate();
 			dataLayer.shutdown();
+
 		}
 
 	}

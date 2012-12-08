@@ -15,6 +15,50 @@ public class Quad {
 	private final Value object;
 	private final Value context;
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((context == null) ? 0 : context.hashCode());
+		result = prime * result + ((object == null) ? 0 : object.hashCode());
+		result = prime * result
+				+ ((predicate == null) ? 0 : predicate.hashCode());
+		result = prime * result + ((subject == null) ? 0 : subject.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Quad other = (Quad) obj;
+		if (context == null) {
+			if (other.context != null)
+				return false;
+		} else if (!context.equals(other.context))
+			return false;
+		if (object == null) {
+			if (other.object != null)
+				return false;
+		} else if (!object.equals(other.object))
+			return false;
+		if (predicate == null) {
+			if (other.predicate != null)
+				return false;
+		} else if (!predicate.equals(other.predicate))
+			return false;
+		if (subject == null) {
+			if (other.subject != null)
+				return false;
+		} else if (!subject.equals(other.subject))
+			return false;
+		return true;
+	}
+
 	/**
 	 * @param subject
 	 * @param predicate
@@ -34,8 +78,8 @@ public class Quad {
 	 */
 	@Override
 	public String toString() {
-		return "Triple [subject=" + subject + ", predicate=" + predicate + ", object=" + object + ", context="
-				+ context + "]";
+		return "Triple [subject=" + subject + ", predicate=" + predicate
+				+ ", object=" + object + ", context=" + context + "]";
 	}
 
 	/**

@@ -80,7 +80,7 @@ _:node17e034br1x1 qf:statement _:node17e034br1x11 .
 
 _:node17e034br1x11 a rdf:Statement ;
 	rdf:subject "Bill_Clinton" ;
-	rdf:predicate "daughter" ;
+	rdf:predicate "child" ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
@@ -88,6 +88,6 @@ _:node17e034br1x1 qf:statement _:node17e034br1x12 .
 
 _:node17e034br1x12 a rdf:Statement ;
 	rdf:subject "?daughter" ;
-	rdf:predicate "married to" ;
+	rdf:predicate "spouse" ;
 	rdf:object "?person" ;
 	rdfs:label "married to" .

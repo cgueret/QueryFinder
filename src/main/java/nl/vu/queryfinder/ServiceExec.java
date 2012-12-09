@@ -24,7 +24,6 @@ import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.PosixParser;
 
-// http://www.velocityreviews.com/forums/t303241-instantiate-a-class-with-a-variable-as-its-name.html
 public class ServiceExec {
 	// The different services available
 	private final static Set<String> services = new HashSet<String>();
@@ -57,7 +56,7 @@ public class ServiceExec {
 		options.addOption("i", "input", true, "query input file (ttl)");
 		options.addOption("o", "output", true, "query output file (ttl)");
 		options.addOption("p", "parameters", true,
-				"coma separated list of parameters");
+				"comma separated list of parameters");
 		options.addOption("l", "list", false, "list available services");
 		options.addOption("h", "help", false, "print help message");
 
@@ -126,17 +125,18 @@ public class ServiceExec {
 		 * (dataLayerName.equals("sparql")) dataLayer = new
 		 * SPARQLDataLayer(null); else dataLayer = null; }
 		 */
-		dataLayer = new SPARQLDataLayer(null);
-		service.setDataLayer(dataLayer);
 
 		// Configure the SPARQL end points
 		Directory directory = new Directory();
-		// directory.add(new EndPoint("http://dbpedia.org/sparql",
-		// "http://dbpedia.org", EndPointType.VIRTUOSO));
-		directory.add(new EndPoint("http://factforge.net/sparql", null,
-				EndPointType.OWLIM));
+		directory.add(new EndPoint("http://dbpedia.org/sparql",
+				"http://dbpedia.org", EndPointType.VIRTUOSO));
+		// directory.add(new EndPoint("http://factforge.net/sparql", null,
+		// EndPointType.OWLIM));
 		service.setDirectory(directory);
 
+		dataLayer = new SPARQLDataLayer(directory);
+		service.setDataLayer(dataLayer);
+		
 		// Process the query
 		Query outputQuery = service.process(inputQuery);
 

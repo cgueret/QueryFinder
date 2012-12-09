@@ -2,5 +2,28 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-_:node17e034p2px1 a qf:Query ;
-	rdfs:comment "Who is the daughter of Bill Clinton married to?" .
+_:node17e03e04tx1 a qf:Query ;
+	rdfs:comment "Who is the daughter of Bill Clinton married to?" ;
+	qf:statement _:node17e03e04tx2 .
+
+_:node17e03e04tx2 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03e04tx1 qf:statement _:node17e03e04tx3 .
+
+_:node17e03e04tx3 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Presidency_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03e04tx1 qf:statement _:node17e03e04tx4 .
+
+_:node17e03e04tx4 a rdf:Statement ;
+	rdf:subject "?daughter" ;
+	rdf:predicate <http://dbpedia.org/ontology/spouse> ;
+	rdf:object "?person" ;
+	rdfs:label "married to" .

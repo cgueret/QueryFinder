@@ -110,7 +110,7 @@ public class Query {
 	 * @throws RDFParseException
 	 */
 	public void loadFrom(String fileName) throws RDFParseException, RepositoryException, IOException {
-		logger.info("Load from " + fileName);
+		//logger.info("Load from " + fileName);
 		SailRepositoryConnection connection = repository.getConnection();
 		connection.clear();
 		connection.add(new File(fileName), "http://example.com/", RDFFormat.TURTLE);

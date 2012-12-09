@@ -2,5 +2,492 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-_:node17e034c9vx1 a qf:Query ;
-	rdfs:comment "Who is the daughter of Bill Clinton married to?" .
+_:node17e03dgsax1 a qf:Query ;
+	rdfs:comment "Who is the daughter of Bill Clinton married to?" ;
+	qf:statement _:node17e03dgsax2 .
+
+_:node17e03dgsax2 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax3 .
+
+_:node17e03dgsax3 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax4 .
+
+_:node17e03dgsax4 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax5 .
+
+_:node17e03dgsax5 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax6 .
+
+_:node17e03dgsax6 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_district_court_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax7 .
+
+_:node17e03dgsax7 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_district_court_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax8 .
+
+_:node17e03dgsax8 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_district_court_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax9 .
+
+_:node17e03dgsax9 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_district_court_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax10 .
+
+_:node17e03dgsax10 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesDistrictCourtJuDgesAppointedByBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax11 .
+
+_:node17e03dgsax11 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesDistrictCourtJuDgesAppointedByBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax12 .
+
+_:node17e03dgsax12 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesDistrictCourtJuDgesAppointedByBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax13 .
+
+_:node17e03dgsax13 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesDistrictCourtJuDgesAppointedByBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax14 .
+
+_:node17e03dgsax14 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_federal_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax15 .
+
+_:node17e03dgsax15 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_federal_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax16 .
+
+_:node17e03dgsax16 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_federal_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax17 .
+
+_:node17e03dgsax17 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_federal_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax18 .
+
+_:node17e03dgsax18 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_court_of_appeals_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax19 .
+
+_:node17e03dgsax19 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_court_of_appeals_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax20 .
+
+_:node17e03dgsax20 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_court_of_appeals_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax21 .
+
+_:node17e03dgsax21 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_court_of_appeals_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax22 .
+
+_:node17e03dgsax22 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Presidency_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax23 .
+
+_:node17e03dgsax23 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Presidency_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax24 .
+
+_:node17e03dgsax24 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Presidency_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax25 .
+
+_:node17e03dgsax25 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Presidency_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax26 .
+
+_:node17e03dgsax26 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax27 .
+
+_:node17e03dgsax27 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax28 .
+
+_:node17e03dgsax28 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax29 .
+
+_:node17e03dgsax29 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax30 .
+
+_:node17e03dgsax30 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Presidency_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax31 .
+
+_:node17e03dgsax31 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Presidency_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax32 .
+
+_:node17e03dgsax32 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Presidency_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax33 .
+
+_:node17e03dgsax33 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Presidency_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax34 .
+
+_:node17e03dgsax34 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_Article_I_federal_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax35 .
+
+_:node17e03dgsax35 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_Article_I_federal_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax36 .
+
+_:node17e03dgsax36 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_Article_I_federal_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax37 .
+
+_:node17e03dgsax37 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_Article_I_federal_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax38 .
+
+_:node17e03dgsax38 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_orders_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax39 .
+
+_:node17e03dgsax39 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_orders_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax40 .
+
+_:node17e03dgsax40 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_orders_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax41 .
+
+_:node17e03dgsax41 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_orders_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax42 .
+
+_:node17e03dgsax42 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Impeachment_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax43 .
+
+_:node17e03dgsax43 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Impeachment_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax44 .
+
+_:node17e03dgsax44 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Impeachment_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax45 .
+
+_:node17e03dgsax45 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Impeachment_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax46 .
+
+_:node17e03dgsax46 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesArticleIFederalJuDgesAppointedByBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax47 .
+
+_:node17e03dgsax47 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesArticleIFederalJuDgesAppointedByBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax48 .
+
+_:node17e03dgsax48 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesArticleIFederalJuDgesAppointedByBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax49 .
+
+_:node17e03dgsax49 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesArticleIFederalJuDgesAppointedByBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax50 .
+
+_:node17e03dgsax50 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/ExecutiveOrdersOfBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax51 .
+
+_:node17e03dgsax51 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/ExecutiveOrdersOfBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax52 .
+
+_:node17e03dgsax52 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/ExecutiveOrdersOfBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax53 .
+
+_:node17e03dgsax53 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/ExecutiveOrdersOfBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax54 .
+
+_:node17e03dgsax54 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bill_Clinton_pardon_controversy> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax55 .
+
+_:node17e03dgsax55 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bill_Clinton_pardon_controversy> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax56 .
+
+_:node17e03dgsax56 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bill_Clinton_pardon_controversy> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax57 .
+
+_:node17e03dgsax57 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bill_Clinton_pardon_controversy> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax58 .
+
+_:node17e03dgsax58 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Foreign_policy_of_the_Bill_Clinton_administration> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax59 .
+
+_:node17e03dgsax59 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Foreign_policy_of_the_Bill_Clinton_administration> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax60 .
+
+_:node17e03dgsax60 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Foreign_policy_of_the_Bill_Clinton_administration> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax61 .
+
+_:node17e03dgsax61 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Foreign_policy_of_the_Bill_Clinton_administration> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e03dgsax1 qf:statement _:node17e03dgsax62 .
+
+_:node17e03dgsax62 a rdf:Statement ;
+	rdf:subject "?daughter" ;
+	rdf:predicate <http://dbpedia.org/ontology/spouse> ;
+	rdf:object "?person" ;
+	rdfs:label "married to" .

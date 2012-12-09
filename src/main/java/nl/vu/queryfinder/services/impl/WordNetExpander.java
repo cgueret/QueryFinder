@@ -28,11 +28,14 @@ import edu.mit.jwi.Dictionary;
 import edu.mit.jwi.IDictionary;
 import edu.mit.jwi.item.IIndexWord;
 import edu.mit.jwi.item.ISynset;
+import edu.mit.jwi.item.ISynsetID;
 import edu.mit.jwi.item.IWord;
 import edu.mit.jwi.item.IWordID;
 import edu.mit.jwi.item.POS;
 import edu.mit.jwi.morph.IStemmer;
 import edu.mit.jwi.morph.WordnetStemmer;
+
+// See http://stackoverflow.com/questions/7804715/dictionary-api-for-java-for-finding-meaning-for-the-word
 
 /**
  * @author Christophe Guéret <christophe.gueret@gmail.com>
@@ -40,7 +43,8 @@ import edu.mit.jwi.morph.WordnetStemmer;
  */
 public class WordNetExpander extends Service {
 	// Logger
-	protected static final Logger logger = LoggerFactory.getLogger(WordNetExpander.class);
+	protected static final Logger logger = LoggerFactory
+			.getLogger(WordNetExpander.class);
 
 	// Dictionary
 	protected final IDictionary dict;
@@ -53,7 +57,7 @@ public class WordNetExpander extends Service {
 		String wnhome = System.getProperty("user.dir") + "/wordnet";
 		String path = wnhome + File.separator + "dict";
 		URL url = new URL("file", null, path);
-		logger.info(url.toString());
+		logger.info("Using " + url.toString());
 
 		// construct the dictionary object and open it
 		dict = new Dictionary(url);
@@ -79,7 +83,8 @@ public class WordNetExpander extends Service {
 			// Prepare a list of subjects
 			List<Value> subjects = new ArrayList<Value>();
 			Value subject = quad.getSubject();
-			if (subject instanceof Literal && !subject.stringValue().startsWith("?")) {
+			if (subject instanceof Literal
+					&& !subject.stringValue().startsWith("?")) {
 				subjects.addAll(getWords(subject.stringValue()));
 			} else {
 				subjects.add(subject);
@@ -88,7 +93,8 @@ public class WordNetExpander extends Service {
 			// Prepare a list of predicates
 			List<Value> predicates = new ArrayList<Value>();
 			Value predicate = quad.getPredicate();
-			if (predicate instanceof Literal && !predicate.stringValue().startsWith("?")) {
+			if (predicate instanceof Literal
+					&& !predicate.stringValue().startsWith("?")) {
 				predicates.addAll(getWords(predicate.stringValue()));
 			} else {
 				predicates.add(predicate);
@@ -97,7 +103,8 @@ public class WordNetExpander extends Service {
 			// Prepare a list of objects
 			List<Value> objects = new ArrayList<Value>();
 			Value object = quad.getObject();
-			if (object instanceof Literal && !object.stringValue().startsWith("?")) {
+			if (object instanceof Literal
+					&& !object.stringValue().startsWith("?")) {
 				objects.addAll(getWords(object.stringValue()));
 			} else {
 				objects.add(object);
@@ -107,13 +114,26 @@ public class WordNetExpander extends Service {
 			for (Value s : subjects)
 				for (Value p : predicates)
 					for (Value o : objects)
-						outputQuery.addQuad(new Quad(s, p, o, quad.getContext()));
+						outputQuery
+								.addQuad(new Quad(s, p, o, quad.getContext()));
 
 			// Add the original quad
 			outputQuery.addQuad(quad);
 		}
 
 		return outputQuery;
+	}
+
+	private void recurseSynSet(ISynset synset, Set<Literal> out,
+			Set<ISynsetID> set) {
+		for (IWord w : synset.getWords())
+			out.add(f.createLiteral(w.getLemma()));
+		for (ISynsetID synsetId : synset.getRelatedSynsets()) {
+			if (!set.contains(synsetId) && set.size() < 3 && out.size() < 5) {
+				set.add(synsetId);
+				recurseSynSet(dict.getSynset(synsetId), out, set);
+			}
+		}
 	}
 
 	/**
@@ -141,8 +161,11 @@ public class WordNetExpander extends Service {
 						for (IWordID wordID : idxWord.getWordIDs()) {
 							// Iterate over words associated with the synset
 							ISynset synset = dict.getWord(wordID).getSynset();
-							for (IWord w : synset.getWords())
-								out.add(f.createLiteral(w.getLemma()));
+							Set<ISynsetID> set = new HashSet<ISynsetID>();
+							set.add(synset.getID());
+							recurseSynSet(synset, out, set);
+							// for (IWord w : synset.getWords())
+							// out.add(f.createLiteral(w.getLemma()));
 						}
 					}
 				}
@@ -160,13 +183,15 @@ public class WordNetExpander extends Service {
 	 * @throws IOException
 	 * @throws RepositoryException
 	 */
-	public static void main(String[] args) throws IOException, RepositoryException {
+	public static void main(String[] args) throws IOException,
+			RepositoryException {
 		WordNetExpander e = new WordNetExpander();
-		for (Literal l : e.getWords("dog"))
-			logger.info(l.toString());
-		for (Literal l : e.getWords("born"))
-			logger.info(l.toString());
-		for (Literal l : e.getWords("born_in"))
+		/*
+		 * for (Literal l : e.getWords("dog")) logger.info(l.toString()); for
+		 * (Literal l : e.getWords("born")) logger.info(l.toString()); for
+		 * (Literal l : e.getWords("born_in")) logger.info(l.toString());
+		 */
+		for (Literal l : e.getWords("daughter"))
 			logger.info(l.toString());
 	}
 }

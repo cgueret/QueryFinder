@@ -1,0 +1,25 @@
+@prefix :     <http://example.org#>.
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+_:query
+	rdf:type	:Query;
+	rdfs:comment "Who is the daughter of Bill Clinton married to?";
+	:statement _:a;
+	:statement _:b.
+		
+_:a
+	rdf:type rdf:Statement;
+	rdf:subject "Bill Clinton";
+	rdf:predicate "daughter";
+	rdf:object "?daughter";
+	rdfs:label "daughter".
+	
+_:b
+	rdf:type rdf:Statement;
+	rdf:subject "?daughter";
+	rdf:predicate "married to";
+	rdf:object "?person";
+	rdfs:label "married to".
+	
+	

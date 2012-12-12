@@ -2,1123 +2,1667 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-_:node17dt8ncjfx1 a qf:Query ;
+_:node17e7j66odx1 a qf:Query ;
 	rdfs:comment "Give me the official websites of actors of the television show Charmed." ;
-	qf:statement _:node17dt8ncjfx2 .
+	qf:statement _:node17e7j66odx2 .
 
-_:node17dt8ncjfx2 a rdf:Statement ;
+_:node17e7j66odx2 a rdf:Statement ;
 	rdf:subject "captivate" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx3 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx3 .
 
-_:node17dt8ncjfx3 a rdf:Statement ;
+_:node17e7j66odx3 a rdf:Statement ;
+	rdf:subject "captivate" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx4 .
+
+_:node17e7j66odx4 a rdf:Statement ;
 	rdf:subject "captivate" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx4 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx5 .
 
-_:node17dt8ncjfx4 a rdf:Statement ;
+_:node17e7j66odx5 a rdf:Statement ;
+	rdf:subject "captivate" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx6 .
+
+_:node17e7j66odx6 a rdf:Statement ;
 	rdf:subject "captivate" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx5 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx7 .
 
-_:node17dt8ncjfx5 a rdf:Statement ;
+_:node17e7j66odx7 a rdf:Statement ;
 	rdf:subject "captivate" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx6 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx8 .
 
-_:node17dt8ncjfx6 a rdf:Statement ;
+_:node17e7j66odx8 a rdf:Statement ;
 	rdf:subject "captivate" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx7 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx9 .
 
-_:node17dt8ncjfx7 a rdf:Statement ;
+_:node17e7j66odx9 a rdf:Statement ;
+	rdf:subject "captivate" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx10 .
+
+_:node17e7j66odx10 a rdf:Statement ;
 	rdf:subject "captivate" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx8 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx11 .
 
-_:node17dt8ncjfx8 a rdf:Statement ;
+_:node17e7j66odx11 a rdf:Statement ;
 	rdf:subject "entranced" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx9 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx12 .
 
-_:node17dt8ncjfx9 a rdf:Statement ;
+_:node17e7j66odx12 a rdf:Statement ;
+	rdf:subject "entranced" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx13 .
+
+_:node17e7j66odx13 a rdf:Statement ;
 	rdf:subject "entranced" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx10 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx14 .
 
-_:node17dt8ncjfx10 a rdf:Statement ;
+_:node17e7j66odx14 a rdf:Statement ;
+	rdf:subject "entranced" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx15 .
+
+_:node17e7j66odx15 a rdf:Statement ;
 	rdf:subject "entranced" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx11 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx16 .
 
-_:node17dt8ncjfx11 a rdf:Statement ;
+_:node17e7j66odx16 a rdf:Statement ;
 	rdf:subject "entranced" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx12 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx17 .
 
-_:node17dt8ncjfx12 a rdf:Statement ;
+_:node17e7j66odx17 a rdf:Statement ;
 	rdf:subject "entranced" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx13 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx18 .
 
-_:node17dt8ncjfx13 a rdf:Statement ;
+_:node17e7j66odx18 a rdf:Statement ;
+	rdf:subject "entranced" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx19 .
+
+_:node17e7j66odx19 a rdf:Statement ;
 	rdf:subject "entranced" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx14 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx20 .
 
-_:node17dt8ncjfx14 a rdf:Statement ;
+_:node17e7j66odx20 a rdf:Statement ;
 	rdf:subject "Charmed" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx15 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx21 .
 
-_:node17dt8ncjfx15 a rdf:Statement ;
+_:node17e7j66odx21 a rdf:Statement ;
+	rdf:subject "Charmed" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx22 .
+
+_:node17e7j66odx22 a rdf:Statement ;
 	rdf:subject "Charmed" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx16 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx23 .
 
-_:node17dt8ncjfx16 a rdf:Statement ;
+_:node17e7j66odx23 a rdf:Statement ;
+	rdf:subject "Charmed" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx24 .
+
+_:node17e7j66odx24 a rdf:Statement ;
 	rdf:subject "Charmed" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx17 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx25 .
 
-_:node17dt8ncjfx17 a rdf:Statement ;
+_:node17e7j66odx25 a rdf:Statement ;
 	rdf:subject "Charmed" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx18 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx26 .
 
-_:node17dt8ncjfx18 a rdf:Statement ;
+_:node17e7j66odx26 a rdf:Statement ;
 	rdf:subject "Charmed" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx19 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx27 .
 
-_:node17dt8ncjfx19 a rdf:Statement ;
+_:node17e7j66odx27 a rdf:Statement ;
+	rdf:subject "Charmed" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx28 .
+
+_:node17e7j66odx28 a rdf:Statement ;
 	rdf:subject "Charmed" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx20 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx29 .
 
-_:node17dt8ncjfx20 a rdf:Statement ;
+_:node17e7j66odx29 a rdf:Statement ;
 	rdf:subject "bewitch" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx21 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx30 .
 
-_:node17dt8ncjfx21 a rdf:Statement ;
+_:node17e7j66odx30 a rdf:Statement ;
+	rdf:subject "bewitch" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx31 .
+
+_:node17e7j66odx31 a rdf:Statement ;
 	rdf:subject "bewitch" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx22 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx32 .
 
-_:node17dt8ncjfx22 a rdf:Statement ;
+_:node17e7j66odx32 a rdf:Statement ;
+	rdf:subject "bewitch" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx33 .
+
+_:node17e7j66odx33 a rdf:Statement ;
 	rdf:subject "bewitch" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx23 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx34 .
 
-_:node17dt8ncjfx23 a rdf:Statement ;
+_:node17e7j66odx34 a rdf:Statement ;
 	rdf:subject "bewitch" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx24 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx35 .
 
-_:node17dt8ncjfx24 a rdf:Statement ;
+_:node17e7j66odx35 a rdf:Statement ;
 	rdf:subject "bewitch" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx25 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx36 .
 
-_:node17dt8ncjfx25 a rdf:Statement ;
+_:node17e7j66odx36 a rdf:Statement ;
+	rdf:subject "bewitch" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx37 .
+
+_:node17e7j66odx37 a rdf:Statement ;
 	rdf:subject "bewitch" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx26 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx38 .
 
-_:node17dt8ncjfx26 a rdf:Statement ;
+_:node17e7j66odx38 a rdf:Statement ;
 	rdf:subject "beguiled" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx27 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx39 .
 
-_:node17dt8ncjfx27 a rdf:Statement ;
+_:node17e7j66odx39 a rdf:Statement ;
+	rdf:subject "beguiled" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx40 .
+
+_:node17e7j66odx40 a rdf:Statement ;
 	rdf:subject "beguiled" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx28 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx41 .
 
-_:node17dt8ncjfx28 a rdf:Statement ;
+_:node17e7j66odx41 a rdf:Statement ;
+	rdf:subject "beguiled" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx42 .
+
+_:node17e7j66odx42 a rdf:Statement ;
 	rdf:subject "beguiled" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx29 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx43 .
 
-_:node17dt8ncjfx29 a rdf:Statement ;
+_:node17e7j66odx43 a rdf:Statement ;
 	rdf:subject "beguiled" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx30 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx44 .
 
-_:node17dt8ncjfx30 a rdf:Statement ;
+_:node17e7j66odx44 a rdf:Statement ;
 	rdf:subject "beguiled" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx31 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx45 .
 
-_:node17dt8ncjfx31 a rdf:Statement ;
+_:node17e7j66odx45 a rdf:Statement ;
+	rdf:subject "beguiled" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx46 .
+
+_:node17e7j66odx46 a rdf:Statement ;
 	rdf:subject "beguiled" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx32 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx47 .
 
-_:node17dt8ncjfx32 a rdf:Statement ;
+_:node17e7j66odx47 a rdf:Statement ;
 	rdf:subject "enamour" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx33 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx48 .
 
-_:node17dt8ncjfx33 a rdf:Statement ;
+_:node17e7j66odx48 a rdf:Statement ;
+	rdf:subject "enamour" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx49 .
+
+_:node17e7j66odx49 a rdf:Statement ;
 	rdf:subject "enamour" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx34 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx50 .
 
-_:node17dt8ncjfx34 a rdf:Statement ;
+_:node17e7j66odx50 a rdf:Statement ;
+	rdf:subject "enamour" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx51 .
+
+_:node17e7j66odx51 a rdf:Statement ;
 	rdf:subject "enamour" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx35 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx52 .
 
-_:node17dt8ncjfx35 a rdf:Statement ;
+_:node17e7j66odx52 a rdf:Statement ;
 	rdf:subject "enamour" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx36 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx53 .
 
-_:node17dt8ncjfx36 a rdf:Statement ;
+_:node17e7j66odx53 a rdf:Statement ;
 	rdf:subject "enamour" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx37 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx54 .
 
-_:node17dt8ncjfx37 a rdf:Statement ;
+_:node17e7j66odx54 a rdf:Statement ;
+	rdf:subject "enamour" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx55 .
+
+_:node17e7j66odx55 a rdf:Statement ;
 	rdf:subject "enamour" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx38 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx56 .
 
-_:node17dt8ncjfx38 a rdf:Statement ;
+_:node17e7j66odx56 a rdf:Statement ;
 	rdf:subject "captivated" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx39 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx57 .
 
-_:node17dt8ncjfx39 a rdf:Statement ;
+_:node17e7j66odx57 a rdf:Statement ;
+	rdf:subject "captivated" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx58 .
+
+_:node17e7j66odx58 a rdf:Statement ;
 	rdf:subject "captivated" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx40 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx59 .
 
-_:node17dt8ncjfx40 a rdf:Statement ;
+_:node17e7j66odx59 a rdf:Statement ;
+	rdf:subject "captivated" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx60 .
+
+_:node17e7j66odx60 a rdf:Statement ;
 	rdf:subject "captivated" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx41 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx61 .
 
-_:node17dt8ncjfx41 a rdf:Statement ;
+_:node17e7j66odx61 a rdf:Statement ;
 	rdf:subject "captivated" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx42 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx62 .
 
-_:node17dt8ncjfx42 a rdf:Statement ;
+_:node17e7j66odx62 a rdf:Statement ;
 	rdf:subject "captivated" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx43 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx63 .
 
-_:node17dt8ncjfx43 a rdf:Statement ;
+_:node17e7j66odx63 a rdf:Statement ;
+	rdf:subject "captivated" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx64 .
+
+_:node17e7j66odx64 a rdf:Statement ;
 	rdf:subject "captivated" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx44 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx65 .
 
-_:node17dt8ncjfx44 a rdf:Statement ;
+_:node17e7j66odx65 a rdf:Statement ;
 	rdf:subject "catch" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx45 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx66 .
 
-_:node17dt8ncjfx45 a rdf:Statement ;
+_:node17e7j66odx66 a rdf:Statement ;
+	rdf:subject "catch" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx67 .
+
+_:node17e7j66odx67 a rdf:Statement ;
 	rdf:subject "catch" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx46 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx68 .
 
-_:node17dt8ncjfx46 a rdf:Statement ;
+_:node17e7j66odx68 a rdf:Statement ;
+	rdf:subject "catch" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx69 .
+
+_:node17e7j66odx69 a rdf:Statement ;
 	rdf:subject "catch" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx47 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx70 .
 
-_:node17dt8ncjfx47 a rdf:Statement ;
+_:node17e7j66odx70 a rdf:Statement ;
 	rdf:subject "catch" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx48 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx71 .
 
-_:node17dt8ncjfx48 a rdf:Statement ;
+_:node17e7j66odx71 a rdf:Statement ;
 	rdf:subject "catch" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx49 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx72 .
 
-_:node17dt8ncjfx49 a rdf:Statement ;
+_:node17e7j66odx72 a rdf:Statement ;
+	rdf:subject "catch" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx73 .
+
+_:node17e7j66odx73 a rdf:Statement ;
 	rdf:subject "catch" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx50 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx74 .
 
-_:node17dt8ncjfx50 a rdf:Statement ;
+_:node17e7j66odx74 a rdf:Statement ;
 	rdf:subject "influence" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx51 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx75 .
 
-_:node17dt8ncjfx51 a rdf:Statement ;
+_:node17e7j66odx75 a rdf:Statement ;
+	rdf:subject "influence" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx76 .
+
+_:node17e7j66odx76 a rdf:Statement ;
 	rdf:subject "influence" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx52 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx77 .
 
-_:node17dt8ncjfx52 a rdf:Statement ;
+_:node17e7j66odx77 a rdf:Statement ;
+	rdf:subject "influence" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx78 .
+
+_:node17e7j66odx78 a rdf:Statement ;
 	rdf:subject "influence" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx53 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx79 .
 
-_:node17dt8ncjfx53 a rdf:Statement ;
+_:node17e7j66odx79 a rdf:Statement ;
 	rdf:subject "influence" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx54 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx80 .
 
-_:node17dt8ncjfx54 a rdf:Statement ;
+_:node17e7j66odx80 a rdf:Statement ;
 	rdf:subject "influence" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx55 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx81 .
 
-_:node17dt8ncjfx55 a rdf:Statement ;
+_:node17e7j66odx81 a rdf:Statement ;
+	rdf:subject "influence" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx82 .
+
+_:node17e7j66odx82 a rdf:Statement ;
 	rdf:subject "influence" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx56 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx83 .
 
-_:node17dt8ncjfx56 a rdf:Statement ;
+_:node17e7j66odx83 a rdf:Statement ;
 	rdf:subject "enamor" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx57 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx84 .
 
-_:node17dt8ncjfx57 a rdf:Statement ;
+_:node17e7j66odx84 a rdf:Statement ;
+	rdf:subject "enamor" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx85 .
+
+_:node17e7j66odx85 a rdf:Statement ;
 	rdf:subject "enamor" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx58 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx86 .
 
-_:node17dt8ncjfx58 a rdf:Statement ;
+_:node17e7j66odx86 a rdf:Statement ;
+	rdf:subject "enamor" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx87 .
+
+_:node17e7j66odx87 a rdf:Statement ;
 	rdf:subject "enamor" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx59 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx88 .
 
-_:node17dt8ncjfx59 a rdf:Statement ;
+_:node17e7j66odx88 a rdf:Statement ;
 	rdf:subject "enamor" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx60 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx89 .
 
-_:node17dt8ncjfx60 a rdf:Statement ;
+_:node17e7j66odx89 a rdf:Statement ;
 	rdf:subject "enamor" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx61 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx90 .
 
-_:node17dt8ncjfx61 a rdf:Statement ;
+_:node17e7j66odx90 a rdf:Statement ;
+	rdf:subject "enamor" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx91 .
+
+_:node17e7j66odx91 a rdf:Statement ;
 	rdf:subject "enamor" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx62 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx92 .
 
-_:node17dt8ncjfx62 a rdf:Statement ;
+_:node17e7j66odx92 a rdf:Statement ;
 	rdf:subject "entrance" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx63 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx93 .
 
-_:node17dt8ncjfx63 a rdf:Statement ;
+_:node17e7j66odx93 a rdf:Statement ;
+	rdf:subject "entrance" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx94 .
+
+_:node17e7j66odx94 a rdf:Statement ;
 	rdf:subject "entrance" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx64 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx95 .
 
-_:node17dt8ncjfx64 a rdf:Statement ;
+_:node17e7j66odx95 a rdf:Statement ;
+	rdf:subject "entrance" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx96 .
+
+_:node17e7j66odx96 a rdf:Statement ;
 	rdf:subject "entrance" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx65 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx97 .
 
-_:node17dt8ncjfx65 a rdf:Statement ;
+_:node17e7j66odx97 a rdf:Statement ;
 	rdf:subject "entrance" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx66 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx98 .
 
-_:node17dt8ncjfx66 a rdf:Statement ;
+_:node17e7j66odx98 a rdf:Statement ;
 	rdf:subject "entrance" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx67 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx99 .
 
-_:node17dt8ncjfx67 a rdf:Statement ;
+_:node17e7j66odx99 a rdf:Statement ;
+	rdf:subject "entrance" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx100 .
+
+_:node17e7j66odx100 a rdf:Statement ;
 	rdf:subject "entrance" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx68 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx101 .
 
-_:node17dt8ncjfx68 a rdf:Statement ;
+_:node17e7j66odx101 a rdf:Statement ;
 	rdf:subject "enthralled" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx69 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx102 .
 
-_:node17dt8ncjfx69 a rdf:Statement ;
+_:node17e7j66odx102 a rdf:Statement ;
+	rdf:subject "enthralled" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx103 .
+
+_:node17e7j66odx103 a rdf:Statement ;
 	rdf:subject "enthralled" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx70 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx104 .
 
-_:node17dt8ncjfx70 a rdf:Statement ;
+_:node17e7j66odx104 a rdf:Statement ;
+	rdf:subject "enthralled" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx105 .
+
+_:node17e7j66odx105 a rdf:Statement ;
 	rdf:subject "enthralled" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx71 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx106 .
 
-_:node17dt8ncjfx71 a rdf:Statement ;
+_:node17e7j66odx106 a rdf:Statement ;
 	rdf:subject "enthralled" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx72 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx107 .
 
-_:node17dt8ncjfx72 a rdf:Statement ;
+_:node17e7j66odx107 a rdf:Statement ;
 	rdf:subject "enthralled" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx73 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx108 .
 
-_:node17dt8ncjfx73 a rdf:Statement ;
+_:node17e7j66odx108 a rdf:Statement ;
+	rdf:subject "enthralled" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx109 .
+
+_:node17e7j66odx109 a rdf:Statement ;
 	rdf:subject "enthralled" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx74 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx110 .
 
-_:node17dt8ncjfx74 a rdf:Statement ;
+_:node17e7j66odx110 a rdf:Statement ;
 	rdf:subject "fascinate" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx75 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx111 .
 
-_:node17dt8ncjfx75 a rdf:Statement ;
+_:node17e7j66odx111 a rdf:Statement ;
+	rdf:subject "fascinate" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx112 .
+
+_:node17e7j66odx112 a rdf:Statement ;
 	rdf:subject "fascinate" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx76 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx113 .
 
-_:node17dt8ncjfx76 a rdf:Statement ;
+_:node17e7j66odx113 a rdf:Statement ;
+	rdf:subject "fascinate" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx114 .
+
+_:node17e7j66odx114 a rdf:Statement ;
 	rdf:subject "fascinate" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx77 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx115 .
 
-_:node17dt8ncjfx77 a rdf:Statement ;
+_:node17e7j66odx115 a rdf:Statement ;
 	rdf:subject "fascinate" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx78 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx116 .
 
-_:node17dt8ncjfx78 a rdf:Statement ;
+_:node17e7j66odx116 a rdf:Statement ;
 	rdf:subject "fascinate" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx79 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx117 .
 
-_:node17dt8ncjfx79 a rdf:Statement ;
+_:node17e7j66odx117 a rdf:Statement ;
+	rdf:subject "fascinate" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx118 .
+
+_:node17e7j66odx118 a rdf:Statement ;
 	rdf:subject "fascinate" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx80 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx119 .
 
-_:node17dt8ncjfx80 a rdf:Statement ;
+_:node17e7j66odx119 a rdf:Statement ;
 	rdf:subject "tempt" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx81 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx120 .
 
-_:node17dt8ncjfx81 a rdf:Statement ;
+_:node17e7j66odx120 a rdf:Statement ;
+	rdf:subject "tempt" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx121 .
+
+_:node17e7j66odx121 a rdf:Statement ;
 	rdf:subject "tempt" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx82 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx122 .
 
-_:node17dt8ncjfx82 a rdf:Statement ;
+_:node17e7j66odx122 a rdf:Statement ;
+	rdf:subject "tempt" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx123 .
+
+_:node17e7j66odx123 a rdf:Statement ;
 	rdf:subject "tempt" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx83 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx124 .
 
-_:node17dt8ncjfx83 a rdf:Statement ;
+_:node17e7j66odx124 a rdf:Statement ;
 	rdf:subject "tempt" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx84 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx125 .
 
-_:node17dt8ncjfx84 a rdf:Statement ;
+_:node17e7j66odx125 a rdf:Statement ;
 	rdf:subject "tempt" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx85 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx126 .
 
-_:node17dt8ncjfx85 a rdf:Statement ;
+_:node17e7j66odx126 a rdf:Statement ;
+	rdf:subject "tempt" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx127 .
+
+_:node17e7j66odx127 a rdf:Statement ;
 	rdf:subject "tempt" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx86 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx128 .
 
-_:node17dt8ncjfx86 a rdf:Statement ;
+_:node17e7j66odx128 a rdf:Statement ;
 	rdf:subject "charm" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx87 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx129 .
 
-_:node17dt8ncjfx87 a rdf:Statement ;
+_:node17e7j66odx129 a rdf:Statement ;
+	rdf:subject "charm" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx130 .
+
+_:node17e7j66odx130 a rdf:Statement ;
 	rdf:subject "charm" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx88 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx131 .
 
-_:node17dt8ncjfx88 a rdf:Statement ;
+_:node17e7j66odx131 a rdf:Statement ;
+	rdf:subject "charm" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx132 .
+
+_:node17e7j66odx132 a rdf:Statement ;
 	rdf:subject "charm" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx89 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx133 .
 
-_:node17dt8ncjfx89 a rdf:Statement ;
+_:node17e7j66odx133 a rdf:Statement ;
 	rdf:subject "charm" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx90 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx134 .
 
-_:node17dt8ncjfx90 a rdf:Statement ;
+_:node17e7j66odx134 a rdf:Statement ;
 	rdf:subject "charm" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx91 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx135 .
 
-_:node17dt8ncjfx91 a rdf:Statement ;
+_:node17e7j66odx135 a rdf:Statement ;
+	rdf:subject "charm" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx136 .
+
+_:node17e7j66odx136 a rdf:Statement ;
 	rdf:subject "charm" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx92 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx137 .
 
-_:node17dt8ncjfx92 a rdf:Statement ;
+_:node17e7j66odx137 a rdf:Statement ;
 	rdf:subject "beguile" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx93 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx138 .
 
-_:node17dt8ncjfx93 a rdf:Statement ;
+_:node17e7j66odx138 a rdf:Statement ;
+	rdf:subject "beguile" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx139 .
+
+_:node17e7j66odx139 a rdf:Statement ;
 	rdf:subject "beguile" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx94 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx140 .
 
-_:node17dt8ncjfx94 a rdf:Statement ;
+_:node17e7j66odx140 a rdf:Statement ;
+	rdf:subject "beguile" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx141 .
+
+_:node17e7j66odx141 a rdf:Statement ;
 	rdf:subject "beguile" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx95 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx142 .
 
-_:node17dt8ncjfx95 a rdf:Statement ;
+_:node17e7j66odx142 a rdf:Statement ;
 	rdf:subject "beguile" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx96 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx143 .
 
-_:node17dt8ncjfx96 a rdf:Statement ;
+_:node17e7j66odx143 a rdf:Statement ;
 	rdf:subject "beguile" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx97 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx144 .
 
-_:node17dt8ncjfx97 a rdf:Statement ;
+_:node17e7j66odx144 a rdf:Statement ;
+	rdf:subject "beguile" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx145 .
+
+_:node17e7j66odx145 a rdf:Statement ;
 	rdf:subject "beguile" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx98 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx146 .
 
-_:node17dt8ncjfx98 a rdf:Statement ;
+_:node17e7j66odx146 a rdf:Statement ;
 	rdf:subject "becharm" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx99 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx147 .
 
-_:node17dt8ncjfx99 a rdf:Statement ;
+_:node17e7j66odx147 a rdf:Statement ;
+	rdf:subject "becharm" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx148 .
+
+_:node17e7j66odx148 a rdf:Statement ;
 	rdf:subject "becharm" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx100 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx149 .
 
-_:node17dt8ncjfx100 a rdf:Statement ;
+_:node17e7j66odx149 a rdf:Statement ;
+	rdf:subject "becharm" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx150 .
+
+_:node17e7j66odx150 a rdf:Statement ;
 	rdf:subject "becharm" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx101 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx151 .
 
-_:node17dt8ncjfx101 a rdf:Statement ;
+_:node17e7j66odx151 a rdf:Statement ;
 	rdf:subject "becharm" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx102 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx152 .
 
-_:node17dt8ncjfx102 a rdf:Statement ;
+_:node17e7j66odx152 a rdf:Statement ;
 	rdf:subject "becharm" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx103 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx153 .
 
-_:node17dt8ncjfx103 a rdf:Statement ;
+_:node17e7j66odx153 a rdf:Statement ;
+	rdf:subject "becharm" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx154 .
+
+_:node17e7j66odx154 a rdf:Statement ;
 	rdf:subject "becharm" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx104 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx155 .
 
-_:node17dt8ncjfx104 a rdf:Statement ;
+_:node17e7j66odx155 a rdf:Statement ;
 	rdf:subject "capture" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx105 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx156 .
 
-_:node17dt8ncjfx105 a rdf:Statement ;
+_:node17e7j66odx156 a rdf:Statement ;
+	rdf:subject "capture" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx157 .
+
+_:node17e7j66odx157 a rdf:Statement ;
 	rdf:subject "capture" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx106 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx158 .
 
-_:node17dt8ncjfx106 a rdf:Statement ;
+_:node17e7j66odx158 a rdf:Statement ;
+	rdf:subject "capture" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx159 .
+
+_:node17e7j66odx159 a rdf:Statement ;
 	rdf:subject "capture" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx107 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx160 .
 
-_:node17dt8ncjfx107 a rdf:Statement ;
+_:node17e7j66odx160 a rdf:Statement ;
 	rdf:subject "capture" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx108 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx161 .
 
-_:node17dt8ncjfx108 a rdf:Statement ;
+_:node17e7j66odx161 a rdf:Statement ;
 	rdf:subject "capture" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx109 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx162 .
 
-_:node17dt8ncjfx109 a rdf:Statement ;
+_:node17e7j66odx162 a rdf:Statement ;
+	rdf:subject "capture" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx163 .
+
+_:node17e7j66odx163 a rdf:Statement ;
 	rdf:subject "capture" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx110 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx164 .
 
-_:node17dt8ncjfx110 a rdf:Statement ;
+_:node17e7j66odx164 a rdf:Statement ;
 	rdf:subject "charmed" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx111 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx165 .
 
-_:node17dt8ncjfx111 a rdf:Statement ;
+_:node17e7j66odx165 a rdf:Statement ;
+	rdf:subject "charmed" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx166 .
+
+_:node17e7j66odx166 a rdf:Statement ;
 	rdf:subject "charmed" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx112 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx167 .
 
-_:node17dt8ncjfx112 a rdf:Statement ;
+_:node17e7j66odx167 a rdf:Statement ;
+	rdf:subject "charmed" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx168 .
+
+_:node17e7j66odx168 a rdf:Statement ;
 	rdf:subject "charmed" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx113 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx169 .
 
-_:node17dt8ncjfx113 a rdf:Statement ;
+_:node17e7j66odx169 a rdf:Statement ;
 	rdf:subject "charmed" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx114 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx170 .
 
-_:node17dt8ncjfx114 a rdf:Statement ;
+_:node17e7j66odx170 a rdf:Statement ;
 	rdf:subject "charmed" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx115 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx171 .
 
-_:node17dt8ncjfx115 a rdf:Statement ;
+_:node17e7j66odx171 a rdf:Statement ;
+	rdf:subject "charmed" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx172 .
+
+_:node17e7j66odx172 a rdf:Statement ;
 	rdf:subject "charmed" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx116 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx173 .
 
-_:node17dt8ncjfx116 a rdf:Statement ;
+_:node17e7j66odx173 a rdf:Statement ;
 	rdf:subject "delighted" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx117 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx174 .
 
-_:node17dt8ncjfx117 a rdf:Statement ;
+_:node17e7j66odx174 a rdf:Statement ;
+	rdf:subject "delighted" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx175 .
+
+_:node17e7j66odx175 a rdf:Statement ;
 	rdf:subject "delighted" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx118 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx176 .
 
-_:node17dt8ncjfx118 a rdf:Statement ;
+_:node17e7j66odx176 a rdf:Statement ;
+	rdf:subject "delighted" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx177 .
+
+_:node17e7j66odx177 a rdf:Statement ;
 	rdf:subject "delighted" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx119 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx178 .
 
-_:node17dt8ncjfx119 a rdf:Statement ;
+_:node17e7j66odx178 a rdf:Statement ;
 	rdf:subject "delighted" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx120 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx179 .
 
-_:node17dt8ncjfx120 a rdf:Statement ;
+_:node17e7j66odx179 a rdf:Statement ;
 	rdf:subject "delighted" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx121 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx180 .
 
-_:node17dt8ncjfx121 a rdf:Statement ;
+_:node17e7j66odx180 a rdf:Statement ;
+	rdf:subject "delighted" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx181 .
+
+_:node17e7j66odx181 a rdf:Statement ;
 	rdf:subject "delighted" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx122 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx182 .
 
-_:node17dt8ncjfx122 a rdf:Statement ;
+_:node17e7j66odx182 a rdf:Statement ;
 	rdf:subject "enchant" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx123 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx183 .
 
-_:node17dt8ncjfx123 a rdf:Statement ;
+_:node17e7j66odx183 a rdf:Statement ;
+	rdf:subject "enchant" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx184 .
+
+_:node17e7j66odx184 a rdf:Statement ;
 	rdf:subject "enchant" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx124 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx185 .
 
-_:node17dt8ncjfx124 a rdf:Statement ;
+_:node17e7j66odx185 a rdf:Statement ;
+	rdf:subject "enchant" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx186 .
+
+_:node17e7j66odx186 a rdf:Statement ;
 	rdf:subject "enchant" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx125 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx187 .
 
-_:node17dt8ncjfx125 a rdf:Statement ;
+_:node17e7j66odx187 a rdf:Statement ;
 	rdf:subject "enchant" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx126 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx188 .
 
-_:node17dt8ncjfx126 a rdf:Statement ;
+_:node17e7j66odx188 a rdf:Statement ;
 	rdf:subject "enchant" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx127 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx189 .
 
-_:node17dt8ncjfx127 a rdf:Statement ;
+_:node17e7j66odx189 a rdf:Statement ;
+	rdf:subject "enchant" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx190 .
+
+_:node17e7j66odx190 a rdf:Statement ;
 	rdf:subject "enchant" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx128 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx191 .
 
-_:node17dt8ncjfx128 a rdf:Statement ;
+_:node17e7j66odx191 a rdf:Statement ;
 	rdf:subject "trance" ;
 	rdf:predicate "prima" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx129 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx192 .
 
-_:node17dt8ncjfx129 a rdf:Statement ;
+_:node17e7j66odx192 a rdf:Statement ;
+	rdf:subject "trance" ;
+	rdf:predicate "co-star" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx193 .
+
+_:node17e7j66odx193 a rdf:Statement ;
 	rdf:subject "trance" ;
 	rdf:predicate "leading" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx130 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx194 .
 
-_:node17dt8ncjfx130 a rdf:Statement ;
+_:node17e7j66odx194 a rdf:Statement ;
+	rdf:subject "trance" ;
+	rdf:predicate "have" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx195 .
+
+_:node17e7j66odx195 a rdf:Statement ;
 	rdf:subject "trance" ;
 	rdf:predicate "asterisk" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx131 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx196 .
 
-_:node17dt8ncjfx131 a rdf:Statement ;
+_:node17e7j66odx196 a rdf:Statement ;
 	rdf:subject "trance" ;
 	rdf:predicate "stellar" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx132 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx197 .
 
-_:node17dt8ncjfx132 a rdf:Statement ;
+_:node17e7j66odx197 a rdf:Statement ;
 	rdf:subject "trance" ;
 	rdf:predicate "star" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx133 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx198 .
 
-_:node17dt8ncjfx133 a rdf:Statement ;
+_:node17e7j66odx198 a rdf:Statement ;
+	rdf:subject "trance" ;
+	rdf:predicate "feature" ;
+	rdf:object "?actor" ;
+	rdfs:label "?show starring ?actor" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx199 .
+
+_:node17e7j66odx199 a rdf:Statement ;
 	rdf:subject "trance" ;
 	rdf:predicate "starring" ;
 	rdf:object "?actor" ;
 	rdfs:label "?show starring ?actor" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx134 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx200 .
 
-_:node17dt8ncjfx134 a rdf:Statement ;
+_:node17e7j66odx200 a rdf:Statement ;
 	rdf:subject "?actor" ;
 	rdf:predicate "foliate" ;
 	rdf:object "?page" ;
 	rdfs:label "?actor page ?page" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx135 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx201 .
 
-_:node17dt8ncjfx135 a rdf:Statement ;
+_:node17e7j66odx201 a rdf:Statement ;
 	rdf:subject "?actor" ;
 	rdf:predicate "Thomas_Nelson_Page" ;
 	rdf:object "?page" ;
 	rdfs:label "?actor page ?page" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx136 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx202 .
 
-_:node17dt8ncjfx136 a rdf:Statement ;
+_:node17e7j66odx202 a rdf:Statement ;
 	rdf:subject "?actor" ;
 	rdf:predicate "page" ;
 	rdf:object "?page" ;
 	rdfs:label "?actor page ?page" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx137 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx203 .
 
-_:node17dt8ncjfx137 a rdf:Statement ;
+_:node17e7j66odx203 a rdf:Statement ;
 	rdf:subject "?actor" ;
 	rdf:predicate "pageboy" ;
 	rdf:object "?page" ;
 	rdfs:label "?actor page ?page" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx138 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx204 .
 
-_:node17dt8ncjfx138 a rdf:Statement ;
+_:node17e7j66odx204 a rdf:Statement ;
 	rdf:subject "?actor" ;
 	rdf:predicate "Page" ;
 	rdf:object "?page" ;
 	rdfs:label "?actor page ?page" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx139 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx205 .
 
-_:node17dt8ncjfx139 a rdf:Statement ;
+_:node17e7j66odx205 a rdf:Statement ;
 	rdf:subject "?actor" ;
 	rdf:predicate "varlet" ;
 	rdf:object "?page" ;
 	rdfs:label "?actor page ?page" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx140 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx206 .
 
-_:node17dt8ncjfx140 a rdf:Statement ;
+_:node17e7j66odx206 a rdf:Statement ;
+	rdf:subject "?actor" ;
+	rdf:predicate "half_page" ;
+	rdf:object "?page" ;
+	rdfs:label "?actor page ?page" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx207 .
+
+_:node17e7j66odx207 a rdf:Statement ;
 	rdf:subject "?actor" ;
 	rdf:predicate "Sir_Frederick_Handley_Page" ;
 	rdf:object "?page" ;
 	rdfs:label "?actor page ?page" .
 
-_:node17dt8ncjfx1 qf:statement _:node17dt8ncjfx141 .
+_:node17e7j66odx1 qf:statement _:node17e7j66odx208 .
 
-_:node17dt8ncjfx141 a rdf:Statement ;
+_:node17e7j66odx208 a rdf:Statement ;
+	rdf:subject "?actor" ;
+	rdf:predicate "full_page" ;
+	rdf:object "?page" ;
+	rdfs:label "?actor page ?page" .
+
+_:node17e7j66odx1 qf:statement _:node17e7j66odx209 .
+
+_:node17e7j66odx209 a rdf:Statement ;
 	rdf:subject "?actor" ;
 	rdf:predicate "paginate" ;
 	rdf:object "?page" ;

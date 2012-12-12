@@ -2,11 +2,11 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-_:node17dsub44lx1 a qf:Query ;
+_:node17e7q3p8rx1 a qf:Query ;
 	rdfs:comment "Where did Abraham Lincoln die?" ;
-	qf:statement _:node17dsub44lx2 .
+	qf:statement _:node17e7q3p8rx2 .
 
-_:node17dsub44lx2 a rdf:Statement ;
+_:node17e7q3p8rx2 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Abraham_Lincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;

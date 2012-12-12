@@ -1,0 +1,29 @@
+@prefix qf: <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+_:node17e7qftb2x1 a qf:Query ;
+	rdfs:comment "Who is the daughter of Bill Clinton married to?" ;
+	qf:statement _:node17e7qftb2x2 .
+
+_:node17e7qftb2x2 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hillary_Rodham_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object <http://dbpedia.org/resource/Chelsea_Clinton> ;
+	rdfs:label "1.00  [daughter=http://dbpedia.org/resource/Chelsea_Clinton]" .
+
+_:node17e7qftb2x1 qf:statement _:node17e7qftb2x3 .
+
+_:node17e7qftb2x3 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Presidency_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object <http://dbpedia.org/resource/Chelsea_Clinton> ;
+	rdfs:label "1.00  [daughter=http://dbpedia.org/resource/Chelsea_Clinton]" .
+
+_:node17e7qftb2x1 qf:statement _:node17e7qftb2x4 .
+
+_:node17e7qftb2x4 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object <http://dbpedia.org/resource/Chelsea_Clinton> ;
+	rdfs:label "1.00  [daughter=http://dbpedia.org/resource/Chelsea_Clinton]" .

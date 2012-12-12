@@ -2,492 +2,4964 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-_:node17e03dgsax1 a qf:Query ;
+_:node17e7qf60jx1 a qf:Query ;
 	rdfs:comment "Who is the daughter of Bill Clinton married to?" ;
-	qf:statement _:node17e03dgsax2 .
+	qf:statement _:node17e7qf60jx2 .
 
-_:node17e03dgsax2 a rdf:Statement ;
+_:node17e7qf60jx2 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:AEC_vehicles> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx3 .
+
+_:node17e7qf60jx3 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:AEC_vehicles> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx4 .
+
+_:node17e7qf60jx4 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:AEC_vehicles> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx5 .
+
+_:node17e7qf60jx5 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:AEC_vehicles> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx6 .
+
+_:node17e7qf60jx6 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Associated_Equipment_Company> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx7 .
+
+_:node17e7qf60jx7 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Associated_Equipment_Company> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx8 .
+
+_:node17e7qf60jx8 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Associated_Equipment_Company> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx9 .
+
+_:node17e7qf60jx9 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Associated_Equipment_Company> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx10 .
+
+_:node17e7qf60jx10 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/AECVehicles> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx11 .
+
+_:node17e7qf60jx11 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/AECVehicles> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx12 .
+
+_:node17e7qf60jx12 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/AECVehicles> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx13 .
+
+_:node17e7qf60jx13 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/AECVehicles> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx14 .
+
+_:node17e7qf60jx14 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/FMA_AeC.2> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx15 .
+
+_:node17e7qf60jx15 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/FMA_AeC.2> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx16 .
+
+_:node17e7qf60jx16 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/FMA_AeC.2> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx17 .
+
+_:node17e7qf60jx17 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/FMA_AeC.2> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx18 .
+
+_:node17e7qf60jx18 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Manlleu> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx19 .
+
+_:node17e7qf60jx19 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Manlleu> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx20 .
+
+_:node17e7qf60jx20 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Manlleu> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx21 .
+
+_:node17e7qf60jx21 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Manlleu> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx22 .
+
+_:node17e7qf60jx22 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Routemaster> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx23 .
+
+_:node17e7qf60jx23 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Routemaster> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx24 .
+
+_:node17e7qf60jx24 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Routemaster> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx25 .
+
+_:node17e7qf60jx25 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Routemaster> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx26 .
+
+_:node17e7qf60jx26 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/FMA_AeC.3> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx27 .
+
+_:node17e7qf60jx27 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/FMA_AeC.3> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx28 .
+
+_:node17e7qf60jx28 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/FMA_AeC.3> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx29 .
+
+_:node17e7qf60jx29 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/FMA_AeC.3> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx30 .
+
+_:node17e7qf60jx30 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Reliance> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx31 .
+
+_:node17e7qf60jx31 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Reliance> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx32 .
+
+_:node17e7qf60jx32 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Reliance> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx33 .
+
+_:node17e7qf60jx33 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Reliance> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx34 .
+
+_:node17e7qf60jx34 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Regent_III_RT> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx35 .
+
+_:node17e7qf60jx35 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Regent_III_RT> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx36 .
+
+_:node17e7qf60jx36 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Regent_III_RT> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx37 .
+
+_:node17e7qf60jx37 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Regent_III_RT> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx38 .
+
+_:node17e7qf60jx38 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Regent_III> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx39 .
+
+_:node17e7qf60jx39 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Regent_III> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx40 .
+
+_:node17e7qf60jx40 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Regent_III> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx41 .
+
+_:node17e7qf60jx41 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Regent_III> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx42 .
+
+_:node17e7qf60jx42 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/FMA_AeC.1> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx43 .
+
+_:node17e7qf60jx43 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/FMA_AeC.1> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx44 .
+
+_:node17e7qf60jx44 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/FMA_AeC.1> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx45 .
+
+_:node17e7qf60jx45 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/FMA_AeC.1> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx46 .
+
+_:node17e7qf60jx46 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Astro_AEC> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx47 .
+
+_:node17e7qf60jx47 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Astro_AEC> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx48 .
+
+_:node17e7qf60jx48 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Astro_AEC> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx49 .
+
+_:node17e7qf60jx49 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Astro_AEC> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx50 .
+
+_:node17e7qf60jx50 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Matador> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx51 .
+
+_:node17e7qf60jx51 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Matador> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx52 .
+
+_:node17e7qf60jx52 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Matador> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx53 .
+
+_:node17e7qf60jx53 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Matador> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx54 .
+
+_:node17e7qf60jx54 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx55 .
+
+_:node17e7qf60jx55 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx56 .
+
+_:node17e7qf60jx56 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx57 .
+
+_:node17e7qf60jx57 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx58 .
+
+_:node17e7qf60jx58 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Regent_II> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx59 .
+
+_:node17e7qf60jx59 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Regent_II> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx60 .
+
+_:node17e7qf60jx60 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Regent_II> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx61 .
+
+_:node17e7qf60jx61 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/AEC_Regent_II> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx62 .
+
+_:node17e7qf60jx62 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Pakistan_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx63 .
+
+_:node17e7qf60jx63 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Pakistan_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx64 .
+
+_:node17e7qf60jx64 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Pakistan_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx65 .
+
+_:node17e7qf60jx65 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Pakistan_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx66 .
+
+_:node17e7qf60jx66 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx67 .
+
+_:node17e7qf60jx67 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx68 .
+
+_:node17e7qf60jx68 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx69 .
+
+_:node17e7qf60jx69 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx70 .
+
+_:node17e7qf60jx70 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Constituent_institutions_of_Pakistan_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx71 .
+
+_:node17e7qf60jx71 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Constituent_institutions_of_Pakistan_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx72 .
+
+_:node17e7qf60jx72 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Constituent_institutions_of_Pakistan_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx73 .
+
+_:node17e7qf60jx73 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Constituent_institutions_of_Pakistan_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx74 .
+
+_:node17e7qf60jx74 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Atomic_Energy_Commission_of_India> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx75 .
+
+_:node17e7qf60jx75 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Atomic_Energy_Commission_of_India> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx76 .
+
+_:node17e7qf60jx76 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Atomic_Energy_Commission_of_India> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx77 .
+
+_:node17e7qf60jx77 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Atomic_Energy_Commission_of_India> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx78 .
+
+_:node17e7qf60jx78 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Chairmen_of_the_United_States_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx79 .
+
+_:node17e7qf60jx79 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Chairmen_of_the_United_States_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx80 .
+
+_:node17e7qf60jx80 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Chairmen_of_the_United_States_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx81 .
+
+_:node17e7qf60jx81 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Chairmen_of_the_United_States_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx82 .
+
+_:node17e7qf60jx82 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_Nations_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx83 .
+
+_:node17e7qf60jx83 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_Nations_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx84 .
+
+_:node17e7qf60jx84 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_Nations_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx85 .
+
+_:node17e7qf60jx85 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_Nations_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx86 .
+
+_:node17e7qf60jx86 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/National_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx87 .
+
+_:node17e7qf60jx87 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/National_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx88 .
+
+_:node17e7qf60jx88 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/National_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx89 .
+
+_:node17e7qf60jx89 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/National_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx90 .
+
+_:node17e7qf60jx90 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Australian_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx91 .
+
+_:node17e7qf60jx91 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Australian_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx92 .
+
+_:node17e7qf60jx92 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Australian_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx93 .
+
+_:node17e7qf60jx93 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Australian_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx94 .
+
+_:node17e7qf60jx94 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx95 .
+
+_:node17e7qf60jx95 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx96 .
+
+_:node17e7qf60jx96 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx97 .
+
+_:node17e7qf60jx97 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx98 .
+
+_:node17e7qf60jx98 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bangladesh_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx99 .
+
+_:node17e7qf60jx99 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bangladesh_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx100 .
+
+_:node17e7qf60jx100 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bangladesh_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx101 .
+
+_:node17e7qf60jx101 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bangladesh_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx102 .
+
+_:node17e7qf60jx102 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Tanzania_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx103 .
+
+_:node17e7qf60jx103 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Tanzania_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx104 .
+
+_:node17e7qf60jx104 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Tanzania_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx105 .
+
+_:node17e7qf60jx105 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Tanzania_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx106 .
+
+_:node17e7qf60jx106 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Japanese_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx107 .
+
+_:node17e7qf60jx107 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Japanese_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx108 .
+
+_:node17e7qf60jx108 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Japanese_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx109 .
+
+_:node17e7qf60jx109 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Japanese_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx110 .
+
+_:node17e7qf60jx110 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Jordan_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx111 .
+
+_:node17e7qf60jx111 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Jordan_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx112 .
+
+_:node17e7qf60jx112 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Jordan_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx113 .
+
+_:node17e7qf60jx113 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Jordan_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx114 .
+
+_:node17e7qf60jx114 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Greek_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx115 .
+
+_:node17e7qf60jx115 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Greek_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx116 .
+
+_:node17e7qf60jx116 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Greek_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx117 .
+
+_:node17e7qf60jx117 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Greek_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx118 .
+
+_:node17e7qf60jx118 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Vietnam_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx119 .
+
+_:node17e7qf60jx119 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Vietnam_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx120 .
+
+_:node17e7qf60jx120 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Vietnam_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx121 .
+
+_:node17e7qf60jx121 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Vietnam_Atomic_Energy_Commission> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx122 .
+
+_:node17e7qf60jx122 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_William_Jefferson_Clinton_Birthplace_Home_National_Historic_Site> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx123 .
+
+_:node17e7qf60jx123 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_William_Jefferson_Clinton_Birthplace_Home_National_Historic_Site> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx124 .
+
+_:node17e7qf60jx124 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_William_Jefferson_Clinton_Birthplace_Home_National_Historic_Site> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx125 .
+
+_:node17e7qf60jx125 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_William_Jefferson_Clinton_Birthplace_Home_National_Historic_Site> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx126 .
+
+_:node17e7qf60jx126 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx127 .
+
+_:node17e7qf60jx127 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx128 .
+
+_:node17e7qf60jx128 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx129 .
+
+_:node17e7qf60jx129 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx130 .
+
+_:node17e7qf60jx130 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Presidential_Foundation> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx131 .
+
+_:node17e7qf60jx131 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Presidential_Foundation> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx132 .
+
+_:node17e7qf60jx132 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Presidential_Foundation> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx133 .
+
+_:node17e7qf60jx133 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Presidential_Foundation> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx134 .
+
+_:node17e7qf60jx134 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Foundation> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx135 .
+
+_:node17e7qf60jx135 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Foundation> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx136 .
+
+_:node17e7qf60jx136 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Foundation> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx137 .
+
+_:node17e7qf60jx137 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Foundation> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx138 .
+
+_:node17e7qf60jx138 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Impeachment_Trial_of_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx139 .
+
+_:node17e7qf60jx139 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Impeachment_Trial_of_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx140 .
+
+_:node17e7qf60jx140 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Impeachment_Trial_of_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx141 .
+
+_:node17e7qf60jx141 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Impeachment_Trial_of_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx142 .
+
+_:node17e7qf60jx142 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hollywood_Gala_Salute_to_President_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx143 .
+
+_:node17e7qf60jx143 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hollywood_Gala_Salute_to_President_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx144 .
+
+_:node17e7qf60jx144 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hollywood_Gala_Salute_to_President_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx145 .
+
+_:node17e7qf60jx145 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hollywood_Gala_Salute_to_President_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx146 .
+
+_:node17e7qf60jx146 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Presidential_Library> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx147 .
+
+_:node17e7qf60jx147 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Presidential_Library> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx148 .
+
+_:node17e7qf60jx148 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Presidential_Library> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx149 .
+
+_:node17e7qf60jx149 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Presidential_Library> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx150 .
+
+_:node17e7qf60jx150 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hollywood_Farewell_Gala_Salute_to_President_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx151 .
+
+_:node17e7qf60jx151 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hollywood_Farewell_Gala_Salute_to_President_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx152 .
+
+_:node17e7qf60jx152 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hollywood_Farewell_Gala_Salute_to_President_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx153 .
+
+_:node17e7qf60jx153 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hollywood_Farewell_Gala_Salute_to_President_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx154 .
+
+_:node17e7qf60jx154 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Birthplace_Home_National_Historic_Site> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx155 .
+
+_:node17e7qf60jx155 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Birthplace_Home_National_Historic_Site> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx156 .
+
+_:node17e7qf60jx156 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Birthplace_Home_National_Historic_Site> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx157 .
+
+_:node17e7qf60jx157 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Birthplace_Home_National_Historic_Site> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx158 .
+
+_:node17e7qf60jx158 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Presidential_Center> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx159 .
+
+_:node17e7qf60jx159 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Presidential_Center> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx160 .
+
+_:node17e7qf60jx160 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Presidential_Center> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx161 .
+
+_:node17e7qf60jx161 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/William_Jefferson_Clinton_Presidential_Center> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx162 .
+
+_:node17e7qf60jx162 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/No_One_Left_to_Lie_To:_The_Triangulations_of_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx163 .
+
+_:node17e7qf60jx163 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/No_One_Left_to_Lie_To:_The_Triangulations_of_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx164 .
+
+_:node17e7qf60jx164 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/No_One_Left_to_Lie_To:_The_Triangulations_of_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx165 .
+
+_:node17e7qf60jx165 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/No_One_Left_to_Lie_To:_The_Triangulations_of_William_Jefferson_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx166 .
+
+_:node17e7qf60jx166 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/GalaHollywoodFarewellSaluteToPresidentClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx167 .
+
+_:node17e7qf60jx167 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/GalaHollywoodFarewellSaluteToPresidentClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx168 .
+
+_:node17e7qf60jx168 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/GalaHollywoodFarewellSaluteToPresidentClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx169 .
+
+_:node17e7qf60jx169 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/GalaHollywoodFarewellSaluteToPresidentClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx170 .
+
+_:node17e7qf60jx170 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx171 .
+
+_:node17e7qf60jx171 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx172 .
+
+_:node17e7qf60jx172 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx173 .
+
+_:node17e7qf60jx173 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx174 .
+
+_:node17e7qf60jx174 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/ImpeachmentOfBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx175 .
+
+_:node17e7qf60jx175 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/ImpeachmentOfBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx176 .
+
+_:node17e7qf60jx176 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/ImpeachmentOfBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx177 .
+
+_:node17e7qf60jx177 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/ImpeachmentOfBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx178 .
+
+_:node17e7qf60jx178 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BillClintonBirthplace> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx179 .
+
+_:node17e7qf60jx179 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BillClintonBirthplace> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx180 .
+
+_:node17e7qf60jx180 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BillClintonBirthplace> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx181 .
+
+_:node17e7qf60jx181 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BillClintonBirthplace> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx182 .
+
+_:node17e7qf60jx182 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax3 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx183 .
 
-_:node17e03dgsax3 a rdf:Statement ;
+_:node17e7qf60jx183 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax4 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx184 .
 
-_:node17e03dgsax4 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Bill_Clinton> ;
-	rdf:predicate <http://dbpedia.org/ontology/child> ;
-	rdf:object "?daughter" ;
-	rdfs:label "daughter" .
-
-_:node17e03dgsax1 qf:statement _:node17e03dgsax5 .
-
-_:node17e03dgsax5 a rdf:Statement ;
+_:node17e7qf60jx184 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax6 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx185 .
 
-_:node17e03dgsax6 a rdf:Statement ;
+_:node17e7qf60jx185 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx186 .
+
+_:node17e7qf60jx186 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:United_States_district_court_judges_appointed_by_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax7 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx187 .
 
-_:node17e03dgsax7 a rdf:Statement ;
+_:node17e7qf60jx187 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:United_States_district_court_judges_appointed_by_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax8 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx188 .
 
-_:node17e03dgsax8 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Category:United_States_district_court_judges_appointed_by_Bill_Clinton> ;
-	rdf:predicate <http://dbpedia.org/ontology/child> ;
-	rdf:object "?daughter" ;
-	rdfs:label "daughter" .
-
-_:node17e03dgsax1 qf:statement _:node17e03dgsax9 .
-
-_:node17e03dgsax9 a rdf:Statement ;
+_:node17e7qf60jx188 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:United_States_district_court_judges_appointed_by_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax10 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx189 .
 
-_:node17e03dgsax10 a rdf:Statement ;
+_:node17e7qf60jx189 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_district_court_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx190 .
+
+_:node17e7qf60jx190 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesDistrictCourtJuDgesAppointedByBillClinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax11 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx191 .
 
-_:node17e03dgsax11 a rdf:Statement ;
+_:node17e7qf60jx191 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesDistrictCourtJuDgesAppointedByBillClinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax12 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx192 .
 
-_:node17e03dgsax12 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesDistrictCourtJuDgesAppointedByBillClinton> ;
-	rdf:predicate <http://dbpedia.org/ontology/child> ;
-	rdf:object "?daughter" ;
-	rdfs:label "daughter" .
-
-_:node17e03dgsax1 qf:statement _:node17e03dgsax13 .
-
-_:node17e03dgsax13 a rdf:Statement ;
+_:node17e7qf60jx192 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesDistrictCourtJuDgesAppointedByBillClinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax14 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx193 .
 
-_:node17e03dgsax14 a rdf:Statement ;
+_:node17e7qf60jx193 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesDistrictCourtJuDgesAppointedByBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx194 .
+
+_:node17e7qf60jx194 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/List_of_federal_judges_appointed_by_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax15 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx195 .
 
-_:node17e03dgsax15 a rdf:Statement ;
+_:node17e7qf60jx195 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/List_of_federal_judges_appointed_by_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax16 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx196 .
 
-_:node17e03dgsax16 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/List_of_federal_judges_appointed_by_Bill_Clinton> ;
-	rdf:predicate <http://dbpedia.org/ontology/child> ;
-	rdf:object "?daughter" ;
-	rdfs:label "daughter" .
-
-_:node17e03dgsax1 qf:statement _:node17e03dgsax17 .
-
-_:node17e03dgsax17 a rdf:Statement ;
+_:node17e7qf60jx196 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/List_of_federal_judges_appointed_by_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax18 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx197 .
 
-_:node17e03dgsax18 a rdf:Statement ;
+_:node17e7qf60jx197 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_federal_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx198 .
+
+_:node17e7qf60jx198 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:United_States_court_of_appeals_judges_appointed_by_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax19 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx199 .
 
-_:node17e03dgsax19 a rdf:Statement ;
+_:node17e7qf60jx199 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:United_States_court_of_appeals_judges_appointed_by_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax20 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx200 .
 
-_:node17e03dgsax20 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Category:United_States_court_of_appeals_judges_appointed_by_Bill_Clinton> ;
-	rdf:predicate <http://dbpedia.org/ontology/child> ;
-	rdf:object "?daughter" ;
-	rdfs:label "daughter" .
-
-_:node17e03dgsax1 qf:statement _:node17e03dgsax21 .
-
-_:node17e03dgsax21 a rdf:Statement ;
+_:node17e7qf60jx200 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:United_States_court_of_appeals_judges_appointed_by_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax22 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx201 .
 
-_:node17e03dgsax22 a rdf:Statement ;
+_:node17e7qf60jx201 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_court_of_appeals_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx202 .
+
+_:node17e7qf60jx202 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Presidency_of_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax23 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx203 .
 
-_:node17e03dgsax23 a rdf:Statement ;
+_:node17e7qf60jx203 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Presidency_of_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax24 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx204 .
 
-_:node17e03dgsax24 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Category:Presidency_of_Bill_Clinton> ;
-	rdf:predicate <http://dbpedia.org/ontology/child> ;
-	rdf:object "?daughter" ;
-	rdfs:label "daughter" .
-
-_:node17e03dgsax1 qf:statement _:node17e03dgsax25 .
-
-_:node17e03dgsax25 a rdf:Statement ;
+_:node17e7qf60jx204 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Presidency_of_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax26 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx205 .
 
-_:node17e03dgsax26 a rdf:Statement ;
+_:node17e7qf60jx205 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Presidency_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx206 .
+
+_:node17e7qf60jx206 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax27 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx207 .
 
-_:node17e03dgsax27 a rdf:Statement ;
+_:node17e7qf60jx207 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax28 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx208 .
 
-_:node17e03dgsax28 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Category:Bill_Clinton> ;
-	rdf:predicate <http://dbpedia.org/ontology/child> ;
-	rdf:object "?daughter" ;
-	rdfs:label "daughter" .
-
-_:node17e03dgsax1 qf:statement _:node17e03dgsax29 .
-
-_:node17e03dgsax29 a rdf:Statement ;
+_:node17e7qf60jx208 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax30 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx209 .
 
-_:node17e03dgsax30 a rdf:Statement ;
+_:node17e7qf60jx209 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx210 .
+
+_:node17e7qf60jx210 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Presidency_of_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax31 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx211 .
 
-_:node17e03dgsax31 a rdf:Statement ;
+_:node17e7qf60jx211 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Presidency_of_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax32 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx212 .
 
-_:node17e03dgsax32 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Presidency_of_Bill_Clinton> ;
-	rdf:predicate <http://dbpedia.org/ontology/child> ;
-	rdf:object "?daughter" ;
-	rdfs:label "daughter" .
-
-_:node17e03dgsax1 qf:statement _:node17e03dgsax33 .
-
-_:node17e03dgsax33 a rdf:Statement ;
+_:node17e7qf60jx212 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Presidency_of_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax34 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx213 .
 
-_:node17e03dgsax34 a rdf:Statement ;
+_:node17e7qf60jx213 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Presidency_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx214 .
+
+_:node17e7qf60jx214 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:United_States_Article_I_federal_judges_appointed_by_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax35 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx215 .
 
-_:node17e03dgsax35 a rdf:Statement ;
+_:node17e7qf60jx215 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:United_States_Article_I_federal_judges_appointed_by_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax36 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx216 .
 
-_:node17e03dgsax36 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Category:United_States_Article_I_federal_judges_appointed_by_Bill_Clinton> ;
-	rdf:predicate <http://dbpedia.org/ontology/child> ;
-	rdf:object "?daughter" ;
-	rdfs:label "daughter" .
-
-_:node17e03dgsax1 qf:statement _:node17e03dgsax37 .
-
-_:node17e03dgsax37 a rdf:Statement ;
+_:node17e7qf60jx216 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:United_States_Article_I_federal_judges_appointed_by_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax38 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx217 .
 
-_:node17e03dgsax38 a rdf:Statement ;
+_:node17e7qf60jx217 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_Article_I_federal_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx218 .
+
+_:node17e7qf60jx218 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Executive_orders_of_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax39 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx219 .
 
-_:node17e03dgsax39 a rdf:Statement ;
+_:node17e7qf60jx219 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Executive_orders_of_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax40 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx220 .
 
-_:node17e03dgsax40 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Category:Executive_orders_of_Bill_Clinton> ;
-	rdf:predicate <http://dbpedia.org/ontology/child> ;
-	rdf:object "?daughter" ;
-	rdfs:label "daughter" .
-
-_:node17e03dgsax1 qf:statement _:node17e03dgsax41 .
-
-_:node17e03dgsax41 a rdf:Statement ;
+_:node17e7qf60jx220 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Executive_orders_of_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax42 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx221 .
 
-_:node17e03dgsax42 a rdf:Statement ;
+_:node17e7qf60jx221 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_orders_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx222 .
+
+_:node17e7qf60jx222 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Impeachment_of_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax43 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx223 .
 
-_:node17e03dgsax43 a rdf:Statement ;
+_:node17e7qf60jx223 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Impeachment_of_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax44 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx224 .
 
-_:node17e03dgsax44 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Impeachment_of_Bill_Clinton> ;
-	rdf:predicate <http://dbpedia.org/ontology/child> ;
-	rdf:object "?daughter" ;
-	rdfs:label "daughter" .
-
-_:node17e03dgsax1 qf:statement _:node17e03dgsax45 .
-
-_:node17e03dgsax45 a rdf:Statement ;
+_:node17e7qf60jx224 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Impeachment_of_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax46 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx225 .
 
-_:node17e03dgsax46 a rdf:Statement ;
+_:node17e7qf60jx225 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Impeachment_of_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx226 .
+
+_:node17e7qf60jx226 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesArticleIFederalJuDgesAppointedByBillClinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax47 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx227 .
 
-_:node17e03dgsax47 a rdf:Statement ;
+_:node17e7qf60jx227 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesArticleIFederalJuDgesAppointedByBillClinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax48 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx228 .
 
-_:node17e03dgsax48 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesArticleIFederalJuDgesAppointedByBillClinton> ;
-	rdf:predicate <http://dbpedia.org/ontology/child> ;
-	rdf:object "?daughter" ;
-	rdfs:label "daughter" .
-
-_:node17e03dgsax1 qf:statement _:node17e03dgsax49 .
-
-_:node17e03dgsax49 a rdf:Statement ;
+_:node17e7qf60jx228 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesArticleIFederalJuDgesAppointedByBillClinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax50 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx229 .
 
-_:node17e03dgsax50 a rdf:Statement ;
+_:node17e7qf60jx229 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesArticleIFederalJuDgesAppointedByBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx230 .
+
+_:node17e7qf60jx230 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/ExecutiveOrdersOfBillClinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax51 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx231 .
 
-_:node17e03dgsax51 a rdf:Statement ;
+_:node17e7qf60jx231 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/ExecutiveOrdersOfBillClinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax52 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx232 .
 
-_:node17e03dgsax52 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/class/yago/ExecutiveOrdersOfBillClinton> ;
-	rdf:predicate <http://dbpedia.org/ontology/child> ;
-	rdf:object "?daughter" ;
-	rdfs:label "daughter" .
-
-_:node17e03dgsax1 qf:statement _:node17e03dgsax53 .
-
-_:node17e03dgsax53 a rdf:Statement ;
+_:node17e7qf60jx232 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/ExecutiveOrdersOfBillClinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax54 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx233 .
 
-_:node17e03dgsax54 a rdf:Statement ;
+_:node17e7qf60jx233 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/ExecutiveOrdersOfBillClinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx234 .
+
+_:node17e7qf60jx234 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Bill_Clinton_pardon_controversy> ;
 	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax55 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx235 .
 
-_:node17e03dgsax55 a rdf:Statement ;
+_:node17e7qf60jx235 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Bill_Clinton_pardon_controversy> ;
 	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax56 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx236 .
 
-_:node17e03dgsax56 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Bill_Clinton_pardon_controversy> ;
-	rdf:predicate <http://dbpedia.org/ontology/child> ;
-	rdf:object "?daughter" ;
-	rdfs:label "daughter" .
-
-_:node17e03dgsax1 qf:statement _:node17e03dgsax57 .
-
-_:node17e03dgsax57 a rdf:Statement ;
+_:node17e7qf60jx236 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Bill_Clinton_pardon_controversy> ;
 	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax58 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx237 .
 
-_:node17e03dgsax58 a rdf:Statement ;
+_:node17e7qf60jx237 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Bill_Clinton_pardon_controversy> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx238 .
+
+_:node17e7qf60jx238 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_federal_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx239 .
+
+_:node17e7qf60jx239 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_federal_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx240 .
+
+_:node17e7qf60jx240 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_federal_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx241 .
+
+_:node17e7qf60jx241 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:United_States_federal_judges_appointed_by_Bill_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx242 .
+
+_:node17e7qf60jx242 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx243 .
+
+_:node17e7qf60jx243 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx244 .
+
+_:node17e7qf60jx244 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx245 .
+
+_:node17e7qf60jx245 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx246 .
+
+_:node17e7qf60jx246 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Vice_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx247 .
+
+_:node17e7qf60jx247 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Vice_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx248 .
+
+_:node17e7qf60jx248 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Vice_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx249 .
+
+_:node17e7qf60jx249 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Vice_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx250 .
+
+_:node17e7qf60jx250 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_Office_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx251 .
+
+_:node17e7qf60jx251 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_Office_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx252 .
+
+_:node17e7qf60jx252 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_Office_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx253 .
+
+_:node17e7qf60jx253 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_Office_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx254 .
+
+_:node17e7qf60jx254 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_Office_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx255 .
+
+_:node17e7qf60jx255 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_Office_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx256 .
+
+_:node17e7qf60jx256 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_Office_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx257 .
+
+_:node17e7qf60jx257 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_Office_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx258 .
+
+_:node17e7qf60jx258 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Personal_secretaries_to_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx259 .
+
+_:node17e7qf60jx259 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Personal_secretaries_to_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx260 .
+
+_:node17e7qf60jx260 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Personal_secretaries_to_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx261 .
+
+_:node17e7qf60jx261 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Personal_secretaries_to_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx262 .
+
+_:node17e7qf60jx262 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/PersonalSecretariesToThePresidentOfTheUnitedStates> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx263 .
+
+_:node17e7qf60jx263 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/PersonalSecretariesToThePresidentOfTheUnitedStates> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx264 .
+
+_:node17e7qf60jx264 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/PersonalSecretariesToThePresidentOfTheUnitedStates> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx265 .
+
+_:node17e7qf60jx265 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/PersonalSecretariesToThePresidentOfTheUnitedStates> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx266 .
+
+_:node17e7qf60jx266 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Assistants_to_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx267 .
+
+_:node17e7qf60jx267 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Assistants_to_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx268 .
+
+_:node17e7qf60jx268 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Assistants_to_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx269 .
+
+_:node17e7qf60jx269 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Assistants_to_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx270 .
+
+_:node17e7qf60jx270 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/AssistantsToThePresidentOfTheUnitedStates> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx271 .
+
+_:node17e7qf60jx271 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/AssistantsToThePresidentOfTheUnitedStates> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx272 .
+
+_:node17e7qf60jx272 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/AssistantsToThePresidentOfTheUnitedStates> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx273 .
+
+_:node17e7qf60jx273 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/AssistantsToThePresidentOfTheUnitedStates> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx274 .
+
+_:node17e7qf60jx274 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_of_Staff_to_the_Vice_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx275 .
+
+_:node17e7qf60jx275 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_of_Staff_to_the_Vice_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx276 .
+
+_:node17e7qf60jx276 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_of_Staff_to_the_Vice_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx277 .
+
+_:node17e7qf60jx277 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_of_Staff_to_the_Vice_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx278 .
+
+_:node17e7qf60jx278 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Weekly_Radio_Address_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx279 .
+
+_:node17e7qf60jx279 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Weekly_Radio_Address_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx280 .
+
+_:node17e7qf60jx280 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Weekly_Radio_Address_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx281 .
+
+_:node17e7qf60jx281 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Weekly_Radio_Address_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx282 .
+
+_:node17e7qf60jx282 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Threatening_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx283 .
+
+_:node17e7qf60jx283 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Threatening_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx284 .
+
+_:node17e7qf60jx284 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Threatening_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx285 .
+
+_:node17e7qf60jx285 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Threatening_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx286 .
+
+_:node17e7qf60jx286 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Secretary_to_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx287 .
+
+_:node17e7qf60jx287 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Secretary_to_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx288 .
+
+_:node17e7qf60jx288 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Secretary_to_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx289 .
+
+_:node17e7qf60jx289 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Secretary_to_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx290 .
+
+_:node17e7qf60jx290 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Candidates_for_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx291 .
+
+_:node17e7qf60jx291 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Candidates_for_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx292 .
+
+_:node17e7qf60jx292 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Candidates_for_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx293 .
+
+_:node17e7qf60jx293 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Candidates_for_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx294 .
+
+_:node17e7qf60jx294 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Acting_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx295 .
+
+_:node17e7qf60jx295 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Acting_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx296 .
+
+_:node17e7qf60jx296 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Acting_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx297 .
+
+_:node17e7qf60jx297 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Acting_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx298 .
+
+_:node17e7qf60jx298 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Seal_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx299 .
+
+_:node17e7qf60jx299 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Seal_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx300 .
+
+_:node17e7qf60jx300 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Seal_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx301 .
+
+_:node17e7qf60jx301 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Seal_of_the_President_of_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx302 .
+
+_:node17e7qf60jx302 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/George_Clinton_(musician)> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx303 .
+
+_:node17e7qf60jx303 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/George_Clinton_(musician)> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx304 .
+
+_:node17e7qf60jx304 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/George_Clinton_(musician)> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx305 .
+
+_:node17e7qf60jx305 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/George_Clinton_(musician)> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx306 .
+
+_:node17e7qf60jx306 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hillary_Rodham_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx307 .
+
+_:node17e7qf60jx307 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hillary_Rodham_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx308 .
+
+_:node17e7qf60jx308 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hillary_Rodham_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx309 .
+
+_:node17e7qf60jx309 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hillary_Rodham_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx310 .
+
+_:node17e7qf60jx310 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Clinton_Administration_personnel> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx311 .
+
+_:node17e7qf60jx311 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Clinton_Administration_personnel> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx312 .
+
+_:node17e7qf60jx312 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Clinton_Administration_personnel> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx313 .
+
+_:node17e7qf60jx313 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Clinton_Administration_personnel> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx314 .
+
+_:node17e7qf60jx314 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_Hart_Merriam> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx315 .
+
+_:node17e7qf60jx315 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_Hart_Merriam> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx316 .
+
+_:node17e7qf60jx316 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_Hart_Merriam> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx317 .
+
+_:node17e7qf60jx317 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_Hart_Merriam> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx318 .
+
+_:node17e7qf60jx318 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/George_S._Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx319 .
+
+_:node17e7qf60jx319 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/George_S._Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx320 .
+
+_:node17e7qf60jx320 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/George_S._Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx321 .
+
+_:node17e7qf60jx321 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/George_S._Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx322 .
+
+_:node17e7qf60jx322 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Illinois> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx323 .
+
+_:node17e7qf60jx323 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Illinois> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx324 .
+
+_:node17e7qf60jx324 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Illinois> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx325 .
+
+_:node17e7qf60jx325 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Illinois> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx326 .
+
+_:node17e7qf60jx326 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_New_York> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx327 .
+
+_:node17e7qf60jx327 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_New_York> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx328 .
+
+_:node17e7qf60jx328 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_New_York> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx329 .
+
+_:node17e7qf60jx329 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_New_York> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx330 .
+
+_:node17e7qf60jx330 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton,_Iowa> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx331 .
+
+_:node17e7qf60jx331 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton,_Iowa> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx332 .
+
+_:node17e7qf60jx332 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton,_Iowa> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx333 .
+
+_:node17e7qf60jx333 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton,_Iowa> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx334 .
+
+_:node17e7qf60jx334 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Ohio> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx335 .
+
+_:node17e7qf60jx335 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Ohio> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx336 .
+
+_:node17e7qf60jx336 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Ohio> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx337 .
+
+_:node17e7qf60jx337 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Ohio> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx338 .
+
+_:node17e7qf60jx338 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Pennsylvania> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx339 .
+
+_:node17e7qf60jx339 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Pennsylvania> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx340 .
+
+_:node17e7qf60jx340 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Pennsylvania> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx341 .
+
+_:node17e7qf60jx341 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Pennsylvania> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx342 .
+
+_:node17e7qf60jx342 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Indiana> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx343 .
+
+_:node17e7qf60jx343 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Indiana> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx344 .
+
+_:node17e7qf60jx344 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Indiana> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx345 .
+
+_:node17e7qf60jx345 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Indiana> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx346 .
+
+_:node17e7qf60jx346 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Iowa> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx347 .
+
+_:node17e7qf60jx347 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Iowa> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx348 .
+
+_:node17e7qf60jx348 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Iowa> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx349 .
+
+_:node17e7qf60jx349 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Clinton_County,_Iowa> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx350 .
+
+_:node17e7qf60jx350 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_executive_officer> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx351 .
+
+_:node17e7qf60jx351 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_executive_officer> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx352 .
+
+_:node17e7qf60jx352 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_executive_officer> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx353 .
+
+_:node17e7qf60jx353 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_executive_officer> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx354 .
+
+_:node17e7qf60jx354 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Chief_executive_officers> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx355 .
+
+_:node17e7qf60jx355 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Chief_executive_officers> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx356 .
+
+_:node17e7qf60jx356 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Chief_executive_officers> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx357 .
+
+_:node17e7qf60jx357 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Chief_executive_officers> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx358 .
+
+_:node17e7qf60jx358 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_Hong_Kong> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx359 .
+
+_:node17e7qf60jx359 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_Hong_Kong> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx360 .
+
+_:node17e7qf60jx360 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_Hong_Kong> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx361 .
+
+_:node17e7qf60jx361 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_Hong_Kong> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx362 .
+
+_:node17e7qf60jx362 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_the_Falkland_Islands> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx363 .
+
+_:node17e7qf60jx363 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_the_Falkland_Islands> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx364 .
+
+_:node17e7qf60jx364 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_the_Falkland_Islands> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx365 .
+
+_:node17e7qf60jx365 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_the_Falkland_Islands> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx366 .
+
+_:node17e7qf60jx366 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_Macau> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx367 .
+
+_:node17e7qf60jx367 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_Macau> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx368 .
+
+_:node17e7qf60jx368 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_Macau> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx369 .
+
+_:node17e7qf60jx369 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_Macau> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx370 .
+
+_:node17e7qf60jx370 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Chief_Executive_Officers_of_Goldman_Sachs> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx371 .
+
+_:node17e7qf60jx371 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Chief_Executive_Officers_of_Goldman_Sachs> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx372 .
+
+_:node17e7qf60jx372 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Chief_Executive_Officers_of_Goldman_Sachs> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx373 .
+
+_:node17e7qf60jx373 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Chief_Executive_Officers_of_Goldman_Sachs> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx374 .
+
+_:node17e7qf60jx374 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Consultation_Document_on_the_Methods_for_Selecting_the_Chief_Executive_and_for_Forming_the_LegCo_in_2012> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx375 .
+
+_:node17e7qf60jx375 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Consultation_Document_on_the_Methods_for_Selecting_the_Chief_Executive_and_for_Forming_the_LegCo_in_2012> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx376 .
+
+_:node17e7qf60jx376 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Consultation_Document_on_the_Methods_for_Selecting_the_Chief_Executive_and_for_Forming_the_LegCo_in_2012> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx377 .
+
+_:node17e7qf60jx377 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Consultation_Document_on_the_Methods_for_Selecting_the_Chief_Executive_and_for_Forming_the_LegCo_in_2012> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx378 .
+
+_:node17e7qf60jx378 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_chief_executive_officers> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx379 .
+
+_:node17e7qf60jx379 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_chief_executive_officers> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx380 .
+
+_:node17e7qf60jx380 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_chief_executive_officers> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx381 .
+
+_:node17e7qf60jx381 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_chief_executive_officers> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx382 .
+
+_:node17e7qf60jx382 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Craig_Barrett_(chief_executive)> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx383 .
+
+_:node17e7qf60jx383 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Craig_Barrett_(chief_executive)> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx384 .
+
+_:node17e7qf60jx384 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Craig_Barrett_(chief_executive)> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx385 .
+
+_:node17e7qf60jx385 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Craig_Barrett_(chief_executive)> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx386 .
+
+_:node17e7qf60jx386 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_(magazine)> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx387 .
+
+_:node17e7qf60jx387 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_(magazine)> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx388 .
+
+_:node17e7qf60jx388 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_(magazine)> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx389 .
+
+_:node17e7qf60jx389 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_(magazine)> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx390 .
+
+_:node17e7qf60jx390 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_Rodrigues> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx391 .
+
+_:node17e7qf60jx391 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_Rodrigues> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx392 .
+
+_:node17e7qf60jx392 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_Rodrigues> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx393 .
+
+_:node17e7qf60jx393 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_of_Rodrigues> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx394 .
+
+_:node17e7qf60jx394 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_and_Clerk_to_the_National_Assembly_for_Wales> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx395 .
+
+_:node17e7qf60jx395 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_and_Clerk_to_the_National_Assembly_for_Wales> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx396 .
+
+_:node17e7qf60jx396 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_and_Clerk_to_the_National_Assembly_for_Wales> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx397 .
+
+_:node17e7qf60jx397 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Chief_Executive_and_Clerk_to_the_National_Assembly_for_Wales> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx398 .
+
+_:node17e7qf60jx398 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hong_Kong_Chief_Executive_election,_2012> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx399 .
+
+_:node17e7qf60jx399 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hong_Kong_Chief_Executive_election,_2012> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx400 .
+
+_:node17e7qf60jx400 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hong_Kong_Chief_Executive_election,_2012> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx401 .
+
+_:node17e7qf60jx401 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hong_Kong_Chief_Executive_election,_2012> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx402 .
+
+_:node17e7qf60jx402 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/James_Heywood_(chief_executive)> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx403 .
+
+_:node17e7qf60jx403 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/James_Heywood_(chief_executive)> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx404 .
+
+_:node17e7qf60jx404 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/James_Heywood_(chief_executive)> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx405 .
+
+_:node17e7qf60jx405 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/James_Heywood_(chief_executive)> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx406 .
+
+_:node17e7qf60jx406 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Roy_Roberts_(chief_executive)> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx407 .
+
+_:node17e7qf60jx407 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Roy_Roberts_(chief_executive)> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx408 .
+
+_:node17e7qf60jx408 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Roy_Roberts_(chief_executive)> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx409 .
+
+_:node17e7qf60jx409 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Roy_Roberts_(chief_executive)> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx410 .
+
+_:node17e7qf60jx410 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_office_of_the_president_of_the_united_states> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx411 .
+
+_:node17e7qf60jx411 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_office_of_the_president_of_the_united_states> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx412 .
+
+_:node17e7qf60jx412 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_office_of_the_president_of_the_united_states> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx413 .
+
+_:node17e7qf60jx413 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_office_of_the_president_of_the_united_states> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx414 .
+
+_:node17e7qf60jx414 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_Office_of_the_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx415 .
+
+_:node17e7qf60jx415 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_Office_of_the_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx416 .
+
+_:node17e7qf60jx416 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_Office_of_the_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx417 .
+
+_:node17e7qf60jx417 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_Office_of_the_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx418 .
+
+_:node17e7qf60jx418 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_office_of_the_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx419 .
+
+_:node17e7qf60jx419 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_office_of_the_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx420 .
+
+_:node17e7qf60jx420 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_office_of_the_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx421 .
+
+_:node17e7qf60jx421 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_office_of_the_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx422 .
+
+_:node17e7qf60jx422 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_Office_of_the_President_images> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx423 .
+
+_:node17e7qf60jx423 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_Office_of_the_President_images> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx424 .
+
+_:node17e7qf60jx424 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_Office_of_the_President_images> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx425 .
+
+_:node17e7qf60jx425 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_Office_of_the_President_images> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx426 .
+
+_:node17e7qf60jx426 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Gala_Hollywood_Farewell_Salute_to_President_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx427 .
+
+_:node17e7qf60jx427 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Gala_Hollywood_Farewell_Salute_to_President_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx428 .
+
+_:node17e7qf60jx428 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Gala_Hollywood_Farewell_Salute_to_President_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx429 .
+
+_:node17e7qf60jx429 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Gala_Hollywood_Farewell_Salute_to_President_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx430 .
+
+_:node17e7qf60jx430 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx431 .
+
+_:node17e7qf60jx431 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx432 .
+
+_:node17e7qf60jx432 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx433 .
+
+_:node17e7qf60jx433 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx434 .
+
+_:node17e7qf60jx434 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_Clinton's_judicial_appointments_controversy> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx435 .
+
+_:node17e7qf60jx435 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_Clinton's_judicial_appointments_controversy> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx436 .
+
+_:node17e7qf60jx436 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_Clinton's_judicial_appointments_controversy> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx437 .
+
+_:node17e7qf60jx437 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_Clinton's_judicial_appointments_controversy> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx438 .
+
+_:node17e7qf60jx438 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Gala_hollywood_farewell_salute_to_president_clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx439 .
+
+_:node17e7qf60jx439 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Gala_hollywood_farewell_salute_to_president_clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx440 .
+
+_:node17e7qf60jx440 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Gala_hollywood_farewell_salute_to_president_clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx441 .
+
+_:node17e7qf60jx441 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Gala_hollywood_farewell_salute_to_president_clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx442 .
+
+_:node17e7qf60jx442 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BillClintonJuDicialAppointmentControversies> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx443 .
+
+_:node17e7qf60jx443 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BillClintonJuDicialAppointmentControversies> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx444 .
+
+_:node17e7qf60jx444 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BillClintonJuDicialAppointmentControversies> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx445 .
+
+_:node17e7qf60jx445 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/BillClintonJuDicialAppointmentControversies> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx446 .
+
+_:node17e7qf60jx446 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx447 .
+
+_:node17e7qf60jx447 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx448 .
+
+_:node17e7qf60jx448 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx449 .
+
+_:node17e7qf60jx449 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx450 .
+
+_:node17e7qf60jx450 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/ontology/President> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx451 .
+
+_:node17e7qf60jx451 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/ontology/President> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx452 .
+
+_:node17e7qf60jx452 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/ontology/President> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx453 .
+
+_:node17e7qf60jx453 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/ontology/President> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx454 .
+
+_:node17e7qf60jx454 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/President110467179> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx455 .
+
+_:node17e7qf60jx455 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/President110467179> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx456 .
+
+_:node17e7qf60jx456 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/President110467179> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx457 .
+
+_:node17e7qf60jx457 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/class/yago/President110467179> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx458 .
+
+_:node17e7qf60jx458 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Vice_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx459 .
+
+_:node17e7qf60jx459 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Vice_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx460 .
+
+_:node17e7qf60jx460 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Vice_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx461 .
+
+_:node17e7qf60jx461 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Vice_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx462 .
+
+_:node17e7qf60jx462 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Lord_President_of_the_Council> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx463 .
+
+_:node17e7qf60jx463 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Lord_President_of_the_Council> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx464 .
+
+_:node17e7qf60jx464 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Lord_President_of_the_Council> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx465 .
+
+_:node17e7qf60jx465 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Lord_President_of_the_Council> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx466 .
+
+_:node17e7qf60jx466 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Municipal_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx467 .
+
+_:node17e7qf60jx467 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Municipal_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx468 .
+
+_:node17e7qf60jx468 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Municipal_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx469 .
+
+_:node17e7qf60jx469 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Municipal_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx470 .
+
+_:node17e7qf60jx470 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_pro_tempore_of_the_United_States_Senate> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx471 .
+
+_:node17e7qf60jx471 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_pro_tempore_of_the_United_States_Senate> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx472 .
+
+_:node17e7qf60jx472 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_pro_tempore_of_the_United_States_Senate> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx473 .
+
+_:node17e7qf60jx473 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_pro_tempore_of_the_United_States_Senate> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx474 .
+
+_:node17e7qf60jx474 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Prime_Minister_of_Japan> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx475 .
+
+_:node17e7qf60jx475 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Prime_Minister_of_Japan> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx476 .
+
+_:node17e7qf60jx476 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Prime_Minister_of_Japan> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx477 .
+
+_:node17e7qf60jx477 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Prime_Minister_of_Japan> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx478 .
+
+_:node17e7qf60jx478 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_of_the_General_Council> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx479 .
+
+_:node17e7qf60jx479 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_of_the_General_Council> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx480 .
+
+_:node17e7qf60jx480 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_of_the_General_Council> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx481 .
+
+_:node17e7qf60jx481 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_of_the_General_Council> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx482 .
+
+_:node17e7qf60jx482 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/John_Adams> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx483 .
+
+_:node17e7qf60jx483 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/John_Adams> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx484 .
+
+_:node17e7qf60jx484 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/John_Adams> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx485 .
+
+_:node17e7qf60jx485 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/John_Adams> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx486 .
+
+_:node17e7qf60jx486 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Prime_Minister_of_Spain> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx487 .
+
+_:node17e7qf60jx487 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Prime_Minister_of_Spain> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx488 .
+
+_:node17e7qf60jx488 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Prime_Minister_of_Spain> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx489 .
+
+_:node17e7qf60jx489 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Prime_Minister_of_Spain> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx490 .
+
+_:node17e7qf60jx490 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_of_the_Trades_Union_Congress> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx491 .
+
+_:node17e7qf60jx491 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_of_the_Trades_Union_Congress> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx492 .
+
+_:node17e7qf60jx492 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_of_the_Trades_Union_Congress> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx493 .
+
+_:node17e7qf60jx493 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_of_the_Trades_Union_Congress> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx494 .
+
+_:node17e7qf60jx494 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Speaker_of_the_United_States_House_of_Representatives> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx495 .
+
+_:node17e7qf60jx495 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Speaker_of_the_United_States_House_of_Representatives> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx496 .
+
+_:node17e7qf60jx496 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Speaker_of_the_United_States_House_of_Representatives> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx497 .
+
+_:node17e7qf60jx497 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Speaker_of_the_United_States_House_of_Representatives> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx498 .
+
+_:node17e7qf60jx498 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Indian_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx499 .
+
+_:node17e7qf60jx499 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Indian_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx500 .
+
+_:node17e7qf60jx500 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Indian_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx501 .
+
+_:node17e7qf60jx501 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Indian_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx502 .
+
+_:node17e7qf60jx502 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_United_States_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx503 .
+
+_:node17e7qf60jx503 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_United_States_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx504 .
+
+_:node17e7qf60jx504 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_United_States_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx505 .
+
+_:node17e7qf60jx505 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_United_States_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx506 .
+
+_:node17e7qf60jx506 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_Oklahoma_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx507 .
+
+_:node17e7qf60jx507 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_Oklahoma_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx508 .
+
+_:node17e7qf60jx508 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_Oklahoma_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx509 .
+
+_:node17e7qf60jx509 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_Oklahoma_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx510 .
+
+_:node17e7qf60jx510 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_Branch_of_the_Government_of_Puerto_Rico> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx511 .
+
+_:node17e7qf60jx511 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_Branch_of_the_Government_of_Puerto_Rico> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx512 .
+
+_:node17e7qf60jx512 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_Branch_of_the_Government_of_Puerto_Rico> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx513 .
+
+_:node17e7qf60jx513 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_Branch_of_the_Government_of_Puerto_Rico> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx514 .
+
+_:node17e7qf60jx514 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Departments_of_the_Executive_Branch_of_the_Government_of_Puerto_Rico> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx515 .
+
+_:node17e7qf60jx515 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Departments_of_the_Executive_Branch_of_the_Government_of_Puerto_Rico> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx516 .
+
+_:node17e7qf60jx516 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Departments_of_the_Executive_Branch_of_the_Government_of_Puerto_Rico> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx517 .
+
+_:node17e7qf60jx517 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Departments_of_the_Executive_Branch_of_the_Government_of_Puerto_Rico> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx518 .
+
+_:node17e7qf60jx518 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_Israel> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx519 .
+
+_:node17e7qf60jx519 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_Israel> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx520 .
+
+_:node17e7qf60jx520 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_Israel> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx521 .
+
+_:node17e7qf60jx521 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_Israel> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx522 .
+
+_:node17e7qf60jx522 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Mexican_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx523 .
+
+_:node17e7qf60jx523 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Mexican_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx524 .
+
+_:node17e7qf60jx524 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Mexican_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx525 .
+
+_:node17e7qf60jx525 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Mexican_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx526 .
+
+_:node17e7qf60jx526 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Government_of_Afghanistan> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx527 .
+
+_:node17e7qf60jx527 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Government_of_Afghanistan> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx528 .
+
+_:node17e7qf60jx528 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Government_of_Afghanistan> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx529 .
+
+_:node17e7qf60jx529 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Government_of_Afghanistan> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx530 .
+
+_:node17e7qf60jx530 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_Colombia> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx531 .
+
+_:node17e7qf60jx531 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_Colombia> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx532 .
+
+_:node17e7qf60jx532 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_Colombia> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx533 .
+
+_:node17e7qf60jx533 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_Colombia> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx534 .
+
+_:node17e7qf60jx534 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Government_of_Venezuela> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx535 .
+
+_:node17e7qf60jx535 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Government_of_Venezuela> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx536 .
+
+_:node17e7qf60jx536 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Government_of_Venezuela> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx537 .
+
+_:node17e7qf60jx537 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Government_of_Venezuela> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx538 .
+
+_:node17e7qf60jx538 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_South_African_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx539 .
+
+_:node17e7qf60jx539 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_South_African_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx540 .
+
+_:node17e7qf60jx540 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_South_African_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx541 .
+
+_:node17e7qf60jx541 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_South_African_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx542 .
+
+_:node17e7qf60jx542 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Pakistani_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx543 .
+
+_:node17e7qf60jx543 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Pakistani_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx544 .
+
+_:node17e7qf60jx544 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Pakistani_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx545 .
+
+_:node17e7qf60jx545 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_Pakistani_government> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx546 .
+
+_:node17e7qf60jx546 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_U.S._executive_branch_czars> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx547 .
+
+_:node17e7qf60jx547 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_U.S._executive_branch_czars> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx548 .
+
+_:node17e7qf60jx548 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_U.S._executive_branch_czars> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx549 .
+
+_:node17e7qf60jx549 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_U.S._executive_branch_czars> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx550 .
+
+_:node17e7qf60jx550 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_government_of_the_Philippines> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx551 .
+
+_:node17e7qf60jx551 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_government_of_the_Philippines> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx552 .
+
+_:node17e7qf60jx552 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_government_of_the_Philippines> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx553 .
+
+_:node17e7qf60jx553 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_government_of_the_Philippines> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx554 .
+
+_:node17e7qf60jx554 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_United_States_government_templates> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx555 .
+
+_:node17e7qf60jx555 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_United_States_government_templates> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx556 .
+
+_:node17e7qf60jx556 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_United_States_government_templates> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx557 .
+
+_:node17e7qf60jx557 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Category:Executive_branch_of_the_United_States_government_templates> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx558 .
+
+_:node17e7qf60jx558 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Foreign_policy_of_the_Bill_Clinton_administration> ;
 	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax59 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx559 .
 
-_:node17e03dgsax59 a rdf:Statement ;
+_:node17e7qf60jx559 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Foreign_policy_of_the_Bill_Clinton_administration> ;
 	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax60 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx560 .
 
-_:node17e03dgsax60 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Foreign_policy_of_the_Bill_Clinton_administration> ;
-	rdf:predicate <http://dbpedia.org/ontology/child> ;
-	rdf:object "?daughter" ;
-	rdfs:label "daughter" .
-
-_:node17e03dgsax1 qf:statement _:node17e03dgsax61 .
-
-_:node17e03dgsax61 a rdf:Statement ;
+_:node17e7qf60jx560 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Foreign_policy_of_the_Bill_Clinton_administration> ;
 	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03dgsax1 qf:statement _:node17e03dgsax62 .
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx561 .
 
-_:node17e03dgsax62 a rdf:Statement ;
-	rdf:subject "?daughter" ;
-	rdf:predicate <http://dbpedia.org/ontology/spouse> ;
-	rdf:object "?person" ;
-	rdfs:label "married to" .
+_:node17e7qf60jx561 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Foreign_policy_of_the_Bill_Clinton_administration> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx562 .
+
+_:node17e7qf60jx562 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_President's_Council_of_Advisors_on_Science_and_Technology> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx563 .
+
+_:node17e7qf60jx563 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_President's_Council_of_Advisors_on_Science_and_Technology> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx564 .
+
+_:node17e7qf60jx564 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_President's_Council_of_Advisors_on_Science_and_Technology> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx565 .
+
+_:node17e7qf60jx565 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_President's_Council_of_Advisors_on_Science_and_Technology> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx566 .
+
+_:node17e7qf60jx566 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_President's_Commission_on_CIA_activities_within_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx567 .
+
+_:node17e7qf60jx567 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_President's_Commission_on_CIA_activities_within_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx568 .
+
+_:node17e7qf60jx568 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_President's_Commission_on_CIA_activities_within_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx569 .
+
+_:node17e7qf60jx569 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_President's_Commission_on_CIA_activities_within_the_United_States> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx570 .
+
+_:node17e7qf60jx570 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Oldest_living_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx571 .
+
+_:node17e7qf60jx571 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Oldest_living_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx572 .
+
+_:node17e7qf60jx572 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Oldest_living_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx573 .
+
+_:node17e7qf60jx573 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Oldest_living_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx574 .
+
+_:node17e7qf60jx574 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Assassination_of_United_States_President_John_F._Kennedy> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx575 .
+
+_:node17e7qf60jx575 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Assassination_of_United_States_President_John_F._Kennedy> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx576 .
+
+_:node17e7qf60jx576 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Assassination_of_United_States_President_John_F._Kennedy> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx577 .
+
+_:node17e7qf60jx577 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Assassination_of_United_States_President_John_F._Kennedy> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx578 .
+
+_:node17e7qf60jx578 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Oldest_united_states_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx579 .
+
+_:node17e7qf60jx579 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Oldest_united_states_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx580 .
+
+_:node17e7qf60jx580 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Oldest_united_states_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx581 .
+
+_:node17e7qf60jx581 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Oldest_united_states_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx582 .
+
+_:node17e7qf60jx582 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx583 .
+
+_:node17e7qf60jx583 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx584 .
+
+_:node17e7qf60jx584 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx585 .
+
+_:node17e7qf60jx585 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx586 .
+
+_:node17e7qf60jx586 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_United_States_President_by_judicial_appointments> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx587 .
+
+_:node17e7qf60jx587 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_United_States_President_by_judicial_appointments> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx588 .
+
+_:node17e7qf60jx588 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_United_States_President_by_judicial_appointments> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx589 .
+
+_:node17e7qf60jx589 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_United_States_President_by_judicial_appointments> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx590 .
+
+_:node17e7qf60jx590 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Line_of_succession_to_the_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx591 .
+
+_:node17e7qf60jx591 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Line_of_succession_to_the_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx592 .
+
+_:node17e7qf60jx592 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Line_of_succession_to_the_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx593 .
+
+_:node17e7qf60jx593 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Line_of_succession_to_the_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx594 .
+
+_:node17e7qf60jx594 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_Office_of_the_United_States_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx595 .
+
+_:node17e7qf60jx595 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_Office_of_the_United_States_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx596 .
+
+_:node17e7qf60jx596 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_Office_of_the_United_States_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx597 .
+
+_:node17e7qf60jx597 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Executive_Office_of_the_United_States_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx598 .
+
+_:node17e7qf60jx598 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx599 .
+
+_:node17e7qf60jx599 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx600 .
+
+_:node17e7qf60jx600 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx601 .
+
+_:node17e7qf60jx601 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx602 .
+
+_:node17e7qf60jx602 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/International_travel_by_the_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx603 .
+
+_:node17e7qf60jx603 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/International_travel_by_the_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx604 .
+
+_:node17e7qf60jx604 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/International_travel_by_the_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx605 .
+
+_:node17e7qf60jx605 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/International_travel_by_the_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx606 .
+
+_:node17e7qf60jx606 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_people_pardoned_or_granted_clemency_by_a_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx607 .
+
+_:node17e7qf60jx607 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_people_pardoned_or_granted_clemency_by_a_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx608 .
+
+_:node17e7qf60jx608 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_people_pardoned_or_granted_clemency_by_a_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx609 .
+
+_:node17e7qf60jx609 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_people_pardoned_or_granted_clemency_by_a_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx610 .
+
+_:node17e7qf60jx610 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Oldest_living_united_states_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx611 .
+
+_:node17e7qf60jx611 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Oldest_living_united_states_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx612 .
+
+_:node17e7qf60jx612 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Oldest_living_united_states_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx613 .
+
+_:node17e7qf60jx613 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Oldest_living_united_states_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx614 .
+
+_:node17e7qf60jx614 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_people_pardoned_or_clemenced_by_a_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx615 .
+
+_:node17e7qf60jx615 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_people_pardoned_or_clemenced_by_a_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx616 .
+
+_:node17e7qf60jx616 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_people_pardoned_or_clemenced_by_a_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx617 .
+
+_:node17e7qf60jx617 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_people_pardoned_or_clemenced_by_a_United_States_president> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx618 .
+
+_:node17e7qf60jx618 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Powers_of_the_United_States_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/leftChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx619 .
+
+_:node17e7qf60jx619 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Powers_of_the_United_States_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/rightChild> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx620 .
+
+_:node17e7qf60jx620 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Powers_of_the_United_States_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/childOrganisation> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qf60jx1 qf:statement _:node17e7qf60jx621 .
+
+_:node17e7qf60jx621 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Powers_of_the_United_States_President> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .

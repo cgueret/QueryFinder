@@ -2,363 +2,363 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-_:node17dsub1o0x1 a qf:Query ;
+_:node17e7q3l16x1 a qf:Query ;
 	rdfs:comment "Where did Abraham Lincoln die?" ;
-	qf:statement _:node17dsub1o0x2 .
+	qf:statement _:node17e7q3l16x2 .
 
-_:node17dsub1o0x2 a rdf:Statement ;
+_:node17e7q3l16x2 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/President_Lincoln's_Cottage_at_the_Soldiers'_Home> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x3 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x3 .
 
-_:node17dsub1o0x3 a rdf:Statement ;
+_:node17e7q3l16x3 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/USS_President_Lincoln_(1907)> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x4 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x4 .
 
-_:node17dsub1o0x4 a rdf:Statement ;
+_:node17e7q3l16x4 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/First_Reading_of_the_Emancipation_Proclamation_of_President_Lincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x5 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x5 .
 
-_:node17dsub1o0x5 a rdf:Statement ;
+_:node17e7q3l16x5 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/President_Lincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x6 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x6 .
 
-_:node17dsub1o0x6 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/President_Lincoln_and_Soldier's_Home_National_Monument> ;
-	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
-	rdf:object "?p" ;
-	rdfs:label "Abraham Lincoln death place ?p" .
-
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x7 .
-
-_:node17dsub1o0x7 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Assassination_of_President_Lincoln> ;
-	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
-	rdf:object "?p" ;
-	rdfs:label "Abraham Lincoln death place ?p" .
-
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x8 .
-
-_:node17dsub1o0x8 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/President_Lincoln_and_Soldiers'_Home_National_Monument> ;
-	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
-	rdf:object "?p" ;
-	rdfs:label "Abraham Lincoln death place ?p" .
-
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x9 .
-
-_:node17dsub1o0x9 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/SS_President_Lincoln> ;
-	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
-	rdf:object "?p" ;
-	rdfs:label "Abraham Lincoln death place ?p" .
-
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x10 .
-
-_:node17dsub1o0x10 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/President_Lincoln_and_Soldiers_Home_National_Monument> ;
-	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
-	rdf:object "?p" ;
-	rdfs:label "Abraham Lincoln death place ?p" .
-
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x11 .
-
-_:node17dsub1o0x11 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/President_Lincoln's_Cottage> ;
-	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
-	rdf:object "?p" ;
-	rdfs:label "Abraham Lincoln death place ?p" .
-
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x12 .
-
-_:node17dsub1o0x12 a rdf:Statement ;
+_:node17e7q3l16x6 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/USS_President_Lincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x13 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x7 .
 
-_:node17dsub1o0x13 a rdf:Statement ;
+_:node17e7q3l16x7 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_Lincoln_and_Soldier's_Home_National_Monument> ;
+	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
+	rdf:object "?p" ;
+	rdfs:label "Abraham Lincoln death place ?p" .
+
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x8 .
+
+_:node17e7q3l16x8 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Assassination_of_President_Lincoln> ;
+	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
+	rdf:object "?p" ;
+	rdfs:label "Abraham Lincoln death place ?p" .
+
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x9 .
+
+_:node17e7q3l16x9 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_Lincoln_and_Soldiers'_Home_National_Monument> ;
+	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
+	rdf:object "?p" ;
+	rdfs:label "Abraham Lincoln death place ?p" .
+
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x10 .
+
+_:node17e7q3l16x10 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/SS_President_Lincoln> ;
+	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
+	rdf:object "?p" ;
+	rdfs:label "Abraham Lincoln death place ?p" .
+
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x11 .
+
+_:node17e7q3l16x11 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_Lincoln_and_Soldiers_Home_National_Monument> ;
+	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
+	rdf:object "?p" ;
+	rdfs:label "Abraham Lincoln death place ?p" .
+
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x12 .
+
+_:node17e7q3l16x12 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/President_Lincoln's_Cottage> ;
+	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
+	rdf:object "?p" ;
+	rdfs:label "Abraham Lincoln death place ?p" .
+
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x13 .
+
+_:node17e7q3l16x13 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/USSPresidentLincoln(1907)> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x14 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x14 .
 
-_:node17dsub1o0x14 a rdf:Statement ;
+_:node17e7q3l16x14 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/PresidentLincoln'sCottageAtTheSoldiers'Home> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x15 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x15 .
 
-_:node17dsub1o0x15 a rdf:Statement ;
+_:node17e7q3l16x15 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/AbrahamLincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x16 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x16 .
 
-_:node17dsub1o0x16 a rdf:Statement ;
+_:node17e7q3l16x16 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Lincoln_Near-Earth_Asteroid_Research> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x17 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x17 .
 
-_:node17dsub1o0x17 a rdf:Statement ;
+_:node17e7q3l16x17 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Lincoln_City_F.C.> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x18 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x18 .
 
-_:node17dsub1o0x18 a rdf:Statement ;
+_:node17e7q3l16x18 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Lincoln,_Nebraska> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x19 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x19 .
 
-_:node17dsub1o0x19 a rdf:Statement ;
+_:node17e7q3l16x19 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Lincoln_City_F.C._players> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x20 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x20 .
 
-_:node17dsub1o0x20 a rdf:Statement ;
+_:node17e7q3l16x20 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/LincolnCityF.C.Players> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x21 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x21 .
 
-_:node17dsub1o0x21 a rdf:Statement ;
+_:node17e7q3l16x21 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Lincoln,_England> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x22 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x22 .
 
-_:node17dsub1o0x22 a rdf:Statement ;
+_:node17e7q3l16x22 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Members_of_Lincoln's_Inn> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x23 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x23 .
 
-_:node17dsub1o0x23 a rdf:Statement ;
+_:node17e7q3l16x23 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Memorial_Stadium,_Lincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x24 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x24 .
 
-_:node17dsub1o0x24 a rdf:Statement ;
+_:node17e7q3l16x24 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/University_of_Nebraska%E2%80%93Lincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x25 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x25 .
 
-_:node17dsub1o0x25 a rdf:Statement ;
+_:node17e7q3l16x25 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:University_of_Nebraska%E2%80%93Lincoln_alumni> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x26 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x26 .
 
-_:node17dsub1o0x26 a rdf:Statement ;
+_:node17e7q3l16x26 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Alumni_of_Lincoln_College,_Oxford> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x27 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x27 .
 
-_:node17dsub1o0x27 a rdf:Statement ;
+_:node17e7q3l16x27 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Abraham_Lincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x28 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x28 .
 
-_:node17dsub1o0x28 a rdf:Statement ;
+_:node17e7q3l16x28 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Lincoln_County,_Oregon> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x29 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x29 .
 
-_:node17dsub1o0x29 a rdf:Statement ;
+_:node17e7q3l16x29 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Lincoln_County,_Nevada> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x30 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x30 .
 
-_:node17dsub1o0x30 a rdf:Statement ;
+_:node17e7q3l16x30 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:People_from_Lincoln,_Nebraska> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x31 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x31 .
 
-_:node17dsub1o0x31 a rdf:Statement ;
+_:node17e7q3l16x31 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/President_Abraham_Lincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x32 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x32 .
 
-_:node17dsub1o0x32 a rdf:Statement ;
+_:node17e7q3l16x32 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/Lincoln'sBirthday> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x33 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x33 .
 
-_:node17dsub1o0x33 a rdf:Statement ;
+_:node17e7q3l16x33 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Abraham_Lincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x34 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x34 .
 
-_:node17dsub1o0x34 a rdf:Statement ;
+_:node17e7q3l16x34 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Abraham_Lincoln_in_fiction> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x35 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x35 .
 
-_:node17dsub1o0x35 a rdf:Statement ;
+_:node17e7q3l16x35 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Assassination_of_Abraham_Lincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x36 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x36 .
 
-_:node17dsub1o0x36 a rdf:Statement ;
+_:node17e7q3l16x36 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Abraham_Lincoln_Brigade> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x37 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x37 .
 
-_:node17dsub1o0x37 a rdf:Statement ;
+_:node17e7q3l16x37 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Abraham_Lincoln_in_art> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x38 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x38 .
 
-_:node17dsub1o0x38 a rdf:Statement ;
+_:node17e7q3l16x38 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Abraham_Lincoln_Brigade_members> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x39 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x39 .
 
-_:node17dsub1o0x39 a rdf:Statement ;
+_:node17e7q3l16x39 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:United_States_federal_judges_appointed_by_Abraham_Lincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x40 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x40 .
 
-_:node17dsub1o0x40 a rdf:Statement ;
+_:node17e7q3l16x40 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Abraham_Lincoln_High_School_(Brooklyn,_New_York)_alumni> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x41 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x41 .
 
-_:node17dsub1o0x41 a rdf:Statement ;
+_:node17e7q3l16x41 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/UnitedStatesFederalJuDgesAppointedByAbrahamLincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x42 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x42 .
 
-_:node17dsub1o0x42 a rdf:Statement ;
+_:node17e7q3l16x42 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Assassination_of_Abraham_Lincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x43 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x43 .
 
-_:node17dsub1o0x43 a rdf:Statement ;
+_:node17e7q3l16x43 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/class/yago/AbrahamLincolnHighSchool(Brooklyn,NewYork)Alumni> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x44 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x44 .
 
-_:node17dsub1o0x44 a rdf:Statement ;
+_:node17e7q3l16x44 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Abraham_Lincoln_High_School_(Brooklyn,_New_York)> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x45 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x45 .
 
-_:node17dsub1o0x45 a rdf:Statement ;
+_:node17e7q3l16x45 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Abraham_Lincoln_National_Heritage_Area> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;
 	rdfs:label "Abraham Lincoln death place ?p" .
 
-_:node17dsub1o0x1 qf:statement _:node17dsub1o0x46 .
+_:node17e7q3l16x1 qf:statement _:node17e7q3l16x46 .
 
-_:node17dsub1o0x46 a rdf:Statement ;
+_:node17e7q3l16x46 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Category:Presidency_of_Abraham_Lincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object "?p" ;

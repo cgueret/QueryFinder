@@ -16,6 +16,7 @@ import nl.vu.queryfinder.model.Quad;
 import nl.vu.queryfinder.model.Query;
 import nl.vu.queryfinder.services.Service;
 
+import org.apache.hadoop.util.StringUtils;
 import org.openrdf.model.Literal;
 import org.openrdf.model.Value;
 import org.openrdf.model.ValueFactory;
@@ -127,9 +128,9 @@ public class WordNetExpander extends Service {
 	private void recurseSynSet(ISynset synset, Set<Literal> out,
 			Set<ISynsetID> set) {
 		for (IWord w : synset.getWords())
-			out.add(f.createLiteral(w.getLemma()));
+			out.add(f.createLiteral(StringUtils.escapeHTML(w.getLemma())));
 		for (ISynsetID synsetId : synset.getRelatedSynsets()) {
-			if (!set.contains(synsetId) && set.size() < 3 && out.size() < 5) {
+			if (!set.contains(synsetId) && set.size() < 4) {
 				set.add(synsetId);
 				recurseSynSet(dict.getSynset(synsetId), out, set);
 			}

@@ -2,92 +2,844 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-_:node17e034br1x1 a qf:Query ;
+_:node17e7qetpdx1 a qf:Query ;
 	rdfs:comment "Who is the daughter of Bill Clinton married to?" ;
-	qf:statement _:node17e034br1x2 .
+	qf:statement _:node17e7qetpdx2 .
 
-_:node17e034br1x2 a rdf:Statement ;
-	rdf:subject "Clinton" ;
+_:node17e7qetpdx2 a rdf:Statement ;
+	rdf:subject "AEC" ;
+	rdf:predicate "child" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx3 .
+
+_:node17e7qetpdx3 a rdf:Statement ;
+	rdf:subject "AEC" ;
 	rdf:predicate "girl" ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e034br1x1 qf:statement _:node17e034br1x3 .
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx4 .
 
-_:node17e034br1x3 a rdf:Statement ;
-	rdf:subject "Clinton" ;
+_:node17e7qetpdx4 a rdf:Statement ;
+	rdf:subject "AEC" ;
+	rdf:predicate "progeny" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx5 .
+
+_:node17e7qetpdx5 a rdf:Statement ;
+	rdf:subject "AEC" ;
+	rdf:predicate "issue" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx6 .
+
+_:node17e7qetpdx6 a rdf:Statement ;
+	rdf:subject "AEC" ;
 	rdf:predicate "daughter" ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e034br1x1 qf:statement _:node17e034br1x4 .
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx7 .
 
-_:node17e034br1x4 a rdf:Statement ;
+_:node17e7qetpdx7 a rdf:Statement ;
+	rdf:subject "AEC" ;
+	rdf:predicate "female_offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx8 .
+
+_:node17e7qetpdx8 a rdf:Statement ;
+	rdf:subject "AEC" ;
+	rdf:predicate "offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx9 .
+
+_:node17e7qetpdx9 a rdf:Statement ;
+	rdf:subject "AEC" ;
+	rdf:predicate "kid" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx10 .
+
+_:node17e7qetpdx10 a rdf:Statement ;
+	rdf:subject "Atomic_Energy_Commission" ;
+	rdf:predicate "child" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx11 .
+
+_:node17e7qetpdx11 a rdf:Statement ;
+	rdf:subject "Atomic_Energy_Commission" ;
+	rdf:predicate "girl" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx12 .
+
+_:node17e7qetpdx12 a rdf:Statement ;
+	rdf:subject "Atomic_Energy_Commission" ;
+	rdf:predicate "progeny" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx13 .
+
+_:node17e7qetpdx13 a rdf:Statement ;
+	rdf:subject "Atomic_Energy_Commission" ;
+	rdf:predicate "issue" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx14 .
+
+_:node17e7qetpdx14 a rdf:Statement ;
+	rdf:subject "Atomic_Energy_Commission" ;
+	rdf:predicate "daughter" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx15 .
+
+_:node17e7qetpdx15 a rdf:Statement ;
+	rdf:subject "Atomic_Energy_Commission" ;
+	rdf:predicate "female_offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx16 .
+
+_:node17e7qetpdx16 a rdf:Statement ;
+	rdf:subject "Atomic_Energy_Commission" ;
+	rdf:predicate "offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx17 .
+
+_:node17e7qetpdx17 a rdf:Statement ;
+	rdf:subject "Atomic_Energy_Commission" ;
+	rdf:predicate "kid" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx18 .
+
+_:node17e7qetpdx18 a rdf:Statement ;
+	rdf:subject "William_Jefferson_Clinton" ;
+	rdf:predicate "child" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx19 .
+
+_:node17e7qetpdx19 a rdf:Statement ;
 	rdf:subject "William_Jefferson_Clinton" ;
 	rdf:predicate "girl" ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e034br1x1 qf:statement _:node17e034br1x5 .
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx20 .
 
-_:node17e034br1x5 a rdf:Statement ;
+_:node17e7qetpdx20 a rdf:Statement ;
+	rdf:subject "William_Jefferson_Clinton" ;
+	rdf:predicate "progeny" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx21 .
+
+_:node17e7qetpdx21 a rdf:Statement ;
+	rdf:subject "William_Jefferson_Clinton" ;
+	rdf:predicate "issue" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx22 .
+
+_:node17e7qetpdx22 a rdf:Statement ;
 	rdf:subject "William_Jefferson_Clinton" ;
 	rdf:predicate "daughter" ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e034br1x1 qf:statement _:node17e034br1x6 .
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx23 .
 
-_:node17e034br1x6 a rdf:Statement ;
+_:node17e7qetpdx23 a rdf:Statement ;
+	rdf:subject "William_Jefferson_Clinton" ;
+	rdf:predicate "female_offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx24 .
+
+_:node17e7qetpdx24 a rdf:Statement ;
+	rdf:subject "William_Jefferson_Clinton" ;
+	rdf:predicate "offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx25 .
+
+_:node17e7qetpdx25 a rdf:Statement ;
+	rdf:subject "William_Jefferson_Clinton" ;
+	rdf:predicate "kid" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx26 .
+
+_:node17e7qetpdx26 a rdf:Statement ;
+	rdf:subject "Bill Clinton" ;
+	rdf:predicate "child" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx27 .
+
+_:node17e7qetpdx27 a rdf:Statement ;
 	rdf:subject "Bill Clinton" ;
 	rdf:predicate "girl" ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e034br1x1 qf:statement _:node17e034br1x7 .
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx28 .
 
-_:node17e034br1x7 a rdf:Statement ;
+_:node17e7qetpdx28 a rdf:Statement ;
+	rdf:subject "Bill Clinton" ;
+	rdf:predicate "progeny" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx29 .
+
+_:node17e7qetpdx29 a rdf:Statement ;
+	rdf:subject "Bill Clinton" ;
+	rdf:predicate "issue" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx30 .
+
+_:node17e7qetpdx30 a rdf:Statement ;
 	rdf:subject "Bill Clinton" ;
 	rdf:predicate "daughter" ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e034br1x1 qf:statement _:node17e034br1x8 .
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx31 .
 
-_:node17e034br1x8 a rdf:Statement ;
+_:node17e7qetpdx31 a rdf:Statement ;
+	rdf:subject "Bill Clinton" ;
+	rdf:predicate "female_offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx32 .
+
+_:node17e7qetpdx32 a rdf:Statement ;
+	rdf:subject "Bill Clinton" ;
+	rdf:predicate "offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx33 .
+
+_:node17e7qetpdx33 a rdf:Statement ;
+	rdf:subject "Bill Clinton" ;
+	rdf:predicate "kid" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx34 .
+
+_:node17e7qetpdx34 a rdf:Statement ;
+	rdf:subject "President_of_the_United_States" ;
+	rdf:predicate "child" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx35 .
+
+_:node17e7qetpdx35 a rdf:Statement ;
+	rdf:subject "President_of_the_United_States" ;
+	rdf:predicate "girl" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx36 .
+
+_:node17e7qetpdx36 a rdf:Statement ;
+	rdf:subject "President_of_the_United_States" ;
+	rdf:predicate "progeny" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx37 .
+
+_:node17e7qetpdx37 a rdf:Statement ;
+	rdf:subject "President_of_the_United_States" ;
+	rdf:predicate "issue" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx38 .
+
+_:node17e7qetpdx38 a rdf:Statement ;
+	rdf:subject "President_of_the_United_States" ;
+	rdf:predicate "daughter" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx39 .
+
+_:node17e7qetpdx39 a rdf:Statement ;
+	rdf:subject "President_of_the_United_States" ;
+	rdf:predicate "female_offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx40 .
+
+_:node17e7qetpdx40 a rdf:Statement ;
+	rdf:subject "President_of_the_United_States" ;
+	rdf:predicate "offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx41 .
+
+_:node17e7qetpdx41 a rdf:Statement ;
+	rdf:subject "President_of_the_United_States" ;
+	rdf:predicate "kid" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx42 .
+
+_:node17e7qetpdx42 a rdf:Statement ;
+	rdf:subject "Clinton" ;
+	rdf:predicate "child" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx43 .
+
+_:node17e7qetpdx43 a rdf:Statement ;
+	rdf:subject "Clinton" ;
+	rdf:predicate "girl" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx44 .
+
+_:node17e7qetpdx44 a rdf:Statement ;
+	rdf:subject "Clinton" ;
+	rdf:predicate "progeny" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx45 .
+
+_:node17e7qetpdx45 a rdf:Statement ;
+	rdf:subject "Clinton" ;
+	rdf:predicate "issue" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx46 .
+
+_:node17e7qetpdx46 a rdf:Statement ;
+	rdf:subject "Clinton" ;
+	rdf:predicate "daughter" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx47 .
+
+_:node17e7qetpdx47 a rdf:Statement ;
+	rdf:subject "Clinton" ;
+	rdf:predicate "female_offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx48 .
+
+_:node17e7qetpdx48 a rdf:Statement ;
+	rdf:subject "Clinton" ;
+	rdf:predicate "offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx49 .
+
+_:node17e7qetpdx49 a rdf:Statement ;
+	rdf:subject "Clinton" ;
+	rdf:predicate "kid" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx50 .
+
+_:node17e7qetpdx50 a rdf:Statement ;
+	rdf:subject "Chief_Executive" ;
+	rdf:predicate "child" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx51 .
+
+_:node17e7qetpdx51 a rdf:Statement ;
+	rdf:subject "Chief_Executive" ;
+	rdf:predicate "girl" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx52 .
+
+_:node17e7qetpdx52 a rdf:Statement ;
+	rdf:subject "Chief_Executive" ;
+	rdf:predicate "progeny" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx53 .
+
+_:node17e7qetpdx53 a rdf:Statement ;
+	rdf:subject "Chief_Executive" ;
+	rdf:predicate "issue" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx54 .
+
+_:node17e7qetpdx54 a rdf:Statement ;
+	rdf:subject "Chief_Executive" ;
+	rdf:predicate "daughter" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx55 .
+
+_:node17e7qetpdx55 a rdf:Statement ;
+	rdf:subject "Chief_Executive" ;
+	rdf:predicate "female_offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx56 .
+
+_:node17e7qetpdx56 a rdf:Statement ;
+	rdf:subject "Chief_Executive" ;
+	rdf:predicate "offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx57 .
+
+_:node17e7qetpdx57 a rdf:Statement ;
+	rdf:subject "Chief_Executive" ;
+	rdf:predicate "kid" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx58 .
+
+_:node17e7qetpdx58 a rdf:Statement ;
+	rdf:subject "Executive_Office_of_the_President" ;
+	rdf:predicate "child" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx59 .
+
+_:node17e7qetpdx59 a rdf:Statement ;
+	rdf:subject "Executive_Office_of_the_President" ;
+	rdf:predicate "girl" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx60 .
+
+_:node17e7qetpdx60 a rdf:Statement ;
+	rdf:subject "Executive_Office_of_the_President" ;
+	rdf:predicate "progeny" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx61 .
+
+_:node17e7qetpdx61 a rdf:Statement ;
+	rdf:subject "Executive_Office_of_the_President" ;
+	rdf:predicate "issue" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx62 .
+
+_:node17e7qetpdx62 a rdf:Statement ;
+	rdf:subject "Executive_Office_of_the_President" ;
+	rdf:predicate "daughter" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx63 .
+
+_:node17e7qetpdx63 a rdf:Statement ;
+	rdf:subject "Executive_Office_of_the_President" ;
+	rdf:predicate "female_offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx64 .
+
+_:node17e7qetpdx64 a rdf:Statement ;
+	rdf:subject "Executive_Office_of_the_President" ;
+	rdf:predicate "offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx65 .
+
+_:node17e7qetpdx65 a rdf:Statement ;
+	rdf:subject "Executive_Office_of_the_President" ;
+	rdf:predicate "kid" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx66 .
+
+_:node17e7qetpdx66 a rdf:Statement ;
+	rdf:subject "President_Clinton" ;
+	rdf:predicate "child" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx67 .
+
+_:node17e7qetpdx67 a rdf:Statement ;
 	rdf:subject "President_Clinton" ;
 	rdf:predicate "girl" ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e034br1x1 qf:statement _:node17e034br1x9 .
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx68 .
 
-_:node17e034br1x9 a rdf:Statement ;
+_:node17e7qetpdx68 a rdf:Statement ;
+	rdf:subject "President_Clinton" ;
+	rdf:predicate "progeny" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx69 .
+
+_:node17e7qetpdx69 a rdf:Statement ;
+	rdf:subject "President_Clinton" ;
+	rdf:predicate "issue" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx70 .
+
+_:node17e7qetpdx70 a rdf:Statement ;
 	rdf:subject "President_Clinton" ;
 	rdf:predicate "daughter" ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e034br1x1 qf:statement _:node17e034br1x10 .
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx71 .
 
-_:node17e034br1x10 a rdf:Statement ;
-	rdf:subject "Bill_Clinton" ;
+_:node17e7qetpdx71 a rdf:Statement ;
+	rdf:subject "President_Clinton" ;
+	rdf:predicate "female_offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx72 .
+
+_:node17e7qetpdx72 a rdf:Statement ;
+	rdf:subject "President_Clinton" ;
+	rdf:predicate "offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx73 .
+
+_:node17e7qetpdx73 a rdf:Statement ;
+	rdf:subject "President_Clinton" ;
+	rdf:predicate "kid" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx74 .
+
+_:node17e7qetpdx74 a rdf:Statement ;
+	rdf:subject "President" ;
+	rdf:predicate "child" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx75 .
+
+_:node17e7qetpdx75 a rdf:Statement ;
+	rdf:subject "President" ;
 	rdf:predicate "girl" ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e034br1x1 qf:statement _:node17e034br1x11 .
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx76 .
 
-_:node17e034br1x11 a rdf:Statement ;
+_:node17e7qetpdx76 a rdf:Statement ;
+	rdf:subject "President" ;
+	rdf:predicate "progeny" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx77 .
+
+_:node17e7qetpdx77 a rdf:Statement ;
+	rdf:subject "President" ;
+	rdf:predicate "issue" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx78 .
+
+_:node17e7qetpdx78 a rdf:Statement ;
+	rdf:subject "President" ;
+	rdf:predicate "daughter" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx79 .
+
+_:node17e7qetpdx79 a rdf:Statement ;
+	rdf:subject "President" ;
+	rdf:predicate "female_offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx80 .
+
+_:node17e7qetpdx80 a rdf:Statement ;
+	rdf:subject "President" ;
+	rdf:predicate "offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx81 .
+
+_:node17e7qetpdx81 a rdf:Statement ;
+	rdf:subject "President" ;
+	rdf:predicate "kid" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx82 .
+
+_:node17e7qetpdx82 a rdf:Statement ;
+	rdf:subject "executive_branch" ;
+	rdf:predicate "child" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx83 .
+
+_:node17e7qetpdx83 a rdf:Statement ;
+	rdf:subject "executive_branch" ;
+	rdf:predicate "girl" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx84 .
+
+_:node17e7qetpdx84 a rdf:Statement ;
+	rdf:subject "executive_branch" ;
+	rdf:predicate "progeny" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx85 .
+
+_:node17e7qetpdx85 a rdf:Statement ;
+	rdf:subject "executive_branch" ;
+	rdf:predicate "issue" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx86 .
+
+_:node17e7qetpdx86 a rdf:Statement ;
+	rdf:subject "executive_branch" ;
+	rdf:predicate "daughter" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx87 .
+
+_:node17e7qetpdx87 a rdf:Statement ;
+	rdf:subject "executive_branch" ;
+	rdf:predicate "female_offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx88 .
+
+_:node17e7qetpdx88 a rdf:Statement ;
+	rdf:subject "executive_branch" ;
+	rdf:predicate "offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx89 .
+
+_:node17e7qetpdx89 a rdf:Statement ;
+	rdf:subject "executive_branch" ;
+	rdf:predicate "kid" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx90 .
+
+_:node17e7qetpdx90 a rdf:Statement ;
 	rdf:subject "Bill_Clinton" ;
 	rdf:predicate "child" ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e034br1x1 qf:statement _:node17e034br1x12 .
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx91 .
 
-_:node17e034br1x12 a rdf:Statement ;
+_:node17e7qetpdx91 a rdf:Statement ;
+	rdf:subject "Bill_Clinton" ;
+	rdf:predicate "girl" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx92 .
+
+_:node17e7qetpdx92 a rdf:Statement ;
+	rdf:subject "Bill_Clinton" ;
+	rdf:predicate "progeny" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx93 .
+
+_:node17e7qetpdx93 a rdf:Statement ;
+	rdf:subject "Bill_Clinton" ;
+	rdf:predicate "issue" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx94 .
+
+_:node17e7qetpdx94 a rdf:Statement ;
+	rdf:subject "Bill_Clinton" ;
+	rdf:predicate "daughter" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx95 .
+
+_:node17e7qetpdx95 a rdf:Statement ;
+	rdf:subject "Bill_Clinton" ;
+	rdf:predicate "female_offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx96 .
+
+_:node17e7qetpdx96 a rdf:Statement ;
+	rdf:subject "Bill_Clinton" ;
+	rdf:predicate "offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx97 .
+
+_:node17e7qetpdx97 a rdf:Statement ;
+	rdf:subject "Bill_Clinton" ;
+	rdf:predicate "kid" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx98 .
+
+_:node17e7qetpdx98 a rdf:Statement ;
+	rdf:subject "United_States_President" ;
+	rdf:predicate "child" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx99 .
+
+_:node17e7qetpdx99 a rdf:Statement ;
+	rdf:subject "United_States_President" ;
+	rdf:predicate "girl" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx100 .
+
+_:node17e7qetpdx100 a rdf:Statement ;
+	rdf:subject "United_States_President" ;
+	rdf:predicate "progeny" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx101 .
+
+_:node17e7qetpdx101 a rdf:Statement ;
+	rdf:subject "United_States_President" ;
+	rdf:predicate "issue" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx102 .
+
+_:node17e7qetpdx102 a rdf:Statement ;
+	rdf:subject "United_States_President" ;
+	rdf:predicate "daughter" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx103 .
+
+_:node17e7qetpdx103 a rdf:Statement ;
+	rdf:subject "United_States_President" ;
+	rdf:predicate "female_offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx104 .
+
+_:node17e7qetpdx104 a rdf:Statement ;
+	rdf:subject "United_States_President" ;
+	rdf:predicate "offspring" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx105 .
+
+_:node17e7qetpdx105 a rdf:Statement ;
+	rdf:subject "United_States_President" ;
+	rdf:predicate "kid" ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
+
+_:node17e7qetpdx1 qf:statement _:node17e7qetpdx106 .
+
+_:node17e7qetpdx106 a rdf:Statement ;
 	rdf:subject "?daughter" ;
-	rdf:predicate "spouse" ;
+	rdf:predicate "married to" ;
 	rdf:object "?person" ;
 	rdfs:label "married to" .

@@ -2,20 +2,20 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-_:node17dsujq84x1 a qf:Query ;
+_:node17e7q3q0rx1 a qf:Query ;
 	rdfs:comment "Where did Abraham Lincoln die?" ;
-	qf:statement _:node17dsujq84x2 .
+	qf:statement _:node17e7q3q0rx2 .
 
-_:node17dsujq84x2 a rdf:Statement ;
+_:node17e7q3q0rx2 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Abraham_Lincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object <http://dbpedia.org/resource/Washington,_D.C.> ;
-	rdfs:label "1.00  [p=http://dbpedia.org/resource/Washington,_D.C. (1.00)]" .
+	rdfs:label "1.00  [p=http://dbpedia.org/resource/Washington,_D.C.]" .
 
-_:node17dsujq84x1 qf:statement _:node17dsujq84x3 .
+_:node17e7q3q0rx1 qf:statement _:node17e7q3q0rx3 .
 
-_:node17dsujq84x3 a rdf:Statement ;
+_:node17e7q3q0rx3 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Abraham_Lincoln> ;
 	rdf:predicate <http://dbpedia.org/ontology/deathPlace> ;
 	rdf:object <http://dbpedia.org/resource/Petersen_House_(Washington,_D.C.)> ;
-	rdfs:label "1.00  [p=http://dbpedia.org/resource/Petersen_House_(Washington,_D.C.) (1.00)]" .
+	rdfs:label "1.00  [p=http://dbpedia.org/resource/Petersen_House_(Washington,_D.C.)]" .

@@ -2,84 +2,84 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-_:node17dt93hu3x1 a qf:Query ;
+_:node17e7j7tg6x1 a qf:Query ;
 	rdfs:comment "Give me the official websites of actors of the television show Charmed." ;
-	qf:statement _:node17dt93hu3x2 .
+	qf:statement _:node17e7j7tg6x2 .
 
-_:node17dt93hu3x2 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Mo'Nique> ;
+_:node17e7j7tg6x2 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Rose_McGowan> ;
 	rdf:predicate <http://dbpedia.org/ontology/wikiPageExternalLink> ;
-	rdf:object <http://www.askdoctorv.com/index.php?select=past_shows> ;
-	rdfs:label "0.38  [actor=http://dbpedia.org/resource/Mo'Nique (3.00),page=http://www.askdoctorv.com/index.php?select=past_shows (2.00)]" .
+	rdf:object <http://www.bostonrescue.net/> ;
+	rdfs:label "0.42  [actor=http://dbpedia.org/resource/Rose_McGowan,page=http://www.bostonrescue.net/]" .
 
-_:node17dt93hu3x1 qf:statement _:node17dt93hu3x3 .
+_:node17e7j7tg6x1 qf:statement _:node17e7j7tg6x3 .
 
-_:node17dt93hu3x3 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Flavor_of_Love_Girls:_Charm_School> ;
-	rdf:predicate <http://dbpedia.org/ontology/starring> ;
-	rdf:object <http://dbpedia.org/resource/Mo'Nique> ;
-	rdfs:label "0.38  [actor=http://dbpedia.org/resource/Mo'Nique (3.00),page=http://www.askdoctorv.com/index.php?select=past_shows (2.00)]" .
-
-_:node17dt93hu3x1 qf:statement _:node17dt93hu3x4 .
-
-_:node17dt93hu3x4 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/The_Discreet_Charm_of_the_Bourgeoisie> ;
-	rdf:predicate <http://dbpedia.org/ontology/starring> ;
-	rdf:object <http://dbpedia.org/resource/Jean-Pierre_Cassel> ;
-	rdfs:label "0.38  [actor=http://dbpedia.org/resource/Jean-Pierre_Cassel (3.00),page=http://www.lecoinducinephage.com/?p=477 (2.00)]" .
-
-_:node17dt93hu3x1 qf:statement _:node17dt93hu3x5 .
-
-_:node17dt93hu3x5 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Jean-Pierre_Cassel> ;
-	rdf:predicate <http://dbpedia.org/ontology/wikiPageExternalLink> ;
-	rdf:object <http://www.lecoinducinephage.com/?p=477> ;
-	rdfs:label "0.38  [actor=http://dbpedia.org/resource/Jean-Pierre_Cassel (3.00),page=http://www.lecoinducinephage.com/?p=477 (2.00)]" .
-
-_:node17dt93hu3x1 qf:statement _:node17dt93hu3x6 .
-
-_:node17dt93hu3x6 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Mo'Nique> ;
-	rdf:predicate <http://dbpedia.org/ontology/wikiPageExternalLink> ;
-	rdf:object <http://www.bet.com/ontv/betshows/monique/> ;
-	rdfs:label "0.38  [actor=http://dbpedia.org/resource/Mo'Nique (3.00),page=http://www.bet.com/ontv/betshows/monique/ (2.00)]" .
-
-_:node17dt93hu3x1 qf:statement _:node17dt93hu3x7 .
-
-_:node17dt93hu3x7 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Flavor_of_Love_Girls:_Charm_School> ;
-	rdf:predicate <http://dbpedia.org/ontology/starring> ;
-	rdf:object <http://dbpedia.org/resource/Mo'Nique> ;
-	rdfs:label "0.38  [actor=http://dbpedia.org/resource/Mo'Nique (3.00),page=http://www.bet.com/ontv/betshows/monique/ (2.00)]" .
-
-_:node17dt93hu3x1 qf:statement _:node17dt93hu3x8 .
-
-_:node17dt93hu3x8 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Mo'Nique> ;
-	rdf:predicate <http://dbpedia.org/ontology/wikiPageExternalLink> ;
-	rdf:object <http://www.nydailynews.com/archives/news/2006/07/25/2006-07-25_airline_s_actions_won_t_fly_.html> ;
-	rdfs:label "0.38  [actor=http://dbpedia.org/resource/Mo'Nique (3.00),page=http://www.nydailynews.com/archives/news/2006/07/25/2006-07-25_airline_s_actions_won_t_fly_.html (2.00)]" .
-
-_:node17dt93hu3x1 qf:statement _:node17dt93hu3x9 .
-
-_:node17dt93hu3x9 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Flavor_of_Love_Girls:_Charm_School> ;
-	rdf:predicate <http://dbpedia.org/ontology/starring> ;
-	rdf:object <http://dbpedia.org/resource/Mo'Nique> ;
-	rdfs:label "0.38  [actor=http://dbpedia.org/resource/Mo'Nique (3.00),page=http://www.nydailynews.com/archives/news/2006/07/25/2006-07-25_airline_s_actions_won_t_fly_.html (2.00)]" .
-
-_:node17dt93hu3x1 qf:statement _:node17dt93hu3x10 .
-
-_:node17dt93hu3x10 a rdf:Statement ;
-	rdf:subject <http://dbpedia.org/resource/Brian_Krause> ;
-	rdf:predicate <http://dbpedia.org/ontology/wikiPageExternalLink> ;
-	rdf:object <http://www.briankrause.us/> ;
-	rdfs:label "0.38  [actor=http://dbpedia.org/resource/Brian_Krause (3.00),page=http://www.briankrause.us/ (2.00)]" .
-
-_:node17dt93hu3x1 qf:statement _:node17dt93hu3x11 .
-
-_:node17dt93hu3x11 a rdf:Statement ;
+_:node17e7j7tg6x3 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Charmed> ;
 	rdf:predicate <http://dbpedia.org/ontology/starring> ;
-	rdf:object <http://dbpedia.org/resource/Brian_Krause> ;
-	rdfs:label "0.38  [actor=http://dbpedia.org/resource/Brian_Krause (3.00),page=http://www.briankrause.us/ (2.00)]" .
+	rdf:object <http://dbpedia.org/resource/Rose_McGowan> ;
+	rdfs:label "0.42  [actor=http://dbpedia.org/resource/Rose_McGowan,page=http://www.bostonrescue.net/]" .
+
+_:node17e7j7tg6x1 qf:statement _:node17e7j7tg6x4 .
+
+_:node17e7j7tg6x4 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Rose_McGowan> ;
+	rdf:predicate <http://dbpedia.org/ontology/wikiPageExternalLink> ;
+	rdf:object <http://www.moviesonline.ca/movienews_11600.html> ;
+	rdfs:label "0.42  [actor=http://dbpedia.org/resource/Rose_McGowan,page=http://www.moviesonline.ca/movienews_11600.html]" .
+
+_:node17e7j7tg6x1 qf:statement _:node17e7j7tg6x5 .
+
+_:node17e7j7tg6x5 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object <http://dbpedia.org/resource/Rose_McGowan> ;
+	rdfs:label "0.42  [actor=http://dbpedia.org/resource/Rose_McGowan,page=http://www.moviesonline.ca/movienews_11600.html]" .
+
+_:node17e7j7tg6x1 qf:statement _:node17e7j7tg6x6 .
+
+_:node17e7j7tg6x6 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Rose_McGowan> ;
+	rdf:predicate <http://dbpedia.org/ontology/wikiPageExternalLink> ;
+	rdf:object <http://www.maximonline.com/articles/index.aspx?a_id=282&src=GM7070:MD> ;
+	rdfs:label "0.42  [actor=http://dbpedia.org/resource/Rose_McGowan,page=http://www.maximonline.com/articles/index.aspx?a_id=282&src=GM7070:MD]" .
+
+_:node17e7j7tg6x1 qf:statement _:node17e7j7tg6x7 .
+
+_:node17e7j7tg6x7 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object <http://dbpedia.org/resource/Rose_McGowan> ;
+	rdfs:label "0.42  [actor=http://dbpedia.org/resource/Rose_McGowan,page=http://www.maximonline.com/articles/index.aspx?a_id=282&src=GM7070:MD]" .
+
+_:node17e7j7tg6x1 qf:statement _:node17e7j7tg6x8 .
+
+_:node17e7j7tg6x8 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Charmed> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object <http://dbpedia.org/resource/List_of_Charmed_characters> ;
+	rdfs:label "0.42  [actor=http://dbpedia.org/resource/List_of_Charmed_characters,page=http://www.imdb.com/name/nm0189252/]" .
+
+_:node17e7j7tg6x1 qf:statement _:node17e7j7tg6x9 .
+
+_:node17e7j7tg6x9 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/List_of_Charmed_characters> ;
+	rdf:predicate <http://dbpedia.org/ontology/wikiPageExternalLink> ;
+	rdf:object <http://www.imdb.com/name/nm0189252/> ;
+	rdfs:label "0.42  [actor=http://dbpedia.org/resource/List_of_Charmed_characters,page=http://www.imdb.com/name/nm0189252/]" .
+
+_:node17e7j7tg6x1 qf:statement _:node17e7j7tg6x10 .
+
+_:node17e7j7tg6x10 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Riki_Rachtman> ;
+	rdf:predicate <http://dbpedia.org/ontology/wikiPageExternalLink> ;
+	rdf:object <http://lovelinecentral.com/> ;
+	rdfs:label "0.42  [actor=http://dbpedia.org/resource/Riki_Rachtman,page=http://lovelinecentral.com/]" .
+
+_:node17e7j7tg6x1 qf:statement _:node17e7j7tg6x11 .
+
+_:node17e7j7tg6x11 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Rock_of_Love:_Charm_School> ;
+	rdf:predicate <http://dbpedia.org/ontology/starring> ;
+	rdf:object <http://dbpedia.org/resource/Riki_Rachtman> ;
+	rdfs:label "0.42  [actor=http://dbpedia.org/resource/Riki_Rachtman,page=http://lovelinecentral.com/]" .

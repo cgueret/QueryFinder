@@ -2,28 +2,28 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-_:node17e03e04tx1 a qf:Query ;
+_:node17e7qfkbex1 a qf:Query ;
 	rdfs:comment "Who is the daughter of Bill Clinton married to?" ;
-	qf:statement _:node17e03e04tx2 .
+	qf:statement _:node17e7qfkbex2 .
 
-_:node17e03e04tx2 a rdf:Statement ;
+_:node17e7qfkbex2 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/child> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03e04tx1 qf:statement _:node17e03e04tx3 .
+_:node17e7qfkbex1 qf:statement _:node17e7qfkbex3 .
 
-_:node17e03e04tx3 a rdf:Statement ;
+_:node17e7qfkbex3 a rdf:Statement ;
 	rdf:subject <http://dbpedia.org/resource/Presidency_of_Bill_Clinton> ;
 	rdf:predicate <http://dbpedia.org/ontology/child> ;
 	rdf:object "?daughter" ;
 	rdfs:label "daughter" .
 
-_:node17e03e04tx1 qf:statement _:node17e03e04tx4 .
+_:node17e7qfkbex1 qf:statement _:node17e7qfkbex4 .
 
-_:node17e03e04tx4 a rdf:Statement ;
-	rdf:subject "?daughter" ;
-	rdf:predicate <http://dbpedia.org/ontology/spouse> ;
-	rdf:object "?person" ;
-	rdfs:label "married to" .
+_:node17e7qfkbex4 a rdf:Statement ;
+	rdf:subject <http://dbpedia.org/resource/Hillary_Rodham_Clinton> ;
+	rdf:predicate <http://dbpedia.org/ontology/child> ;
+	rdf:object "?daughter" ;
+	rdfs:label "daughter" .
